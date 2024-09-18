@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1，什么是ansible | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.4df6cfe1.js" as="script"><link rel="preload" href="/devops/public/assets/js/104.efe2d7e6.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/178.0941d077.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.a222dbf7.js"><link rel="prefetch" href="/devops/public/assets/js/100.57f35976.js"><link rel="prefetch" href="/devops/public/assets/js/101.16f0a3b7.js"><link rel="prefetch" href="/devops/public/assets/js/102.ecbc3708.js"><link rel="prefetch" href="/devops/public/assets/js/103.3507b281.js"><link rel="prefetch" href="/devops/public/assets/js/105.38279475.js"><link rel="prefetch" href="/devops/public/assets/js/106.44c32359.js"><link rel="prefetch" href="/devops/public/assets/js/107.07d16688.js"><link rel="prefetch" href="/devops/public/assets/js/108.a18b2ef1.js"><link rel="prefetch" href="/devops/public/assets/js/109.c9f86610.js"><link rel="prefetch" href="/devops/public/assets/js/11.de00880c.js"><link rel="prefetch" href="/devops/public/assets/js/110.7a66b7dd.js"><link rel="prefetch" href="/devops/public/assets/js/111.f754444c.js"><link rel="prefetch" href="/devops/public/assets/js/112.6a777934.js"><link rel="prefetch" href="/devops/public/assets/js/113.adafecb9.js"><link rel="prefetch" href="/devops/public/assets/js/114.29405c0f.js"><link rel="prefetch" href="/devops/public/assets/js/115.3cd92205.js"><link rel="prefetch" href="/devops/public/assets/js/116.05bcf710.js"><link rel="prefetch" href="/devops/public/assets/js/117.3da285a2.js"><link rel="prefetch" href="/devops/public/assets/js/118.deb06702.js"><link rel="prefetch" href="/devops/public/assets/js/119.5736894d.js"><link rel="prefetch" href="/devops/public/assets/js/12.afcd1952.js"><link rel="prefetch" href="/devops/public/assets/js/120.9b3d15b1.js"><link rel="prefetch" href="/devops/public/assets/js/121.e85b24a9.js"><link rel="prefetch" href="/devops/public/assets/js/122.3535e845.js"><link rel="prefetch" href="/devops/public/assets/js/123.faf5d8a3.js"><link rel="prefetch" href="/devops/public/assets/js/124.b31a3157.js"><link rel="prefetch" href="/devops/public/assets/js/125.401b8d68.js"><link rel="prefetch" href="/devops/public/assets/js/126.034e18d4.js"><link rel="prefetch" href="/devops/public/assets/js/127.51164dc3.js"><link rel="prefetch" href="/devops/public/assets/js/128.8a282f65.js"><link rel="prefetch" href="/devops/public/assets/js/129.a213210f.js"><link rel="prefetch" href="/devops/public/assets/js/13.50795a7f.js"><link rel="prefetch" href="/devops/public/assets/js/130.a64e2797.js"><link rel="prefetch" href="/devops/public/assets/js/131.aae3591f.js"><link rel="prefetch" href="/devops/public/assets/js/132.67cba06f.js"><link rel="prefetch" href="/devops/public/assets/js/133.e202475a.js"><link rel="prefetch" href="/devops/public/assets/js/134.d94bc405.js"><link rel="prefetch" href="/devops/public/assets/js/135.38a7f2eb.js"><link rel="prefetch" href="/devops/public/assets/js/136.a1060c9e.js"><link rel="prefetch" href="/devops/public/assets/js/137.0df30c05.js"><link rel="prefetch" href="/devops/public/assets/js/138.f331695b.js"><link rel="prefetch" href="/devops/public/assets/js/139.14e366c2.js"><link rel="prefetch" href="/devops/public/assets/js/14.c8b85b37.js"><link rel="prefetch" href="/devops/public/assets/js/140.76e60bba.js"><link rel="prefetch" href="/devops/public/assets/js/141.b3785a0a.js"><link rel="prefetch" href="/devops/public/assets/js/142.84af3b12.js"><link rel="prefetch" href="/devops/public/assets/js/143.aca25ee0.js"><link rel="prefetch" href="/devops/public/assets/js/144.2a0e1634.js"><link rel="prefetch" href="/devops/public/assets/js/145.0712333e.js"><link rel="prefetch" href="/devops/public/assets/js/146.a9a5362f.js"><link rel="prefetch" href="/devops/public/assets/js/147.8e21707a.js"><link rel="prefetch" href="/devops/public/assets/js/148.bca21a6a.js"><link rel="prefetch" href="/devops/public/assets/js/149.07e5317e.js"><link rel="prefetch" href="/devops/public/assets/js/15.f95bfb78.js"><link rel="prefetch" href="/devops/public/assets/js/150.558453ea.js"><link rel="prefetch" href="/devops/public/assets/js/151.a38e2234.js"><link rel="prefetch" href="/devops/public/assets/js/152.fc084701.js"><link rel="prefetch" href="/devops/public/assets/js/153.964667fe.js"><link rel="prefetch" href="/devops/public/assets/js/154.221f36eb.js"><link rel="prefetch" href="/devops/public/assets/js/155.4801dbc2.js"><link rel="prefetch" href="/devops/public/assets/js/156.0c5da048.js"><link rel="prefetch" href="/devops/public/assets/js/157.7bfb52dd.js"><link rel="prefetch" href="/devops/public/assets/js/158.19f69cbc.js"><link rel="prefetch" href="/devops/public/assets/js/159.c0c1828a.js"><link rel="prefetch" href="/devops/public/assets/js/16.bd366d92.js"><link rel="prefetch" href="/devops/public/assets/js/160.a11953fc.js"><link rel="prefetch" href="/devops/public/assets/js/161.6cd3c364.js"><link rel="prefetch" href="/devops/public/assets/js/162.24ff2fbc.js"><link rel="prefetch" href="/devops/public/assets/js/163.7fa5c174.js"><link rel="prefetch" href="/devops/public/assets/js/164.7f0983f6.js"><link rel="prefetch" href="/devops/public/assets/js/165.071acfcc.js"><link rel="prefetch" href="/devops/public/assets/js/166.5bea24cb.js"><link rel="prefetch" href="/devops/public/assets/js/167.b1355235.js"><link rel="prefetch" href="/devops/public/assets/js/168.1d61aa36.js"><link rel="prefetch" href="/devops/public/assets/js/169.dbaed32a.js"><link rel="prefetch" href="/devops/public/assets/js/17.08791185.js"><link rel="prefetch" href="/devops/public/assets/js/170.58cf9809.js"><link rel="prefetch" href="/devops/public/assets/js/171.c146fe72.js"><link rel="prefetch" href="/devops/public/assets/js/172.1a0a58ba.js"><link rel="prefetch" href="/devops/public/assets/js/173.7734347a.js"><link rel="prefetch" href="/devops/public/assets/js/174.b2111903.js"><link rel="prefetch" href="/devops/public/assets/js/175.e2d954dd.js"><link rel="prefetch" href="/devops/public/assets/js/176.67714410.js"><link rel="prefetch" href="/devops/public/assets/js/177.cbd15b5a.js"><link rel="prefetch" href="/devops/public/assets/js/179.6891fb00.js"><link rel="prefetch" href="/devops/public/assets/js/18.be74f5d1.js"><link rel="prefetch" href="/devops/public/assets/js/180.105c3c0c.js"><link rel="prefetch" href="/devops/public/assets/js/181.091a4aba.js"><link rel="prefetch" href="/devops/public/assets/js/182.a72eff7e.js"><link rel="prefetch" href="/devops/public/assets/js/183.95fca98e.js"><link rel="prefetch" href="/devops/public/assets/js/184.4a6d573e.js"><link rel="prefetch" href="/devops/public/assets/js/185.0aa8f292.js"><link rel="prefetch" href="/devops/public/assets/js/186.36d27c5a.js"><link rel="prefetch" href="/devops/public/assets/js/187.cbb37c76.js"><link rel="prefetch" href="/devops/public/assets/js/188.394ea608.js"><link rel="prefetch" href="/devops/public/assets/js/189.85d25d0c.js"><link rel="prefetch" href="/devops/public/assets/js/19.fae8155d.js"><link rel="prefetch" href="/devops/public/assets/js/190.5a1f134c.js"><link rel="prefetch" href="/devops/public/assets/js/191.a624428a.js"><link rel="prefetch" href="/devops/public/assets/js/192.0ca0c40a.js"><link rel="prefetch" href="/devops/public/assets/js/193.cfd2ea21.js"><link rel="prefetch" href="/devops/public/assets/js/194.0e34c1e4.js"><link rel="prefetch" href="/devops/public/assets/js/195.3c180225.js"><link rel="prefetch" href="/devops/public/assets/js/196.54aff013.js"><link rel="prefetch" href="/devops/public/assets/js/197.899734a8.js"><link rel="prefetch" href="/devops/public/assets/js/198.feda34f7.js"><link rel="prefetch" href="/devops/public/assets/js/199.5c3e1329.js"><link rel="prefetch" href="/devops/public/assets/js/20.84265e78.js"><link rel="prefetch" href="/devops/public/assets/js/200.f8854500.js"><link rel="prefetch" href="/devops/public/assets/js/201.167390f4.js"><link rel="prefetch" href="/devops/public/assets/js/202.af4cac56.js"><link rel="prefetch" href="/devops/public/assets/js/203.120ce6c1.js"><link rel="prefetch" href="/devops/public/assets/js/204.9203811e.js"><link rel="prefetch" href="/devops/public/assets/js/205.43fbf4da.js"><link rel="prefetch" href="/devops/public/assets/js/206.9e3ce210.js"><link rel="prefetch" href="/devops/public/assets/js/207.82ee2724.js"><link rel="prefetch" href="/devops/public/assets/js/208.4bf52d4d.js"><link rel="prefetch" href="/devops/public/assets/js/209.7db0e0d0.js"><link rel="prefetch" href="/devops/public/assets/js/21.511538a8.js"><link rel="prefetch" href="/devops/public/assets/js/210.b8b336d9.js"><link rel="prefetch" href="/devops/public/assets/js/211.89cc53b4.js"><link rel="prefetch" href="/devops/public/assets/js/212.717a5c0b.js"><link rel="prefetch" href="/devops/public/assets/js/213.36fa1410.js"><link rel="prefetch" href="/devops/public/assets/js/214.ba0fbe6a.js"><link rel="prefetch" href="/devops/public/assets/js/215.d4582592.js"><link rel="prefetch" href="/devops/public/assets/js/216.1d5d77d6.js"><link rel="prefetch" href="/devops/public/assets/js/217.6d9a584a.js"><link rel="prefetch" href="/devops/public/assets/js/218.a4e4cec8.js"><link rel="prefetch" href="/devops/public/assets/js/22.b4630d41.js"><link rel="prefetch" href="/devops/public/assets/js/23.01321c1e.js"><link rel="prefetch" href="/devops/public/assets/js/24.37bc717d.js"><link rel="prefetch" href="/devops/public/assets/js/25.8b41596c.js"><link rel="prefetch" href="/devops/public/assets/js/26.0759f5dd.js"><link rel="prefetch" href="/devops/public/assets/js/27.421393e8.js"><link rel="prefetch" href="/devops/public/assets/js/28.7f747789.js"><link rel="prefetch" href="/devops/public/assets/js/29.60384c48.js"><link rel="prefetch" href="/devops/public/assets/js/3.4611f306.js"><link rel="prefetch" href="/devops/public/assets/js/30.83e2c55e.js"><link rel="prefetch" href="/devops/public/assets/js/31.26a0a48f.js"><link rel="prefetch" href="/devops/public/assets/js/32.bf77ae3a.js"><link rel="prefetch" href="/devops/public/assets/js/33.555b47ef.js"><link rel="prefetch" href="/devops/public/assets/js/34.add122aa.js"><link rel="prefetch" href="/devops/public/assets/js/35.d409bcbb.js"><link rel="prefetch" href="/devops/public/assets/js/36.3b525db7.js"><link rel="prefetch" href="/devops/public/assets/js/37.a17ecb54.js"><link rel="prefetch" href="/devops/public/assets/js/38.d5805972.js"><link rel="prefetch" href="/devops/public/assets/js/39.20df5d67.js"><link rel="prefetch" href="/devops/public/assets/js/4.fb3e0b7b.js"><link rel="prefetch" href="/devops/public/assets/js/40.df6be02c.js"><link rel="prefetch" href="/devops/public/assets/js/41.a50e87c4.js"><link rel="prefetch" href="/devops/public/assets/js/42.eded202b.js"><link rel="prefetch" href="/devops/public/assets/js/43.97b1abd9.js"><link rel="prefetch" href="/devops/public/assets/js/44.65623035.js"><link rel="prefetch" href="/devops/public/assets/js/45.c2adbc86.js"><link rel="prefetch" href="/devops/public/assets/js/46.ea612a5e.js"><link rel="prefetch" href="/devops/public/assets/js/47.4c992ec1.js"><link rel="prefetch" href="/devops/public/assets/js/48.093c17ef.js"><link rel="prefetch" href="/devops/public/assets/js/49.a3675199.js"><link rel="prefetch" href="/devops/public/assets/js/5.5d5c290f.js"><link rel="prefetch" href="/devops/public/assets/js/50.a32147f1.js"><link rel="prefetch" href="/devops/public/assets/js/51.0b270655.js"><link rel="prefetch" href="/devops/public/assets/js/52.b37d9dc6.js"><link rel="prefetch" href="/devops/public/assets/js/53.4d3fbf28.js"><link rel="prefetch" href="/devops/public/assets/js/54.f98a4582.js"><link rel="prefetch" href="/devops/public/assets/js/55.92e3007b.js"><link rel="prefetch" href="/devops/public/assets/js/56.1d77ae31.js"><link rel="prefetch" href="/devops/public/assets/js/57.b459cdd7.js"><link rel="prefetch" href="/devops/public/assets/js/58.20a9a84b.js"><link rel="prefetch" href="/devops/public/assets/js/59.ef166db8.js"><link rel="prefetch" href="/devops/public/assets/js/6.f4c8cc75.js"><link rel="prefetch" href="/devops/public/assets/js/60.c1444d95.js"><link rel="prefetch" href="/devops/public/assets/js/61.198ba6e7.js"><link rel="prefetch" href="/devops/public/assets/js/62.483bef39.js"><link rel="prefetch" href="/devops/public/assets/js/63.75807889.js"><link rel="prefetch" href="/devops/public/assets/js/64.40268277.js"><link rel="prefetch" href="/devops/public/assets/js/65.83603460.js"><link rel="prefetch" href="/devops/public/assets/js/66.9125cb5e.js"><link rel="prefetch" href="/devops/public/assets/js/67.3b57bd40.js"><link rel="prefetch" href="/devops/public/assets/js/68.7732c93d.js"><link rel="prefetch" href="/devops/public/assets/js/69.d65b3d31.js"><link rel="prefetch" href="/devops/public/assets/js/7.61b2080e.js"><link rel="prefetch" href="/devops/public/assets/js/70.615f48d0.js"><link rel="prefetch" href="/devops/public/assets/js/71.3dcd2877.js"><link rel="prefetch" href="/devops/public/assets/js/72.f91ea4a1.js"><link rel="prefetch" href="/devops/public/assets/js/73.220826f0.js"><link rel="prefetch" href="/devops/public/assets/js/74.2906dfba.js"><link rel="prefetch" href="/devops/public/assets/js/75.725b70fb.js"><link rel="prefetch" href="/devops/public/assets/js/76.c2c3ae24.js"><link rel="prefetch" href="/devops/public/assets/js/77.5cecb717.js"><link rel="prefetch" href="/devops/public/assets/js/78.77d25316.js"><link rel="prefetch" href="/devops/public/assets/js/79.a82a9d1d.js"><link rel="prefetch" href="/devops/public/assets/js/8.f197ec99.js"><link rel="prefetch" href="/devops/public/assets/js/80.bf2b919a.js"><link rel="prefetch" href="/devops/public/assets/js/81.3bb6ef41.js"><link rel="prefetch" href="/devops/public/assets/js/82.0b69c3cd.js"><link rel="prefetch" href="/devops/public/assets/js/83.15c6f6d6.js"><link rel="prefetch" href="/devops/public/assets/js/84.b4bdc22a.js"><link rel="prefetch" href="/devops/public/assets/js/85.abe6805f.js"><link rel="prefetch" href="/devops/public/assets/js/86.609cba8d.js"><link rel="prefetch" href="/devops/public/assets/js/87.8d27fecc.js"><link rel="prefetch" href="/devops/public/assets/js/88.78935da6.js"><link rel="prefetch" href="/devops/public/assets/js/89.52820bcb.js"><link rel="prefetch" href="/devops/public/assets/js/9.425bb89d.js"><link rel="prefetch" href="/devops/public/assets/js/90.672fcfe4.js"><link rel="prefetch" href="/devops/public/assets/js/91.9b0c1b4a.js"><link rel="prefetch" href="/devops/public/assets/js/92.f9d83927.js"><link rel="prefetch" href="/devops/public/assets/js/93.78289ff7.js"><link rel="prefetch" href="/devops/public/assets/js/94.e9c972d5.js"><link rel="prefetch" href="/devops/public/assets/js/95.3b97d34a.js"><link rel="prefetch" href="/devops/public/assets/js/96.5af5ac55.js"><link rel="prefetch" href="/devops/public/assets/js/97.1cae3119.js"><link rel="prefetch" href="/devops/public/assets/js/98.a981ee0f.js"><link rel="prefetch" href="/devops/public/assets/js/99.ae6dd75c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>205</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">1，什么是ansible</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h3 id="_1-什么是ansible"><a href="#_1-什么是ansible" class="header-anchor">#</a> 1，什么是ansible</h3> <p>Ansible是一个自动化<strong>统一配置管理工具</strong>，自动化主要体现在Ansible集成了丰富模块以及功能组件，可以通过一个命令完成一系列的操作，进而能减少重复性的工作和维护成本，可以提高工作效率。</p> <p>同类型软件对比:</p> <ol><li>puppet 学习难，安装ruby环境难，没有远程执行功能</li> <li>ansible 轻量级，大规模环境下只通过ssh会很慢，串行的</li> <li>saltstack 一般选择salt会使用<code>C/S</code>结构的模式，<code>salt-master</code>和<code>salt-minion</code>，并行的，大规模批量操作的情况下，会比Ansible速度快一些，底层使用的是<code>zero-MQ</code>消协队列</li></ol> <p>手动运维时代（原始社会）</p> <ul><li>在之前，我们学习了如何安装nginx。但是我们使用的是yum安装的方式，在以前，运维需要规范，需要统一配置管理，我们只能使用源码安装方式，便于我们去管理，源码安装，如果是单台还好，一会也就装完了，如果此时，生产环境压力骤增，需要扩展100台web节点（源码安装100台nginx）我们该如何操作？<strong>重复以下步骤100遍？？？</strong></li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#1.安装依赖</span>
+yum <span class="token function">install</span> pcre-devel openssl-devel <span class="token parameter variable">-y</span>
+
+<span class="token comment">#2.进入安装目录</span>
+<span class="token builtin class-name">cd</span> /usr/local/tools
+
+<span class="token comment">#3.创建nginx用户</span>
+<span class="token function">useradd</span> nginx <span class="token parameter variable">-M</span> <span class="token parameter variable">-s</span> /sbin/nologin
+
+<span class="token comment">#4.解压</span>
+<span class="token function">tar</span> xf nginx-1.6.3.tar.gz
+
+<span class="token comment">#5.进入nginx程序目录</span>
+<span class="token builtin class-name">cd</span> nginx-1.6.3
+
+<span class="token comment">#6.生成</span>
+./configure <span class="token parameter variable">--prefix</span><span class="token operator">=</span>/usr/local/nginx-1.6.3 <span class="token parameter variable">--user</span><span class="token operator">=</span>nginx <span class="token parameter variable">--group</span><span class="token operator">=</span>nginx --with-http_ssl_module --with-http_stub_status_module
+
+<span class="token comment">#7.编译</span>
+<span class="token function">make</span>
+
+<span class="token comment">#8.安装</span>
+<span class="token function">make</span> <span class="token function">install</span>
+
+<span class="token comment">#9.做软链接</span>
+<span class="token function">ln</span> <span class="token parameter variable">-s</span> /usr/local/nginx-1.6.3/ /usr/local/nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>以上步骤还只是安装，那还要部署代码呢？修改配置文件？优化？启动？那还工作个毛线啊，一天啥也不用干了，就装<code>nginx</code>吧。</p> <p>自动化运维时代：只需要一条命令，搞定100台集群</p> <p><img src="/devops/public/assets/img/1725323115526.fdc2d0cd.png" alt="1725323115526"></p> <p>自动化运维工具的优势：</p> <p><img src="/devops/public/assets/img/1725323144959.a08c20ec.png" alt="1725323144959"></p> <p>Ansible的功能及优点：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.远程执行
+批量执行远程命令，可以对多台主机进行远程操作
+
+<span class="token number">2</span>.配置管理
+批量配置软件服务，可以进行自动化方式配置，服务的统一配置管理，和启停
+
+<span class="token number">3</span>.事件驱动
+通过Ansible的模块，对服务进行不同的事件驱动
+比如：
+<span class="token number">1</span>）修改配置后重启
+<span class="token number">2</span>）只修改配置文件，不重启
+<span class="token number">3</span>）修改配置文件后，重新加载
+<span class="token number">4</span>）远程启停服务管理
+
+<span class="token number">4</span>.管理公有云
+通过API接口的方式管理公有云，不过这方面做的不如saltstack.
+saltstack本身可以通过saltcloud管理各大云厂商的云平台。
+
+<span class="token number">5</span>.二次开发
+因为语法是Python，所以便于运维进行二次开发。
+
+<span class="token number">6</span>.任务编排
+可以通过playbook的方式来统一管理服务，并且可以使用一条命令，实现一套架构的部署
+
+<span class="token number">7</span>.跨平台，跨系统
+几乎不受到平台和系统的限制，比如安装apache和启动服务
+
+在Ubuntu上安装apache服务名字叫apache2
+在CentOS上安装apache服务名字叫httpd
+
+在CentOS6上启动服务器使用命令：/etc/init.d/nginx start
+在CentOS7上启动服务器使用命令：systemctl start nginx
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>Ansible的架构</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>、连接插件connection plugins用于连接主机 用来连接被管理端
+<span class="token number">2</span>、核心模块core modules连接主机实现操作， 它依赖于具体的模块来做具体的事情
+<span class="token number">3</span>、自定义模块custom modules根据自己的需求编写具体的模块
+<span class="token number">4</span>、插件plugins完成模块功能的补充
+<span class="token number">5</span>、剧本playbookansible的配置文件,将多个任务定义在剧本中，由ansible自动执行
+<span class="token number">6</span>、主机清单inventor定义ansible需要操作主机的范围
+最重要的一点是 ansible是模块化的 它所有的操作都依赖于模块
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><img src="/devops/public/assets/img/1725323498119.f05804ba.png" alt="1725323498119"></p> <p>Ansible的执行流程</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.Ansible读取playbook剧本，剧本中会记录对哪些主机执行哪些任务。
+<span class="token number">2</span>.首先Ansible通过主机清单找到要执行的主机，然后调用具体的模块。
+<span class="token number">3</span>.其次Ansible会通过连接插件连接对应的主机并推送对应的任务列表。
+<span class="token number">4</span>.最后被管理的主机会将Ansible发送过来的任务解析为本地Shell命令执行。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="/devops/public/assets/img/1725323592598.121cd29e.png" alt="1725323592598"></p> <h3 id="_2-主机清单"><a href="#_2-主机清单" class="header-anchor">#</a> 2，主机清单</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>配置文件:
+/etc/ansible/hosts
+
+ansible运行的时候默认会查找/etc/ansible/hosts,可以使用参数指定hosts文件的位置
+比如/opt/hosts
+anisble <span class="token number">10.0</span>.0.7 <span class="token parameter variable">-m</span> <span class="token function">ping</span> <span class="token parameter variable">-i</span> /opt/hosts
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>方法1:
+主机清单配置基于用户名和密码的方式<span class="token punctuation">(</span>不建议使用 配置文件密码为明文 服务器密码复杂<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts </span>
+<span class="token number">10.0</span>.0.7 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible 10.0.0.7 -m ping</span>
+<span class="token number">10.0</span>.0.7 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible 10.0.0.8 -m ping   # 说明主机清单里没有10.0.0.8</span>
+<span class="token punctuation">[</span>WARNING<span class="token punctuation">]</span>: Could not match supplied <span class="token function">host</span> pattern, ignoring: <span class="token number">10.0</span>.0.8
+<span class="token punctuation">[</span>WARNING<span class="token punctuation">]</span>: No hosts matched, nothing to <span class="token keyword">do</span>
+
+
+配置客户端的别名
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+配置多台
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web02 -m ping</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+
+控制多少的客户端all
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible all -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+配置backup
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+backup  <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible all -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+backup <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>配置组
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+backup  <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+
+<span class="token punctuation">[</span>webs<span class="token punctuation">]</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+
+
+使用变量配置:
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+backup  <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41 <span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root  <span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span> <span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+
+<span class="token punctuation">[</span>webs<span class="token punctuation">]</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8
+
+<span class="token punctuation">[</span>webs:vars<span class="token punctuation">]</span>
+<span class="token assign-left variable">ansible_ssh_user</span><span class="token operator">=</span>root
+<span class="token assign-left variable">ansible_ssh_port</span><span class="token operator">=</span><span class="token number">22</span>
+<span class="token assign-left variable">ansible_ssh_pass</span><span class="token operator">=</span><span class="token string">'123456Abc.com'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>方法2: 基于秘钥方式管理客户端  重点
+<span class="token number">1</span>.生成秘钥对
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ssh-keygen </span>
+<span class="token number">2</span>.将公钥拷贝到目标主机
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ssh-copy-id 10.0.0.7</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ssh-copy-id 10.0.0.8</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ssh-copy-id 10.0.0.41</span>
+登录测试:
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ssh 10.0.0.8</span>
+
+
+
+<span class="token number">3</span>.配置主机清单
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+<span class="token number">10.0</span>.0.7
+<span class="token number">10.0</span>.0.8
+<span class="token number">10.0</span>.0.41
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible 10.0.0.7 -m ping</span>
+<span class="token number">10.0</span>.0.7 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible all -m ping</span>
+<span class="token number">10.0</span>.0.7 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token number">10.0</span>.0.8 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token number">10.0</span>.0.41 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+别名配置、组的配置
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+backup <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41
+
+<span class="token punctuation">[</span>webs<span class="token punctuation">]</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web02 -m ping</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m ping</span>
+web01 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+web02 <span class="token operator">|</span> SUCCESS <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;changed&quot;</span><span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;ping&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;pong&quot;</span>
+<span class="token punctuation">}</span>
+
+
+
+配置多个组属于一个组<span class="token punctuation">(</span>lnmp组包含了back组和webs组<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts</span>
+<span class="token punctuation">[</span>back<span class="token punctuation">]</span>
+backup <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41
+
+
+<span class="token punctuation">[</span>webs<span class="token punctuation">]</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8
+
+<span class="token punctuation">[</span>lnmp:children<span class="token punctuation">]</span>
+back
+webs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br></div></div><h3 id="_3-yum模块"><a href="#_3-yum模块" class="header-anchor">#</a> 3，yum模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -qa wget</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#yum -y remove wget</span>
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/ansible/hosts </span>
+<span class="token punctuation">[</span>back<span class="token punctuation">]</span>
+backup <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.41
+<span class="token punctuation">[</span>webs<span class="token punctuation">]</span>
+web01 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7
+web02 <span class="token assign-left variable">ansible_ssh_host</span><span class="token operator">=</span><span class="token number">10.0</span>.0.8
+
+<span class="token comment"># 安装wget命令</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m yum -a 'name=wget state=present'</span>
+
+<span class="token comment"># 卸载wget命令</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m yum -a 'name=wget state=absent'</span>
+
+颜色辨别：
+- 绿色表示已经是我们要的结果了。
+- 黄色表示已经执行的命令。
+- 红色表示执行失败。
+
+控制webs组安装wget
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m yum -a 'name=wget state=present'</span>
+
+yum: 模块名称
+   name: 指定包的名称
+   state: 动作是什么
+        <span class="token builtin class-name">:</span> present 安装包
+        <span class="token builtin class-name">:</span> absent  卸载包
+        
+文档：ansible-doc yum
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="_4-file模块"><a href="#_4-file模块" class="header-anchor">#</a> 4，file模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 创建普通文件和目录
+<span class="token comment"># 默认为递归创建目录 1/2/3</span>
+
+<span class="token comment">#在web01创建a.txt 默认属主属组root 权限是644</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/a.txt state=touch'</span>
+
+<span class="token comment">#修改a.txt 属主属组为www,权限600</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/a.txt owner=www group=www mode=0600'</span>
+
+<span class="token comment">#web01创建malu目录 属主属组www 权限755</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/malu owner=www group=www mode=755 state=directory'</span>
+
+<span class="token comment">#删除a.txt文件</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/a.txt state=absent'</span>
+
+<span class="token comment">#删除malu目录</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/malu state=absent'</span>
+
+<span class="token comment">#递归修改目录以下所有文件属主属组</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m file -a 'path=/root/malu owner=www group=www recurse=yes'</span>
+
+
+file模块小结:
+file: 模块
+    path: 路径具体在客户端的哪个位置 /root/a.txt  /opt/malu
+    recurese: <span class="token function">yes</span>    <span class="token comment"># 递归修改文件属主属组 权限</span>
+    state:
+         <span class="token builtin class-name">:</span> <span class="token function">touch</span>     <span class="token comment"># 创建普通文件</span>
+         <span class="token builtin class-name">:</span> directory <span class="token comment"># 创建目录</span>
+         <span class="token builtin class-name">:</span> absent    <span class="token comment"># 删除文件或目录</span>
+         <span class="token builtin class-name">:</span> owner     <span class="token comment"># 属主</span>
+         <span class="token builtin class-name">:</span> group     <span class="token comment"># 属组</span>
+         <span class="token builtin class-name">:</span> mode      <span class="token comment"># 权限</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><h3 id="_5-copy模块"><a href="#_5-copy模块" class="header-anchor">#</a> 5，copy模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 远程拷贝,将ansible上的文件拷贝到目标主机
+
+
+<span class="token comment">#1.将1.txt拷贝到web01和web02的家目录</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#touch 1.txt</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m copy -a 'src=1.txt dest=/root/ owner=www group=www mode=600'</span>
+
+<span class="token comment">#2.将malu目录拷贝到目标主机webs</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ll malu/</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Aug <span class="token number">23</span> <span class="token number">10</span>:39 a.txt
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m copy -a 'src=malu dest=/opt/'</span>
+
+
+<span class="token comment"># 使用backup备份参数</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#echo aaaaaa &gt; 1.txt</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat 1.txt </span>
+aaaaaa
+
+ansible服务器上的1.txt是空的
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#cat 1.txt</span>
+
+将1.txt再次拷贝到web01上会将目标覆盖，使用backup将目标文件先进行备份，然后在覆盖掉。
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m copy -a 'src=1.txt dest=/root/ backup=yes'</span>
+
+
+<span class="token comment">#content 将后面的字符串直接写入到目标文件中</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m copy -a 'content=&quot;backup:123456&quot; dest=/root/pass.txt'</span>
+
+
+copy模块小结:
+copy: 模块
+    src: 源文件 <span class="token comment"># 可以使用content=字符串 写入到目标文件中</span>
+    dest: 目标文件
+    owner:属主
+    group:属组
+    mode: 权限
+    backup: 是否备份目标文件 默认是不备份会覆盖 yes先备份在覆盖
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h3 id="_6-命令模块-不推荐"><a href="#_6-命令模块-不推荐" class="header-anchor">#</a> 6，命令模块（不推荐）</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m command -a 'touch 1.txt'</span>
+web01 <span class="token operator">|</span> CHANGED <span class="token operator">|</span> <span class="token assign-left variable">rc</span><span class="token operator">=</span><span class="token number">0</span> <span class="token operator">&gt;&gt;</span>
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m command -a 'mkdir malu'</span>
+web01 <span class="token operator">|</span> CHANGED <span class="token operator">|</span> <span class="token assign-left variable">rc</span><span class="token operator">=</span><span class="token number">0</span> <span class="token operator">&gt;&gt;</span>
+
+<span class="token comment"># shell模块支持|</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m shell -a &quot;df -h|awk '/\/$/'&quot;</span>
+web01 <span class="token operator">|</span> CHANGED <span class="token operator">|</span> <span class="token assign-left variable">rc</span><span class="token operator">=</span><span class="token number">0</span> <span class="token operator">&gt;&gt;</span>
+/dev/mapper/klas-root   47G  <span class="token number">5</span>.0G   42G  <span class="token number">11</span>% /
+
+<span class="token comment"># command 不支持|</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m command -a &quot;df -h|awk '/\/$/'&quot;</span>
+web01 <span class="token operator">|</span> FAILED <span class="token operator">|</span> <span class="token assign-left variable">rc</span><span class="token operator">=</span><span class="token number">1</span> <span class="token operator">&gt;&gt;</span>
+df: invalid option -- <span class="token string">'|'</span>
+Try <span class="token string">'df --help'</span> <span class="token keyword">for</span> <span class="token function">more</span> information.non-zero <span class="token builtin class-name">return</span> code
+
+
+<span class="token comment"># 执行客户端上的shell脚本</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat test.sh </span>
+<span class="token function">touch</span> aaaaaaaaaa.txt
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ll test.sh </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">21</span> Aug <span class="token number">23</span> <span class="token number">11</span>:10 test.sh
+
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m shell -a 'sh test.sh'</span>
+web01 <span class="token operator">|</span> CHANGED <span class="token operator">|</span> <span class="token assign-left variable">rc</span><span class="token operator">=</span><span class="token number">0</span> <span class="token operator">&gt;&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_7-user模块"><a href="#_7-user模块" class="header-anchor">#</a> 7，user模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 创建用户删除用户
+
+<span class="token comment">#1.创建用户组malu1</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m group -a 'name=malu1 gid=777'</span>
+
+<span class="token comment">#2.创建用户malu101  普通用户</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m user -a 'name=malu1 uid=777 group=777 shell=/bin/bash'</span>
+
+<span class="token comment">#3.删除用户malu101 remove=yes 相当于-r参数</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m user -a 'name=malu1 state=absent remove=yes'</span>
+
+
+<span class="token comment">#4.创建虚拟用户uid667 gid667 不创建家 不允许登录 malu2</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m group -a 'name=malu2 gid=667'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible webs -m user -a 'name=malu2 uid=667 group=667 shell=/sbin/nologin create_home=false'</span>
+
+group:模块名称
+     name： 组名称
+     gid:   组id
+
+user模块小结
+user: 模块名称
+    name: 用户名称
+    uid: id号码
+    group: 组id号码
+    shell: 指定解释器 /bin/bash  /sbin/nologin
+    create_hoame: 是否创建家目录  （true默认创建家目录<span class="token punctuation">)</span> <span class="token punctuation">(</span>false不创建家目录<span class="token punctuation">)</span>
+    state: absent  <span class="token comment"># 删除用户必须配置remove使用 -r参数</span>
+    remove: <span class="token function">yes</span>   <span class="token comment"># 删除用户所有相关的文件 -r参数</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><h3 id="_8-cron模块"><a href="#_8-cron模块" class="header-anchor">#</a> 8，cron模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 配置定时任务
+
+<span class="token comment">#1.配置每间隔5分钟执行时间同步</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m cron -a 'name=&quot;时间同步&quot; minute=*/5 job=&quot;ntpdate ntp1.aliyun.com&quot;'</span>
+
+<span class="token comment"># 查看定时任务</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># crontab -l  </span>
+
+<span class="token comment">#2.每天凌晨12点执行一条命令</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m cron -a 'name=&quot;数据备份&quot; minute=00 hour=00 job=&quot;tar zcf all.tar.gz /etc&quot;'</span>
+
+查看列表
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#crontab -l</span>
+<span class="token comment">#Ansible: 时间同步</span>
+*/5 * * * * ntpdate ntp1.aliyun.com
+<span class="token comment">#Ansible: 数据备份</span>
+00 00 * * * <span class="token function">tar</span> zcf all.tar.gz /etc
+
+
+<span class="token comment">#3.删除定时任务</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m cron -a 'name=&quot;数据备份&quot; state=absent'</span>
+
+
+cron模块:
+    name: 定时任务的注释信息
+    minute: 分 和定时任务规则一样
+    hour:   小时
+    job:  具体执行的命令
+    state: present  <span class="token comment"># 创建定时任务</span>
+         <span class="token builtin class-name">:</span> absent   <span class="token comment"># 删除定时任务</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h3 id="_9-systemd模块"><a href="#_9-systemd模块" class="header-anchor">#</a> 9，systemd模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 启动停止管理服务
+
+<span class="token comment">#1.启动nginx服务并加入开机自动运行</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m systemd -a 'name=nginx state=started enabled=yes'</span>
+
+
+<span class="token comment">#2.停止nginx服务</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m systemd -a 'name=nginx state=stopped'</span>
+
+<span class="token comment">#3.重启nginx服务</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m systemd -a 'name=nginx state=restarted'</span>
+
+<span class="token comment">#4.重新加载</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m systemd -a 'name=nginx state=reloded'</span>
+
+systemd: 
+       name: 服务名称
+       state:
+       	    started: 启动
+       	    stopped: 停止
+       	    restarted: 重启
+       	    reloaded: 重新加载
+       	    enabled: no开机不自启  yes开机自启
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="_10-get-url模块"><a href="#_10-get-url模块" class="header-anchor">#</a> 10，get_url模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 下载软件
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m get_url -a 'url=https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.tar.gz  dest=/root/'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_11-mount模块"><a href="#_11-mount模块" class="header-anchor">#</a> 11，mount模块</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 挂载
+
+<span class="token comment">#1.挂载使用present 只将挂载命令写入fstab配置文件，不会挂载到系统，不会使用</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m mount -a 'src=172.16.1.31:/data/wp path=/mnt state=present fstype=nfs'</span>
+
+<span class="token comment">#2.挂载使用mounted 写入fstab，挂载到系统</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m mount -a 'src=172.16.1.31:/data/wp path=/mnt state=mounted fstype=nfs'</span>
+
+<span class="token comment">#3.卸载使用unmounted 只卸载，不会清理fstab中的配置</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m mount -a 'path=/mnt state=unmounted'</span>
+
+<span class="token comment">#4.卸载并清理开机自动挂载fstab</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m mount -a 'src=172.16.1.31:/data/wp path=/mnt state=mounted fstype=nfs'</span>
+<span class="token punctuation">[</span>root@ansible:~<span class="token punctuation">]</span><span class="token comment">#ansible web01 -m mount -a 'path=/mnt state=absent'</span>
+
+present和unmount一对
+mounted和absent一对  <span class="token comment"># 记住这个，挂载系统并写入fstab，删除系统挂载并清理fstab</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>使用ansible ad-hoc模块实现
+<span class="token number">1</span>.部署rsync
+<span class="token number">2</span>.部署nfs
+<span class="token number">3</span>.部署nginx
+<span class="token number">4</span>.部署myslq
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/5/2024, 6:34:01 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_1-什么是ansible" class="sidebar-link reco-side-_1-什么是ansible" data-v-b57cc07c>1，什么是ansible</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_2-主机清单" class="sidebar-link reco-side-_2-主机清单" data-v-b57cc07c>2，主机清单</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_3-yum模块" class="sidebar-link reco-side-_3-yum模块" data-v-b57cc07c>3，yum模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_4-file模块" class="sidebar-link reco-side-_4-file模块" data-v-b57cc07c>4，file模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_5-copy模块" class="sidebar-link reco-side-_5-copy模块" data-v-b57cc07c>5，copy模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_6-命令模块-不推荐" class="sidebar-link reco-side-_6-命令模块-不推荐" data-v-b57cc07c>6，命令模块（不推荐）</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_7-user模块" class="sidebar-link reco-side-_7-user模块" data-v-b57cc07c>7，user模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_8-cron模块" class="sidebar-link reco-side-_8-cron模块" data-v-b57cc07c>8，cron模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_9-systemd模块" class="sidebar-link reco-side-_9-systemd模块" data-v-b57cc07c>9，systemd模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_10-get-url模块" class="sidebar-link reco-side-_10-get-url模块" data-v-b57cc07c>10，get_url模块</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/31-ansible-ad-hoc/ansible.html#_11-mount模块" class="sidebar-link reco-side-_11-mount模块" data-v-b57cc07c>11，mount模块</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.4df6cfe1.js" defer></script><script src="/devops/public/assets/js/104.efe2d7e6.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/178.0941d077.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>28-iptables | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.4df6cfe1.js" as="script"><link rel="preload" href="/devops/public/assets/js/104.efe2d7e6.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/146.a9a5362f.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.a222dbf7.js"><link rel="prefetch" href="/devops/public/assets/js/100.57f35976.js"><link rel="prefetch" href="/devops/public/assets/js/101.16f0a3b7.js"><link rel="prefetch" href="/devops/public/assets/js/102.ecbc3708.js"><link rel="prefetch" href="/devops/public/assets/js/103.3507b281.js"><link rel="prefetch" href="/devops/public/assets/js/105.38279475.js"><link rel="prefetch" href="/devops/public/assets/js/106.44c32359.js"><link rel="prefetch" href="/devops/public/assets/js/107.07d16688.js"><link rel="prefetch" href="/devops/public/assets/js/108.a18b2ef1.js"><link rel="prefetch" href="/devops/public/assets/js/109.c9f86610.js"><link rel="prefetch" href="/devops/public/assets/js/11.de00880c.js"><link rel="prefetch" href="/devops/public/assets/js/110.7a66b7dd.js"><link rel="prefetch" href="/devops/public/assets/js/111.f754444c.js"><link rel="prefetch" href="/devops/public/assets/js/112.6a777934.js"><link rel="prefetch" href="/devops/public/assets/js/113.adafecb9.js"><link rel="prefetch" href="/devops/public/assets/js/114.29405c0f.js"><link rel="prefetch" href="/devops/public/assets/js/115.3cd92205.js"><link rel="prefetch" href="/devops/public/assets/js/116.05bcf710.js"><link rel="prefetch" href="/devops/public/assets/js/117.3da285a2.js"><link rel="prefetch" href="/devops/public/assets/js/118.deb06702.js"><link rel="prefetch" href="/devops/public/assets/js/119.5736894d.js"><link rel="prefetch" href="/devops/public/assets/js/12.afcd1952.js"><link rel="prefetch" href="/devops/public/assets/js/120.9b3d15b1.js"><link rel="prefetch" href="/devops/public/assets/js/121.e85b24a9.js"><link rel="prefetch" href="/devops/public/assets/js/122.3535e845.js"><link rel="prefetch" href="/devops/public/assets/js/123.faf5d8a3.js"><link rel="prefetch" href="/devops/public/assets/js/124.b31a3157.js"><link rel="prefetch" href="/devops/public/assets/js/125.401b8d68.js"><link rel="prefetch" href="/devops/public/assets/js/126.034e18d4.js"><link rel="prefetch" href="/devops/public/assets/js/127.51164dc3.js"><link rel="prefetch" href="/devops/public/assets/js/128.8a282f65.js"><link rel="prefetch" href="/devops/public/assets/js/129.a213210f.js"><link rel="prefetch" href="/devops/public/assets/js/13.50795a7f.js"><link rel="prefetch" href="/devops/public/assets/js/130.a64e2797.js"><link rel="prefetch" href="/devops/public/assets/js/131.aae3591f.js"><link rel="prefetch" href="/devops/public/assets/js/132.67cba06f.js"><link rel="prefetch" href="/devops/public/assets/js/133.e202475a.js"><link rel="prefetch" href="/devops/public/assets/js/134.d94bc405.js"><link rel="prefetch" href="/devops/public/assets/js/135.38a7f2eb.js"><link rel="prefetch" href="/devops/public/assets/js/136.a1060c9e.js"><link rel="prefetch" href="/devops/public/assets/js/137.0df30c05.js"><link rel="prefetch" href="/devops/public/assets/js/138.f331695b.js"><link rel="prefetch" href="/devops/public/assets/js/139.14e366c2.js"><link rel="prefetch" href="/devops/public/assets/js/14.c8b85b37.js"><link rel="prefetch" href="/devops/public/assets/js/140.76e60bba.js"><link rel="prefetch" href="/devops/public/assets/js/141.b3785a0a.js"><link rel="prefetch" href="/devops/public/assets/js/142.84af3b12.js"><link rel="prefetch" href="/devops/public/assets/js/143.aca25ee0.js"><link rel="prefetch" href="/devops/public/assets/js/144.2a0e1634.js"><link rel="prefetch" href="/devops/public/assets/js/145.0712333e.js"><link rel="prefetch" href="/devops/public/assets/js/147.8e21707a.js"><link rel="prefetch" href="/devops/public/assets/js/148.bca21a6a.js"><link rel="prefetch" href="/devops/public/assets/js/149.07e5317e.js"><link rel="prefetch" href="/devops/public/assets/js/15.f95bfb78.js"><link rel="prefetch" href="/devops/public/assets/js/150.558453ea.js"><link rel="prefetch" href="/devops/public/assets/js/151.a38e2234.js"><link rel="prefetch" href="/devops/public/assets/js/152.fc084701.js"><link rel="prefetch" href="/devops/public/assets/js/153.964667fe.js"><link rel="prefetch" href="/devops/public/assets/js/154.221f36eb.js"><link rel="prefetch" href="/devops/public/assets/js/155.4801dbc2.js"><link rel="prefetch" href="/devops/public/assets/js/156.0c5da048.js"><link rel="prefetch" href="/devops/public/assets/js/157.7bfb52dd.js"><link rel="prefetch" href="/devops/public/assets/js/158.19f69cbc.js"><link rel="prefetch" href="/devops/public/assets/js/159.c0c1828a.js"><link rel="prefetch" href="/devops/public/assets/js/16.bd366d92.js"><link rel="prefetch" href="/devops/public/assets/js/160.a11953fc.js"><link rel="prefetch" href="/devops/public/assets/js/161.6cd3c364.js"><link rel="prefetch" href="/devops/public/assets/js/162.24ff2fbc.js"><link rel="prefetch" href="/devops/public/assets/js/163.7fa5c174.js"><link rel="prefetch" href="/devops/public/assets/js/164.7f0983f6.js"><link rel="prefetch" href="/devops/public/assets/js/165.071acfcc.js"><link rel="prefetch" href="/devops/public/assets/js/166.5bea24cb.js"><link rel="prefetch" href="/devops/public/assets/js/167.b1355235.js"><link rel="prefetch" href="/devops/public/assets/js/168.1d61aa36.js"><link rel="prefetch" href="/devops/public/assets/js/169.dbaed32a.js"><link rel="prefetch" href="/devops/public/assets/js/17.08791185.js"><link rel="prefetch" href="/devops/public/assets/js/170.58cf9809.js"><link rel="prefetch" href="/devops/public/assets/js/171.c146fe72.js"><link rel="prefetch" href="/devops/public/assets/js/172.1a0a58ba.js"><link rel="prefetch" href="/devops/public/assets/js/173.7734347a.js"><link rel="prefetch" href="/devops/public/assets/js/174.b2111903.js"><link rel="prefetch" href="/devops/public/assets/js/175.e2d954dd.js"><link rel="prefetch" href="/devops/public/assets/js/176.67714410.js"><link rel="prefetch" href="/devops/public/assets/js/177.cbd15b5a.js"><link rel="prefetch" href="/devops/public/assets/js/178.0941d077.js"><link rel="prefetch" href="/devops/public/assets/js/179.6891fb00.js"><link rel="prefetch" href="/devops/public/assets/js/18.be74f5d1.js"><link rel="prefetch" href="/devops/public/assets/js/180.105c3c0c.js"><link rel="prefetch" href="/devops/public/assets/js/181.091a4aba.js"><link rel="prefetch" href="/devops/public/assets/js/182.a72eff7e.js"><link rel="prefetch" href="/devops/public/assets/js/183.95fca98e.js"><link rel="prefetch" href="/devops/public/assets/js/184.4a6d573e.js"><link rel="prefetch" href="/devops/public/assets/js/185.0aa8f292.js"><link rel="prefetch" href="/devops/public/assets/js/186.36d27c5a.js"><link rel="prefetch" href="/devops/public/assets/js/187.cbb37c76.js"><link rel="prefetch" href="/devops/public/assets/js/188.394ea608.js"><link rel="prefetch" href="/devops/public/assets/js/189.85d25d0c.js"><link rel="prefetch" href="/devops/public/assets/js/19.fae8155d.js"><link rel="prefetch" href="/devops/public/assets/js/190.5a1f134c.js"><link rel="prefetch" href="/devops/public/assets/js/191.a624428a.js"><link rel="prefetch" href="/devops/public/assets/js/192.0ca0c40a.js"><link rel="prefetch" href="/devops/public/assets/js/193.cfd2ea21.js"><link rel="prefetch" href="/devops/public/assets/js/194.0e34c1e4.js"><link rel="prefetch" href="/devops/public/assets/js/195.3c180225.js"><link rel="prefetch" href="/devops/public/assets/js/196.54aff013.js"><link rel="prefetch" href="/devops/public/assets/js/197.899734a8.js"><link rel="prefetch" href="/devops/public/assets/js/198.feda34f7.js"><link rel="prefetch" href="/devops/public/assets/js/199.5c3e1329.js"><link rel="prefetch" href="/devops/public/assets/js/20.84265e78.js"><link rel="prefetch" href="/devops/public/assets/js/200.f8854500.js"><link rel="prefetch" href="/devops/public/assets/js/201.167390f4.js"><link rel="prefetch" href="/devops/public/assets/js/202.af4cac56.js"><link rel="prefetch" href="/devops/public/assets/js/203.120ce6c1.js"><link rel="prefetch" href="/devops/public/assets/js/204.9203811e.js"><link rel="prefetch" href="/devops/public/assets/js/205.43fbf4da.js"><link rel="prefetch" href="/devops/public/assets/js/206.9e3ce210.js"><link rel="prefetch" href="/devops/public/assets/js/207.82ee2724.js"><link rel="prefetch" href="/devops/public/assets/js/208.4bf52d4d.js"><link rel="prefetch" href="/devops/public/assets/js/209.7db0e0d0.js"><link rel="prefetch" href="/devops/public/assets/js/21.511538a8.js"><link rel="prefetch" href="/devops/public/assets/js/210.b8b336d9.js"><link rel="prefetch" href="/devops/public/assets/js/211.89cc53b4.js"><link rel="prefetch" href="/devops/public/assets/js/212.717a5c0b.js"><link rel="prefetch" href="/devops/public/assets/js/213.36fa1410.js"><link rel="prefetch" href="/devops/public/assets/js/214.ba0fbe6a.js"><link rel="prefetch" href="/devops/public/assets/js/215.d4582592.js"><link rel="prefetch" href="/devops/public/assets/js/216.1d5d77d6.js"><link rel="prefetch" href="/devops/public/assets/js/217.6d9a584a.js"><link rel="prefetch" href="/devops/public/assets/js/218.a4e4cec8.js"><link rel="prefetch" href="/devops/public/assets/js/22.b4630d41.js"><link rel="prefetch" href="/devops/public/assets/js/23.01321c1e.js"><link rel="prefetch" href="/devops/public/assets/js/24.37bc717d.js"><link rel="prefetch" href="/devops/public/assets/js/25.8b41596c.js"><link rel="prefetch" href="/devops/public/assets/js/26.0759f5dd.js"><link rel="prefetch" href="/devops/public/assets/js/27.421393e8.js"><link rel="prefetch" href="/devops/public/assets/js/28.7f747789.js"><link rel="prefetch" href="/devops/public/assets/js/29.60384c48.js"><link rel="prefetch" href="/devops/public/assets/js/3.4611f306.js"><link rel="prefetch" href="/devops/public/assets/js/30.83e2c55e.js"><link rel="prefetch" href="/devops/public/assets/js/31.26a0a48f.js"><link rel="prefetch" href="/devops/public/assets/js/32.bf77ae3a.js"><link rel="prefetch" href="/devops/public/assets/js/33.555b47ef.js"><link rel="prefetch" href="/devops/public/assets/js/34.add122aa.js"><link rel="prefetch" href="/devops/public/assets/js/35.d409bcbb.js"><link rel="prefetch" href="/devops/public/assets/js/36.3b525db7.js"><link rel="prefetch" href="/devops/public/assets/js/37.a17ecb54.js"><link rel="prefetch" href="/devops/public/assets/js/38.d5805972.js"><link rel="prefetch" href="/devops/public/assets/js/39.20df5d67.js"><link rel="prefetch" href="/devops/public/assets/js/4.fb3e0b7b.js"><link rel="prefetch" href="/devops/public/assets/js/40.df6be02c.js"><link rel="prefetch" href="/devops/public/assets/js/41.a50e87c4.js"><link rel="prefetch" href="/devops/public/assets/js/42.eded202b.js"><link rel="prefetch" href="/devops/public/assets/js/43.97b1abd9.js"><link rel="prefetch" href="/devops/public/assets/js/44.65623035.js"><link rel="prefetch" href="/devops/public/assets/js/45.c2adbc86.js"><link rel="prefetch" href="/devops/public/assets/js/46.ea612a5e.js"><link rel="prefetch" href="/devops/public/assets/js/47.4c992ec1.js"><link rel="prefetch" href="/devops/public/assets/js/48.093c17ef.js"><link rel="prefetch" href="/devops/public/assets/js/49.a3675199.js"><link rel="prefetch" href="/devops/public/assets/js/5.5d5c290f.js"><link rel="prefetch" href="/devops/public/assets/js/50.a32147f1.js"><link rel="prefetch" href="/devops/public/assets/js/51.0b270655.js"><link rel="prefetch" href="/devops/public/assets/js/52.b37d9dc6.js"><link rel="prefetch" href="/devops/public/assets/js/53.4d3fbf28.js"><link rel="prefetch" href="/devops/public/assets/js/54.f98a4582.js"><link rel="prefetch" href="/devops/public/assets/js/55.92e3007b.js"><link rel="prefetch" href="/devops/public/assets/js/56.1d77ae31.js"><link rel="prefetch" href="/devops/public/assets/js/57.b459cdd7.js"><link rel="prefetch" href="/devops/public/assets/js/58.20a9a84b.js"><link rel="prefetch" href="/devops/public/assets/js/59.ef166db8.js"><link rel="prefetch" href="/devops/public/assets/js/6.f4c8cc75.js"><link rel="prefetch" href="/devops/public/assets/js/60.c1444d95.js"><link rel="prefetch" href="/devops/public/assets/js/61.198ba6e7.js"><link rel="prefetch" href="/devops/public/assets/js/62.483bef39.js"><link rel="prefetch" href="/devops/public/assets/js/63.75807889.js"><link rel="prefetch" href="/devops/public/assets/js/64.40268277.js"><link rel="prefetch" href="/devops/public/assets/js/65.83603460.js"><link rel="prefetch" href="/devops/public/assets/js/66.9125cb5e.js"><link rel="prefetch" href="/devops/public/assets/js/67.3b57bd40.js"><link rel="prefetch" href="/devops/public/assets/js/68.7732c93d.js"><link rel="prefetch" href="/devops/public/assets/js/69.d65b3d31.js"><link rel="prefetch" href="/devops/public/assets/js/7.61b2080e.js"><link rel="prefetch" href="/devops/public/assets/js/70.615f48d0.js"><link rel="prefetch" href="/devops/public/assets/js/71.3dcd2877.js"><link rel="prefetch" href="/devops/public/assets/js/72.f91ea4a1.js"><link rel="prefetch" href="/devops/public/assets/js/73.220826f0.js"><link rel="prefetch" href="/devops/public/assets/js/74.2906dfba.js"><link rel="prefetch" href="/devops/public/assets/js/75.725b70fb.js"><link rel="prefetch" href="/devops/public/assets/js/76.c2c3ae24.js"><link rel="prefetch" href="/devops/public/assets/js/77.5cecb717.js"><link rel="prefetch" href="/devops/public/assets/js/78.77d25316.js"><link rel="prefetch" href="/devops/public/assets/js/79.a82a9d1d.js"><link rel="prefetch" href="/devops/public/assets/js/8.f197ec99.js"><link rel="prefetch" href="/devops/public/assets/js/80.bf2b919a.js"><link rel="prefetch" href="/devops/public/assets/js/81.3bb6ef41.js"><link rel="prefetch" href="/devops/public/assets/js/82.0b69c3cd.js"><link rel="prefetch" href="/devops/public/assets/js/83.15c6f6d6.js"><link rel="prefetch" href="/devops/public/assets/js/84.b4bdc22a.js"><link rel="prefetch" href="/devops/public/assets/js/85.abe6805f.js"><link rel="prefetch" href="/devops/public/assets/js/86.609cba8d.js"><link rel="prefetch" href="/devops/public/assets/js/87.8d27fecc.js"><link rel="prefetch" href="/devops/public/assets/js/88.78935da6.js"><link rel="prefetch" href="/devops/public/assets/js/89.52820bcb.js"><link rel="prefetch" href="/devops/public/assets/js/9.425bb89d.js"><link rel="prefetch" href="/devops/public/assets/js/90.672fcfe4.js"><link rel="prefetch" href="/devops/public/assets/js/91.9b0c1b4a.js"><link rel="prefetch" href="/devops/public/assets/js/92.f9d83927.js"><link rel="prefetch" href="/devops/public/assets/js/93.78289ff7.js"><link rel="prefetch" href="/devops/public/assets/js/94.e9c972d5.js"><link rel="prefetch" href="/devops/public/assets/js/95.3b97d34a.js"><link rel="prefetch" href="/devops/public/assets/js/96.5af5ac55.js"><link rel="prefetch" href="/devops/public/assets/js/97.1cae3119.js"><link rel="prefetch" href="/devops/public/assets/js/98.a981ee0f.js"><link rel="prefetch" href="/devops/public/assets/js/99.ae6dd75c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>205</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>28-iptables</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">28-iptables</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-防火墙种类"><a href="#_1-防火墙种类" class="header-anchor">#</a> 1，防火墙种类</h3> <ul><li>硬件: 整个企业入口
+<ul><li>三层路由: <strong>H3C   华为</strong>   Cisco(思科)</li> <li>深信服</li> <li><s>Juniper</s></li></ul></li> <li>软件: 开源软件  网站内部  封ip 封ip
+<ul><li><strong>iptables</strong>   写入到Linux内核中   以后服务docker</li> <li>firewalld  C7</li></ul></li> <li>云防火墙
+<ul><li>阿里云:安全组</li></ul></li></ul> <p>必须熟悉的名词</p> <ul><li><strong>容器</strong>: 瓶子 罐子  存放东西</li> <li><strong>表(table)</strong>:  存放<strong>链</strong>的容器</li> <li><strong>链(chain)</strong>:  存放<strong>规则</strong>的容器</li> <li>**规则(**policy):   准许或拒绝规则</li></ul> <table><thead><tr><th><strong>Netfilter</strong></th> <th><strong>表（tables）</strong></th> <th><strong>链（chains）</strong></th> <th><strong>规则（Policy）</strong></th></tr></thead> <tbody><tr><td>一栋楼</td> <td>楼里的房子</td> <td>房子里的柜子</td> <td>柜子里衣服，摆放规则</td></tr></tbody></table> <p>iptables执行过程：</p> <p><img src="/devops/public/assets/img/1725196522865.fea1b0c1.png" alt="1725196522865"></p> <p><img src="/devops/public/assets/img/1725196533464.d6705641.png" alt="1725196533464"></p> <p>有三种数据包：</p> <ul><li>进来找我的</li> <li>经过我的，不找我的</li> <li>我产生的，出去的数据包</li></ul> <p><img src="/devops/public/assets/img/1725196555270.8bbf7a30.png" alt="1725196555270"></p> <p>钩子函数：</p> <p><img src="/devops/public/assets/img/1725196642537.27c43b69.png" alt="1725196642537"></p> <p>表和链：</p> <p><img src="/devops/public/assets/img/1725196690315.6f20af6c.png" alt="1725196690315"></p> <h3 id="_2-4表5链"><a href="#_2-4表5链" class="header-anchor">#</a> 2，4表5链</h3> <p>iptables 是4表5链</p> <ul><li>4表:   <strong>filter 表  nat表</strong>    raw表   mangle表</li> <li>5链:  <strong>INPUT</strong> OUTPUT FORWARD  <strong>PREROUTING  POSTROUTING</strong></li></ul> <p>filter表，防火墙:  屏蔽或准许 端口 ip</p> <table><thead><tr><th>filter表</th> <th>强调：主要和主机自身相关，真正负责主机防火墙功能的（过滤流入流出主机的数据包） filter表示iptables默认使用的表，这个表定义了三个链（chains） <strong>企业工作场景：主机防火墙</strong></th></tr></thead> <tbody><tr><td><strong>INPUT</strong></td> <td>负责过滤所有目标地址是本机地址的数据包 通俗来说：<strong>就是过滤进入主机的数据包</strong></td></tr> <tr><td>FORWARD</td> <td>负责转发流经主机的数据包。起转发的作用，和NAT关系很大，后面会详细介绍 LVS NAT模式，net.ipv4.ip_forward=0</td></tr> <tr><td>OUTPUT</td> <td>处理所有源地址是本机地址的数据包 通俗的讲：就是处理从主机发出去的数据包</td></tr></tbody></table> <p>nat表，实现nat功能</p> <ul><li>实现共享上网(内网服务器上外网)</li> <li>端口映射和ip映射</li></ul> <table><thead><tr><th>nat</th> <th>负责网络地址转换的，即来源与目的IP地址和port的转换。 应用：和主机本身无关，一般用于局域网共享上网或者特殊的端口转换服务相关。 工作场景： 1. 用于企业路由（zebra）或网关（iptables），<strong>共享上网</strong>（<strong>POSTROUTING</strong>） 2. 做内部外部IP地址一对一映射（dmz），硬件防火墙映射IP到内部服务器，ftp服务（<strong>PREROUTING</strong>） 3. WEB，单个端口的映射，直接映射80端口（<strong>PREROUTING</strong>） 这个表定义了3个链，nat功能相当于网络的acl控制。和网络交换机acl类似。</th></tr></thead> <tbody><tr><td>OUTPUT</td> <td>和主机放出去的数据包有关，改变主机发出数据包的目的地址。</td></tr> <tr><td><strong>PRE</strong>ROUTING</td> <td>在数据包到达防火墙时，进行路由判断之前执行的规则，<strong>作用是改变数据包的目的地址、目的端口等</strong> 就是收信时，根据规则重写收件人的地址。 例如：把公网IP：xxx.xxx.xxx.xxx映射到局域网的xx.xx.xx.xx服务器上。 如果是web服务，可以报80转换为局域网的服务器9000端口上 10.0.0.61 8080(目标端口) ----nat---à 10.0.0.7 22</td></tr> <tr><td><strong>POST</strong>ROUTING</td> <td>在数据包离开防火墙时进行路由判断之后执行的规则，作用改变数据包的源地址，源端口等。 写好发件人的地址，要让家人回信时能够有地址可回。 例如。默认笔记本和虚拟机都是局域网地址，在出网的时候被路由器将源地址改为了公网地址。 生产应用：<strong>局域网共享上网</strong>。</td></tr></tbody></table> <p>filter表和nat表：</p> <p><img src="/devops/public/assets/img/1725197622827.9d8cda57.png" alt="1725197622827"></p> <h3 id="_3-filter表配置"><a href="#_3-filter表配置" class="header-anchor">#</a> 3，filter表配置</h3> <p>三台实验机：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">10.0</span>.0.4  iptables服务
+<span class="token number">10.0</span>.0.7  客户端
+<span class="token number">10.0</span>.0.8  客户端
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>iptables服务安装：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># systemctl stop firewalld   </span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># systemctl disable   firewalld </span>
+
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -qa iptables</span>
+iptables-1.8.5-2.ky10.x86_64
+
+iptables的配置文件
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -ql iptables</span>
+/etc/sysconfig/iptables     <span class="token comment"># 主配置文件，启动后服务器会自动读取此文件</span>
+
+加载对应的模块
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#lsmod |egrep 'filter|nat|ipt'</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe ip_tables</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe iptable_filter</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe iptable_nat</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe ip_conntrack</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe ip_conntrack_ftp</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe ip_nat_ftp</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#modprobe ipt_state </span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#lsmod |egrep 'filter|nat|ipt'     # 查看是否加载成功</span>
+nf_nat_ftp             <span class="token number">16384</span>  <span class="token number">0</span>
+nf_conntrack_ftp       <span class="token number">20480</span>  <span class="token number">1</span> nf_nat_ftp
+iptable_nat            <span class="token number">16384</span>  <span class="token number">0</span>
+nf_nat                 <span class="token number">45056</span>  <span class="token number">2</span> nf_nat_ftp,iptable_nat
+nf_conntrack          <span class="token number">159744</span>  <span class="token number">4</span> nf_nat,nf_nat_ftp,xt_state,nf_conntrack_ftp
+iptable_filter         <span class="token number">16384</span>  <span class="token number">0</span>
+ip_tables              <span class="token number">28672</span>  <span class="token number">2</span> iptable_filter,iptable_nat
+libcrc32c              <span class="token number">16384</span>  <span class="token number">3</span> nf_conntrack,nf_nat,xfs
+
+开机自动运行
+<span class="token comment">#永久 </span>
+<span class="token function">cat</span> <span class="token operator">&gt;&gt;</span>/etc/rc.local<span class="token operator">&lt;&lt;</span><span class="token string">EOF
+modprobe ip_tables
+modprobe iptable_filter
+modprobe iptable_nat
+modprobe ip_conntrack
+modprobe ip_conntrack_ftp
+modprobe ip_nat_ftp
+modprobe ipt_state  
+EOF</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>启动iptables服务
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#systemctl start iptables</span>
+
+iptables的策略,默认查看的是filter表
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     icmp --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state NEW tcp dpt:22
+REJECT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            reject-with icmp-host-prohibited
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+REJECT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            reject-with icmp-host-prohibited
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination  
+
+清空表:
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -F</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -X</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -Z</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p><img src="/devops/public/assets/img/1725198198666.1248c0ee.png" alt="1725198198666"></p> <p><strong>iptables命令参数：</strong></p> <table><thead><tr><th>参数</th> <th>含义</th></tr></thead> <tbody><tr><td>-<strong>L</strong></td> <td><strong>显示表中的所有规则</strong></td></tr> <tr><td><strong>-n</strong></td> <td><strong>不要把端口 或ip反向解析为 名字</strong></td></tr> <tr><td><strong>-t</strong></td> <td><strong>指定表 不指定默认是filter表</strong></td></tr> <tr><td>-A</td> <td><strong>append</strong> 追加 加入准许类规则 使用-A</td></tr> <tr><td>-D</td> <td>delete 删除 -D INPUT 1</td></tr> <tr><td>-I</td> <td>insert 拒绝类规则放在所有规则最上面 拒绝类 -I</td></tr> <tr><td>line-numbers</td> <td>显示行号</td></tr></tbody></table> <table><thead><tr><th>参数</th> <th>含义</th> <th></th></tr></thead> <tbody><tr><td>-p</td> <td>协议 protocal <strong>tcp</strong>/udp/icmp/all</td> <td></td></tr> <tr><td><strong>--dport</strong></td> <td><strong>目标端口</strong> dest destination 指定端口 加上协议 -p tcp</td> <td></td></tr> <tr><td>--sport</td> <td>源端口 source 源</td> <td></td></tr> <tr><td>-s</td> <td><strong>--source 源ip</strong></td> <td></td></tr> <tr><td>-d</td> <td>--destination 目标ip</td> <td></td></tr> <tr><td>-m</td> <td>指定模块 multiport</td> <td></td></tr> <tr><td>-i</td> <td>input 输入的时候 从哪个网卡进来</td> <td></td></tr> <tr><td>-o</td> <td>ouput 输出的时候 从哪个网卡出去</td> <td></td></tr></tbody></table> <table><thead><tr><th>参数</th> <th>含义</th> <th></th></tr></thead> <tbody><tr><td>-j</td> <td>满足条件后的动作 : <strong>DROP/ACCEPT</strong>/REJECT</td> <td></td></tr> <tr><td></td> <td>DROP REJECT拒绝 DROP把数据丢掉 不会返回信息给用户 REJECT 拒绝 返回拒绝信息</td> <td></td></tr> <tr><td></td> <td></td> <td></td></tr></tbody></table> <table><thead><tr><th>参数</th> <th>含义</th> <th></th></tr></thead> <tbody><tr><td>-F flush</td> <td><strong>清除所有规则，不会处理默认的规则</strong></td> <td></td></tr> <tr><td>-X</td> <td>删除用户<strong>自定义的链</strong></td> <td></td></tr> <tr><td>-Z</td> <td>链的计数器清零（数据包计数器与数据包字节计数器）</td> <td></td></tr></tbody></table> <p>配置filter表规则，正式配置之前，先备份，清空规则：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>案例1.禁止10.0.0.7访问我
+<span class="token comment">#数据包访问的流程</span>
+<span class="token comment">#1.数据包被哪个表截获  filter</span>
+<span class="token comment">#2.被截获之后使用哪个链 INPUT</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t filter -I INPUT -s 10.0.0.7 -j DROP</span>
+或者省略filter，因为默认操作的是filter表
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT -s 10.0.0.7 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  --  <span class="token number">10.0</span>.0.7             <span class="token number">0.0</span>.0.0/0           
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination 
+
+在10.0.0.7上测试 不通：
+<span class="token function">ping</span> <span class="token number">10.0</span>.0.4
+<span class="token function">ssh</span> <span class="token number">10.0</span>.0.4
+
+在10.0.0.8上测试 通：
+<span class="token function">ping</span> <span class="token number">10.0</span>.0.4
+<span class="token function">ssh</span> <span class="token number">10.0</span>.0.4
+
+------------------------------------------------------------
+
+案例2.禁止访问80端口   <span class="token parameter variable">-I</span> 插入
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT -p tcp --dport 80 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:80
+
+
+规则前面显示编号
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL --lin</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+num  target     prot opt <span class="token builtin class-name">source</span>               destination         
+<span class="token number">1</span>    DROP       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:80
+<span class="token number">2</span>    DROP       all  --  <span class="token number">10.0</span>.0.7             <span class="token number">0.0</span>.0.0/0     
+
+把之前的四层负载干掉。
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#rm -rf ../conf.c/*</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#vim up.conf  写一个server</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#mkdir /code</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#echo lb... &gt; /code/index.html</span>
+
+浏览器测试10.0.0.4.
+
+------------------------------------------------------------
+
+案例3.删除规则
+方法1.怎么添加的怎么删除
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -D INPUT -p tcp --dport 80 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  --  <span class="token number">10.0</span>.0.7             <span class="token number">0.0</span>.0.0/0  
+
+
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -A INPUT -p tcp --dport 80 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  --  <span class="token number">10.0</span>.0.7             <span class="token number">0.0</span>.0.0/0           
+DROP       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:80
+
+
+方法2.使用编号删除
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL --lin</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+num  target     prot opt <span class="token builtin class-name">source</span>               destination         
+<span class="token number">1</span>    DROP       all  --  <span class="token number">10.0</span>.0.7             <span class="token number">0.0</span>.0.0/0           
+<span class="token number">2</span>    DROP       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:80
+
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -D INPUT 2</span>
+
+------------------------------------------------------------
+
+案例4.禁止某个网段访问
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT -s 172.16.1.0/24 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  --  <span class="token number">172.16</span>.1.0/24        <span class="token number">0.0</span>.0.0/0           
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination  
+
+在10.0.0.7上测试：
+<span class="token function">ping</span> <span class="token number">10.0</span>.0.4 可以
+<span class="token function">ssh</span> <span class="token number">10.0</span>.0.4 可以
+<span class="token function">ping</span> <span class="token number">172.16</span>.1.4 不可以
+<span class="token function">ssh</span> <span class="token number">172.16</span>.1.4 不可以
+
+------------------------------------------------------------
+
+案例5.限制172.16.1.0/24网段禁止访问22端口,其他端口放行
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT -s 172.16.1.0/24 -p tcp --dport 22 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       tcp  --  <span class="token number">172.16</span>.1.0/24        <span class="token number">0.0</span>.0.0/0            tcp dpt:22
+
+在10.0.0.7上测试：
+<span class="token function">curl</span> <span class="token number">172.16</span>.1.4 可以
+<span class="token function">ssh</span> <span class="token number">172.16</span>.1.4 不可以
+
+------------------------------------------------------------
+
+案例6.显示主机禁止访问目标地址www.baidu.com
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -I OUTPUT -d www.baidu.com -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">110.242</span>.68.4        
+DROP       all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">110.242</span>.68.3 
+
+在10.0.0.4上测试：
+<span class="token function">ping</span> www.baidu.com 不可以
+<span class="token function">ping</span> www.qq.com 可以
+
+------------------------------------------------------------
+
+案例7.只允许10.0.0.0段连接服务器,其他全拒绝
+企业<span class="token punctuation">(</span>只有公司的网段可以连接服务器，其他网段拒绝<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT ! -s 10.0.0.0/24 -j DROP</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       all  -- <span class="token operator">!</span><span class="token number">10.0</span>.0.0/24          <span class="token number">0.0</span>.0.0/0    
+
+在10.0.0.7上测试：
+<span class="token function">curl</span> <span class="token number">10.0</span>.0.4 可以
+<span class="token function">ssh</span>  <span class="token number">10.0</span>.0.4 可以
+<span class="token function">curl</span> <span class="token number">172.16</span>.1.4 不可以
+<span class="token function">ssh</span> <span class="token number">172.16</span>.1.4 不可以
+
+------------------------------------------------------------
+
+案例8.修改默认的规则使用-P
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -P INPUT DROP   # 输入后断开对虚拟机的链接</span>
+<span class="token punctuation">[</span>root@lb:conf.d<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT -s 10.0.0.0/24 -j ACCEPT</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">10.0</span>.0.0/24          <span class="token number">0.0</span>.0.0/0  
+
+
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -P INPUT ACCEPT</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination 
+
+------------------------------------------------------------
+
+案例9.指定多端口 模块moutiport
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT  -p tcp -m multiport --dport 80,443  -j DROP</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DROP       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            multiport dports <span class="token number">80,443</span>
+
+------------------------------------------------------------
+
+案例10.负载均衡需要放行的端口 <span class="token number">80,443</span>  监控 <span class="token number">10050</span>
+iptables <span class="token parameter variable">-I</span> INPUT  <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> multiport <span class="token operator">!</span> <span class="token parameter variable">--dport</span> <span class="token number">80,443</span>  <span class="token parameter variable">-j</span> DROP
+iptables <span class="token parameter variable">-I</span> INPUT <span class="token operator">!</span> <span class="token parameter variable">-s</span> <span class="token number">10.0</span>.0.0/24 <span class="token parameter variable">-ptcp</span> <span class="token parameter variable">--dport</span> <span class="token number">22</span>  <span class="token parameter variable">-j</span> DROP
+
+------------------------------------------------------------
+
+案例11.禁止ping <span class="token punctuation">(</span>防止洪水攻击<span class="token punctuation">)</span>,所以ping不通，并不意义着，你连接不上此服务器
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -I INPUT  -p icmp --icmp-type 8  -j DROP</span>
+
+------------------------------------------------------------
+
+案例12.通过内核控制ping功能
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#cat /proc/sys/net/ipv4/icmp_echo_ignore_all</span>
+<span class="token number">0</span>       <span class="token comment"># 0可以ping通</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#echo 1 &gt; /proc/sys/net/ipv4/icmp_echo_ignore_all   # 1为禁ping</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#cat /proc/sys/net/ipv4/icmp_echo_ignore_all</span>
+<span class="token number">1</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br></div></div><h3 id="_4-配置保存和恢复"><a href="#_4-配置保存和恢复" class="header-anchor">#</a> 4，配置保存和恢复</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#cat 1.txt </span>
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> tcp <span class="token parameter variable">--dport</span> <span class="token number">22</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-i</span> lo <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> multiport <span class="token parameter variable">--dports</span> <span class="token number">443,80</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">10.0</span>.0.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">172.16</span>.1.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">10.7</span>.1.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-m</span> state <span class="token parameter variable">--state</span> RELATED,ESTABLISHED <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> OUTPUT <span class="token parameter variable">-o</span> lo <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> OUTPUT <span class="token parameter variable">-m</span> state <span class="token parameter variable">--state</span> RELATED,ESTABLISHED <span class="token parameter variable">-j</span> ACCEPT
+
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#cat 1.txt |awk -F &quot;+&quot; '{print &quot;iptables&quot;,$1}'|bash</span>
+
+
+当前配置的规则:
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:22
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            multiport dports <span class="token number">443,80</span>
+ACCEPT     all  --  <span class="token number">10.0</span>.0.0/24          <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">172.16</span>.1.0/24        <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">10.7</span>.1.0/24          <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state RELATED,ESTABLISHED
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state RELATED,ESTABLISHED
+
+<span class="token comment">#保存当前的规则到配置文件/etc/sysconfig/iptables</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables-save</span>
+
+
+<span class="token comment">#重启会读取配置文件</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#systemctl restart iptables</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state RELATED,ESTABLISHED
+ACCEPT     icmp --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            state NEW tcp dpt:22
+REJECT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            reject-with icmp-host-prohibited
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+REJECT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            reject-with icmp-host-prohibited
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination  
+
+
+或者使用恢复命令
+iptables-restore  <span class="token operator">&lt;</span>/etc/sysconfig/iptables 
+
+
+总结: 面试题（封IP，封端口，封网段）
+<span class="token number">1</span>.请问iptables的四表五链
+<span class="token number">2</span>.用过iptables吗，说一下禁止某个IP地址访问我如何写
+iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">172.16</span>.1.8 <span class="token parameter variable">-j</span> DROP
+<span class="token number">3</span>.用过iptables吗，说一下禁止访问我的2222端口如何写
+iptables <span class="token parameter variable">-I</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">--dport</span> <span class="token number">2222</span> <span class="token parameter variable">-j</span> DROP
+
+filter表小结
+- 封ip 端口  网段 
+- 禁止ping
+- 限制速度和并发  
+- iptables filter表 功能 可以在 云服务器使用 
+
+iptables配置方式
+- 逛公园模式:  默认规则是 ACCEPT
+- 看电影模式:   默认规则是 DROP 
+- 默认是拒绝   去电影院
+
+系统优化:
+优化防火墙而不是关闭防火墙
+防火墙只放行80 <span class="token number">443</span> ssh远程连接端口
+
+iptables服务安装在哪里？
+负载均衡。 流量较大不使用软件防火墙，使用硬件防火墙抗并发能力强。
+用户可以直接访问的服务器上。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br></div></div><p>总结：</p> <ul><li><p>配置默认规则及 放行 80 443端口</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -P INPUT DROP </span>
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -P FORWARD DROP </span>
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -P OUTPUT ACCEPT </span>
+
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -A INPUT  -m multiport -p tcp  --dport 443,80   -j ACCEPT </span>
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -nL </span>
+Chain INPUT <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:22
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            multiport dports <span class="token number">443,80</span>
+
+Chain FORWARD <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -A INPUT  -s 10.0.0.0/24  -j ACCEPT </span>
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -A INPUT  -s 172.16.1.0/24  -j ACCEPT </span>
+<span class="token comment">#此处还可以添加 vpn网段 比如说 10.7.1.0/24</span>
+
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables -nL </span>
+Chain INPUT <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            tcp dpt:22
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+ACCEPT     tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0            multiport dports <span class="token number">443,80</span>
+ACCEPT     all  --  <span class="token number">10.0</span>.0.0/24          <span class="token number">0.0</span>.0.0/0           
+ACCEPT     all  --  <span class="token number">172.16</span>.1.0/24        <span class="token number">0.0</span>.0.0/0           
+
+Chain FORWARD <span class="token punctuation">(</span>policy DROP<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+ACCEPT     all  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">0.0</span>.0.0/0           
+<span class="token punctuation">[</span>root@m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables-save </span>
+<span class="token comment"># Generated by iptables-save v1.4.21 on Wed Jul 24 23:42:00 2019</span>
+*filter
+:INPUT DROP <span class="token punctuation">[</span><span class="token number">0</span>:0<span class="token punctuation">]</span>
+:FORWARD DROP <span class="token punctuation">[</span><span class="token number">0</span>:0<span class="token punctuation">]</span>
+:OUTPUT ACCEPT <span class="token punctuation">[</span><span class="token number">24</span>:3008<span class="token punctuation">]</span>
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> tcp <span class="token parameter variable">--dport</span> <span class="token number">22</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-i</span> lo <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> multiport <span class="token parameter variable">--dports</span> <span class="token number">443,80</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">10.0</span>.0.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">172.16</span>.1.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> OUTPUT <span class="token parameter variable">-o</span> lo <span class="token parameter variable">-j</span> ACCEPT
+COMMIT
+<span class="token comment"># Completed on Wed Jul 24 23:42:00 2019</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div></li> <li><p>汇总</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@malu-m01 ~<span class="token punctuation">]</span><span class="token comment"># iptables-save  </span>
+<span class="token comment"># Generated by iptables-save v1.4.21 on Wed Feb 12 15:51:48 2020</span>
+*filter
+:INPUT DROP <span class="token punctuation">[</span><span class="token number">0</span>:0<span class="token punctuation">]</span>
+:FORWARD DROP <span class="token punctuation">[</span><span class="token number">0</span>:0<span class="token punctuation">]</span>
+:OUTPUT ACCEPT <span class="token punctuation">[</span><span class="token number">1</span>:60<span class="token punctuation">]</span>
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> tcp <span class="token parameter variable">--dport</span> <span class="token number">22</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-s</span> zabbix服务端IP <span class="token parameter variable">-m</span> tcp <span class="token parameter variable">--dport</span> <span class="token number">10050</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-i</span> lo <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-p</span> tcp <span class="token parameter variable">-m</span> multiport <span class="token parameter variable">--dports</span> <span class="token number">443,80</span> <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">10.0</span>.0.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">172.16</span>.1.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-s</span> <span class="token number">10.7</span>.1.0/24 <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> INPUT <span class="token parameter variable">-m</span> state <span class="token parameter variable">--state</span> RELATED,ESTABLISHED <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> OUTPUT <span class="token parameter variable">-o</span> lo <span class="token parameter variable">-j</span> ACCEPT
+<span class="token parameter variable">-A</span> OUTPUT <span class="token parameter variable">-m</span> state <span class="token parameter variable">--state</span> RELATED,ESTABLISHED <span class="token parameter variable">-j</span> ACCEPT
+COMMIT
+<span class="token comment"># Completed on Wed Feb 12 15:51:48 2020</span>
+<span class="token comment"># Generated by iptables-save v1.4.21 on Wed Feb 12 15:51:48 2020</span>
+*nat
+:PREROUTING ACCEPT <span class="token punctuation">[</span><span class="token number">2</span>:458<span class="token punctuation">]</span>
+:INPUT ACCEPT <span class="token punctuation">[</span><span class="token number">0</span>:0<span class="token punctuation">]</span>
+:OUTPUT ACCEPT <span class="token punctuation">[</span><span class="token number">417</span>:25020<span class="token punctuation">]</span>
+:POSTROUTING ACCEPT <span class="token punctuation">[</span><span class="token number">417</span>:25020<span class="token punctuation">]</span>
+COMMIT
+<span class="token comment"># Completed on Wed Feb 12 15:51:48 2020</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></li></ul> <h3 id="_5-nat实现共享上网"><a href="#_5-nat实现共享上网" class="header-anchor">#</a> 5，NAT实现共享上网</h3> <ul><li>共享上网</li> <li>端口转发/端口映射</li> <li>ip映射</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>清空当前规则:
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -F</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>NAT实现共享上网:</strong></p> <p><img src="/devops/public/assets/img/1725200816376.a7786263.png" alt="1725200816376"></p> <p>路由：实现不同网段之间通信</p> <p><img src="/devops/public/assets/img/1725201194049.aa31f13e.png" alt="1725201194049"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>iptables的NAT表配置:
+<span class="token comment">#1.开启内核转发</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#echo 'net.ipv4.ip_forward = 1'  &gt;&gt; /etc/sysctl.conf</span>
+
+
+<span class="token comment">#2.配置iptables</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -nL</span>
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain FORWARD <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination  
+
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t nat -A POSTROUTING  -s 172.16.1.0/24   -j SNAT  --to-source 10.0.0.4</span>
+
+<span class="token comment">#3.查看配置</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t nat -nL</span>
+Chain PREROUTING <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+
+Chain POSTROUTING <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+SNAT       all  --  <span class="token number">172.16</span>.1.0/24        <span class="token number">0.0</span>.0.0/0            to:10.0.0.4
+
+<span class="token comment">#4.客户端配置 WEB01测试</span>
+<span class="token comment">#第一步 通过web02远程连接到WEB01的内网口</span>
+<span class="token punctuation">[</span>root@web02:~<span class="token punctuation">]</span><span class="token comment">#ssh 172.16.1.7</span>
+
+Authorized <span class="token function">users</span> only. All activities may be monitored and reported.
+root@172.16.1.7's password: 
+
+Authorized <span class="token function">users</span> only. All activities may be monitored and reported.
+Activate the web console with: systemctl <span class="token builtin class-name">enable</span> <span class="token parameter variable">--now</span> cockpit.socket
+
+Last login: Wed Aug <span class="token number">21</span> <span class="token number">11</span>:22:30 <span class="token number">2024</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ip add</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: ens33: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:32:59:3f brd ff:ff:ff:ff:ff:ff
+<span class="token number">3</span>: ens36: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:32:59:49 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">172.16</span>.1.7/24 brd <span class="token number">172.16</span>.1.255 scope global noprefixroute ens36
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe32:5949/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+
+<span class="token comment">#第二步:关闭we01的ens33外网口</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># ifdown ens33</span>
+
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ping www.baidu.com</span>
+ping: www.baidu.com: Name or <span class="token function">service</span> not known
+
+<span class="token comment">#第三步: 配置内网的网关指向172.16.1.4</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/sysconfig/network-scripts/ifcfg-ens36</span>
+<span class="token assign-left variable">TYPE</span><span class="token operator">=</span>Ethernet
+<span class="token assign-left variable">BOOTPROTO</span><span class="token operator">=</span>none
+<span class="token assign-left variable">NAME</span><span class="token operator">=</span>ens36
+<span class="token assign-left variable">DEVICE</span><span class="token operator">=</span>ens36
+<span class="token assign-left variable">ONBOOT</span><span class="token operator">=</span>yes
+<span class="token assign-left variable">IPADDR</span><span class="token operator">=</span><span class="token number">172.16</span>.1.7
+<span class="token assign-left variable">PREFIX</span><span class="token operator">=</span><span class="token number">24</span>
+<span class="token assign-left variable">GATEWAY</span><span class="token operator">=</span><span class="token number">172.16</span>.1.4
+<span class="token assign-left variable">DNS1</span><span class="token operator">=</span><span class="token number">223.5</span>.5.5
+
+重启网卡生效
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ifdown ens36 &amp;&amp; ifup ens36</span>
+
+检查当前系统的网关是否指向到172.16.1.4
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#route -n</span>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+<span class="token number">0.0</span>.0.0         <span class="token number">172.16</span>.1.4      <span class="token number">0.0</span>.0.0         UG    <span class="token number">100</span>    <span class="token number">0</span>        <span class="token number">0</span> ens36
+
+<span class="token comment"># 测试是否可以联网</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ping www.baidu.com</span>
+PING www.a.shifen.com <span class="token punctuation">(</span><span class="token number">110.242</span>.68.4<span class="token punctuation">)</span> <span class="token number">56</span><span class="token punctuation">(</span><span class="token number">84</span><span class="token punctuation">)</span> bytes of data.
+<span class="token number">64</span> bytes from <span class="token number">110.242</span>.68.4 <span class="token punctuation">(</span><span class="token number">110.242</span>.68.4<span class="token punctuation">)</span>: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">127</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">14.4</span> ms
+<span class="token number">64</span> bytes from <span class="token number">110.242</span>.68.4 <span class="token punctuation">(</span><span class="token number">110.242</span>.68.4<span class="token punctuation">)</span>: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">127</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">13.0</span> ms
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br></div></div><p>ROS ROUTER OS 软路由 网吧 公司上网使用。</p> <p>上网方式: ADSL拨号 家庭 只要重启路由器 重新拨号公网IP地址发生变化</p> <p>专线配置固定的公网IP地址: 11.22.33.44</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>如果外网接口的公网IP经常发生变化则使用:
+公网ip不固定:
+iptables <span class="token parameter variable">-t</span> nat <span class="token parameter variable">-A</span> POSTROUTING  <span class="token parameter variable">-s</span> <span class="token number">172.16</span>.1.0/24   <span class="token parameter variable">-j</span>  MASQUERADE
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_6-nat实现ip地址映射"><a href="#_6-nat实现ip地址映射" class="header-anchor">#</a> 6，<strong>NAT实现IP地址映射</strong></h3> <p><img src="/devops/public/assets/img/1725201840955.32e5ce65.png" alt="1725201840955"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>必须先实现上面的案例。
+
+实现目标: xshell连接172.16.1.7 WEB01
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t nat -A PREROUTING  -d 10.0.0.4 -p tcp --dport 2222  -j DNAT --to-destination 172.16.1.7:22</span>
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t nat -nL</span>
+Chain PREROUTING <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt <span class="token builtin class-name">source</span>               destination         
+DNAT       tcp  --  <span class="token number">0.0</span>.0.0/0            <span class="token number">10.0</span>.0.4             tcp dpt:2222 to:172.16.1.7:22
+
+测试访问:
+xshell执行
+<span class="token punctuation">[</span>c:<span class="token punctuation">\</span>~<span class="token punctuation">]</span>$ <span class="token function">ssh</span> <span class="token number">10.0</span>.0.4 <span class="token number">2222</span>
+
+
+企业中网站在局域网内: 必须通过路由器转发
+<span class="token punctuation">[</span>root@lb:~<span class="token punctuation">]</span><span class="token comment">#iptables -t nat -A PREROUTING    -d 10.0.0.4 -p tcp --dport 80  -j DNAT --to-destination 172.16.1.7:80</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/2/2024, 12:19:45 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_1-防火墙种类" class="sidebar-link reco-side-_1-防火墙种类" data-v-b57cc07c>1，防火墙种类</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_2-4表5链" class="sidebar-link reco-side-_2-4表5链" data-v-b57cc07c>2，4表5链</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_3-filter表配置" class="sidebar-link reco-side-_3-filter表配置" data-v-b57cc07c>3，filter表配置</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_4-配置保存和恢复" class="sidebar-link reco-side-_4-配置保存和恢复" data-v-b57cc07c>4，配置保存和恢复</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_5-nat实现共享上网" class="sidebar-link reco-side-_5-nat实现共享上网" data-v-b57cc07c>5，NAT实现共享上网</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/28-%E9%98%B2%E7%81%AB%E5%A2%99/ittables.html#_6-nat实现ip地址映射" class="sidebar-link reco-side-_6-nat实现ip地址映射" data-v-b57cc07c>6，NAT实现IP地址映射</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.4df6cfe1.js" defer></script><script src="/devops/public/assets/js/104.efe2d7e6.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/146.a9a5362f.js" defer></script>
+  </body>
+</html>

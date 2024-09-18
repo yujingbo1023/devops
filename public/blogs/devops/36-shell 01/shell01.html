@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>01.Shell的作用 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.4df6cfe1.js" as="script"><link rel="preload" href="/devops/public/assets/js/104.efe2d7e6.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/179.6891fb00.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.a222dbf7.js"><link rel="prefetch" href="/devops/public/assets/js/100.57f35976.js"><link rel="prefetch" href="/devops/public/assets/js/101.16f0a3b7.js"><link rel="prefetch" href="/devops/public/assets/js/102.ecbc3708.js"><link rel="prefetch" href="/devops/public/assets/js/103.3507b281.js"><link rel="prefetch" href="/devops/public/assets/js/105.38279475.js"><link rel="prefetch" href="/devops/public/assets/js/106.44c32359.js"><link rel="prefetch" href="/devops/public/assets/js/107.07d16688.js"><link rel="prefetch" href="/devops/public/assets/js/108.a18b2ef1.js"><link rel="prefetch" href="/devops/public/assets/js/109.c9f86610.js"><link rel="prefetch" href="/devops/public/assets/js/11.de00880c.js"><link rel="prefetch" href="/devops/public/assets/js/110.7a66b7dd.js"><link rel="prefetch" href="/devops/public/assets/js/111.f754444c.js"><link rel="prefetch" href="/devops/public/assets/js/112.6a777934.js"><link rel="prefetch" href="/devops/public/assets/js/113.adafecb9.js"><link rel="prefetch" href="/devops/public/assets/js/114.29405c0f.js"><link rel="prefetch" href="/devops/public/assets/js/115.3cd92205.js"><link rel="prefetch" href="/devops/public/assets/js/116.05bcf710.js"><link rel="prefetch" href="/devops/public/assets/js/117.3da285a2.js"><link rel="prefetch" href="/devops/public/assets/js/118.deb06702.js"><link rel="prefetch" href="/devops/public/assets/js/119.5736894d.js"><link rel="prefetch" href="/devops/public/assets/js/12.afcd1952.js"><link rel="prefetch" href="/devops/public/assets/js/120.9b3d15b1.js"><link rel="prefetch" href="/devops/public/assets/js/121.e85b24a9.js"><link rel="prefetch" href="/devops/public/assets/js/122.3535e845.js"><link rel="prefetch" href="/devops/public/assets/js/123.faf5d8a3.js"><link rel="prefetch" href="/devops/public/assets/js/124.b31a3157.js"><link rel="prefetch" href="/devops/public/assets/js/125.401b8d68.js"><link rel="prefetch" href="/devops/public/assets/js/126.034e18d4.js"><link rel="prefetch" href="/devops/public/assets/js/127.51164dc3.js"><link rel="prefetch" href="/devops/public/assets/js/128.8a282f65.js"><link rel="prefetch" href="/devops/public/assets/js/129.a213210f.js"><link rel="prefetch" href="/devops/public/assets/js/13.50795a7f.js"><link rel="prefetch" href="/devops/public/assets/js/130.a64e2797.js"><link rel="prefetch" href="/devops/public/assets/js/131.aae3591f.js"><link rel="prefetch" href="/devops/public/assets/js/132.67cba06f.js"><link rel="prefetch" href="/devops/public/assets/js/133.e202475a.js"><link rel="prefetch" href="/devops/public/assets/js/134.d94bc405.js"><link rel="prefetch" href="/devops/public/assets/js/135.38a7f2eb.js"><link rel="prefetch" href="/devops/public/assets/js/136.a1060c9e.js"><link rel="prefetch" href="/devops/public/assets/js/137.0df30c05.js"><link rel="prefetch" href="/devops/public/assets/js/138.f331695b.js"><link rel="prefetch" href="/devops/public/assets/js/139.14e366c2.js"><link rel="prefetch" href="/devops/public/assets/js/14.c8b85b37.js"><link rel="prefetch" href="/devops/public/assets/js/140.76e60bba.js"><link rel="prefetch" href="/devops/public/assets/js/141.b3785a0a.js"><link rel="prefetch" href="/devops/public/assets/js/142.84af3b12.js"><link rel="prefetch" href="/devops/public/assets/js/143.aca25ee0.js"><link rel="prefetch" href="/devops/public/assets/js/144.2a0e1634.js"><link rel="prefetch" href="/devops/public/assets/js/145.0712333e.js"><link rel="prefetch" href="/devops/public/assets/js/146.a9a5362f.js"><link rel="prefetch" href="/devops/public/assets/js/147.8e21707a.js"><link rel="prefetch" href="/devops/public/assets/js/148.bca21a6a.js"><link rel="prefetch" href="/devops/public/assets/js/149.07e5317e.js"><link rel="prefetch" href="/devops/public/assets/js/15.f95bfb78.js"><link rel="prefetch" href="/devops/public/assets/js/150.558453ea.js"><link rel="prefetch" href="/devops/public/assets/js/151.a38e2234.js"><link rel="prefetch" href="/devops/public/assets/js/152.fc084701.js"><link rel="prefetch" href="/devops/public/assets/js/153.964667fe.js"><link rel="prefetch" href="/devops/public/assets/js/154.221f36eb.js"><link rel="prefetch" href="/devops/public/assets/js/155.4801dbc2.js"><link rel="prefetch" href="/devops/public/assets/js/156.0c5da048.js"><link rel="prefetch" href="/devops/public/assets/js/157.7bfb52dd.js"><link rel="prefetch" href="/devops/public/assets/js/158.19f69cbc.js"><link rel="prefetch" href="/devops/public/assets/js/159.c0c1828a.js"><link rel="prefetch" href="/devops/public/assets/js/16.bd366d92.js"><link rel="prefetch" href="/devops/public/assets/js/160.a11953fc.js"><link rel="prefetch" href="/devops/public/assets/js/161.6cd3c364.js"><link rel="prefetch" href="/devops/public/assets/js/162.24ff2fbc.js"><link rel="prefetch" href="/devops/public/assets/js/163.7fa5c174.js"><link rel="prefetch" href="/devops/public/assets/js/164.7f0983f6.js"><link rel="prefetch" href="/devops/public/assets/js/165.071acfcc.js"><link rel="prefetch" href="/devops/public/assets/js/166.5bea24cb.js"><link rel="prefetch" href="/devops/public/assets/js/167.b1355235.js"><link rel="prefetch" href="/devops/public/assets/js/168.1d61aa36.js"><link rel="prefetch" href="/devops/public/assets/js/169.dbaed32a.js"><link rel="prefetch" href="/devops/public/assets/js/17.08791185.js"><link rel="prefetch" href="/devops/public/assets/js/170.58cf9809.js"><link rel="prefetch" href="/devops/public/assets/js/171.c146fe72.js"><link rel="prefetch" href="/devops/public/assets/js/172.1a0a58ba.js"><link rel="prefetch" href="/devops/public/assets/js/173.7734347a.js"><link rel="prefetch" href="/devops/public/assets/js/174.b2111903.js"><link rel="prefetch" href="/devops/public/assets/js/175.e2d954dd.js"><link rel="prefetch" href="/devops/public/assets/js/176.67714410.js"><link rel="prefetch" href="/devops/public/assets/js/177.cbd15b5a.js"><link rel="prefetch" href="/devops/public/assets/js/178.0941d077.js"><link rel="prefetch" href="/devops/public/assets/js/18.be74f5d1.js"><link rel="prefetch" href="/devops/public/assets/js/180.105c3c0c.js"><link rel="prefetch" href="/devops/public/assets/js/181.091a4aba.js"><link rel="prefetch" href="/devops/public/assets/js/182.a72eff7e.js"><link rel="prefetch" href="/devops/public/assets/js/183.95fca98e.js"><link rel="prefetch" href="/devops/public/assets/js/184.4a6d573e.js"><link rel="prefetch" href="/devops/public/assets/js/185.0aa8f292.js"><link rel="prefetch" href="/devops/public/assets/js/186.36d27c5a.js"><link rel="prefetch" href="/devops/public/assets/js/187.cbb37c76.js"><link rel="prefetch" href="/devops/public/assets/js/188.394ea608.js"><link rel="prefetch" href="/devops/public/assets/js/189.85d25d0c.js"><link rel="prefetch" href="/devops/public/assets/js/19.fae8155d.js"><link rel="prefetch" href="/devops/public/assets/js/190.5a1f134c.js"><link rel="prefetch" href="/devops/public/assets/js/191.a624428a.js"><link rel="prefetch" href="/devops/public/assets/js/192.0ca0c40a.js"><link rel="prefetch" href="/devops/public/assets/js/193.cfd2ea21.js"><link rel="prefetch" href="/devops/public/assets/js/194.0e34c1e4.js"><link rel="prefetch" href="/devops/public/assets/js/195.3c180225.js"><link rel="prefetch" href="/devops/public/assets/js/196.54aff013.js"><link rel="prefetch" href="/devops/public/assets/js/197.899734a8.js"><link rel="prefetch" href="/devops/public/assets/js/198.feda34f7.js"><link rel="prefetch" href="/devops/public/assets/js/199.5c3e1329.js"><link rel="prefetch" href="/devops/public/assets/js/20.84265e78.js"><link rel="prefetch" href="/devops/public/assets/js/200.f8854500.js"><link rel="prefetch" href="/devops/public/assets/js/201.167390f4.js"><link rel="prefetch" href="/devops/public/assets/js/202.af4cac56.js"><link rel="prefetch" href="/devops/public/assets/js/203.120ce6c1.js"><link rel="prefetch" href="/devops/public/assets/js/204.9203811e.js"><link rel="prefetch" href="/devops/public/assets/js/205.43fbf4da.js"><link rel="prefetch" href="/devops/public/assets/js/206.9e3ce210.js"><link rel="prefetch" href="/devops/public/assets/js/207.82ee2724.js"><link rel="prefetch" href="/devops/public/assets/js/208.4bf52d4d.js"><link rel="prefetch" href="/devops/public/assets/js/209.7db0e0d0.js"><link rel="prefetch" href="/devops/public/assets/js/21.511538a8.js"><link rel="prefetch" href="/devops/public/assets/js/210.b8b336d9.js"><link rel="prefetch" href="/devops/public/assets/js/211.89cc53b4.js"><link rel="prefetch" href="/devops/public/assets/js/212.717a5c0b.js"><link rel="prefetch" href="/devops/public/assets/js/213.36fa1410.js"><link rel="prefetch" href="/devops/public/assets/js/214.ba0fbe6a.js"><link rel="prefetch" href="/devops/public/assets/js/215.d4582592.js"><link rel="prefetch" href="/devops/public/assets/js/216.1d5d77d6.js"><link rel="prefetch" href="/devops/public/assets/js/217.6d9a584a.js"><link rel="prefetch" href="/devops/public/assets/js/218.a4e4cec8.js"><link rel="prefetch" href="/devops/public/assets/js/22.b4630d41.js"><link rel="prefetch" href="/devops/public/assets/js/23.01321c1e.js"><link rel="prefetch" href="/devops/public/assets/js/24.37bc717d.js"><link rel="prefetch" href="/devops/public/assets/js/25.8b41596c.js"><link rel="prefetch" href="/devops/public/assets/js/26.0759f5dd.js"><link rel="prefetch" href="/devops/public/assets/js/27.421393e8.js"><link rel="prefetch" href="/devops/public/assets/js/28.7f747789.js"><link rel="prefetch" href="/devops/public/assets/js/29.60384c48.js"><link rel="prefetch" href="/devops/public/assets/js/3.4611f306.js"><link rel="prefetch" href="/devops/public/assets/js/30.83e2c55e.js"><link rel="prefetch" href="/devops/public/assets/js/31.26a0a48f.js"><link rel="prefetch" href="/devops/public/assets/js/32.bf77ae3a.js"><link rel="prefetch" href="/devops/public/assets/js/33.555b47ef.js"><link rel="prefetch" href="/devops/public/assets/js/34.add122aa.js"><link rel="prefetch" href="/devops/public/assets/js/35.d409bcbb.js"><link rel="prefetch" href="/devops/public/assets/js/36.3b525db7.js"><link rel="prefetch" href="/devops/public/assets/js/37.a17ecb54.js"><link rel="prefetch" href="/devops/public/assets/js/38.d5805972.js"><link rel="prefetch" href="/devops/public/assets/js/39.20df5d67.js"><link rel="prefetch" href="/devops/public/assets/js/4.fb3e0b7b.js"><link rel="prefetch" href="/devops/public/assets/js/40.df6be02c.js"><link rel="prefetch" href="/devops/public/assets/js/41.a50e87c4.js"><link rel="prefetch" href="/devops/public/assets/js/42.eded202b.js"><link rel="prefetch" href="/devops/public/assets/js/43.97b1abd9.js"><link rel="prefetch" href="/devops/public/assets/js/44.65623035.js"><link rel="prefetch" href="/devops/public/assets/js/45.c2adbc86.js"><link rel="prefetch" href="/devops/public/assets/js/46.ea612a5e.js"><link rel="prefetch" href="/devops/public/assets/js/47.4c992ec1.js"><link rel="prefetch" href="/devops/public/assets/js/48.093c17ef.js"><link rel="prefetch" href="/devops/public/assets/js/49.a3675199.js"><link rel="prefetch" href="/devops/public/assets/js/5.5d5c290f.js"><link rel="prefetch" href="/devops/public/assets/js/50.a32147f1.js"><link rel="prefetch" href="/devops/public/assets/js/51.0b270655.js"><link rel="prefetch" href="/devops/public/assets/js/52.b37d9dc6.js"><link rel="prefetch" href="/devops/public/assets/js/53.4d3fbf28.js"><link rel="prefetch" href="/devops/public/assets/js/54.f98a4582.js"><link rel="prefetch" href="/devops/public/assets/js/55.92e3007b.js"><link rel="prefetch" href="/devops/public/assets/js/56.1d77ae31.js"><link rel="prefetch" href="/devops/public/assets/js/57.b459cdd7.js"><link rel="prefetch" href="/devops/public/assets/js/58.20a9a84b.js"><link rel="prefetch" href="/devops/public/assets/js/59.ef166db8.js"><link rel="prefetch" href="/devops/public/assets/js/6.f4c8cc75.js"><link rel="prefetch" href="/devops/public/assets/js/60.c1444d95.js"><link rel="prefetch" href="/devops/public/assets/js/61.198ba6e7.js"><link rel="prefetch" href="/devops/public/assets/js/62.483bef39.js"><link rel="prefetch" href="/devops/public/assets/js/63.75807889.js"><link rel="prefetch" href="/devops/public/assets/js/64.40268277.js"><link rel="prefetch" href="/devops/public/assets/js/65.83603460.js"><link rel="prefetch" href="/devops/public/assets/js/66.9125cb5e.js"><link rel="prefetch" href="/devops/public/assets/js/67.3b57bd40.js"><link rel="prefetch" href="/devops/public/assets/js/68.7732c93d.js"><link rel="prefetch" href="/devops/public/assets/js/69.d65b3d31.js"><link rel="prefetch" href="/devops/public/assets/js/7.61b2080e.js"><link rel="prefetch" href="/devops/public/assets/js/70.615f48d0.js"><link rel="prefetch" href="/devops/public/assets/js/71.3dcd2877.js"><link rel="prefetch" href="/devops/public/assets/js/72.f91ea4a1.js"><link rel="prefetch" href="/devops/public/assets/js/73.220826f0.js"><link rel="prefetch" href="/devops/public/assets/js/74.2906dfba.js"><link rel="prefetch" href="/devops/public/assets/js/75.725b70fb.js"><link rel="prefetch" href="/devops/public/assets/js/76.c2c3ae24.js"><link rel="prefetch" href="/devops/public/assets/js/77.5cecb717.js"><link rel="prefetch" href="/devops/public/assets/js/78.77d25316.js"><link rel="prefetch" href="/devops/public/assets/js/79.a82a9d1d.js"><link rel="prefetch" href="/devops/public/assets/js/8.f197ec99.js"><link rel="prefetch" href="/devops/public/assets/js/80.bf2b919a.js"><link rel="prefetch" href="/devops/public/assets/js/81.3bb6ef41.js"><link rel="prefetch" href="/devops/public/assets/js/82.0b69c3cd.js"><link rel="prefetch" href="/devops/public/assets/js/83.15c6f6d6.js"><link rel="prefetch" href="/devops/public/assets/js/84.b4bdc22a.js"><link rel="prefetch" href="/devops/public/assets/js/85.abe6805f.js"><link rel="prefetch" href="/devops/public/assets/js/86.609cba8d.js"><link rel="prefetch" href="/devops/public/assets/js/87.8d27fecc.js"><link rel="prefetch" href="/devops/public/assets/js/88.78935da6.js"><link rel="prefetch" href="/devops/public/assets/js/89.52820bcb.js"><link rel="prefetch" href="/devops/public/assets/js/9.425bb89d.js"><link rel="prefetch" href="/devops/public/assets/js/90.672fcfe4.js"><link rel="prefetch" href="/devops/public/assets/js/91.9b0c1b4a.js"><link rel="prefetch" href="/devops/public/assets/js/92.f9d83927.js"><link rel="prefetch" href="/devops/public/assets/js/93.78289ff7.js"><link rel="prefetch" href="/devops/public/assets/js/94.e9c972d5.js"><link rel="prefetch" href="/devops/public/assets/js/95.3b97d34a.js"><link rel="prefetch" href="/devops/public/assets/js/96.5af5ac55.js"><link rel="prefetch" href="/devops/public/assets/js/97.1cae3119.js"><link rel="prefetch" href="/devops/public/assets/js/98.a981ee0f.js"><link rel="prefetch" href="/devops/public/assets/js/99.ae6dd75c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>205</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">01.Shell的作用</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h3 id="_01-shell的作用"><a href="#_01-shell的作用" class="header-anchor">#</a> 01.Shell的作用</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">5</span>天 企业中使用最多的编程语言,解决重复性的问题。
+Sehll内容:
+一.Shell解释器  *****
+二.变量基础     *****
+三.特殊位置变量 <span class="token variable">$?</span> *****
+四.条件表达式    *****
+五.if判断
+六.while循环
+七.for循环
+八.流程控制语句 <span class="token builtin class-name">exit</span> <span class="token builtin class-name">continue</span> <span class="token builtin class-name">break</span>
+九.数组
+
+<span class="token number">1</span>.安装操作系统<span class="token punctuation">(</span>自动化安装操作系统kickstart cobbler 使用shell<span class="token punctuation">)</span>
+<span class="token number">2</span>.优化操作系统 防火墙优化 优化SSH服务 禁止root登录 修改默认端口 时间同步 加大文件描述符<span class="token punctuation">..</span> shell脚本
+<span class="token number">3</span>.安装部署服务<span class="token punctuation">(</span>yum 编译安装 安装不同的版本<span class="token punctuation">)</span>（Nginx Apache PHP MySQL Redis Tomcat<span class="token punctuation">..</span><span class="token punctuation">..</span>） shell脚本安装不同版本的服务
+<span class="token number">4</span>.代码变更,业务升级，shell脚本
+<span class="token number">5</span>.巡检系统 内存 磁盘 cpu 服务状态 shell
+<span class="token number">6</span>.数据分析、数据统计 定时任务+脚本（统计好后可以定时发到领导邮箱，写入脚本+定时任务）
+<span class="token number">7</span>.重要的数据备份  脚本
+<span class="token number">8</span>.zabbix监控+脚本取值
+<span class="token number">9</span>.日志切割、防止日志过大。
+<span class="token number">10</span>.启动脚本，tomcat 公司python脚本  shell 
+
+面试题: 给你一台新的机器，说一下你的工作流程？
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="_02-学习shell用到的基础知识"><a href="#_02-学习shell用到的基础知识" class="header-anchor">#</a> 02.学习Shell用到的基础知识</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.vim快捷键
+<span class="token number">2</span>.linux系统命令50个左右  <span class="token number">2000</span>+
+<span class="token number">3</span>.三剑客 <span class="token function">awk</span> <span class="token function">sed</span> <span class="token function">grep</span> <span class="token function">find</span>
+<span class="token number">4</span>.远程连接工具
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_03-如何学好shell编程"><a href="#_03-如何学好shell编程" class="header-anchor">#</a> 03.如何学好Shell编程</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.掌握Shell的基础
+<span class="token number">2</span>.先可以看懂
+<span class="token number">3</span>.看懂--<span class="token operator">&gt;</span>修改--<span class="token operator">&gt;</span>自己编写<span class="token punctuation">(</span>看需求默写<span class="token punctuation">)</span>  看到需求无从下手 正常的现象。经历过程
+<span class="token number">4</span>.孰能生巧
+<span class="token number">5</span>.切忌拿来即用，一定要搞明白了编程自己的知识
+公司需求: 能解决问题即可,符合高效、简单、易用原则。
+<span class="token number">6</span>.有一本完整的教材,或者完善的笔记,语法
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_04-什么是shell"><a href="#_04-什么是shell" class="header-anchor">#</a> 04.什么是Shell</h3> <p><img src="/devops/public/assets/img/1726137692255.775566dd.png" alt="1726137692255"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Shell命令解释器,用户输入命令，解释器负责翻译给内核，内核驱动硬件，返回shell
+Linux默认的解释器是: <span class="token function">bash</span> <span class="token function">sh</span>  （bash和sh是同一个东西，sh是一个软链接）
+
+shell脚本
+将多个可执行的命令写入到文件中，称为shell脚本，脚本中还包含了变量,表达式,循环判断语句等。
+
+shell是解释型语言
+
+脚本语言: python javascript shell
+
+编译型语言 c c++
+
+PHP前端页面 python自动化运维平台 运维工具
+
+Sehll编程 处理系统底层技术  批量操作 优化 启动脚本 数据统计分析 根据不同版本安装不同的服务
+
+交互式:  我们和linux系统交互 输入命令 shell解释命令
+非交互式: 不和我们交互，命令放入脚本，shell读取脚本自动执行。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="_05-shell规范"><a href="#_05-shell规范" class="header-anchor">#</a> 05.Shell规范</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.shell开头写解释器 <span class="token comment">#!/bin/bash  #!/bin/sh</span>
+<span class="token number">2</span>.shell必须以.sh结尾
+<span class="token number">3</span>.脚本有注释信息作者信息,版本信息
+<span class="token comment">#!/bin/bash</span>
+<span class="token comment">#author malu</span>
+<span class="token comment">#20081010</span>
+<span class="token comment">#version  v1.0</span>
+<span class="token comment">#联系电话 110</span>
+<span class="token number">4</span>.脚本尽量放在同一个目录 <span class="token function">mkdir</span> /server/scripts <span class="token parameter variable">-p</span>
+  查找公司的脚本在什么地方：find / <span class="token parameter variable">-name</span> <span class="token string">&quot;*.sh&quot;</span>
+<span class="token number">5</span>.每行尽量带注释<span class="token punctuation">(</span>如果不理解<span class="token punctuation">)</span>
+<span class="token number">6</span>.成对的符号一次性写完
+<span class="token number">7</span>.不需要对齐,但是需要层级关系明确
+<span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> xxx
+<span class="token keyword">do</span>      
+        <span class="token keyword">for</span> <span class="token for-or-select variable">a</span>  <span class="token keyword">in</span> xxxx
+        <span class="token keyword">do</span>
+                <span class="token keyword">if</span> <span class="token punctuation">[</span>xxx<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+                <span class="token builtin class-name">echo</span> xxx
+                <span class="token keyword">fi</span>
+        <span class="token keyword">done</span>
+<span class="token keyword">done</span>
+<span class="token number">8</span>.符号注意不要出现中文
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;&quot;</span> <span class="token string">''</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">}</span> <span class="token operator">&lt;&gt;</span> ``  <span class="token punctuation">$(</span><span class="token punctuation">)</span> <span class="token punctuation">((</span><span class="token punctuation">))</span>       <span class="token comment"># 英文符号</span>
+<span class="token builtin class-name">echo</span> ‘’ 【】【【】】 《》·· ￥（）（（））··  <span class="token comment"># 中文符号</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="_06-第一个shell脚本"><a href="#_06-第一个shell脚本" class="header-anchor">#</a> 06.第一个Shell脚本</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash				# 指定解释器</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;hello World!!&quot;</span>	<span class="token comment"># 输出一个字符串</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_07-执行shell脚本"><a href="#_07-执行shell脚本" class="header-anchor">#</a> 07.执行Shell脚本</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>常用的三种执行方式:
+第一种: <span class="token function">bash</span> <span class="token function">sh</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh </span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#bash test.sh </span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+
+第二种: 路径的方式执行  脚本必须有x执行权限
+相对路径执行
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#test.sh		# 当成命令执行</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#./test.sh      # 执行脚本</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#chmod u+x test.sh </span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#ll test.sh</span>
+-rwxr--r-- <span class="token number">1</span> root root <span class="token number">33</span> Sep <span class="token number">12</span> <span class="token number">10</span>:28 test.sh
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#./test.sh</span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+
+绝对路径执行
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#/server/scripts/test.sh</span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+
+第三种: <span class="token builtin class-name">source</span> 或者 .执行
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#source test.sh </span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#. test.sh</span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+
+
+其他方式执行:
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh |bash</span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#curl https://www.linuxnc.com/test.sh|bash</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#bash &lt; test.sh</span>
+hello World<span class="token operator">!</span><span class="token operator">!</span>
+
+
+三种执行脚本方式的区别？
+<span class="token function">bash</span> <span class="token function">sh</span> 和路径的方式执行是相同的，都是在子shell中执行
+执行流程: <span class="token function">bash</span> test.sh 系统会启动一个子shell执行脚本，执行完成后子shell退出
+
+source和.执行都是在父shell中执行，不会产生子shell
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><p><img src="/devops/public/assets/img/image-20240912104635322.f08c26ac.png" alt="image-20240912104635322"></p> <p>source或者.都在父shell中执行</p> <p><img src="data:image/png;base64,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" alt="image-20240912104921113"></p> <p>变量在父shell和子shell执行的区别</p> <p><img src="/devops/public/assets/img/image-20240912105356049.59bd99b9.png" alt="image-20240912105356049"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token assign-left variable">name</span><span class="token operator">=</span>oldboy
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh </span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#source test.sh</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+oldboy
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><h3 id="_08-shell变量"><a href="#_08-shell变量" class="header-anchor">#</a> 08.shell变量</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.什么是变量？
+用一个固定的值表示一串不固定的值称为变量。
+<span class="token assign-left variable">name</span><span class="token operator">=</span>malu <span class="token assign-left variable">name</span><span class="token operator">=</span>xxx
+<span class="token assign-left variable">dir</span><span class="token operator">=</span>/code <span class="token assign-left variable">dir</span><span class="token operator">=</span>/etc/code
+类似:
+<span class="token assign-left variable">x</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">y</span><span class="token operator">=</span>x+1 <span class="token assign-left variable">y</span><span class="token operator">=</span><span class="token number">2</span>
+
+<span class="token number">2</span>.变量的种类
+系统变量: 系统定义好的变量 <span class="token function">env</span>   称为全局环境变量			 						 类似国家法律
+普通变量: 个人自定义的变量 shell脚本中定义 系统中定义的有<span class="token environment constant">LANG</span> <span class="token environment constant">PATH</span> <span class="token environment constant">PS1</span> 称为局部环境变量  类似家规
+
+<span class="token number">3</span>.安装生存周期分类
+永久变量: 一直存在系统   写入/etc/profile
+临时变量: 退出系统没有了 直接在当前命令行定义 重启或者重新连接失效
+
+<span class="token number">4</span>.定义环境变量
+<span class="token number">1</span><span class="token punctuation">)</span>变量名称的定义方式
+  变量名的规范要求字母、数字和下划线的组合，必须以下划线和字母开头，不能以数字开头。
+  等号两端不允许有空格
+  名称见名知其意
+  名字尽量避开系统命令
+  可以全大写 NAME <span class="token environment constant">USER</span> <span class="token environment constant">PATH</span> <span class="token environment constant">LANG</span>
+  可以全小写 name age conut test<span class="token punctuation">(</span>系统命令<span class="token punctuation">)</span>
+  大驼峰语法 <span class="token assign-left variable">Name_Age</span><span class="token operator">=</span> 
+  小驼峰语法 <span class="token assign-left variable">name_Age</span><span class="token operator">=</span>
+  咋写都行。尽量使用一种
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=oldboy</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#_name=oldboy</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $_name</span>
+oldboy
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#1name=oldboy</span>
+-bash: <span class="token assign-left variable">1name</span><span class="token operator">=</span>oldboy: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name= oldboy</span>
+-bash: oldboy: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name =oldboy</span>
+-bash: name: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name = oldboy</span>
+-bash: name: <span class="token builtin class-name">command</span> not found
+
+<span class="token number">2</span><span class="token punctuation">)</span>变量值的定义方式
+连续的数字,不连续的使用<span class="token string">&quot;&quot;</span>或者<span class="token string">''</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#age=12323432</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $age</span>
+<span class="token number">12323432</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#age=2 3</span>
+-bash: <span class="token number">3</span>: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#age='2 3'</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $age</span>
+<span class="token number">2</span> <span class="token number">3</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#age=&quot;2 3&quot;</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $age</span>
+<span class="token number">2</span> <span class="token number">3</span>
+
+
+连续的字符串
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=oldboy</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=old boy</span>
+-bash: boy: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name='old boy'</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=&quot;old boy&quot;</span>
+单引号和双引号的区别
+单引号: 不能解析变量
+双引号和不加引号: 可以解析变量
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#a=oldgirl</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#b=oldboy</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=$a</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+oldgirl
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name='$a'</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+<span class="token variable">$a</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=&quot;$a&quot;</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+oldgirl
+<span class="token comment">#注意变量的名字和其他字符拼接的时候需要使用{}</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=&quot;${a}_&quot;</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+oldgirl_
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#name=&quot;${a}_$b&quot;</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $name</span>
+oldgirl_oldboy
+
+
+
+<span class="token comment">#使用方式使用变量定义路径 常用</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ens33=/etc/sysconfig/network-scripts/ifcfg-ens33</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#cat $ens33</span>
+<span class="token assign-left variable">TYPE</span><span class="token operator">=</span>Ethernet
+<span class="token assign-left variable">BOOTPROTO</span><span class="token operator">=</span>none
+<span class="token assign-left variable">NAME</span><span class="token operator">=</span>ens33
+<span class="token assign-left variable">DEVICE</span><span class="token operator">=</span>ens33
+<span class="token assign-left variable">ONBOOT</span><span class="token operator">=</span>yes
+<span class="token assign-left variable">IPADDR</span><span class="token operator">=</span><span class="token number">10.0</span>.0.7
+<span class="token assign-left variable">PREFIX</span><span class="token operator">=</span><span class="token number">24</span>
+<span class="token assign-left variable">GATEWAY</span><span class="token operator">=</span><span class="token number">10.0</span>.0.2
+<span class="token assign-left variable">DNS1</span><span class="token operator">=</span><span class="token number">223.5</span>.5.5
+
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#code_dir=/etc/sysconfig/network-scripts/</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#cd $code_dir</span>
+<span class="token punctuation">[</span>root@shell:network-scripts<span class="token punctuation">]</span><span class="token comment">#cd</span>
+
+
+<span class="token comment">#金庸 著</span>
+<span class="token comment">#{金庸新}著</span>
+
+
+命令的定义
+<span class="token comment"># 使用反引号``</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#nginx_port=`netstat -tnulp|grep nginx|awk '{print $4}'`</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+<span class="token number">0.0</span>.0.0:80
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+<span class="token number">0.0</span>.0.0:80
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+<span class="token number">0.0</span>.0.0:80
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+<span class="token number">0.0</span>.0.0:80
+<span class="token comment"># 停止nginx服务后再重新赋值，变量中的内容才会改变</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#nginx_port=`netstat -tnulp|grep nginx|awk '{print $4}'`</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+
+<span class="token comment"># 使用$()</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#nginx_port=$(netstat -tnulp|grep nginx|awk '{print $4}')</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $nginx_port</span>
+<span class="token number">0.0</span>.0.0:80
+
+<span class="token comment"># 输出年月日 分时秒</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#date +%F-%H-%M-%S</span>
+<span class="token number">2024</span>-09-12-11-46-11
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#Time=`date +%F-%H-%M-%S`</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $Time</span>
+<span class="token number">2024</span>-09-12-11-46-52
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $Time</span>
+<span class="token number">2024</span>-09-12-11-46-52
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $Time</span>
+<span class="token number">2024</span>-09-12-11-46-52
+时间只有在重新赋值后才会改变
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#Time=`date +%F-%H-%M-%S`</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $Time</span>
+<span class="token number">2024</span>-09-12-11-47-39
+
+
+
+两种时间需求:
+<span class="token number">1</span>.时间要求不能变化
+数据备份客户端
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#mkdir web01_$Time</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">12</span> <span class="token number">11</span>:25 <span class="token number">1</span>.txt
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Sep <span class="token number">12</span> <span class="token number">11</span>:49 web01_2024-09-12-11-47-39
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#tar zcvf all.tar.gz /etc/passwd</span>
+tar: Removing leading <span class="token variable"><span class="token variable">`</span>/' from member names
+/etc/passwd
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#tar zcvf web01_$Time/all.tar.gz /etc/passwd</span>
+tar: Removing leading <span class="token variable">`</span></span>/<span class="token string">' from member names
+/etc/passwd
+[root@shell:~]#ll web01_2024-09-12-11-47-39/
+total 4
+-rw-r--r-- 1 root root 911 Sep 12 11:50 all.tar.gz
+
+
+2.时间要求实时变化
+执行命令的时候不看结果，需要输出到日志文件中。
+[root@shell:~]#Time='</span><span class="token function">date</span> +%F-%H-%M-%S<span class="token string">'	# 每次调用$Time都会执行里面的变量
+[root@shell:~]#echo $Time
+date +%F-%H-%M-%S
+[root@shell:~]#$Time
+2024-09-12-11-52-55
+[root@shell:~]#$Time
+2024-09-12-11-52-57
+
+
+错误的命令定义方式：
+[root@shell:~]#nginx_port=netstat -tnulp|grep nginx|awk '</span><span class="token punctuation">{</span>print <span class="token variable">$4</span><span class="token punctuation">}</span>'
+-bash: -tnulp: <span class="token builtin class-name">command</span> not found
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br></div></div><h3 id="_09-shell位置变量"><a href="#_09-shell位置变量" class="header-anchor">#</a> 09.Shell位置变量</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token variable">$?</span> 上一条命令的执行结果，0为成功,非0失败
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baidu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $?</span>
+<span class="token number">0</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baiaaaaaaaaaadu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $?</span>
+<span class="token number">2</span>
+
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baidu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $?</span>
+<span class="token number">0</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baiaaaaaaaaaadu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $?</span>
+<span class="token number">2</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baidu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#RC=$?</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#ping www.baiaaaaaaaaaadu.com -c1 -W1 &amp;&gt;/dev/null</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $RC</span>
+<span class="token number">0</span>
+
+<span class="token variable">$0</span>   <span class="token comment"># 表示脚本的名称</span>
+<span class="token variable">$n</span>   <span class="token comment"># n为数字从1开始,表示脚本的参数 $1 为第一个参数 $2为第二个参数 以此类推</span>
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$1</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh oldboy	# 脚本传参</span>
+oldboy
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$1</span> <span class="token variable">$2</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh 1 2</span>
+<span class="token number">1</span> <span class="token number">2</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh a b</span>
+a b
+注意: <span class="token variable">$9</span>以后参数接收需要加<span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token variable">${10}</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {a..z}</span>
+a b c d e f g h i a0 a1
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$1</span> <span class="token variable">$2</span> <span class="token variable">$3</span> <span class="token variable">$4</span> <span class="token variable">$5</span> <span class="token variable">$6</span> <span class="token variable">$7</span> <span class="token variable">$8</span> <span class="token variable">$9</span> <span class="token variable">${10}</span> <span class="token variable">${11}</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {a..z}</span>
+a b c d e f g h i j k
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {1..100}</span>
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">3</span> <span class="token number">4</span> <span class="token number">5</span> <span class="token number">6</span> <span class="token number">7</span> <span class="token number">8</span> <span class="token number">9</span> <span class="token number">10</span> <span class="token number">11</span>
+
+
+<span class="token punctuation">[</span>root@linuxnc ~<span class="token punctuation">]</span><span class="token comment"># grep '$0' /etc/init.d/network   # 只过滤字符串 $0</span>
+    <span class="token variable">$0</span> stop
+    <span class="token variable">$0</span> start
+    <span class="token builtin class-name">echo</span> $<span class="token string">&quot;Usage: <span class="token variable">$0</span> {start|stop|status|restart|force-reload}&quot;</span>
+    
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;Usage: <span class="token variable">$0</span> [start|stop|restart|reload|status]&quot;</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh</span>
+Usage: test.sh <span class="token punctuation">[</span>start<span class="token operator">|</span>stop<span class="token operator">|</span>restart<span class="token operator">|</span>reload<span class="token operator">|</span>status<span class="token punctuation">]</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#/server/scripts/test.sh</span>
+Usage: /server/scripts/test.sh <span class="token punctuation">[</span>start<span class="token operator">|</span>stop<span class="token operator">|</span>restart<span class="token operator">|</span>reload<span class="token operator">|</span>status<span class="token punctuation">]</span>
+
+
+<span class="token variable">$#</span>    <span class="token comment"># 表示脚本传参的个数  控制让用户传入的参数</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh </span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$1</span> <span class="token variable">$2</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$#</span>
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {1..26}</span>
+<span class="token number">1</span> <span class="token number">2</span>
+<span class="token number">26</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {1..100}</span>
+<span class="token number">1</span> <span class="token number">2</span>
+<span class="token number">100</span>
+
+示例:
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token variable">$1</span>
+<span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token variable">$2</span>
+
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;你输入的名字是: &quot;</span> <span class="token variable">$name</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;你输入的年龄是: &quot;</span> <span class="token variable">$age</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh oldboy 11</span>
+你输入的名字是:  oldboy
+你输入的年龄是:  <span class="token number">11</span>
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;name=<span class="token variable">$1</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;age=<span class="token variable">$2</span>&quot;</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh oldboy 123</span>
+<span class="token assign-left variable">name</span><span class="token operator">=</span>oldboy
+<span class="token assign-left variable">age</span><span class="token operator">=</span><span class="token number">123</span>
+
+
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh </span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token punctuation">[</span> <span class="token variable">$#</span> <span class="token parameter variable">-ne</span> <span class="token number">2</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">&quot;请传入一个参数即可&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">exit</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;name=<span class="token variable">$1</span>&quot;</span>
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;age=<span class="token variable">$2</span>&quot;</span>
+
+
+<span class="token variable">$$</span>    <span class="token comment"># 表示脚本的PID号</span>
+<span class="token variable">$!</span>    <span class="token comment"># 表示上一个在后台执行脚本的PID号  测试脚本使用</span>
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh </span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token punctuation">[</span> <span class="token variable"><span class="token variable">`</span><span class="token function">cat</span> /opt/tomcat.pid<span class="token operator">|</span><span class="token function">wc</span> <span class="token parameter variable">-l</span><span class="token variable">`</span></span> <span class="token parameter variable">-eq</span> <span class="token number">1</span> <span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">echo</span> <span class="token string">&quot;此脚本正在运行中,你不要瞎搞!!&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">exit</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$$</span> <span class="token operator">&gt;</span> /opt/tomcat.pid
+<span class="token function">sleep</span> <span class="token number">5000</span>
+
+其他位置参数<span class="token punctuation">(</span>了解<span class="token punctuation">)</span>
+<span class="token variable">$*</span>     <span class="token comment"># 获取所有传参的参数  在循环体中和$@不同</span>
+<span class="token variable">$@</span>     <span class="token comment"># 获取所有传参的参数  在循环体中和$*不同</span>
+<span class="token variable">$_</span>     <span class="token comment"># 获取传参的最后一个参数</span>
+
+
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh {a..z}</span>
+a b c d e f g h i j k l m n o p q r s t u <span class="token function">v</span> w x y z
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#vim test.sh </span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh a b c d</span>
+a b c d
+a b c d
+
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#set -- &quot;I am&quot; lizhenya</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $*</span>
+I am lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $@</span>
+I am lizhenya
+------------了解<span class="token variable">$*</span>和<span class="token variable">$@</span>的不同
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#set -- &quot;I am&quot; lizhenya</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $*</span>
+I am lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $@</span>
+I am lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#for i in $*;do echo $i;done</span>
+I
+am
+lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#for i in $@;do echo $i;done</span>
+I
+am
+lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#for i in &quot;$*&quot;;do echo $i;done</span>
+I am lizhenya
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#for i in &quot;$@&quot;;do echo $i;done</span>
+I am
+lizhenya
+------------------
+
+
+
+笔试题:
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#cat test.sh</span>
+<span class="token comment">#!/bin/bash</span>
+<span class="token assign-left variable">Test</span><span class="token operator">=</span><span class="token variable"><span class="token variable">`</span><span class="token function">whoami</span><span class="token variable">`</span></span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#sh test.sh</span>
+<span class="token punctuation">[</span>root@shell:scripts<span class="token punctuation">]</span><span class="token comment">#echo $Test</span>
+在当前命令行执行echo <span class="token variable">$Test</span>结果是:_空_
+
+
+位置参数小结: 面试题
+<span class="token variable">$0</span>   <span class="token comment"># 获取脚本的名称</span>
+<span class="token variable">$n</span>   <span class="token comment"># 脚本传参的参数  $1表示第一个参数 $2表示第二个参数 以此类推 ${10}</span>
+<span class="token variable">$?</span>   <span class="token comment"># 上一条命令的执行结果 0成功 非0失败</span>
+<span class="token variable">$#</span>   <span class="token comment"># 脚本传参的个数</span>
+<span class="token variable">$$</span>   <span class="token comment"># 当前脚本的PID号</span>
+<span class="token variable">$!</span>   <span class="token comment"># 上一个在后台运行脚本的PID号</span>
+
+了解
+<span class="token variable">$*</span>
+<span class="token variable">$@</span>
+<span class="token variable">$_</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br></div></div><p>小结:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>五颗星
+<span class="token number">1</span>.vim linux常用命令 <span class="token function">awk</span> <span class="token function">sed</span> <span class="token function">grep</span> <span class="token function">find</span>
+<span class="token number">2</span>.规范
+<span class="token number">3</span>.脚本的执行方式以及区别
+<span class="token function">bash</span> <span class="token function">sh</span>          子shell执行方式
+路径 相对路径 绝对路径  
+相对路径./ 需要执行x权限
+source或者 <span class="token builtin class-name">.</span> 执行  父shell
+<span class="token number">4</span>.变量
+系统变量  全局变量  写入/etc/profile
+普通变量  局部变量  直接定义 或者 写入脚本中
+临时变量
+永久变量
+
+创建变量加export和不加export的区别
+<span class="token assign-left variable">name</span><span class="token operator">=</span>oldboy
+<span class="token builtin class-name">export</span> <span class="token assign-left variable">name</span><span class="token operator">=</span>oldboy
+
+<span class="token number">5</span>.变量名称的定义
+<span class="token number">6</span>.变量值的定义
+
+不加export: 只对当前的shell生效
+加export:   针对当前登录的父shell以及子shell全都生效
+--------------------不加export测试
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#dir=/code/wordpress</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $dir</span>
+/code/wordpress
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#bash</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $dir</span>
+
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#exit</span>
+<span class="token builtin class-name">exit</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#vim 1.sh</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#cat 1.sh</span>
+<span class="token builtin class-name">echo</span> <span class="token variable">$dir</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $dir</span>
+/code/wordpress
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#sh 1.sh </span>
+
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#source 1.sh</span>
+/code/wordpress
+-----------------------------------加export测试
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#export co_dir=/etc/wp</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $co_dir</span>
+/etc/wp
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#bash</span>
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#echo $co_dir</span>
+/etc/wp
+<span class="token punctuation">[</span>root@shell:~<span class="token punctuation">]</span><span class="token comment">#exit</span>
+<span class="token builtin class-name">exit</span>
+-------------------------------
+在脚本中自定义的变量是否需要加export？
+答: 不需要
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><h3 id="_10-和变量相关的配置文件"><a href="#_10-和变量相关的配置文件" class="header-anchor">#</a> 10.和变量相关的配置文件</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>./etc/profile   <span class="token comment"># 永久生效,重新连接,重启系统,source文件  name=oldboy  全局针对所有用户</span>
+<span class="token number">2</span><span class="token punctuation">..</span>bash_profile
+<span class="token number">3</span><span class="token punctuation">..</span>bashrc										     <span class="token assign-left variable">name</span><span class="token operator">=</span>oldgirl
+<span class="token number">4</span>./etc/bashrc
+如果/etc/profile定义 <span class="token assign-left variable">name</span><span class="token operator">=</span>oldboy
+如果.bashrc中定义name<span class="token operator">=</span>oldgirl
+结果name<span class="token operator">=</span>oldgirl  <span class="token comment"># 重复赋值</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>下次内容: 条件表达式</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token parameter variable">-eq</span>
+<span class="token parameter variable">-ne</span>
+<span class="token parameter variable">-gt</span>
+<span class="token parameter variable">-ge</span>
+<span class="token parameter variable">-lt</span>
+<span class="token parameter variable">-le</span>
+<span class="token parameter variable">-f</span>
+<span class="token parameter variable">-e</span>
+<span class="token parameter variable">-d</span>
+<span class="token parameter variable">-r</span>
+<span class="token parameter variable">-x</span>
+<span class="token parameter variable">-w</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_01-shell的作用" class="sidebar-link reco-side-_01-shell的作用" data-v-b57cc07c>01.Shell的作用</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_02-学习shell用到的基础知识" class="sidebar-link reco-side-_02-学习shell用到的基础知识" data-v-b57cc07c>02.学习Shell用到的基础知识</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_03-如何学好shell编程" class="sidebar-link reco-side-_03-如何学好shell编程" data-v-b57cc07c>03.如何学好Shell编程</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_04-什么是shell" class="sidebar-link reco-side-_04-什么是shell" data-v-b57cc07c>04.什么是Shell</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_05-shell规范" class="sidebar-link reco-side-_05-shell规范" data-v-b57cc07c>05.Shell规范</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_06-第一个shell脚本" class="sidebar-link reco-side-_06-第一个shell脚本" data-v-b57cc07c>06.第一个Shell脚本</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_07-执行shell脚本" class="sidebar-link reco-side-_07-执行shell脚本" data-v-b57cc07c>07.执行Shell脚本</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_08-shell变量" class="sidebar-link reco-side-_08-shell变量" data-v-b57cc07c>08.shell变量</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_09-shell位置变量" class="sidebar-link reco-side-_09-shell位置变量" data-v-b57cc07c>09.Shell位置变量</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/36-shell%2001/shell01.html#_10-和变量相关的配置文件" class="sidebar-link reco-side-_10-和变量相关的配置文件" data-v-b57cc07c>10.和变量相关的配置文件</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.4df6cfe1.js" defer></script><script src="/devops/public/assets/js/104.efe2d7e6.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/179.6891fb00.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>15-nfs | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.4df6cfe1.js" as="script"><link rel="preload" href="/devops/public/assets/js/104.efe2d7e6.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/156.0c5da048.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.a222dbf7.js"><link rel="prefetch" href="/devops/public/assets/js/100.57f35976.js"><link rel="prefetch" href="/devops/public/assets/js/101.16f0a3b7.js"><link rel="prefetch" href="/devops/public/assets/js/102.ecbc3708.js"><link rel="prefetch" href="/devops/public/assets/js/103.3507b281.js"><link rel="prefetch" href="/devops/public/assets/js/105.38279475.js"><link rel="prefetch" href="/devops/public/assets/js/106.44c32359.js"><link rel="prefetch" href="/devops/public/assets/js/107.07d16688.js"><link rel="prefetch" href="/devops/public/assets/js/108.a18b2ef1.js"><link rel="prefetch" href="/devops/public/assets/js/109.c9f86610.js"><link rel="prefetch" href="/devops/public/assets/js/11.de00880c.js"><link rel="prefetch" href="/devops/public/assets/js/110.7a66b7dd.js"><link rel="prefetch" href="/devops/public/assets/js/111.f754444c.js"><link rel="prefetch" href="/devops/public/assets/js/112.6a777934.js"><link rel="prefetch" href="/devops/public/assets/js/113.adafecb9.js"><link rel="prefetch" href="/devops/public/assets/js/114.29405c0f.js"><link rel="prefetch" href="/devops/public/assets/js/115.3cd92205.js"><link rel="prefetch" href="/devops/public/assets/js/116.05bcf710.js"><link rel="prefetch" href="/devops/public/assets/js/117.3da285a2.js"><link rel="prefetch" href="/devops/public/assets/js/118.deb06702.js"><link rel="prefetch" href="/devops/public/assets/js/119.5736894d.js"><link rel="prefetch" href="/devops/public/assets/js/12.afcd1952.js"><link rel="prefetch" href="/devops/public/assets/js/120.9b3d15b1.js"><link rel="prefetch" href="/devops/public/assets/js/121.e85b24a9.js"><link rel="prefetch" href="/devops/public/assets/js/122.3535e845.js"><link rel="prefetch" href="/devops/public/assets/js/123.faf5d8a3.js"><link rel="prefetch" href="/devops/public/assets/js/124.b31a3157.js"><link rel="prefetch" href="/devops/public/assets/js/125.401b8d68.js"><link rel="prefetch" href="/devops/public/assets/js/126.034e18d4.js"><link rel="prefetch" href="/devops/public/assets/js/127.51164dc3.js"><link rel="prefetch" href="/devops/public/assets/js/128.8a282f65.js"><link rel="prefetch" href="/devops/public/assets/js/129.a213210f.js"><link rel="prefetch" href="/devops/public/assets/js/13.50795a7f.js"><link rel="prefetch" href="/devops/public/assets/js/130.a64e2797.js"><link rel="prefetch" href="/devops/public/assets/js/131.aae3591f.js"><link rel="prefetch" href="/devops/public/assets/js/132.67cba06f.js"><link rel="prefetch" href="/devops/public/assets/js/133.e202475a.js"><link rel="prefetch" href="/devops/public/assets/js/134.d94bc405.js"><link rel="prefetch" href="/devops/public/assets/js/135.38a7f2eb.js"><link rel="prefetch" href="/devops/public/assets/js/136.a1060c9e.js"><link rel="prefetch" href="/devops/public/assets/js/137.0df30c05.js"><link rel="prefetch" href="/devops/public/assets/js/138.f331695b.js"><link rel="prefetch" href="/devops/public/assets/js/139.14e366c2.js"><link rel="prefetch" href="/devops/public/assets/js/14.c8b85b37.js"><link rel="prefetch" href="/devops/public/assets/js/140.76e60bba.js"><link rel="prefetch" href="/devops/public/assets/js/141.b3785a0a.js"><link rel="prefetch" href="/devops/public/assets/js/142.84af3b12.js"><link rel="prefetch" href="/devops/public/assets/js/143.aca25ee0.js"><link rel="prefetch" href="/devops/public/assets/js/144.2a0e1634.js"><link rel="prefetch" href="/devops/public/assets/js/145.0712333e.js"><link rel="prefetch" href="/devops/public/assets/js/146.a9a5362f.js"><link rel="prefetch" href="/devops/public/assets/js/147.8e21707a.js"><link rel="prefetch" href="/devops/public/assets/js/148.bca21a6a.js"><link rel="prefetch" href="/devops/public/assets/js/149.07e5317e.js"><link rel="prefetch" href="/devops/public/assets/js/15.f95bfb78.js"><link rel="prefetch" href="/devops/public/assets/js/150.558453ea.js"><link rel="prefetch" href="/devops/public/assets/js/151.a38e2234.js"><link rel="prefetch" href="/devops/public/assets/js/152.fc084701.js"><link rel="prefetch" href="/devops/public/assets/js/153.964667fe.js"><link rel="prefetch" href="/devops/public/assets/js/154.221f36eb.js"><link rel="prefetch" href="/devops/public/assets/js/155.4801dbc2.js"><link rel="prefetch" href="/devops/public/assets/js/157.7bfb52dd.js"><link rel="prefetch" href="/devops/public/assets/js/158.19f69cbc.js"><link rel="prefetch" href="/devops/public/assets/js/159.c0c1828a.js"><link rel="prefetch" href="/devops/public/assets/js/16.bd366d92.js"><link rel="prefetch" href="/devops/public/assets/js/160.a11953fc.js"><link rel="prefetch" href="/devops/public/assets/js/161.6cd3c364.js"><link rel="prefetch" href="/devops/public/assets/js/162.24ff2fbc.js"><link rel="prefetch" href="/devops/public/assets/js/163.7fa5c174.js"><link rel="prefetch" href="/devops/public/assets/js/164.7f0983f6.js"><link rel="prefetch" href="/devops/public/assets/js/165.071acfcc.js"><link rel="prefetch" href="/devops/public/assets/js/166.5bea24cb.js"><link rel="prefetch" href="/devops/public/assets/js/167.b1355235.js"><link rel="prefetch" href="/devops/public/assets/js/168.1d61aa36.js"><link rel="prefetch" href="/devops/public/assets/js/169.dbaed32a.js"><link rel="prefetch" href="/devops/public/assets/js/17.08791185.js"><link rel="prefetch" href="/devops/public/assets/js/170.58cf9809.js"><link rel="prefetch" href="/devops/public/assets/js/171.c146fe72.js"><link rel="prefetch" href="/devops/public/assets/js/172.1a0a58ba.js"><link rel="prefetch" href="/devops/public/assets/js/173.7734347a.js"><link rel="prefetch" href="/devops/public/assets/js/174.b2111903.js"><link rel="prefetch" href="/devops/public/assets/js/175.e2d954dd.js"><link rel="prefetch" href="/devops/public/assets/js/176.67714410.js"><link rel="prefetch" href="/devops/public/assets/js/177.cbd15b5a.js"><link rel="prefetch" href="/devops/public/assets/js/178.0941d077.js"><link rel="prefetch" href="/devops/public/assets/js/179.6891fb00.js"><link rel="prefetch" href="/devops/public/assets/js/18.be74f5d1.js"><link rel="prefetch" href="/devops/public/assets/js/180.105c3c0c.js"><link rel="prefetch" href="/devops/public/assets/js/181.091a4aba.js"><link rel="prefetch" href="/devops/public/assets/js/182.a72eff7e.js"><link rel="prefetch" href="/devops/public/assets/js/183.95fca98e.js"><link rel="prefetch" href="/devops/public/assets/js/184.4a6d573e.js"><link rel="prefetch" href="/devops/public/assets/js/185.0aa8f292.js"><link rel="prefetch" href="/devops/public/assets/js/186.36d27c5a.js"><link rel="prefetch" href="/devops/public/assets/js/187.cbb37c76.js"><link rel="prefetch" href="/devops/public/assets/js/188.394ea608.js"><link rel="prefetch" href="/devops/public/assets/js/189.85d25d0c.js"><link rel="prefetch" href="/devops/public/assets/js/19.fae8155d.js"><link rel="prefetch" href="/devops/public/assets/js/190.5a1f134c.js"><link rel="prefetch" href="/devops/public/assets/js/191.a624428a.js"><link rel="prefetch" href="/devops/public/assets/js/192.0ca0c40a.js"><link rel="prefetch" href="/devops/public/assets/js/193.cfd2ea21.js"><link rel="prefetch" href="/devops/public/assets/js/194.0e34c1e4.js"><link rel="prefetch" href="/devops/public/assets/js/195.3c180225.js"><link rel="prefetch" href="/devops/public/assets/js/196.54aff013.js"><link rel="prefetch" href="/devops/public/assets/js/197.899734a8.js"><link rel="prefetch" href="/devops/public/assets/js/198.feda34f7.js"><link rel="prefetch" href="/devops/public/assets/js/199.5c3e1329.js"><link rel="prefetch" href="/devops/public/assets/js/20.84265e78.js"><link rel="prefetch" href="/devops/public/assets/js/200.f8854500.js"><link rel="prefetch" href="/devops/public/assets/js/201.167390f4.js"><link rel="prefetch" href="/devops/public/assets/js/202.af4cac56.js"><link rel="prefetch" href="/devops/public/assets/js/203.120ce6c1.js"><link rel="prefetch" href="/devops/public/assets/js/204.9203811e.js"><link rel="prefetch" href="/devops/public/assets/js/205.43fbf4da.js"><link rel="prefetch" href="/devops/public/assets/js/206.9e3ce210.js"><link rel="prefetch" href="/devops/public/assets/js/207.82ee2724.js"><link rel="prefetch" href="/devops/public/assets/js/208.4bf52d4d.js"><link rel="prefetch" href="/devops/public/assets/js/209.7db0e0d0.js"><link rel="prefetch" href="/devops/public/assets/js/21.511538a8.js"><link rel="prefetch" href="/devops/public/assets/js/210.b8b336d9.js"><link rel="prefetch" href="/devops/public/assets/js/211.89cc53b4.js"><link rel="prefetch" href="/devops/public/assets/js/212.717a5c0b.js"><link rel="prefetch" href="/devops/public/assets/js/213.36fa1410.js"><link rel="prefetch" href="/devops/public/assets/js/214.ba0fbe6a.js"><link rel="prefetch" href="/devops/public/assets/js/215.d4582592.js"><link rel="prefetch" href="/devops/public/assets/js/216.1d5d77d6.js"><link rel="prefetch" href="/devops/public/assets/js/217.6d9a584a.js"><link rel="prefetch" href="/devops/public/assets/js/218.a4e4cec8.js"><link rel="prefetch" href="/devops/public/assets/js/22.b4630d41.js"><link rel="prefetch" href="/devops/public/assets/js/23.01321c1e.js"><link rel="prefetch" href="/devops/public/assets/js/24.37bc717d.js"><link rel="prefetch" href="/devops/public/assets/js/25.8b41596c.js"><link rel="prefetch" href="/devops/public/assets/js/26.0759f5dd.js"><link rel="prefetch" href="/devops/public/assets/js/27.421393e8.js"><link rel="prefetch" href="/devops/public/assets/js/28.7f747789.js"><link rel="prefetch" href="/devops/public/assets/js/29.60384c48.js"><link rel="prefetch" href="/devops/public/assets/js/3.4611f306.js"><link rel="prefetch" href="/devops/public/assets/js/30.83e2c55e.js"><link rel="prefetch" href="/devops/public/assets/js/31.26a0a48f.js"><link rel="prefetch" href="/devops/public/assets/js/32.bf77ae3a.js"><link rel="prefetch" href="/devops/public/assets/js/33.555b47ef.js"><link rel="prefetch" href="/devops/public/assets/js/34.add122aa.js"><link rel="prefetch" href="/devops/public/assets/js/35.d409bcbb.js"><link rel="prefetch" href="/devops/public/assets/js/36.3b525db7.js"><link rel="prefetch" href="/devops/public/assets/js/37.a17ecb54.js"><link rel="prefetch" href="/devops/public/assets/js/38.d5805972.js"><link rel="prefetch" href="/devops/public/assets/js/39.20df5d67.js"><link rel="prefetch" href="/devops/public/assets/js/4.fb3e0b7b.js"><link rel="prefetch" href="/devops/public/assets/js/40.df6be02c.js"><link rel="prefetch" href="/devops/public/assets/js/41.a50e87c4.js"><link rel="prefetch" href="/devops/public/assets/js/42.eded202b.js"><link rel="prefetch" href="/devops/public/assets/js/43.97b1abd9.js"><link rel="prefetch" href="/devops/public/assets/js/44.65623035.js"><link rel="prefetch" href="/devops/public/assets/js/45.c2adbc86.js"><link rel="prefetch" href="/devops/public/assets/js/46.ea612a5e.js"><link rel="prefetch" href="/devops/public/assets/js/47.4c992ec1.js"><link rel="prefetch" href="/devops/public/assets/js/48.093c17ef.js"><link rel="prefetch" href="/devops/public/assets/js/49.a3675199.js"><link rel="prefetch" href="/devops/public/assets/js/5.5d5c290f.js"><link rel="prefetch" href="/devops/public/assets/js/50.a32147f1.js"><link rel="prefetch" href="/devops/public/assets/js/51.0b270655.js"><link rel="prefetch" href="/devops/public/assets/js/52.b37d9dc6.js"><link rel="prefetch" href="/devops/public/assets/js/53.4d3fbf28.js"><link rel="prefetch" href="/devops/public/assets/js/54.f98a4582.js"><link rel="prefetch" href="/devops/public/assets/js/55.92e3007b.js"><link rel="prefetch" href="/devops/public/assets/js/56.1d77ae31.js"><link rel="prefetch" href="/devops/public/assets/js/57.b459cdd7.js"><link rel="prefetch" href="/devops/public/assets/js/58.20a9a84b.js"><link rel="prefetch" href="/devops/public/assets/js/59.ef166db8.js"><link rel="prefetch" href="/devops/public/assets/js/6.f4c8cc75.js"><link rel="prefetch" href="/devops/public/assets/js/60.c1444d95.js"><link rel="prefetch" href="/devops/public/assets/js/61.198ba6e7.js"><link rel="prefetch" href="/devops/public/assets/js/62.483bef39.js"><link rel="prefetch" href="/devops/public/assets/js/63.75807889.js"><link rel="prefetch" href="/devops/public/assets/js/64.40268277.js"><link rel="prefetch" href="/devops/public/assets/js/65.83603460.js"><link rel="prefetch" href="/devops/public/assets/js/66.9125cb5e.js"><link rel="prefetch" href="/devops/public/assets/js/67.3b57bd40.js"><link rel="prefetch" href="/devops/public/assets/js/68.7732c93d.js"><link rel="prefetch" href="/devops/public/assets/js/69.d65b3d31.js"><link rel="prefetch" href="/devops/public/assets/js/7.61b2080e.js"><link rel="prefetch" href="/devops/public/assets/js/70.615f48d0.js"><link rel="prefetch" href="/devops/public/assets/js/71.3dcd2877.js"><link rel="prefetch" href="/devops/public/assets/js/72.f91ea4a1.js"><link rel="prefetch" href="/devops/public/assets/js/73.220826f0.js"><link rel="prefetch" href="/devops/public/assets/js/74.2906dfba.js"><link rel="prefetch" href="/devops/public/assets/js/75.725b70fb.js"><link rel="prefetch" href="/devops/public/assets/js/76.c2c3ae24.js"><link rel="prefetch" href="/devops/public/assets/js/77.5cecb717.js"><link rel="prefetch" href="/devops/public/assets/js/78.77d25316.js"><link rel="prefetch" href="/devops/public/assets/js/79.a82a9d1d.js"><link rel="prefetch" href="/devops/public/assets/js/8.f197ec99.js"><link rel="prefetch" href="/devops/public/assets/js/80.bf2b919a.js"><link rel="prefetch" href="/devops/public/assets/js/81.3bb6ef41.js"><link rel="prefetch" href="/devops/public/assets/js/82.0b69c3cd.js"><link rel="prefetch" href="/devops/public/assets/js/83.15c6f6d6.js"><link rel="prefetch" href="/devops/public/assets/js/84.b4bdc22a.js"><link rel="prefetch" href="/devops/public/assets/js/85.abe6805f.js"><link rel="prefetch" href="/devops/public/assets/js/86.609cba8d.js"><link rel="prefetch" href="/devops/public/assets/js/87.8d27fecc.js"><link rel="prefetch" href="/devops/public/assets/js/88.78935da6.js"><link rel="prefetch" href="/devops/public/assets/js/89.52820bcb.js"><link rel="prefetch" href="/devops/public/assets/js/9.425bb89d.js"><link rel="prefetch" href="/devops/public/assets/js/90.672fcfe4.js"><link rel="prefetch" href="/devops/public/assets/js/91.9b0c1b4a.js"><link rel="prefetch" href="/devops/public/assets/js/92.f9d83927.js"><link rel="prefetch" href="/devops/public/assets/js/93.78289ff7.js"><link rel="prefetch" href="/devops/public/assets/js/94.e9c972d5.js"><link rel="prefetch" href="/devops/public/assets/js/95.3b97d34a.js"><link rel="prefetch" href="/devops/public/assets/js/96.5af5ac55.js"><link rel="prefetch" href="/devops/public/assets/js/97.1cae3119.js"><link rel="prefetch" href="/devops/public/assets/js/98.a981ee0f.js"><link rel="prefetch" href="/devops/public/assets/js/99.ae6dd75c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>205</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>15-nfs</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">15-nfs</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_01-nfs共享存储介绍"><a href="#_01-nfs共享存储介绍" class="header-anchor">#</a> 01，NFS共享存储介绍</h3> <p>NFS是Network File System的缩写及网络文件系统。<code>NFS</code>主要功能是通过局域网络让不同的主机系统之间可以共享文件或目录。<code>NFS</code>系统和<code>Windows</code>网络共享、网络驱动器类似, 只不过<code>windows</code>用于局域网, NFS用于企业集群架构中, 如果是大型网站, 会用到更复杂的分布式文件系统<code>FastDFS,glusterfs,HDFS</code></p> <p><strong>为什么要使用共享存储？</strong></p> <ul><li>实现多台服务器之间数据共享</li> <li>实现多台服务器之间数据一致</li></ul> <p><strong>集群没有共享存储：</strong></p> <ul><li>A用户上传图片经过负载均衡，负载均衡将上传请求调度至WEB1服务器上</li> <li>B用户访问A用户上传的图片，此时B用户被负载均衡调度至WEB2上，因为WEB2上没有这张图片，所以B用户无法看到A用户传的图片</li></ul> <p><img src="/devops/public/assets/img/1724045651350.f68563ec.png" alt="1724045651350"></p> <p><strong>集群有共享存储：</strong></p> <ul><li>A用户上传图片无论被负载均衡调度至WEB1还是WEB2, 最终数据都被写入至共享存储</li> <li>B用户访问A用户上传图片时，无论调度至WEB1还是WEB2，最终都会上共享存储访问对应的文件，这样就可以访问到资源了</li></ul> <p><img src="/devops/public/assets/img/1724045691062.19c4230f.png" alt="1724045691062"></p> <p><strong>NFS实现原理：</strong></p> <p><img src="/devops/public/assets/img/1724045714154.b34a2747.png" alt="1724045714154"></p> <blockquote><p>本地文件的操作方式:</p> <ol><li>当用户执行<code>mkdir</code>命令, 该命令会调用<code>shell</code>解释器翻译给内核</li> <li>内核解析完成后会驱动对应的硬件设备，完成相应的操作</li></ol></blockquote> <p>NFS原理:</p> <ol><li>用户进程访问NFS客户端，使用不同的函数对数据进行处理</li> <li>NFS客户端通过TCP/IP的方式传递给NFS服务端</li> <li>NFS服务端接收到请求后，会先调用portmap进程进行端口映射</li> <li>nfsd进程用于判断NFS客户端是否拥有权限连接NFS服务端</li> <li>Rpc.mount进程判断客户端是否有对应的权限进行验证</li> <li>idmap进程实现用户映射和压缩</li> <li>最后NFS服务端会将对应请求的函数转换为本地能识别的命令，传递至内核，由内核驱动硬件</li></ol> <p>注意: rpc是一个远程过程调用，那么使用nfs必须有rpc服务</p> <p>总结：NFS就是实现数据共享，实现数据一致性</p> <h3 id="_02-服务搭建"><a href="#_02-服务搭建" class="header-anchor">#</a> 02，服务搭建</h3> <p>克隆一台NFS服务器：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>NFS服务器: <span class="token number">10.0</span>.0.31  <span class="token number">172.16</span>.1.31
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果不会克隆，看系统优化的文章。</p> <p><img src="/devops/public/assets/img/1724053635920.dda5ff56.png" alt="1724053635920"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.安装NFS服务
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#yum -y install nfs-utils</span>
+
+<span class="token number">2</span>.配置NFS服务
+配置文件: /etc/exports 默认为空文件
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#vim /etc/exports</span>
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/exports</span>
+/data <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,all_squash<span class="token punctuation">)</span>
+
+注释信息:
+/data           <span class="token comment">#共享的目录</span>
+<span class="token number">172.16</span>.1.0/24   <span class="token comment"># 允许哪个网段可以挂载我</span>
+rw              <span class="token comment"># 挂载的参数 可读写</span>
+<span class="token function">sync</span>            <span class="token comment"># 同步到内核和磁盘</span>
+all_squash      <span class="token comment"># 将所有的用户压缩成虚拟用户</span>
+
+<span class="token number">3</span>.根据配置创建数据信息
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#mkdir /data</span>
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#ll -d /data</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Aug  <span class="token number">1</span> <span class="token number">10</span>:05 /data
+属主属组修改为匿名用户
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#chown nobody.nobody /data/</span>
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#ll -d /data/</span>
+drwxr-xr-x <span class="token number">2</span> nobody nobody <span class="token number">6</span> Aug  <span class="token number">1</span> <span class="token number">10</span>:05 /data/
+
+
+<span class="token number">4</span>.启动NFS服务
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#systemctl start nfs</span>
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#systemctl enable nfs</span>
+
+
+查看配置文件是否正确，和默认的参数
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#ll -d /data</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Aug  <span class="token number">1</span> <span class="token number">10</span>:05 /data
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#cat /var/lib/nfs/etab </span>
+/data   <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid<span class="token operator">=</span><span class="token number">65534</span>,anongid<span class="token operator">=</span><span class="token number">65534</span>,sec<span class="token operator">=</span>sys,rw,secure,root_squash,all_squash<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@nfs:~<span class="token punctuation">]</span><span class="token comment">#grep 65534 /etc/passwd</span>
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+
+
+
+
+<span class="token number">5</span>.测试NFS服务
+web01测试:
+因为需要依赖rpcbind协议，所以客户端都需要安装nfs-utils，里面包含了rpcbind协议
+第一步: 客户端只安装，不配置，不启动服务。
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#yum -y install nfs-utils</span>
+
+第二步: 查看服务端共享的目录
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#showmount -e 172.16.1.31</span>
+Export list <span class="token keyword">for</span> <span class="token number">172.16</span>.1.31:
+/data <span class="token number">172.16</span>.1.0/24
+
+第三步: 挂载使用
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mkdir /code</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mount -t nfs 172.16.1.31:/data /code</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#df -h</span>
+Filesystem             Size  Used Avail Use% Mounted on
+devtmpfs               459M     <span class="token number">0</span>  459M   <span class="token number">0</span>% /dev
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /dev/shm
+tmpfs                  475M   43M  432M   <span class="token number">9</span>% /run
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/mapper/klas-root   47G  <span class="token number">3</span>.8G   44G   <span class="token number">8</span>% /
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /tmp
+/dev/sda1             1014M  169M  846M  <span class="token number">17</span>% /boot
+tmpfs                   95M     <span class="token number">0</span>   95M   <span class="token number">0</span>% /run/user/0
+<span class="token number">172.16</span>.1.31:/data       47G  <span class="token number">3</span>.8G   44G   <span class="token number">8</span>% /code
+
+第四步: 测试否可以写入内容
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cd /code/</span>
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#touch a.txt</span>
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug  <span class="token number">1</span> <span class="token number">10</span>:21 a.txt
+
+第五步: 写入开机自动挂载 建议写到/etc/rc.local
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#tail -1 /etc/fstab</span>
+<span class="token number">172.16</span>.1.31:/data   /code           nfs     defaults <span class="token number">0</span> <span class="token number">0</span>
+
+测试fstab配置
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mount -a</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#df -h</span>
+Filesystem             Size  Used Avail Use% Mounted on
+devtmpfs               459M     <span class="token number">0</span>  459M   <span class="token number">0</span>% /dev
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /dev/shm
+tmpfs                  475M   43M  432M   <span class="token number">9</span>% /run
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/mapper/klas-root   47G  <span class="token number">3</span>.8G   44G   <span class="token number">8</span>% /
+tmpfs                  475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /tmp
+/dev/sda1             1014M  169M  846M  <span class="token number">17</span>% /boot
+tmpfs                   95M     <span class="token number">0</span>   95M   <span class="token number">0</span>% /run/user/0
+<span class="token number">172.16</span>.1.31:/data       47G  <span class="token number">3</span>.8G   44G   <span class="token number">8</span>% /code
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br></div></div><p>如果不希望使用<code>NFS</code>共享, 可进行卸载：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@nfs ~<span class="token punctuation">]</span><span class="token comment"># umount /nfsdir </span>
+
+<span class="token comment">#注意:卸载的时候如果提示”umount.nfs: /nfsdir: device is busy”  </span>
+<span class="token comment">#1.切换至其他目录, 然后在进行卸载。</span>
+<span class="token comment">#2.NFS Server宕机, 强制卸载umount -lf /nfsdir</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>增加安全性（不用练）：</p> <ul><li>在企业工作场景，通常情况NFS服务器共享的只是普通静态数据（图片、附件、视频），不需要执行<code>suid、exec</code>等权限，挂载的这个文件系统只能作为数据存取之用，无法执行程序，对于客户端来讲增加了安全性。例如: 很多木马篡改站点文件都是由上传入口上传的程序到存储目录。然后执行的。</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment">#通过mount -o指定挂载参数，禁止使用suid，exec，增加安全性能</span>
+<span class="token punctuation">[</span>root@nfs ~<span class="token punctuation">]</span><span class="token comment"># mount -t nfs -o nosuid,noexec,nodev 172.16.1.31:/data /mnt</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_03-挂载夯住"><a href="#_03-挂载夯住" class="header-anchor">#</a> 03，挂载夯住</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.挂载到NFS
+<span class="token number">2</span>.将NFS的内网卡关闭
+<span class="token number">3</span>.df -h夯住
+
+解决方法:
+<span class="token number">1</span>.启动NFS网卡
+<span class="token number">2</span>.强制卸载
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#umount -f /code </span>
+<span class="token number">3</span>.如果不知道挂载点，查看/proc/mounts信息
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat /proc/mounts </span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">..</span>.
+<span class="token number">172.16</span>.1.31:/data /code nfs4 rw,relatime,vers<span class="token operator">=</span><span class="token number">4.2</span>,rsize<span class="token operator">=</span><span class="token number">131072</span>,wsize<span class="token operator">=</span><span class="token number">131072</span>,namlen<span class="token operator">=</span><span class="token number">255</span>,hard,proto<span class="token operator">=</span>tcp,timeo<span class="token operator">=</span><span class="token number">600</span>,retrans<span class="token operator">=</span><span class="token number">2</span>,sec<span class="token operator">=</span>sys,clientaddr<span class="token operator">=</span><span class="token number">172.16</span>.1.7,local_lock<span class="token operator">=</span>none,addr<span class="token operator">=</span><span class="token number">172.16</span>.1.31 <span class="token number">0</span> <span class="token number">0</span>
+然后卸载:
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#umount -f /code </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>图示：</p> <p><img src="/devops/public/assets/img/1724046237164.4ab2fffa.png" alt="1724046237164"></p> <p>多业务挂载不同的目录：</p> <p><img src="/devops/public/assets/img/1724056002957.b0c993dd.png" alt="1724056002957"></p> <h3 id="_04-nfs参数-了解"><a href="#_04-nfs参数-了解" class="header-anchor">#</a> 04，NFS参数（了解）</h3> <p>执行man exports命令，然后切换到文件结尾，可以快速查看如下样例格式：</p> <table><thead><tr><th>nfs共享参数</th> <th>参数作用</th></tr></thead> <tbody><tr><td>rw*</td> <td>读写权限</td></tr> <tr><td>ro</td> <td>只读权限</td></tr> <tr><td>root_squash</td> <td>当NFS客户端以root管理员访问时，映射为NFS服务器的匿名用户(不常用)</td></tr> <tr><td>no_root_squash</td> <td>当NFS客户端以root管理员访问时，映射为NFS服务器的root管理员(不常用)</td></tr> <tr><td>all_squash</td> <td>无论NFS客户端使用什么账户访问，均映射为NFS服务器的匿名用户(常用)</td></tr> <tr><td>no_all_squash</td> <td>无论NFS客户端使用什么账户访问，都不进行压缩</td></tr> <tr><td>sync*</td> <td>同时将数据写入到内存与硬盘中，保证不丢失数据</td></tr> <tr><td>async</td> <td>优先将数据保存到内存，然后再写入硬盘；这样效率更高，但可能会丢失数据</td></tr> <tr><td>anonuid*</td> <td>配置all_squash使用,指定NFS的用户UID,必须存在系统</td></tr> <tr><td>anongid*</td> <td>配置all_squash使用,指定NFS的用户UID,必须存在系统</td></tr></tbody></table> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.rw                       <span class="token comment"># 表示读写</span>
+<span class="token number">2</span>.ro                       <span class="token comment"># 表示只读 只能看</span>
+<span class="token number">3</span>.all_squash               <span class="token comment"># 所有用户进行压缩成匿名用户</span>
+<span class="token assign-left variable">4.anonuid</span><span class="token operator">=</span><span class="token number">666</span>,anongid<span class="token operator">=</span><span class="token number">666</span>  <span class="token comment"># 指定匿名用户uid为666</span>
+<span class="token number">5</span>.sync                     <span class="token comment"># 同步写入磁盘和内存</span>
+
+
+测试ro和rw参数
+<span class="token punctuation">[</span>root@nfs-31:~<span class="token punctuation">]</span><span class="token comment">#cat /etc/exports</span>
+/data/baidu <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,all_squash<span class="token punctuation">)</span>
+/data/taobao <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>ro,sync,all_squash<span class="token punctuation">)</span>
+
+创建上面的两个文件夹：
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#mkdir /data/{baidu,taobao}</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+a.txt  baidu  taobao  xx
+
+
+重启生效
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#systemctl stop nfs</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#systemctl start nfs</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#systemctl status nfs</span>
+● nfs-server.service - NFS server and services
+   Loaded: loaded <span class="token punctuation">(</span>/usr/lib/systemd/system/nfs-server.service<span class="token punctuation">;</span> enabled<span class="token punctuation">;</span> vendor preset: disabled<span class="token punctuation">)</span>
+  Drop-In: /run/systemd/generator/nfs-server.service.d
+           └─order-with-mounts.conf
+   Active: active <span class="token punctuation">(</span>exited<span class="token punctuation">)</span>
+   
+修改目录的属主和属组：
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll /data/</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:11 a.txt
+drwxr-xr-x <span class="token number">2</span> root   root   <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 baidu
+drwxr-xr-x <span class="token number">2</span> root   root   <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 taobao
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:12 xx
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#chown -R nobody.nobody /data</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll /data/</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:11 a.txt
+drwxr-xr-x <span class="token number">2</span> nobody nobody <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 baidu
+drwxr-xr-x <span class="token number">2</span> nobody nobody <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 taobao
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:12 xx
+
+客户端挂载:
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mkdir /code/{baidu,taobao}</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ll /code/</span>
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:36 baidu
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:36 taobao
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mount -t nfs 172.16.1.31:/data/baidu /code/baidu</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mount -t nfs 172.16.1.31:/data/taobao /code/taobao</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#df -h</span>
+Filesystem                Size  Used Avail Use% Mounted on
+devtmpfs                  459M     <span class="token number">0</span>  459M   <span class="token number">0</span>% /dev
+tmpfs                     475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /dev/shm
+tmpfs                     475M  <span class="token number">6</span>.8M  468M   <span class="token number">2</span>% /run
+tmpfs                     475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/mapper/klas-root      47G  <span class="token number">3</span>.8G   44G   <span class="token number">8</span>% /
+tmpfs                     475M     <span class="token number">0</span>  475M   <span class="token number">0</span>% /tmp
+/dev/sda1                1014M  169M  846M  <span class="token number">17</span>% /boot
+tmpfs                      95M     <span class="token number">0</span>   95M   <span class="token number">0</span>% /run/user/0
+<span class="token number">172.16</span>.1.31:/data/baidu    15M  <span class="token number">1</span>.3M   14M   <span class="token number">9</span>% /code/baidu
+<span class="token number">172.16</span>.1.31:/data/taobao   15M  <span class="token number">1</span>.3M   14M   <span class="token number">9</span>% /code/taobao
+
+测试：
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#touch /code/baidu/baidu.txt</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#touch /code/taobao/taobao.txt</span>
+touch: cannot <span class="token function">touch</span> <span class="token string">'/code/taobao/taobao.txt'</span><span class="token builtin class-name">:</span> Read-only <span class="token function">file</span> system
+
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+a.txt  baidu  taobao  xx
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll /data/baidu/</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:37 baidu.txt
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll /data/taobao</span>
+total <span class="token number">0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>指定虚拟用户:
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#cat /etc/exports</span>
+/data/baidu <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,all_squash,anonuid<span class="token operator">=</span><span class="token number">666</span>,anongid<span class="token operator">=</span><span class="token number">666</span><span class="token punctuation">)</span>
+/data/taobao <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>ro,sync,all_squash<span class="token punctuation">)</span>
+
+重启生效:
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#systemctl restart nfs</span>
+
+检查配置结果:
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#cat /var/lib/nfs/etab </span>
+/data/taobao	<span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>ro,sync,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid<span class="token operator">=</span><span class="token number">65534</span>,anongid<span class="token operator">=</span><span class="token number">65534</span>,sec<span class="token operator">=</span>sys,ro,secure,root_squash,all_squash<span class="token punctuation">)</span>
+/data/baidu	<span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,wdelay,hide,nocrossmnt,secure,root_squash,all_squash,no_subtree_check,secure_locks,acl,no_pnfs,anonuid<span class="token operator">=</span><span class="token number">666</span>,anongid<span class="token operator">=</span><span class="token number">666</span>,sec<span class="token operator">=</span>sys,rw,secure,root_squash,all_squash<span class="token punctuation">)</span>
+
+查找虚拟用户id是666对应的用户名：
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#grep 666 /etc/passwd</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#groupadd -g666 www</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#useradd -u666 -g666 -M -s /sbin/nologin www</span>
+
+/data/baidu授权属主属组为www
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody  <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:11 a.txt
+drwxr-xr-x <span class="token number">2</span> nobody nobody <span class="token number">23</span> Aug <span class="token number">19</span> <span class="token number">16</span>:37 baidu
+drwxr-xr-x <span class="token number">2</span> nobody nobody  <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 taobao
+-rw-r--r-- <span class="token number">1</span> nobody nobody  <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:12 xx
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#chown www.www /data/baidu</span>
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> nobody nobody  <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:11 a.txt
+drwxr-xr-x <span class="token number">2</span> www    www    <span class="token number">23</span> Aug <span class="token number">19</span> <span class="token number">16</span>:37 baidu
+drwxr-xr-x <span class="token number">2</span> nobody nobody  <span class="token number">6</span> Aug <span class="token number">19</span> <span class="token number">16</span>:33 taobao
+-rw-r--r-- <span class="token number">1</span> nobody nobody  <span class="token number">0</span> Aug <span class="token number">19</span> <span class="token number">16</span>:12 xx
+
+NFS的配置：
+<span class="token punctuation">[</span>root@nfs-31:data<span class="token punctuation">]</span><span class="token comment">#cat /etc/exports</span>
+/data/baidu <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,all_squash,anonuid<span class="token operator">=</span><span class="token number">666</span>,anongid<span class="token operator">=</span><span class="token number">666</span><span class="token punctuation">)</span>
+/data/taobao <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>ro,sync,all_squash<span class="token punctuation">)</span>
+
+测试：
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#touch /code/baidu/baidu666.txt</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><h3 id="_05-nfs存储小结"><a href="#_05-nfs存储小结" class="header-anchor">#</a> 05，NFS存储小结</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>作用: 实现数据一致性 网络文件系统  类似共享软件
+服务端: <span class="token number">10.0</span>.0.31  nfs服务器
+客户端: <span class="token number">10.0</span>.0.7  <span class="token number">10.0</span>.0.41
+
+服务端安装部署NFS
+<span class="token number">1</span>.安装
+    yum <span class="token parameter variable">-y</span> <span class="token function">install</span> nfs-utils
+<span class="token number">2</span>.配置
+    <span class="token function">vim</span> /etc/exports
+    /data <span class="token number">172.16</span>.1.0/24<span class="token punctuation">(</span>rw,sync,all_squash,anonuid<span class="token operator">=</span><span class="token number">666</span>,anongid<span class="token operator">=</span><span class="token number">666</span><span class="token punctuation">)</span>
+<span class="token number">3</span>.创建必要的信息
+    <span class="token function">groupadd</span> <span class="token parameter variable">-g666</span> www
+    <span class="token function">useradd</span> <span class="token parameter variable">-u666</span> <span class="token parameter variable">-g666</span> <span class="token parameter variable">-M</span> <span class="token parameter variable">-s</span> /sbin/nologin www
+    <span class="token function">mkdir</span> /data
+    <span class="token function">chown</span> www.www /data
+<span class="token number">4</span>.启动服务加入开机自起
+    systemctl start nfs
+    systemctl <span class="token builtin class-name">enable</span> nfs
+
+
+客户端使用:
+<span class="token number">1</span>.安装
+    yum <span class="token parameter variable">-y</span> <span class="token function">install</span> nfs-utils
+<span class="token number">2</span>.查看共享的目录
+    showmount <span class="token parameter variable">-e</span> <span class="token number">172.16</span>.1.31
+<span class="token number">3</span>.挂载使用
+    web01: <span class="token function">mount</span> <span class="token parameter variable">-t</span> nfs <span class="token number">172.16</span>.1.31:/data /mnt
+    backup: <span class="token function">mount</span> <span class="token parameter variable">-t</span> nfs <span class="token number">172.16</span>.1.31:/data /code
+写入开机自动挂载
+    fstab
+    rc.local
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><p><img src="/devops/public/assets/img/1724057368062.c5a28e76.png" alt="1724057368062"></p> <p>1.NFS存储优点</p> <ul><li><p>NFS文件系统简单易用、方便部署、数据可靠、服务稳定、满足中小企业需求。</p></li> <li><p>NFS文件系统内存放的数据都在文件系统之上，所有数据都是能看得见。</p></li></ul> <p>2.NFS存储局限</p> <ul><li><p>存在单点故障, 如果构建高可用维护麻烦<code>web-&gt;nfs()-&gt;backup</code></p></li> <li><p>NFS数据明文, 并不对数据做任何校验。</p></li> <li><p>客户端挂载NFS服务没有密码验证, 安全性一般(内网使用)</p></li></ul> <p>3.NFS应用建议</p> <ul><li>生产场景应将静态数据尽可能往前端推, 减少后端存储压力</li> <li>必须将存储里的静态资源通过CDN缓存<code>jpg\png\mp4\avi\css\js</code></li> <li>如果没有缓存或架构本身历史遗留问题太大, 在多存储也无用</li></ul></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/28/2024, 5:01:38 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/15-nfs/nfs.html#_01-nfs共享存储介绍" class="sidebar-link reco-side-_01-nfs共享存储介绍" data-v-b57cc07c>01，NFS共享存储介绍</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/15-nfs/nfs.html#_02-服务搭建" class="sidebar-link reco-side-_02-服务搭建" data-v-b57cc07c>02，服务搭建</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/15-nfs/nfs.html#_03-挂载夯住" class="sidebar-link reco-side-_03-挂载夯住" data-v-b57cc07c>03，挂载夯住</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/15-nfs/nfs.html#_04-nfs参数-了解" class="sidebar-link reco-side-_04-nfs参数-了解" data-v-b57cc07c>04，NFS参数（了解）</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/15-nfs/nfs.html#_05-nfs存储小结" class="sidebar-link reco-side-_05-nfs存储小结" data-v-b57cc07c>05，NFS存储小结</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.4df6cfe1.js" defer></script><script src="/devops/public/assets/js/104.efe2d7e6.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/156.0c5da048.js" defer></script>
+  </body>
+</html>

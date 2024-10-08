@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git,gitlab,jenkins | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.b860455d.js" as="script"><link rel="preload" href="/devops/public/assets/js/109.23a4a0df.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/51.4e8e815f.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.c1a7ba68.js"><link rel="prefetch" href="/devops/public/assets/js/100.975423a0.js"><link rel="prefetch" href="/devops/public/assets/js/101.2195c60b.js"><link rel="prefetch" href="/devops/public/assets/js/102.86747037.js"><link rel="prefetch" href="/devops/public/assets/js/103.2cdf364a.js"><link rel="prefetch" href="/devops/public/assets/js/104.1e5517eb.js"><link rel="prefetch" href="/devops/public/assets/js/105.ddb187ed.js"><link rel="prefetch" href="/devops/public/assets/js/106.47e0aaea.js"><link rel="prefetch" href="/devops/public/assets/js/107.96cc7c34.js"><link rel="prefetch" href="/devops/public/assets/js/108.ec1603a3.js"><link rel="prefetch" href="/devops/public/assets/js/11.d5d15307.js"><link rel="prefetch" href="/devops/public/assets/js/110.79cc7011.js"><link rel="prefetch" href="/devops/public/assets/js/111.95d8763a.js"><link rel="prefetch" href="/devops/public/assets/js/112.6b4ee9d3.js"><link rel="prefetch" href="/devops/public/assets/js/113.167d7603.js"><link rel="prefetch" href="/devops/public/assets/js/114.8a0c47c9.js"><link rel="prefetch" href="/devops/public/assets/js/115.80696fba.js"><link rel="prefetch" href="/devops/public/assets/js/116.37d4a136.js"><link rel="prefetch" href="/devops/public/assets/js/117.f2d08560.js"><link rel="prefetch" href="/devops/public/assets/js/118.e2438550.js"><link rel="prefetch" href="/devops/public/assets/js/119.614808be.js"><link rel="prefetch" href="/devops/public/assets/js/12.9b3221e8.js"><link rel="prefetch" href="/devops/public/assets/js/120.4504706d.js"><link rel="prefetch" href="/devops/public/assets/js/121.817e9372.js"><link rel="prefetch" href="/devops/public/assets/js/122.ad1e3e1f.js"><link rel="prefetch" href="/devops/public/assets/js/123.5888dc5c.js"><link rel="prefetch" href="/devops/public/assets/js/124.bfbee4fe.js"><link rel="prefetch" href="/devops/public/assets/js/125.61376c8f.js"><link rel="prefetch" href="/devops/public/assets/js/126.1cf4bcea.js"><link rel="prefetch" href="/devops/public/assets/js/127.d70e5918.js"><link rel="prefetch" href="/devops/public/assets/js/128.271c9f04.js"><link rel="prefetch" href="/devops/public/assets/js/129.c2973fc3.js"><link rel="prefetch" href="/devops/public/assets/js/13.0b37ebf3.js"><link rel="prefetch" href="/devops/public/assets/js/130.d4a3675f.js"><link rel="prefetch" href="/devops/public/assets/js/131.e0c4a373.js"><link rel="prefetch" href="/devops/public/assets/js/132.709d0ab4.js"><link rel="prefetch" href="/devops/public/assets/js/133.1f904a00.js"><link rel="prefetch" href="/devops/public/assets/js/134.c838891f.js"><link rel="prefetch" href="/devops/public/assets/js/135.3081db40.js"><link rel="prefetch" href="/devops/public/assets/js/136.9f2bad42.js"><link rel="prefetch" href="/devops/public/assets/js/137.84cb95fb.js"><link rel="prefetch" href="/devops/public/assets/js/138.f6a41c62.js"><link rel="prefetch" href="/devops/public/assets/js/139.1a37b203.js"><link rel="prefetch" href="/devops/public/assets/js/14.a289ae05.js"><link rel="prefetch" href="/devops/public/assets/js/140.1f170a59.js"><link rel="prefetch" href="/devops/public/assets/js/141.f757292c.js"><link rel="prefetch" href="/devops/public/assets/js/142.2722ead4.js"><link rel="prefetch" href="/devops/public/assets/js/143.d1107264.js"><link rel="prefetch" href="/devops/public/assets/js/144.38cc3ba6.js"><link rel="prefetch" href="/devops/public/assets/js/145.a78dfe37.js"><link rel="prefetch" href="/devops/public/assets/js/146.85501357.js"><link rel="prefetch" href="/devops/public/assets/js/147.a8ac9148.js"><link rel="prefetch" href="/devops/public/assets/js/148.af1036e0.js"><link rel="prefetch" href="/devops/public/assets/js/149.da0eae33.js"><link rel="prefetch" href="/devops/public/assets/js/15.69a723cb.js"><link rel="prefetch" href="/devops/public/assets/js/150.17db1a8f.js"><link rel="prefetch" href="/devops/public/assets/js/151.d92d9d90.js"><link rel="prefetch" href="/devops/public/assets/js/152.09de591c.js"><link rel="prefetch" href="/devops/public/assets/js/153.a75d2d62.js"><link rel="prefetch" href="/devops/public/assets/js/154.2e497d08.js"><link rel="prefetch" href="/devops/public/assets/js/155.50667eef.js"><link rel="prefetch" href="/devops/public/assets/js/156.32b5bbc4.js"><link rel="prefetch" href="/devops/public/assets/js/157.a4235980.js"><link rel="prefetch" href="/devops/public/assets/js/158.38fa8c0d.js"><link rel="prefetch" href="/devops/public/assets/js/159.5048f3ef.js"><link rel="prefetch" href="/devops/public/assets/js/16.14b71284.js"><link rel="prefetch" href="/devops/public/assets/js/160.9b1aa1ad.js"><link rel="prefetch" href="/devops/public/assets/js/161.78d7fc80.js"><link rel="prefetch" href="/devops/public/assets/js/162.6ebbbaca.js"><link rel="prefetch" href="/devops/public/assets/js/163.eba1fb45.js"><link rel="prefetch" href="/devops/public/assets/js/164.ff759251.js"><link rel="prefetch" href="/devops/public/assets/js/165.d9f83b2f.js"><link rel="prefetch" href="/devops/public/assets/js/166.c3ffc7d7.js"><link rel="prefetch" href="/devops/public/assets/js/167.0f6c86e7.js"><link rel="prefetch" href="/devops/public/assets/js/168.057a2fe5.js"><link rel="prefetch" href="/devops/public/assets/js/169.a60b883d.js"><link rel="prefetch" href="/devops/public/assets/js/17.e7379d5b.js"><link rel="prefetch" href="/devops/public/assets/js/170.f7ca45b9.js"><link rel="prefetch" href="/devops/public/assets/js/171.c62f6150.js"><link rel="prefetch" href="/devops/public/assets/js/172.e0e74089.js"><link rel="prefetch" href="/devops/public/assets/js/173.f6f9532b.js"><link rel="prefetch" href="/devops/public/assets/js/174.09fe05ea.js"><link rel="prefetch" href="/devops/public/assets/js/175.7055b2f5.js"><link rel="prefetch" href="/devops/public/assets/js/176.86db0af9.js"><link rel="prefetch" href="/devops/public/assets/js/177.d5764e61.js"><link rel="prefetch" href="/devops/public/assets/js/178.8397abb7.js"><link rel="prefetch" href="/devops/public/assets/js/179.091975f5.js"><link rel="prefetch" href="/devops/public/assets/js/18.699a9299.js"><link rel="prefetch" href="/devops/public/assets/js/180.5caec85e.js"><link rel="prefetch" href="/devops/public/assets/js/181.baabf86f.js"><link rel="prefetch" href="/devops/public/assets/js/182.d20d9b0e.js"><link rel="prefetch" href="/devops/public/assets/js/183.92f510af.js"><link rel="prefetch" href="/devops/public/assets/js/184.80901d20.js"><link rel="prefetch" href="/devops/public/assets/js/185.8a126cef.js"><link rel="prefetch" href="/devops/public/assets/js/186.8023641d.js"><link rel="prefetch" href="/devops/public/assets/js/187.290590d1.js"><link rel="prefetch" href="/devops/public/assets/js/188.c0c96e93.js"><link rel="prefetch" href="/devops/public/assets/js/189.99c0da0f.js"><link rel="prefetch" href="/devops/public/assets/js/19.1a6df479.js"><link rel="prefetch" href="/devops/public/assets/js/190.2855292a.js"><link rel="prefetch" href="/devops/public/assets/js/191.09c5aa4d.js"><link rel="prefetch" href="/devops/public/assets/js/192.383a88e7.js"><link rel="prefetch" href="/devops/public/assets/js/193.a055e99f.js"><link rel="prefetch" href="/devops/public/assets/js/194.f878cf61.js"><link rel="prefetch" href="/devops/public/assets/js/195.aae8c05f.js"><link rel="prefetch" href="/devops/public/assets/js/196.2269ccd3.js"><link rel="prefetch" href="/devops/public/assets/js/197.b1bdae33.js"><link rel="prefetch" href="/devops/public/assets/js/198.45a3c23a.js"><link rel="prefetch" href="/devops/public/assets/js/199.800999d3.js"><link rel="prefetch" href="/devops/public/assets/js/20.831c2103.js"><link rel="prefetch" href="/devops/public/assets/js/200.beefc8b9.js"><link rel="prefetch" href="/devops/public/assets/js/201.c9e33ee8.js"><link rel="prefetch" href="/devops/public/assets/js/202.33aae307.js"><link rel="prefetch" href="/devops/public/assets/js/203.31c1d5b8.js"><link rel="prefetch" href="/devops/public/assets/js/204.a304312c.js"><link rel="prefetch" href="/devops/public/assets/js/205.78598cbc.js"><link rel="prefetch" href="/devops/public/assets/js/206.b74c5509.js"><link rel="prefetch" href="/devops/public/assets/js/207.10e3bda6.js"><link rel="prefetch" href="/devops/public/assets/js/208.fdc8df17.js"><link rel="prefetch" href="/devops/public/assets/js/209.ef458edb.js"><link rel="prefetch" href="/devops/public/assets/js/21.896b2318.js"><link rel="prefetch" href="/devops/public/assets/js/210.d18826bb.js"><link rel="prefetch" href="/devops/public/assets/js/211.6bd5ee80.js"><link rel="prefetch" href="/devops/public/assets/js/212.2a1fb443.js"><link rel="prefetch" href="/devops/public/assets/js/213.8064ef32.js"><link rel="prefetch" href="/devops/public/assets/js/214.1b76d4c6.js"><link rel="prefetch" href="/devops/public/assets/js/215.ec6448a0.js"><link rel="prefetch" href="/devops/public/assets/js/216.47676d5e.js"><link rel="prefetch" href="/devops/public/assets/js/217.f06612e1.js"><link rel="prefetch" href="/devops/public/assets/js/218.3f2d57d1.js"><link rel="prefetch" href="/devops/public/assets/js/219.2a1e84a5.js"><link rel="prefetch" href="/devops/public/assets/js/22.1c9f48b4.js"><link rel="prefetch" href="/devops/public/assets/js/220.b05dda04.js"><link rel="prefetch" href="/devops/public/assets/js/221.c05617f7.js"><link rel="prefetch" href="/devops/public/assets/js/222.38bcd7b5.js"><link rel="prefetch" href="/devops/public/assets/js/223.98e0f39c.js"><link rel="prefetch" href="/devops/public/assets/js/23.d2259243.js"><link rel="prefetch" href="/devops/public/assets/js/24.fd3d73aa.js"><link rel="prefetch" href="/devops/public/assets/js/25.e8624ca3.js"><link rel="prefetch" href="/devops/public/assets/js/26.3e831a5c.js"><link rel="prefetch" href="/devops/public/assets/js/27.c0eda38b.js"><link rel="prefetch" href="/devops/public/assets/js/28.73161dd2.js"><link rel="prefetch" href="/devops/public/assets/js/29.a678e0b4.js"><link rel="prefetch" href="/devops/public/assets/js/3.b9b61006.js"><link rel="prefetch" href="/devops/public/assets/js/30.33730965.js"><link rel="prefetch" href="/devops/public/assets/js/31.e37028b7.js"><link rel="prefetch" href="/devops/public/assets/js/32.6f14a758.js"><link rel="prefetch" href="/devops/public/assets/js/33.2675423b.js"><link rel="prefetch" href="/devops/public/assets/js/34.e7a723e2.js"><link rel="prefetch" href="/devops/public/assets/js/35.6c5c6754.js"><link rel="prefetch" href="/devops/public/assets/js/36.c51927b4.js"><link rel="prefetch" href="/devops/public/assets/js/37.e39361c4.js"><link rel="prefetch" href="/devops/public/assets/js/38.8d5425d9.js"><link rel="prefetch" href="/devops/public/assets/js/39.26fb82ad.js"><link rel="prefetch" href="/devops/public/assets/js/4.0acde3c4.js"><link rel="prefetch" href="/devops/public/assets/js/40.1ef8978c.js"><link rel="prefetch" href="/devops/public/assets/js/41.2d38058c.js"><link rel="prefetch" href="/devops/public/assets/js/42.5c9b7e24.js"><link rel="prefetch" href="/devops/public/assets/js/43.a47b77c7.js"><link rel="prefetch" href="/devops/public/assets/js/44.ceebae10.js"><link rel="prefetch" href="/devops/public/assets/js/45.2f29e77d.js"><link rel="prefetch" href="/devops/public/assets/js/46.e19c6f26.js"><link rel="prefetch" href="/devops/public/assets/js/47.37116780.js"><link rel="prefetch" href="/devops/public/assets/js/48.45ac8cef.js"><link rel="prefetch" href="/devops/public/assets/js/49.53bfb0ab.js"><link rel="prefetch" href="/devops/public/assets/js/5.60b255e7.js"><link rel="prefetch" href="/devops/public/assets/js/50.7ca2acde.js"><link rel="prefetch" href="/devops/public/assets/js/52.a464cb8b.js"><link rel="prefetch" href="/devops/public/assets/js/53.a24caad2.js"><link rel="prefetch" href="/devops/public/assets/js/54.9abf56a0.js"><link rel="prefetch" href="/devops/public/assets/js/55.2bc616a2.js"><link rel="prefetch" href="/devops/public/assets/js/56.8bd5277c.js"><link rel="prefetch" href="/devops/public/assets/js/57.75aac570.js"><link rel="prefetch" href="/devops/public/assets/js/58.7d590590.js"><link rel="prefetch" href="/devops/public/assets/js/59.a161243c.js"><link rel="prefetch" href="/devops/public/assets/js/6.b776c796.js"><link rel="prefetch" href="/devops/public/assets/js/60.eed205d5.js"><link rel="prefetch" href="/devops/public/assets/js/61.779a2912.js"><link rel="prefetch" href="/devops/public/assets/js/62.b260256d.js"><link rel="prefetch" href="/devops/public/assets/js/63.4e6cbbcc.js"><link rel="prefetch" href="/devops/public/assets/js/64.82e5ea01.js"><link rel="prefetch" href="/devops/public/assets/js/65.f9808fae.js"><link rel="prefetch" href="/devops/public/assets/js/66.6261b002.js"><link rel="prefetch" href="/devops/public/assets/js/67.54e17801.js"><link rel="prefetch" href="/devops/public/assets/js/68.f6574e38.js"><link rel="prefetch" href="/devops/public/assets/js/69.72c751d6.js"><link rel="prefetch" href="/devops/public/assets/js/7.e5f11abd.js"><link rel="prefetch" href="/devops/public/assets/js/70.3724f642.js"><link rel="prefetch" href="/devops/public/assets/js/71.d52edac1.js"><link rel="prefetch" href="/devops/public/assets/js/72.ee0d8a18.js"><link rel="prefetch" href="/devops/public/assets/js/73.e5252b3f.js"><link rel="prefetch" href="/devops/public/assets/js/74.2c1b05a7.js"><link rel="prefetch" href="/devops/public/assets/js/75.a06c32bd.js"><link rel="prefetch" href="/devops/public/assets/js/76.ba120557.js"><link rel="prefetch" href="/devops/public/assets/js/77.212cc06e.js"><link rel="prefetch" href="/devops/public/assets/js/78.706a08b0.js"><link rel="prefetch" href="/devops/public/assets/js/79.ae39a42e.js"><link rel="prefetch" href="/devops/public/assets/js/8.746ae051.js"><link rel="prefetch" href="/devops/public/assets/js/80.f6121b58.js"><link rel="prefetch" href="/devops/public/assets/js/81.df8551aa.js"><link rel="prefetch" href="/devops/public/assets/js/82.9881dd03.js"><link rel="prefetch" href="/devops/public/assets/js/83.16164624.js"><link rel="prefetch" href="/devops/public/assets/js/84.8ccc4c36.js"><link rel="prefetch" href="/devops/public/assets/js/85.9c5fee40.js"><link rel="prefetch" href="/devops/public/assets/js/86.8fe8b661.js"><link rel="prefetch" href="/devops/public/assets/js/87.89023952.js"><link rel="prefetch" href="/devops/public/assets/js/88.c6be5d92.js"><link rel="prefetch" href="/devops/public/assets/js/89.082d349a.js"><link rel="prefetch" href="/devops/public/assets/js/9.cdf6f757.js"><link rel="prefetch" href="/devops/public/assets/js/90.86f36474.js"><link rel="prefetch" href="/devops/public/assets/js/91.82bbebe3.js"><link rel="prefetch" href="/devops/public/assets/js/92.6e74f48a.js"><link rel="prefetch" href="/devops/public/assets/js/93.cd54b579.js"><link rel="prefetch" href="/devops/public/assets/js/94.0a726777.js"><link rel="prefetch" href="/devops/public/assets/js/95.2f1d3449.js"><link rel="prefetch" href="/devops/public/assets/js/96.f4b9aa60.js"><link rel="prefetch" href="/devops/public/assets/js/97.628f0ddf.js"><link rel="prefetch" href="/devops/public/assets/js/98.00dfd1c1.js"><link rel="prefetch" href="/devops/public/assets/js/99.23dc7f72.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>209</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>git,gitlab,jenkins</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">git,gitlab,jenkins</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h2 id="一-服务器准备"><a href="#一-服务器准备" class="header-anchor">#</a> 一. 服务器准备</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>服务器 虚拟机 纯干净的系统
+IP 主机名 配置
+<span class="token number">10.0</span>.0.201 Gitlab  <span class="token number">2</span>核4G 20G硬盘
+<span class="token number">10.0</span>.0.202 Jenkins <span class="token number">1</span>核2G 20G硬盘
+<span class="token number">10.0</span>.0.203 Nexus   <span class="token number">1</span>核2G 20G硬盘
+<span class="token number">10.0</span>.0.204 Sonar   <span class="token number">1</span>核2G 20G硬盘
+<span class="token number">10.0</span>.0.7   Web     <span class="token number">1</span>核1G 20G硬盘
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="二-git版本控制"><a href="#二-git版本控制" class="header-anchor">#</a> 二. Git版本控制</h2> <p>企业常用的git版本系统</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.SVN
+<span class="token number">2</span>.git
+
+页面版的代码仓库
+<span class="token number">1</span>.gihub 全球使用最多的代码仓库
+<span class="token number">2</span>.gitlab 全球使用最多的私有代码仓库
+<span class="token number">3</span>.gitee 码云 中国使用最多的代码仓库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="三-git使用"><a href="#三-git使用" class="header-anchor">#</a> 三. git使用</h2> <h3 id="_1-配置当前代码仓库的使用角色的信息"><a href="#_1-配置当前代码仓库的使用角色的信息" class="header-anchor">#</a> 1.配置当前代码仓库的使用角色的信息</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>git环境Kylin v10 SP3
+
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#git --version</span>
+<span class="token function">git</span> version <span class="token number">2.27</span>.0
+
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#git config --global user.name &quot;malu&quot;</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#git config --global user.email &quot;malu@mail.com&quot;</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#git config --global color.ui true</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#git config --list</span>
+<span class="token assign-left variable">user.name</span><span class="token operator">=</span>malu
+<span class="token assign-left variable">user.email</span><span class="token operator">=</span>malu@mail.com
+<span class="token assign-left variable">color.ui</span><span class="token operator">=</span>true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_2-初始化仓库"><a href="#_2-初始化仓库" class="header-anchor">#</a> 2.初始化仓库</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#mkdir git_data</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment">#cd git_data/</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git init</span>
+Initialized empty Git repository <span class="token keyword">in</span> /root/git_data/.git/
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll -a</span>
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">3</span> root root  <span class="token number">18</span> Sep <span class="token number">27</span> 09:23 <span class="token builtin class-name">.</span>
+dr-xr-x--- <span class="token number">5</span> root root <span class="token number">204</span> Sep <span class="token number">27</span> 09:23 <span class="token punctuation">..</span>
+drwxr-xr-x <span class="token number">7</span> root root <span class="token number">119</span> Sep <span class="token number">27</span> 09:23 .git
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll .git/	#  隐藏的代码仓库</span>
+total <span class="token number">12</span>
+drwxr-xr-x <span class="token number">2</span> root root   <span class="token number">6</span> Sep <span class="token number">27</span> 09:23 branches	<span class="token comment"># 分支</span>
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">92</span> Sep <span class="token number">27</span> 09:23 config	    <span class="token comment"># 配置文件</span>
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">73</span> Sep <span class="token number">27</span> 09:23 description <span class="token comment"># 描述</span>
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">23</span> Sep <span class="token number">27</span> 09:23 HEAD		<span class="token comment"># 头部</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">332</span> Sep <span class="token number">27</span> 09:23 hooks		<span class="token comment"># 勾子</span>
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">21</span> Sep <span class="token number">27</span> 09:23 info
+drwxr-xr-x <span class="token number">4</span> root root  <span class="token number">30</span> Sep <span class="token number">27</span> 09:23 objects		<span class="token comment"># 项目 代码放此目录但是不是明文的HASH</span>
+drwxr-xr-x <span class="token number">4</span> root root  <span class="token number">31</span> Sep <span class="token number">27</span> 09:23 refs
+drwxr-xr-x <span class="token number">4</span> root root  <span class="token number">31</span> Sep <span class="token number">27</span> 09:23 index	   <span class="token comment"># 缓存区</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3 id="_3-git区域名称"><a href="#_3-git区域名称" class="header-anchor">#</a> 3.git区域名称</h3> <p><img src="/devops/public/assets/img/1728309688683.b92ac7e3.png" alt="1728309688683"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>工作目录:  进入git_data目录 当前的位置称为工作目录  类似车间工人
+
+暂存区域:  临时存放代码的问题     类似质检车间 有问题可以返回,没有问题可以保存到仓库
+
+本地仓库:  存储代码的位置	   类似工厂仓库
+
+开发在工作目录写代码---&gt;提交到暂存区域----&gt;提交到本地仓库---&gt;代码才真正的被管理。每次走当前这个流程相当于虚拟机做了一个快照的动作
+
+1.txt----&gt;暂存区域---&gt;本地仓库   1.txt放到仓库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/devops/public/assets/img/image-20240927093431754.3401c08a.png" alt="image-20240927093431754"></p> <h3 id="_4-git常用命令"><a href="#_4-git常用命令" class="header-anchor">#</a> 4.git常用命令</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>git初始化命令
+<span class="token number">1</span>.git init 
+
+查看git仓库的状态
+<span class="token number">2</span>.git status 
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git status</span>
+On branch master
+No commits yet
+nothing to commit <span class="token punctuation">(</span>create/copy files and use <span class="token string">&quot;git add&quot;</span> to track<span class="token punctuation">)</span>
+
+将文件保存到本地仓库的流程
+<span class="token number">1</span>.创建文件
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#touch a.txt</span>
+<span class="token number">2</span>.提交到暂存区
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add a.txt</span>
+<span class="token number">3</span>.将暂存区的内容提交到本地仓库
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;newfile a.txt&quot;</span>
+<span class="token punctuation">[</span>master <span class="token punctuation">(</span>root-commit<span class="token punctuation">)</span> 914acbb<span class="token punctuation">]</span> newfile a.txt
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> a.txt
+提交完成后检查工作状态必须是完全干净的。
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git status</span>
+On branch master
+nothing to commit, working tree clean
+
+注意: 只要执行一次 commit 就相当于做了一个快照
+
+
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#touch b.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add b.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;newfile b.txt&quot;</span>
+<span class="token punctuation">[</span>master ee852fc<span class="token punctuation">]</span> newfile b.txt
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> b.txt
+
+
+
+git删除文件使用 <span class="token function">git</span> <span class="token function">rm</span> <span class="token parameter variable">-f</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git rm -f a.txt</span>
+<span class="token function">rm</span> <span class="token string">'a.txt'</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;delete a.txt file&quot;</span>
+<span class="token punctuation">[</span>master 474fec8<span class="token punctuation">]</span> delete a.txt <span class="token function">file</span>
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ delete mode <span class="token number">100644</span> a.txt
+
+如果不小心误删除了工作目录的文件可以恢复
+git恢复工作目录的文件
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#touch a.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+a.txt  b.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;newfile a.txt 2&quot;</span>
+<span class="token punctuation">[</span>master 2fc64ff<span class="token punctuation">]</span> newfile a.txt <span class="token number">2</span>
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> a.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+a.txt  b.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#rm -f a.txt </span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+b.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git restore a.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ls</span>
+a.txt  b.txt
+
+
+git修改文件
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#echo aaaa &gt;&gt; b.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;modifiled b.txt &gt;&gt;aaaa&quot;</span>
+<span class="token punctuation">[</span>master 21ed94f<span class="token punctuation">]</span> modifiled b.txt <span class="token operator">&gt;&gt;</span>aaaa
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">1</span> insertion<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
+
+
+查看历史提交日志
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git log --oneline</span>
+21ed94f <span class="token punctuation">(</span>HEAD -<span class="token operator">&gt;</span> master<span class="token punctuation">)</span> modifiled b.txt <span class="token operator">&gt;&gt;</span>aaaa
+474fec8 delete a.txt <span class="token function">file</span>
+ee852fc newfile b.txt
+914acbb newfile a.txt
+
+git比对
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#echo bbbbb &gt;&gt; b.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git diff b.txt</span>
+<span class="token function">diff</span> <span class="token parameter variable">--git</span> a/b.txt b/b.txt
+index 5d308e1<span class="token punctuation">..</span>76dfd6c <span class="token number">100644</span>
+--- a/b.txt
++++ b/b.txt
+@@ <span class="token parameter variable">-1</span> +1,2 @@
+ aaaa
++bbbbb
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git diff b.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git diff --cached  b.txt</span>
+<span class="token function">diff</span> <span class="token parameter variable">--git</span> a/b.txt b/b.txt
+index 5d308e1<span class="token punctuation">..</span>76dfd6c <span class="token number">100644</span>
+--- a/b.txt
++++ b/b.txt
+@@ <span class="token parameter variable">-1</span> +1,2 @@
+ aaaa
++bbbbb
+
+<span class="token comment"># git diff 比对的工作目录和暂存区的不同</span>
+<span class="token comment"># git diff --cached 比对的是暂存区和本地仓库的不同</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br></div></div><p><img src="/devops/public/assets/img/image-20240927100835341.91e6bfa7.png" alt="image-20240927100835341"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>版本回滚
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git log --oneline</span>
+21ed94f <span class="token punctuation">(</span>HEAD -<span class="token operator">&gt;</span> master<span class="token punctuation">)</span> modifiled b.txt <span class="token operator">&gt;&gt;</span>aaaa
+474fec8 delete a.txt <span class="token function">file</span>
+ee852fc newfile b.txt
+914acbb newfile a.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat b.txt </span>
+aaaa
+bbbbb
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git reset --hard 914acbb</span>
+HEAD is now at 914acbb newfile a.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">10</span>:11 a.txt
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><img src="/devops/public/assets/img/1728309779937.febc4038.png" alt="1728309779937"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>版本返回到最新的位置
+<span class="token comment">#reflog 查看所有的历史提交</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git reflog</span>
+914acbb <span class="token punctuation">(</span>HEAD -<span class="token operator">&gt;</span> master<span class="token punctuation">)</span> HEAD@<span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span>: reset: moving to 914acbb
+21ed94f HEAD@<span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span>: commit: modifiled b.txt <span class="token operator">&gt;&gt;</span>aaaa
+474fec8 HEAD@<span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span>: commit: delete a.txt <span class="token function">file</span>
+ee852fc HEAD@<span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span>: commit: newfile b.txt
+914acbb <span class="token punctuation">(</span>HEAD -<span class="token operator">&gt;</span> master<span class="token punctuation">)</span> HEAD@<span class="token punctuation">{</span><span class="token number">4</span><span class="token punctuation">}</span>: commit <span class="token punctuation">(</span>initial<span class="token punctuation">)</span>: newfile a.txt
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment"># git reset --hard 21ed94f</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>git分支</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>查看分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+* master
+
+创建分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch dev</span>
+
+查看当前所在
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+  dev
+* master
+
+切换到dev分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git checkout dev</span>
+Switched to branch <span class="token string">'dev'</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+* dev
+  master
+创建新的功能c.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat b.txt </span>
+aaaa
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#touch c.txt</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;newfile c.txt&quot;</span>
+<span class="token punctuation">[</span>dev 11a662d<span class="token punctuation">]</span> newfile c.txt
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> c.txt
+
+
+切换到master分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git checkout master</span>
+Switched to branch <span class="token string">'master'</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">5</span> Sep <span class="token number">27</span> <span class="token number">10</span>:16 b.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+  dev
+* master
+
+
+将dev中的代码合并到master分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git merge dev</span>
+Updating 21ed94f<span class="token punctuation">..</span>11a662d
+Fast-forward
+ c.txt <span class="token operator">|</span> <span class="token number">0</span>
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">0</span> insertions<span class="token punctuation">(</span>+<span class="token punctuation">)</span>, <span class="token number">0</span> deletions<span class="token punctuation">(</span>-<span class="token punctuation">)</span>
+ create mode <span class="token number">100644</span> c.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">5</span> Sep <span class="token number">27</span> <span class="token number">10</span>:16 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">10</span>:32 c.txt
+
+合并后删除dev分支
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch </span>
+  dev
+* master
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch -d dev</span>
+Deleted branch dev <span class="token punctuation">(</span>was 11a662d<span class="token punctuation">)</span>.
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+* master
+
+
+冲突合并
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br></div></div><p><img src="/devops/public/assets/img/image-20240927103900450.032ab5f5.png" alt="image-20240927103900450"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>主分支执行命令
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">8</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">5</span> Sep <span class="token number">27</span> <span class="token number">10</span>:16 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">5</span> Sep <span class="token number">27</span> <span class="token number">10</span>:36 c.txt
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat c.txt </span>
+aaaa
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch dev</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+  dev
+* master
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#echo bbbb &gt;&gt; c.txt </span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;modifle c.txt bbbb&quot;</span>
+<span class="token punctuation">[</span>master a4cfbbb<span class="token punctuation">]</span> modifle c.txt bbbb
+ <span class="token number">1</span> <span class="token function">file</span> changed, <span class="token number">1</span> insertion<span class="token punctuation">(</span>+<span class="token punctuation">)</span>
+当前为止 master c.txt 里面有 aaaa和bbbb两行
+当前为止 dev    c.txt 里面只有aaaa
+
+切换到dev分支操作
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git checkout dev</span>
+Switched to branch <span class="token string">'dev'</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+* dev
+  master
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat c.txt </span>
+aaaa
+
+修改第二行为cccc 
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#echo cccc &gt;&gt; c.txt </span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;modifl c.txt cccc&quot;</span>
+当前为止 master c.txt 里面有 aaaa和bbbb两行
+当前为止 dev    c.txt 里面只有aaaa和cccc两行
+
+切换到master分支进行合并
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git checkout master</span>
+Switched to branch <span class="token string">'master'</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git branch</span>
+  dev
+* master
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat c.txt </span>
+aaaa
+bbbb
+
+合并代码dev 提示代码冲突
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git merge dev</span>
+Auto-merging c.txt
+CONFLICT <span class="token punctuation">(</span>content<span class="token punctuation">)</span>: Merge conflict <span class="token keyword">in</span> c.txt
+Automatic merge failed<span class="token punctuation">;</span> fix conflicts and <span class="token keyword">then</span> commit the result.
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat c.txt </span>
+aaaa
+<span class="token operator">&lt;&lt;&lt;</span><span class="token operator">&lt;&lt;&lt;</span><span class="token operator">&lt;</span> HEAD
+bbbb
+<span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+cccc
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> dev
+
+手动vim解决冲突合并 留下想要的代码
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#cat c.txt </span>
+aaaa
+bbbb
+cccc
+然后再进行提交的动作
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;merge dev code&quot;</span>
+<span class="token punctuation">[</span>master 053f679<span class="token punctuation">]</span> merge dev code
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br></div></div><p>git标签</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>标签也是指向了一次commit提交，是一个里程碑式的标签，回滚打标签直接加标签号，不需要加唯一字符串不好记
+标签即为版本号
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git log --oneline</span>
+053f679 <span class="token punctuation">(</span>HEAD -<span class="token operator">&gt;</span> master<span class="token punctuation">)</span> merge dev code
+<span class="token number">3697460</span> <span class="token punctuation">(</span>dev<span class="token punctuation">)</span> modifl c.txt cccc
+a4cfbbb modifle c.txt bbbb
+53a96f8 modifl c.txt aaa
+11a662d newfile c.txt
+21ed94f modifiled b.txt <span class="token operator">&gt;&gt;</span>aaaa
+474fec8 delete a.txt <span class="token function">file</span>
+ee852fc newfile b.txt
+914acbb newfile a.txt
+
+给最早的一个hahs值打tag
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag -a v1.0 914acbb -m &quot;v1.0稳定版本&quot;</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag</span>
+v1.0
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag -a v1.2 053f679 -m &quot;v1.2&quot;</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag</span>
+v1.0
+v1.1
+v1.2
+
+查看tag的详细信息
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git show v1.0</span>
+tag v1.0
+Tagger: malu <span class="token operator">&lt;</span>malu@mail.com<span class="token operator">&gt;</span>
+Date:   Fri Sep <span class="token number">27</span> <span class="token number">10</span>:47:52 <span class="token number">2024</span> +0800
+
+v1.0稳定版本
+
+commit 914acbb4546483d961d84e30bb18ae56f34d5797 <span class="token punctuation">(</span>tag: v1.0<span class="token punctuation">)</span>
+Author: malu <span class="token operator">&lt;</span>malu@mail.com<span class="token operator">&gt;</span>
+Date:   Fri Sep <span class="token number">27</span> 09:51:49 <span class="token number">2024</span> +0800
+
+    newfile a.txt
+
+通过tag版本回滚代码
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git reset --hard v1.0</span>
+HEAD is now at 914acbb newfile a.txt
+
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git reset --hard v1.2</span>
+HEAD is now at 053f679 merge dev code
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">8</span>
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">5</span> Sep <span class="token number">27</span> <span class="token number">10</span>:50 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">15</span> Sep <span class="token number">27</span> <span class="token number">10</span>:50 c.txt
+
+删除标签
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag -d v1.1</span>
+Deleted tag <span class="token string">'v1.1'</span> <span class="token punctuation">(</span>was <span class="token number">3627509</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@malu:git_data<span class="token punctuation">]</span><span class="token comment">#git tag</span>
+v1.0
+v1.2
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br></div></div><h2 id="四-gitlab"><a href="#四-gitlab" class="header-anchor">#</a> 四. gitlab</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>GitLab 是一个用于仓库管理系统的开源项目。使用Git作为代码管理工具，并在此基础上搭建起来的web服务。可
+通过Web界面进行访问公开的或者私人项目。它拥有与Github类似的功能，能够浏览源代码，管理缺陷和注释。可
+以管理团队对仓库的访问，它非常易于浏览提交过的版本并提供一个文件历史库。团队成员可以利用内置的简单聊
+天程序<span class="token punctuation">(</span>Wall<span class="token punctuation">)</span>进行交流。它还提供一个代码片段收集功能可以轻松实现代码复用。
+常用的网站：
+官网：https://about.gitlab.com/
+国内镜像：https://mirrors.tuna.tsinghua.edu.cn/gitlab‐ce/yum/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="_1-ubt安装gitlab"><a href="#_1-ubt安装gitlab" class="header-anchor">#</a> 1.ubt安装gitlab</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>安装环境：
+<span class="token number">1</span>、 ubuntu22.04
+<span class="token number">2</span>、 4G内存（实验）生产（至少6G）
+<span class="token number">3</span>、 安装包：gitlab-ce_16.5.2-ce.0_amd64
+<span class="token number">4</span>、 禁用防火墙，关闭selinux
+    <span class="token function">sudo</span> ufw disable
+    
+    
+
+<span class="token comment"># yum仓库更新</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> update
+<span class="token comment">#安装仓库依赖</span>
+<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">curl</span> openssh-server ca-certificates tzdata perl
+<span class="token comment">#通过curl到的bash脚本然后交给bash执行</span>
+<span class="token function">curl</span> <span class="token parameter variable">-L</span> get.gitlab.cn <span class="token operator">|</span> <span class="token function">bash</span>
+
+切换到root用户：
+<span class="token function">sudo</span> <span class="token function">passwd</span> root
+<span class="token function">su</span> root
+
+安装gitlab
+root@ubuntu:~<span class="token comment"># EXTERNAL_URL=&quot;http://10.0.0.201&quot; apt-get install -y gitlab-jh</span>
+
+root@ubuntu:~<span class="token comment"># gitlab-ctl status	# 查看gitlab状态</span>
+root@ubuntu:~<span class="token comment"># gitlab-ctl stop		# 停止gitlab服务</span>
+root@ubuntu:~<span class="token comment"># gitlab-ctl start     # 启动gitlab服务</span>
+
+
+安装完成后访问10.0.0.201
+默认用户: root
+临时密码的问题
+<span class="token function">cat</span> /etc/gitlab/initial_root_password
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p><img src="/devops/public/assets/img/image-20240927144955233.9178ec53.png" alt="image-20240927144955233"></p> <h3 id="_2-修改语言为中文"><a href="#_2-修改语言为中文" class="header-anchor">#</a> 2.修改语言为中文</h3> <p><img src="/devops/public/assets/img/image-20240927145212700.5923a0c7.png" alt="image-20240927145212700"></p> <p><img src="/devops/public/assets/img/image-20240927145352659.62bdf159.png" alt="image-20240927145352659"></p> <p>修改密码</p> <p><img src="/devops/public/assets/img/image-20240927150850824.be615a70.png" alt="image-20240927150850824"></p> <h3 id="_3-创建新的项目"><a href="#_3-创建新的项目" class="header-anchor">#</a> 3.创建新的项目</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>第一种方式: 空的代码仓库,在gitlab创建代码仓库，然后拉取到本地服务器
+第二种方式: 已经存在的代码仓库，需要配置远程仓库，然后将本地仓库中的代码推送到远程服务器
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>第一种方式:</p> <p><img src="/devops/public/assets/img/image-20240927150224808.f45e3d9c.png" alt="image-20240927150224808"></p> <p><img src="/devops/public/assets/img/1728358750513.f7d092f4.png" alt="1728358750513"></p> <p><img src="/devops/public/assets/img/1728358766112.c0f18b92.png" alt="1728358766112"></p> <p><img src="/devops/public/assets/img/1728358808715.21a29b0d.png" alt="1728358808715"></p> <p>其他选项默认，直接创建组</p> <p><img src="/devops/public/assets/img/1728358828479.0c318f08.png" alt="1728358828479"></p> <p>创建仓库</p> <p><img src="/devops/public/assets/img/1728358857109.cf232ab2.png" alt="1728358857109"></p> <p><img src="/devops/public/assets/img/1728358877764.42b9e9cd.png" alt="1728358877764"></p> <p><img src="/devops/public/assets/img/1728358908386.0c471012.png" alt="1728358908386"></p> <p><img src="/devops/public/assets/img/1728358950727.8621a3bd.png" alt="1728358950727"></p> <h3 id="_4-打通系统和gitlabroot账号的ssh免秘钥"><a href="#_4-打通系统和gitlabroot账号的ssh免秘钥" class="header-anchor">#</a> 4.打通系统和gitlabroot账号的SSH免秘钥</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.ubt生成秘钥对
+root@ubuntu:~<span class="token comment"># ssh-keygen</span>
+
+<span class="token number">2</span>.将公钥复制到gitlab的root账号下
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><img src="/devops/public/assets/img/1728359427617.1118242b.png" alt="1728359427617"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>命令行将空的仓库下载到本地
+root@ubuntu:~<span class="token comment"># git clone git@10.0.0.201:malu/game.git</span>
+root@ubuntu:~<span class="token comment"># ll</span>
+total <span class="token number">1055528</span>
+drwxr-xr-x <span class="token number">3</span> root root       <span class="token number">4096</span> Sep <span class="token number">27</span> <span class="token number">15</span>:13 game
+root@ubuntu:~<span class="token comment"># cd game/</span>
+root@ubuntu:~/game<span class="token comment"># ll</span>
+total <span class="token number">8</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">6148</span> Sep <span class="token number">27</span> <span class="token number">15</span>:13 README.md
+<span class="token comment"># 配置使用人是谁</span>
+root@ubuntu:~/game<span class="token comment"># git config --global user.email &quot;wc@example.com&quot;</span>
+root@ubuntu:~/game<span class="token comment"># git config --global user.name &quot;wc&quot;</span>
+root@ubuntu:~/game<span class="token comment"># rm -rf README.md </span>
+
+<span class="token comment">#创建新的文件提交到本地仓库</span>
+root@ubuntu:~/game<span class="token comment"># touch game.txt</span>
+root@ubuntu:~/game<span class="token comment"># git add .</span>
+root@ubuntu:~/game<span class="token comment"># git commit -m &quot;nwfile file game.txt&quot;</span>
+
+<span class="token comment"># 查看远程仓库的名称</span>
+root@ubuntu:~/game<span class="token comment"># git remote</span>
+origin
+<span class="token comment"># 查看远程仓库的详细地址</span>
+root@ubuntu:~/game<span class="token comment"># git remote -v</span>
+origin	git@10.0.0.201:malu/game.git <span class="token punctuation">(</span>fetch<span class="token punctuation">)</span>
+origin	git@10.0.0.201:malu/game.git <span class="token punctuation">(</span>push<span class="token punctuation">)</span>
+
+
+<span class="token comment">#将本地仓库的代码提交到远程仓库</span>
+root@ubuntu:~/game<span class="token comment"># git push -u origin main</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p>第二种代码上传流程</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>代码已经存在本地
+<span class="token number">1</span>.本地仓库已经初始化
+<span class="token number">2</span>.本地代码已经存在
+root@ubuntu:~/git_data<span class="token comment"># git init</span>
+root@ubuntu:~/git_data<span class="token comment"># ll</span>
+total <span class="token number">0</span>
+root@ubuntu:~/git_data<span class="token comment"># ll</span>
+total <span class="token number">0</span>
+root@ubuntu:~/git_data<span class="token comment"># touch {a..c}.txt</span>
+root@ubuntu:~/git_data<span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 a.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 c.txt
+root@ubuntu:~/git_data<span class="token comment"># git add .</span>
+root@ubuntu:~/git_data<span class="token comment"># git commit -m &quot;newfilexxx&quot;</span>
+root@ubuntu:~/git_data<span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 a.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:37 c.txt
+
+
+
+
+<span class="token number">5</span>.将本地仓库的代码提交到远程仓库
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p>3.gitlab页面上创建仓库</p> <p><img src="/devops/public/assets/img/1728360050174.4e499256.png" alt="1728360050174"></p> <p>4.本地仓库配置远程仓库的地址</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>查看默认的远程仓库
+root@ubuntu:~/git_data<span class="token comment"># git remote</span>
+root@ubuntu:~/git_data<span class="token comment"># git remote -v</span>
+
+配置远程仓库名称为origin
+root@ubuntu:~/git_data<span class="token comment"># git remote add origin git@10.0.0.201:malu/test.git</span>
+root@ubuntu:~/git_data<span class="token comment"># git remote -v</span>
+origin	git@10.0.0.201:malu/test.git <span class="token punctuation">(</span>fetch<span class="token punctuation">)</span>
+origin	git@10.0.0.201:malu/test.git <span class="token punctuation">(</span>push<span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>5.推送代码到远程test仓库</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># 把本地的master分支推送到远程的master分支，远程没有，会自动创建master分支</span>
+malu@malu:~/git_data$ <span class="token function">git</span> push origin master
+
+root@ubuntu:~/git_data<span class="token comment"># git branch -m master main</span>
+root@ubuntu:~/git_data<span class="token comment"># git branch</span>
+* main
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>由于main分支是受保护的，默认是推不上去的，设置一下：</p> <p><img src="/devops/public/assets/img/1728361642999.3c2b7e77.png" alt="1728361642999"></p> <h3 id="_5-推送game游戏代码到远程的game项目中"><a href="#_5-推送game游戏代码到远程的game项目中" class="header-anchor">#</a> 5.推送game游戏代码到远程的game项目中</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>root@ubuntu:~/game<span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Sep <span class="token number">27</span> <span class="token number">15</span>:14 game.txt
+root@ubuntu:~/game<span class="token comment"># git rm -f game.txt</span>
+<span class="token function">rm</span> <span class="token string">'game.txt'</span>
+root@ubuntu:~/game<span class="token comment"># git add .</span>
+root@ubuntu:~/game<span class="token comment"># git commit -m &quot;delete game.txt&quot;</span>
+
+
+root@ubuntu:~/game<span class="token comment"># ll</span>
+total <span class="token number">7708</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">7892256</span> Sep <span class="token number">27</span> <span class="token number">15</span>:59 xbw.zip
+root@ubuntu:~/game<span class="token comment"># unzip xbw.zip</span>
+root@ubuntu:~/game<span class="token comment"># ll</span>
+total <span class="token number">60</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">28032</span> May <span class="token number">24</span>  <span class="token number">2021</span> bgm.mp3
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">4096</span> May <span class="token number">24</span>  <span class="token number">2021</span> css
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">4096</span> May <span class="token number">24</span>  <span class="token number">2021</span> images
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">8956</span> May <span class="token number">24</span>  <span class="token number">2021</span> index.html
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">4096</span> May <span class="token number">24</span>  <span class="token number">2021</span> js
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">4096</span> May <span class="token number">24</span>  <span class="token number">2021</span> roms
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">811</span> May <span class="token number">24</span>  <span class="token number">2021</span> shuoming.html
+root@ubuntu:~/game<span class="token comment"># git add .</span>
+root@ubuntu:~/game<span class="token comment"># git commit -m &quot;xbw code&quot;</span>
+
+将本地仓库的游戏代码提交到远程仓库
+root@ubuntu:~/game<span class="token comment"># git push -u origin main</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><img src="/devops/public/assets/img/1728372253204.e496ee7b.png" alt="1728372253204"></p> <h3 id="_6-创建普通用户dev"><a href="#_6-创建普通用户dev" class="header-anchor">#</a> 6.创建普通用户dev</h3> <p><img src="/devops/public/assets/img/image-20240927160254257.58128399.png" alt="image-20240927160254257"></p> <p><img src="/devops/public/assets/img/image-20240927160316258.dc7043a4.png" alt="image-20240927160316258"></p> <p><img src="/devops/public/assets/img/image-20240927160346373.1694928c.png" alt="image-20240927160346373"></p> <p><img src="/devops/public/assets/img/image-20240927160411832.af6bd4c5.png" alt="image-20240927160411832"></p> <p>使用普通账号登录gitlab 默认里面空的</p> <p><img src="/devops/public/assets/img/image-20240927160617769.71d934c3.png" alt="image-20240927160617769"></p> <p>将dev账号添加到malu组中，dev用户拥有game项目的权限。</p> <p><img src="/devops/public/assets/img/1728373138957.3254b8c8.png" alt="1728373138957"></p> <p>开发下载代码到本地服务器</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>dev开发使用的服务器10.0.0.31
+<span class="token number">1</span>.开发需要再自己的linux系统中生成秘钥对
+<span class="token punctuation">[</span>root@dev:~<span class="token punctuation">]</span><span class="token comment">#ssh-keygen </span>
+<span class="token number">2</span>.将公钥复制到gitlab的 dev账号中
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="/devops/public/assets/img/image-20240927161338907.01284150.png" alt="image-20240927161338907"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">3</span>.下载游戏代码到本地
+<span class="token punctuation">[</span>root@dev:~<span class="token punctuation">]</span><span class="token comment">#git clone git@10.0.0.201:malu/game.git</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_7-开发上传代码的流程"><a href="#_7-开发上传代码的流程" class="header-anchor">#</a> 7.开发上传代码的流程</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>配置使用人信息
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git config --global user.email &quot;dev@example.com&quot;</span>
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git config --global user.name &quot;dev&quot;</span>
+
+<span class="token number">1</span>.写代码
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#vim index.html </span>
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git add .</span>
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git commit -m &quot;魂斗&quot;</span>
+
+<span class="token number">2</span>.提交到远程仓库
+默认不允许提交到master主干分支，需要先创建子分支，然后提交子分支,在发起代码合并请求master
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git branch dev</span>
+<span class="token punctuation">[</span>root@dev:game<span class="token punctuation">]</span><span class="token comment">#git push -u origin dev</span>
+
+<span class="token number">3</span>.发起代码合并请求
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><img src="/devops/public/assets/img/1728373725381.21fcab9e.png" alt="1728373725381"></p> <p><img src="/devops/public/assets/img/1728373715280.6321c85f.png" alt="1728373715280"></p> <p><img src="/devops/public/assets/img/1728373762460.8690d1c8.png" alt="1728373762460"></p> <p>到root账号合并代码</p> <p><img src="/devops/public/assets/img/1728373823767.285a9022.png" alt="1728373823767"></p> <p><img src="/devops/public/assets/img/1728373843141.b76b6638.png" alt="1728373843141"></p> <p><img src="/devops/public/assets/img/1728373864089.531cf779.png" alt="1728373864089"></p> <p><img src="/devops/public/assets/img/1728373884425.c0d396d8.png" alt="1728373884425"></p> <h2 id="五-jenkins"><a href="#五-jenkins" class="header-anchor">#</a> 五. Jenkins</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>官网 jenkins.io
+Jenkins是一个开源软件项目，是基于Java开发的一种持续集成工具，用于监控持续重复的工作，旨在提供一个开
+放易用的软件平台，使软件的持续集成变成可能。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="_1-安装jenkins"><a href="#_1-安装jenkins" class="header-anchor">#</a> 1.安装jenkins</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Kylin系统 <span class="token number">10.0</span>.0.202  <span class="token number">2</span>核4G内存
+
+安装JDK运行环境
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#rpm -ivh jdk-17_linux-x64_bin.rpm</span>
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#java -version</span>
+<span class="token function">java</span> version <span class="token string">&quot;17.0.11&quot;</span> <span class="token number">2024</span>-04-16 LTS
+
+使用rpm安装jenkins
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#rpm -ivh jenkins-2.405-1.1.noarch.rpm</span>
+启动jenkins
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#systemctl start jenkins</span>
+修改启动用户为root默认使用jenkins运行。
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#grep root /usr/lib/systemd/system/jenkins.service</span>
+<span class="token assign-left variable">User</span><span class="token operator">=</span>root
+<span class="token assign-left variable">Group</span><span class="token operator">=</span>root
+重新加载配置文件
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#systemctl daemon-reload</span>
+修改配置文件中的启动用户
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#grep root /etc/sysconfig/jenkins</span>
+<span class="token assign-left variable">JENKINS_USER</span><span class="token operator">=</span><span class="token string">&quot;root&quot;</span>
+
+配置jenkins的插件
+将jenkins_plu.tar.gz压缩包上传到/var/lib/jenkins/plugins
+<span class="token punctuation">[</span>root@jenkins:plugins<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">306796</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">314156543</span> Sep <span class="token number">27</span> <span class="token number">17</span>:16 jenkins_plu.tar.gz
+<span class="token punctuation">[</span>root@jenkins:plugins<span class="token punctuation">]</span><span class="token comment">#tar xf jenkins_plu.tar.gz </span>
+
+重启jenkins生效
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#systemctl restart jenkins</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>打开浏览器通过页面安装步骤</p> <p>10.0.0.202:8080</p> <p><img src="/devops/public/assets/img/image-20240927173121044.b12f94a8.png" alt="image-20240927173121044"></p> <p><img src="/devops/public/assets/img/image-20240927173252254.b2d4923c.png" alt="image-20240927173252254"></p> <p><img src="/devops/public/assets/img/image-20240927173305262.78dd80c4.png" alt="image-20240927173305262"></p> <p>修改jenkins的登录密码</p> <p><img src="/devops/public/assets/img/image-20240927173334550.48eb6c63.png" alt="image-20240927173334550"></p> <p><img src="/devops/public/assets/img/image-20240927173403671.78200ddb.png" alt="image-20240927173403671"></p> <h3 id="_2-手动的将gitlab中的代码运行到web服务器"><a href="#_2-手动的将gitlab中的代码运行到web服务器" class="header-anchor">#</a> 2.手动的将gitlab中的代码运行到web服务器</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat wordpress.conf </span>
+server <span class="token punctuation">{</span>
+	listen <span class="token number">80</span><span class="token punctuation">;</span>
+	server_name _<span class="token punctuation">;</span>
+
+	location / <span class="token punctuation">{</span>
+	root /code<span class="token punctuation">;</span>
+	index index.html<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+systemc	renginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+
+
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#mkdir /code/</span>
+进入到code下载game项目代码
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#git clone http://10.0.0.201/malu/game.git</span>
+Cloning into <span class="token string">'game'</span><span class="token punctuation">..</span>.
+Username <span class="token keyword">for</span> <span class="token string">'http://10.0.0.201'</span><span class="token builtin class-name">:</span> root
+Password <span class="token keyword">for</span> <span class="token string">'http://root@10.0.0.201'</span><span class="token builtin class-name">:</span> malu123.com
+
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#mv game/* .</span>
+<span class="token punctuation">[</span>root@web01:code<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">48</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">28032</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 bgm.mp3
+drwxr-xr-x <span class="token number">2</span> root root    <span class="token number">23</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 css
+drwxr-xr-x <span class="token number">3</span> root root    <span class="token number">18</span> Sep <span class="token number">27</span> <span class="token number">17</span>:40 game
+drwxr-xr-x <span class="token number">2</span> root root    <span class="token number">23</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 images
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">8954</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 index.html
+drwxr-xr-x <span class="token number">2</span> root root   <span class="token number">213</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 js
+drwxr-xr-x <span class="token number">2</span> root root  <span class="token number">4096</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 roms
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">811</span> Sep <span class="token number">27</span> <span class="token number">17</span>:39 shuoming.html
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><p>访问：</p> <p><img src="/devops/public/assets/img/1728377275051.2f09c867.png" alt="1728377275051"></p> <h3 id="_3-继续让dev开发新的功能"><a href="#_3-继续让dev开发新的功能" class="header-anchor">#</a> 3.继续让dev开发新的功能</h3> <p><img src="/devops/public/assets/img/1728378873160.19ccf986.png" alt="1728378873160"></p> <p><img src="/devops/public/assets/img/1728378721711.7791e5a8.png" alt="1728378721711"></p> <p>生成版本，推到远程仓库：</p> <p><img src="/devops/public/assets/img/1728378967063.884392b0.png" alt="1728378967063"></p> <p>查看：</p> <p><img src="/devops/public/assets/img/1728379008277.4b49ede0.png" alt="1728379008277"></p> <p>请求合并：</p> <p><img src="/devops/public/assets/img/1728379032122.6f632a32.png" alt="1728379032122"></p> <p><img src="/devops/public/assets/img/1728379053679.e5b3ce39.png" alt="1728379053679"></p> <p>管理员这一端开始合并：</p> <p><img src="/devops/public/assets/img/1728379101043.1679d7a1.png" alt="1728379101043"></p> <p>查看：</p> <p><img src="/devops/public/assets/img/1728379140877.edadb16f.png" alt="1728379140877"></p> <p>在生产的机器上，直接更新代码：</p> <p><img src="/devops/public/assets/img/1728379326234.d01d97bc.png" alt="1728379326234"></p> <p>查看：</p> <p><img src="/devops/public/assets/img/1728379352460.34096516.png" alt="1728379352460"></p> <h3 id="_4-jnekins默认执行的shell路径"><a href="#_4-jnekins默认执行的shell路径" class="header-anchor">#</a> 4.Jnekins默认执行的Shell路径</h3> <p>插件管理：</p> <p><img src="/devops/public/assets/img/1728379488864.97709093.png" alt="1728379488864"></p> <p>插件源：</p> <p>https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json</p> <p><img src="/devops/public/assets/img/1728379689296.42d96d09.png" alt="1728379689296"></p> <p>创建一个项目：</p> <p><img src="/devops/public/assets/img/1728366865773.60c6573c.png" alt="1728366865773"></p> <p>java项目中选择构建一个mave项目，如果是php，python...等项目，选择构建一个自由风格的软件项目。项目描述，写hehe，丢弃旧的构建，保持构建的天数：5。  保持构建的最大个数：5。</p> <p><img src="/devops/public/assets/img/1728379881947.b093eb06.png" alt="1728379881947"></p> <p>执行pwd命令查看默认的路径</p> <p><img src="/devops/public/assets/img/1728367076643.b51b48f4.png" alt="1728367076643"></p> <p><img src="/devops/public/assets/img/1728380041035.0d3ef3c7.png" alt="1728380041035"></p> <p><img src="/devops/public/assets/img/1728380114547.71505ec9.png" alt="1728380114547"></p> <p><img src="/devops/public/assets/img/1728380162382.5c201123.png" alt="1728380162382"></p> <p>我们去gitlab上拉取代码，把代码拉取到/var/lib/jenkins/workspace/game_job目录下面。</p> <h3 id="_5-jenkins拉取gitlab的代码"><a href="#_5-jenkins拉取gitlab的代码" class="header-anchor">#</a> 5.jenkins拉取gitlab的代码</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#git clone git@10.0.0.201:malu/game.git</span>
+<span class="token comment"># 手动输入yes</span>
+
+<span class="token number">1</span>.jenkins生成秘钥对
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#ssh-keygen</span>
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#cat .ssh/id_rsa.pub</span>
+
+<span class="token number">2</span>.将公钥复制到gitlab的root账号中
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/devops/public/assets/img/1728367395634.0572a739.png" alt="1728367395634"></p> <p>配置jenkins拉取game</p> <p><img src="/devops/public/assets/img/1728367507046.08c14d9a.png" alt="1728367507046"></p> <p>完成后执行构建，立即构建。</p> <p><img src="/devops/public/assets/img/1728380728230.0e9c0d5c.png" alt="1728380728230"></p> <p><img src="/devops/public/assets/img/1728380784572.1c47d49d.png" alt="1728380784572"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>查看拉取后的代码
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#cd  /var/lib/jenkins/workspace/game_job/</span>
+<span class="token punctuation">[</span>root@jenkins:game_job<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">48</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">28032</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21  bgm.mp3
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">23</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21 css
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">23</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21  images
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">8954</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21  index.html
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">213</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21 js
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">4096</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21 roms
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">811</span> Sep <span class="token number">28</span> <span class="token number">10</span>:21  shuoming.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>将代码推送到web服务器</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>jenkins推送公钥到web服务器
+<span class="token punctuation">[</span>root@jenkins:~<span class="token punctuation">]</span><span class="token comment">#ssh-copy-id 10.0.0.7</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="/devops/public/assets/img/1728381215531.e5c3d3f1.png" alt="1728381215531"></p> <p>删除生产机器mycode下面的代码：</p> <p><img src="/devops/public/assets/img/1728381267168.a7c08158.png" alt="1728381267168"></p> <p>再去点击立即构建：</p> <p><img src="/devops/public/assets/img/1728381326243.6ea17445.png" alt="1728381326243"></p> <p>看一下生产的机器上有没有代码：</p> <p><img src="/devops/public/assets/img/1728381350851.308dbd02.png" alt="1728381350851"></p> <h3 id="_6-让dev开发新的功能"><a href="#_6-让dev开发新的功能" class="header-anchor">#</a> 6. 让dev开发新的功能</h3> <p>dev开发新的功能：</p> <p><img src="/devops/public/assets/img/1728381422224.bd78d324.png" alt="1728381422224"></p> <p><img src="/devops/public/assets/img/1728381472718.b37661d4.png" alt="1728381472718"></p> <p>请求合并：</p> <p><img src="/devops/public/assets/img/1728381532160.d7d42c3c.png" alt="1728381532160"></p> <p><img src="/devops/public/assets/img/1728381553226.6b6caac2.png" alt="1728381553226"></p> <p>管理员合并：</p> <p><img src="/devops/public/assets/img/1728381603834.6e21a334.png" alt="1728381603834"></p> <p>合并后，点击立即构建：</p> <p><img src="/devops/public/assets/img/1728381647323.66256c94.png" alt="1728381647323"></p> <p>查看：</p> <p><img src="/devops/public/assets/img/1728381670180.6a4ee29c.png" alt="1728381670180"></p> <h3 id="_7-配置自动触发webhook勾子"><a href="#_7-配置自动触发webhook勾子" class="header-anchor">#</a> 7. 配置自动触发webhook勾子</h3> <p><img src="/devops/public/assets/img/1728382131948.80df1540.png" alt="1728382131948"></p> <p><img src="/devops/public/assets/img/1728382162125.864983ff.png" alt="1728382162125"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>93ee40d04f62ae194dc70e0c5d2d47a3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>gitlab页面配置勾子</p> <p><img src="/devops/public/assets/img/1728382240140.72101405.png" alt="1728382240140"></p> <p><img src="/devops/public/assets/img/1728382275336.c6a05d00.png" alt="1728382275336"></p> <p><img src="/devops/public/assets/img/1728384114522.43e36b1f.png" alt="1728384114522"></p> <p><img src="/devops/public/assets/img/1728384084607.980c45c2.png" alt="1728384084607"></p> <p>测试：</p> <p><img src="/devops/public/assets/img/1728383141595.cee5764d.png" alt="1728383141595"></p> <p><img src="/devops/public/assets/img/1728383180750.640480d4.png" alt="1728383180750"></p> <p>请求合并：</p> <p><img src="/devops/public/assets/img/1728383246272.349a2137.png" alt="1728383246272"></p> <p><img src="/devops/public/assets/img/1728383260134.e94ea1a5.png" alt="1728383260134"></p> <p>管理员合并：</p> <p><img src="/devops/public/assets/img/1728383299685.fbaacb4d.png" alt="1728383299685"></p> <p><img src="/devops/public/assets/img/1728383412378.703d3be7.png" alt="1728383412378"></p> <p><img src="/devops/public/assets/img/1728383439009.80fd2108.png" alt="1728383439009"></p> <p><img src="/devops/public/assets/img/1728383487605.5a34e590.png" alt="1728383487605"></p> <p>测试：</p> <p><img src="/devops/public/assets/img/1728383636341.c8a493fb.png" alt="1728383636341"></p> <h2 id="六-sonarqube代码扫描"><a href="#六-sonarqube代码扫描" class="header-anchor">#</a> 六，SonarQube代码扫描</h2> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>jenkins将代码拉取到jenkins本地，先将代码推送到sonar服务器上代码扫描检测,检测漏洞 逻辑 坏味道。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#一-服务器准备" class="sidebar-link reco-side-一-服务器准备" data-v-b57cc07c>一. 服务器准备</a></li><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#二-git版本控制" class="sidebar-link reco-side-二-git版本控制" data-v-b57cc07c>二. Git版本控制</a></li><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#三-git使用" class="sidebar-link reco-side-三-git使用" data-v-b57cc07c>三. git使用</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_1-配置当前代码仓库的使用角色的信息" class="sidebar-link reco-side-_1-配置当前代码仓库的使用角色的信息" data-v-b57cc07c>1.配置当前代码仓库的使用角色的信息</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_2-初始化仓库" class="sidebar-link reco-side-_2-初始化仓库" data-v-b57cc07c>2.初始化仓库</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_3-git区域名称" class="sidebar-link reco-side-_3-git区域名称" data-v-b57cc07c>3.git区域名称</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_4-git常用命令" class="sidebar-link reco-side-_4-git常用命令" data-v-b57cc07c>4.git常用命令</a></li><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#四-gitlab" class="sidebar-link reco-side-四-gitlab" data-v-b57cc07c>四. gitlab</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_1-ubt安装gitlab" class="sidebar-link reco-side-_1-ubt安装gitlab" data-v-b57cc07c>1.ubt安装gitlab</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_2-修改语言为中文" class="sidebar-link reco-side-_2-修改语言为中文" data-v-b57cc07c>2.修改语言为中文</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_3-创建新的项目" class="sidebar-link reco-side-_3-创建新的项目" data-v-b57cc07c>3.创建新的项目</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_4-打通系统和gitlabroot账号的ssh免秘钥" class="sidebar-link reco-side-_4-打通系统和gitlabroot账号的ssh免秘钥" data-v-b57cc07c>4.打通系统和gitlabroot账号的SSH免秘钥</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_5-推送game游戏代码到远程的game项目中" class="sidebar-link reco-side-_5-推送game游戏代码到远程的game项目中" data-v-b57cc07c>5.推送game游戏代码到远程的game项目中</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_6-创建普通用户dev" class="sidebar-link reco-side-_6-创建普通用户dev" data-v-b57cc07c>6.创建普通用户dev</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_7-开发上传代码的流程" class="sidebar-link reco-side-_7-开发上传代码的流程" data-v-b57cc07c>7.开发上传代码的流程</a></li><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#五-jenkins" class="sidebar-link reco-side-五-jenkins" data-v-b57cc07c>五. Jenkins</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_1-安装jenkins" class="sidebar-link reco-side-_1-安装jenkins" data-v-b57cc07c>1.安装jenkins</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_2-手动的将gitlab中的代码运行到web服务器" class="sidebar-link reco-side-_2-手动的将gitlab中的代码运行到web服务器" data-v-b57cc07c>2.手动的将gitlab中的代码运行到web服务器</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_3-继续让dev开发新的功能" class="sidebar-link reco-side-_3-继续让dev开发新的功能" data-v-b57cc07c>3.继续让dev开发新的功能</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_4-jnekins默认执行的shell路径" class="sidebar-link reco-side-_4-jnekins默认执行的shell路径" data-v-b57cc07c>4.Jnekins默认执行的Shell路径</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_5-jenkins拉取gitlab的代码" class="sidebar-link reco-side-_5-jenkins拉取gitlab的代码" data-v-b57cc07c>5.jenkins拉取gitlab的代码</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_6-让dev开发新的功能" class="sidebar-link reco-side-_6-让dev开发新的功能" data-v-b57cc07c>6. 让dev开发新的功能</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#_7-配置自动触发webhook勾子" class="sidebar-link reco-side-_7-配置自动触发webhook勾子" data-v-b57cc07c>7. 配置自动触发webhook勾子</a></li><li class="level-2" data-v-b57cc07c><a href="/devops/public/blogs/devops/42-git%E5%92%8Cgitlib/git%E5%92%8Cgitlib.html#六-sonarqube代码扫描" class="sidebar-link reco-side-六-sonarqube代码扫描" data-v-b57cc07c>六，SonarQube代码扫描</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.b860455d.js" defer></script><script src="/devops/public/assets/js/109.23a4a0df.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/51.4e8e815f.js" defer></script>
+  </body>
+</html>

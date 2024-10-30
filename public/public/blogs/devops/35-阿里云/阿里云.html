@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>35-阿里云 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.86aff7dd.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.82199a69.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/16.4e3fe668.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.45391833.js"><link rel="prefetch" href="/devops/public/assets/js/100.cf8565ef.js"><link rel="prefetch" href="/devops/public/assets/js/101.8a4bacc6.js"><link rel="prefetch" href="/devops/public/assets/js/102.695543b8.js"><link rel="prefetch" href="/devops/public/assets/js/103.4f6122ca.js"><link rel="prefetch" href="/devops/public/assets/js/104.f41d384f.js"><link rel="prefetch" href="/devops/public/assets/js/105.5ac3284a.js"><link rel="prefetch" href="/devops/public/assets/js/106.17b2a7aa.js"><link rel="prefetch" href="/devops/public/assets/js/107.65c7a01c.js"><link rel="prefetch" href="/devops/public/assets/js/108.58b9bfd7.js"><link rel="prefetch" href="/devops/public/assets/js/109.db00d83f.js"><link rel="prefetch" href="/devops/public/assets/js/11.d0fc4f3f.js"><link rel="prefetch" href="/devops/public/assets/js/110.778a0069.js"><link rel="prefetch" href="/devops/public/assets/js/111.f363cf54.js"><link rel="prefetch" href="/devops/public/assets/js/112.3d4eec93.js"><link rel="prefetch" href="/devops/public/assets/js/114.c1908e94.js"><link rel="prefetch" href="/devops/public/assets/js/115.7b0b3e1d.js"><link rel="prefetch" href="/devops/public/assets/js/116.f4329d97.js"><link rel="prefetch" href="/devops/public/assets/js/117.6458fba7.js"><link rel="prefetch" href="/devops/public/assets/js/118.3c5eb28f.js"><link rel="prefetch" href="/devops/public/assets/js/119.3e43d492.js"><link rel="prefetch" href="/devops/public/assets/js/12.cf024d8c.js"><link rel="prefetch" href="/devops/public/assets/js/120.8edb8b37.js"><link rel="prefetch" href="/devops/public/assets/js/121.f1daf9cc.js"><link rel="prefetch" href="/devops/public/assets/js/122.1392990a.js"><link rel="prefetch" href="/devops/public/assets/js/123.594ef8b6.js"><link rel="prefetch" href="/devops/public/assets/js/124.78c7f925.js"><link rel="prefetch" href="/devops/public/assets/js/125.f23a2b2b.js"><link rel="prefetch" href="/devops/public/assets/js/126.066eb994.js"><link rel="prefetch" href="/devops/public/assets/js/127.01cb7847.js"><link rel="prefetch" href="/devops/public/assets/js/128.116cbd62.js"><link rel="prefetch" href="/devops/public/assets/js/129.1a30f99b.js"><link rel="prefetch" href="/devops/public/assets/js/13.1cfd6ba0.js"><link rel="prefetch" href="/devops/public/assets/js/130.db61a817.js"><link rel="prefetch" href="/devops/public/assets/js/131.c0729626.js"><link rel="prefetch" href="/devops/public/assets/js/132.826244ba.js"><link rel="prefetch" href="/devops/public/assets/js/133.011935ba.js"><link rel="prefetch" href="/devops/public/assets/js/134.cae3440a.js"><link rel="prefetch" href="/devops/public/assets/js/135.8a9a72a0.js"><link rel="prefetch" href="/devops/public/assets/js/136.c90ca54a.js"><link rel="prefetch" href="/devops/public/assets/js/137.8edfe481.js"><link rel="prefetch" href="/devops/public/assets/js/138.7d289872.js"><link rel="prefetch" href="/devops/public/assets/js/139.e5c30af7.js"><link rel="prefetch" href="/devops/public/assets/js/14.ad6057c0.js"><link rel="prefetch" href="/devops/public/assets/js/140.3cc72f4a.js"><link rel="prefetch" href="/devops/public/assets/js/141.4d70c207.js"><link rel="prefetch" href="/devops/public/assets/js/142.419bceb5.js"><link rel="prefetch" href="/devops/public/assets/js/143.5f8c26d1.js"><link rel="prefetch" href="/devops/public/assets/js/144.ee0e1be3.js"><link rel="prefetch" href="/devops/public/assets/js/145.2da55411.js"><link rel="prefetch" href="/devops/public/assets/js/146.ca8f7d0d.js"><link rel="prefetch" href="/devops/public/assets/js/147.9a6d5129.js"><link rel="prefetch" href="/devops/public/assets/js/148.a67dd46d.js"><link rel="prefetch" href="/devops/public/assets/js/149.e9a00072.js"><link rel="prefetch" href="/devops/public/assets/js/15.def2b642.js"><link rel="prefetch" href="/devops/public/assets/js/150.e64d2e0b.js"><link rel="prefetch" href="/devops/public/assets/js/151.106515de.js"><link rel="prefetch" href="/devops/public/assets/js/152.463ac6d0.js"><link rel="prefetch" href="/devops/public/assets/js/153.bbcaf173.js"><link rel="prefetch" href="/devops/public/assets/js/154.26f53ef4.js"><link rel="prefetch" href="/devops/public/assets/js/155.ae34734c.js"><link rel="prefetch" href="/devops/public/assets/js/156.488b1538.js"><link rel="prefetch" href="/devops/public/assets/js/157.3ded7356.js"><link rel="prefetch" href="/devops/public/assets/js/158.0f2c4349.js"><link rel="prefetch" href="/devops/public/assets/js/159.6a95e903.js"><link rel="prefetch" href="/devops/public/assets/js/160.c678d160.js"><link rel="prefetch" href="/devops/public/assets/js/161.c79b746a.js"><link rel="prefetch" href="/devops/public/assets/js/162.5d709ff0.js"><link rel="prefetch" href="/devops/public/assets/js/163.1d2fe855.js"><link rel="prefetch" href="/devops/public/assets/js/164.3231157a.js"><link rel="prefetch" href="/devops/public/assets/js/165.e046b30a.js"><link rel="prefetch" href="/devops/public/assets/js/166.3876c921.js"><link rel="prefetch" href="/devops/public/assets/js/167.70e67254.js"><link rel="prefetch" href="/devops/public/assets/js/168.0d3f8e47.js"><link rel="prefetch" href="/devops/public/assets/js/169.46997b70.js"><link rel="prefetch" href="/devops/public/assets/js/17.04d821f9.js"><link rel="prefetch" href="/devops/public/assets/js/170.f43d5156.js"><link rel="prefetch" href="/devops/public/assets/js/171.635faa90.js"><link rel="prefetch" href="/devops/public/assets/js/172.2cac5c3f.js"><link rel="prefetch" href="/devops/public/assets/js/173.e3737b26.js"><link rel="prefetch" href="/devops/public/assets/js/174.50717dc0.js"><link rel="prefetch" href="/devops/public/assets/js/175.4b24eee6.js"><link rel="prefetch" href="/devops/public/assets/js/176.417cffbe.js"><link rel="prefetch" href="/devops/public/assets/js/177.2ee307c4.js"><link rel="prefetch" href="/devops/public/assets/js/178.9041245f.js"><link rel="prefetch" href="/devops/public/assets/js/179.41fcbbcb.js"><link rel="prefetch" href="/devops/public/assets/js/18.b576cb51.js"><link rel="prefetch" href="/devops/public/assets/js/180.c53d3905.js"><link rel="prefetch" href="/devops/public/assets/js/181.308dc969.js"><link rel="prefetch" href="/devops/public/assets/js/182.808e8c47.js"><link rel="prefetch" href="/devops/public/assets/js/183.32a8f52b.js"><link rel="prefetch" href="/devops/public/assets/js/184.0c29c558.js"><link rel="prefetch" href="/devops/public/assets/js/185.71ab7938.js"><link rel="prefetch" href="/devops/public/assets/js/186.9194d03c.js"><link rel="prefetch" href="/devops/public/assets/js/187.4c760ea1.js"><link rel="prefetch" href="/devops/public/assets/js/188.aa344b05.js"><link rel="prefetch" href="/devops/public/assets/js/189.82519a42.js"><link rel="prefetch" href="/devops/public/assets/js/19.c45b1ba4.js"><link rel="prefetch" href="/devops/public/assets/js/190.01e4ff16.js"><link rel="prefetch" href="/devops/public/assets/js/191.6b3692d7.js"><link rel="prefetch" href="/devops/public/assets/js/192.1d4f0133.js"><link rel="prefetch" href="/devops/public/assets/js/193.f970d2a7.js"><link rel="prefetch" href="/devops/public/assets/js/194.db5a2d70.js"><link rel="prefetch" href="/devops/public/assets/js/195.a5e1255a.js"><link rel="prefetch" href="/devops/public/assets/js/196.fbe3bf8e.js"><link rel="prefetch" href="/devops/public/assets/js/197.7987b641.js"><link rel="prefetch" href="/devops/public/assets/js/198.dc16d883.js"><link rel="prefetch" href="/devops/public/assets/js/199.c1449578.js"><link rel="prefetch" href="/devops/public/assets/js/20.6b80775e.js"><link rel="prefetch" href="/devops/public/assets/js/200.8e8146d1.js"><link rel="prefetch" href="/devops/public/assets/js/201.41f1e415.js"><link rel="prefetch" href="/devops/public/assets/js/202.22aa46cf.js"><link rel="prefetch" href="/devops/public/assets/js/203.1365c4fe.js"><link rel="prefetch" href="/devops/public/assets/js/204.dcd590e2.js"><link rel="prefetch" href="/devops/public/assets/js/205.4dffec8d.js"><link rel="prefetch" href="/devops/public/assets/js/206.6f102810.js"><link rel="prefetch" href="/devops/public/assets/js/207.ff9fa0ae.js"><link rel="prefetch" href="/devops/public/assets/js/208.31cd3e7f.js"><link rel="prefetch" href="/devops/public/assets/js/209.9674efe2.js"><link rel="prefetch" href="/devops/public/assets/js/21.c7a1735f.js"><link rel="prefetch" href="/devops/public/assets/js/210.d6ffa4eb.js"><link rel="prefetch" href="/devops/public/assets/js/211.78964744.js"><link rel="prefetch" href="/devops/public/assets/js/212.633341d7.js"><link rel="prefetch" href="/devops/public/assets/js/213.9d85b1b9.js"><link rel="prefetch" href="/devops/public/assets/js/214.853e1f5e.js"><link rel="prefetch" href="/devops/public/assets/js/215.250acf5d.js"><link rel="prefetch" href="/devops/public/assets/js/216.dd502fd2.js"><link rel="prefetch" href="/devops/public/assets/js/217.27d20f63.js"><link rel="prefetch" href="/devops/public/assets/js/218.c2a56486.js"><link rel="prefetch" href="/devops/public/assets/js/219.c7b62c1f.js"><link rel="prefetch" href="/devops/public/assets/js/22.278b9a12.js"><link rel="prefetch" href="/devops/public/assets/js/220.c5b76849.js"><link rel="prefetch" href="/devops/public/assets/js/221.ca896923.js"><link rel="prefetch" href="/devops/public/assets/js/222.19f1703d.js"><link rel="prefetch" href="/devops/public/assets/js/223.956f2b67.js"><link rel="prefetch" href="/devops/public/assets/js/224.304537c5.js"><link rel="prefetch" href="/devops/public/assets/js/225.a13aebd0.js"><link rel="prefetch" href="/devops/public/assets/js/226.a3636db6.js"><link rel="prefetch" href="/devops/public/assets/js/227.542bf1cb.js"><link rel="prefetch" href="/devops/public/assets/js/228.18831269.js"><link rel="prefetch" href="/devops/public/assets/js/229.bb0aa3b6.js"><link rel="prefetch" href="/devops/public/assets/js/23.fa037677.js"><link rel="prefetch" href="/devops/public/assets/js/230.9e51c7a1.js"><link rel="prefetch" href="/devops/public/assets/js/231.60a84287.js"><link rel="prefetch" href="/devops/public/assets/js/232.98f9d224.js"><link rel="prefetch" href="/devops/public/assets/js/233.62237c81.js"><link rel="prefetch" href="/devops/public/assets/js/234.42c84a1a.js"><link rel="prefetch" href="/devops/public/assets/js/235.0e093e12.js"><link rel="prefetch" href="/devops/public/assets/js/236.5e78345f.js"><link rel="prefetch" href="/devops/public/assets/js/237.2acb7e77.js"><link rel="prefetch" href="/devops/public/assets/js/238.b1c416d0.js"><link rel="prefetch" href="/devops/public/assets/js/239.792174fd.js"><link rel="prefetch" href="/devops/public/assets/js/24.019dd9a9.js"><link rel="prefetch" href="/devops/public/assets/js/240.7609d279.js"><link rel="prefetch" href="/devops/public/assets/js/241.1d4c5fde.js"><link rel="prefetch" href="/devops/public/assets/js/242.d5b98f64.js"><link rel="prefetch" href="/devops/public/assets/js/243.cdbcb67d.js"><link rel="prefetch" href="/devops/public/assets/js/244.61e8cec8.js"><link rel="prefetch" href="/devops/public/assets/js/245.f40f95f7.js"><link rel="prefetch" href="/devops/public/assets/js/246.6454b808.js"><link rel="prefetch" href="/devops/public/assets/js/247.84e98eb2.js"><link rel="prefetch" href="/devops/public/assets/js/248.caec6070.js"><link rel="prefetch" href="/devops/public/assets/js/249.6f1e6b70.js"><link rel="prefetch" href="/devops/public/assets/js/25.7cc76123.js"><link rel="prefetch" href="/devops/public/assets/js/250.9af75980.js"><link rel="prefetch" href="/devops/public/assets/js/251.4e6ab307.js"><link rel="prefetch" href="/devops/public/assets/js/252.67136418.js"><link rel="prefetch" href="/devops/public/assets/js/253.80320e88.js"><link rel="prefetch" href="/devops/public/assets/js/254.3c4b0161.js"><link rel="prefetch" href="/devops/public/assets/js/255.ac6987fc.js"><link rel="prefetch" href="/devops/public/assets/js/256.d77ba4b3.js"><link rel="prefetch" href="/devops/public/assets/js/26.9f0fdf72.js"><link rel="prefetch" href="/devops/public/assets/js/27.461b9804.js"><link rel="prefetch" href="/devops/public/assets/js/28.0c9b09d1.js"><link rel="prefetch" href="/devops/public/assets/js/29.8253373e.js"><link rel="prefetch" href="/devops/public/assets/js/3.f68b281f.js"><link rel="prefetch" href="/devops/public/assets/js/30.5e9428db.js"><link rel="prefetch" href="/devops/public/assets/js/31.4d87ce5a.js"><link rel="prefetch" href="/devops/public/assets/js/32.cb8db418.js"><link rel="prefetch" href="/devops/public/assets/js/33.29150823.js"><link rel="prefetch" href="/devops/public/assets/js/34.fd093637.js"><link rel="prefetch" href="/devops/public/assets/js/35.876b592e.js"><link rel="prefetch" href="/devops/public/assets/js/36.6b75fa19.js"><link rel="prefetch" href="/devops/public/assets/js/37.d1219eb5.js"><link rel="prefetch" href="/devops/public/assets/js/38.f0d71203.js"><link rel="prefetch" href="/devops/public/assets/js/39.b311c04c.js"><link rel="prefetch" href="/devops/public/assets/js/4.048f10c6.js"><link rel="prefetch" href="/devops/public/assets/js/40.8bf0f75a.js"><link rel="prefetch" href="/devops/public/assets/js/41.840cff26.js"><link rel="prefetch" href="/devops/public/assets/js/42.6e4f90d9.js"><link rel="prefetch" href="/devops/public/assets/js/43.1e0d8706.js"><link rel="prefetch" href="/devops/public/assets/js/44.b1bbc659.js"><link rel="prefetch" href="/devops/public/assets/js/45.df88b117.js"><link rel="prefetch" href="/devops/public/assets/js/46.5968145e.js"><link rel="prefetch" href="/devops/public/assets/js/47.932a22cc.js"><link rel="prefetch" href="/devops/public/assets/js/48.0f8a1a35.js"><link rel="prefetch" href="/devops/public/assets/js/49.ba790a81.js"><link rel="prefetch" href="/devops/public/assets/js/5.46e7e081.js"><link rel="prefetch" href="/devops/public/assets/js/50.27c91206.js"><link rel="prefetch" href="/devops/public/assets/js/51.c590048d.js"><link rel="prefetch" href="/devops/public/assets/js/52.484d1686.js"><link rel="prefetch" href="/devops/public/assets/js/53.68f806da.js"><link rel="prefetch" href="/devops/public/assets/js/54.075e1350.js"><link rel="prefetch" href="/devops/public/assets/js/55.f4dc2d0d.js"><link rel="prefetch" href="/devops/public/assets/js/56.4efd5cc6.js"><link rel="prefetch" href="/devops/public/assets/js/57.300d08f0.js"><link rel="prefetch" href="/devops/public/assets/js/58.67c8c486.js"><link rel="prefetch" href="/devops/public/assets/js/59.f8fa932f.js"><link rel="prefetch" href="/devops/public/assets/js/6.563dcc3b.js"><link rel="prefetch" href="/devops/public/assets/js/60.8eb6cb80.js"><link rel="prefetch" href="/devops/public/assets/js/61.78f56324.js"><link rel="prefetch" href="/devops/public/assets/js/62.0ffc75ed.js"><link rel="prefetch" href="/devops/public/assets/js/63.26c9992c.js"><link rel="prefetch" href="/devops/public/assets/js/64.7e083b2c.js"><link rel="prefetch" href="/devops/public/assets/js/65.bb611593.js"><link rel="prefetch" href="/devops/public/assets/js/66.9a5b44b4.js"><link rel="prefetch" href="/devops/public/assets/js/67.fa29edfb.js"><link rel="prefetch" href="/devops/public/assets/js/68.70146672.js"><link rel="prefetch" href="/devops/public/assets/js/69.c3ee37b7.js"><link rel="prefetch" href="/devops/public/assets/js/7.651b7833.js"><link rel="prefetch" href="/devops/public/assets/js/70.7bc778c1.js"><link rel="prefetch" href="/devops/public/assets/js/71.9e6c1527.js"><link rel="prefetch" href="/devops/public/assets/js/72.70a6fcc6.js"><link rel="prefetch" href="/devops/public/assets/js/73.b78cef61.js"><link rel="prefetch" href="/devops/public/assets/js/74.08400541.js"><link rel="prefetch" href="/devops/public/assets/js/75.277c6c1c.js"><link rel="prefetch" href="/devops/public/assets/js/76.3f6f041f.js"><link rel="prefetch" href="/devops/public/assets/js/77.081a5ad0.js"><link rel="prefetch" href="/devops/public/assets/js/78.f20a423c.js"><link rel="prefetch" href="/devops/public/assets/js/79.24ed7e81.js"><link rel="prefetch" href="/devops/public/assets/js/8.82c44eeb.js"><link rel="prefetch" href="/devops/public/assets/js/80.e7f805d4.js"><link rel="prefetch" href="/devops/public/assets/js/81.288855e0.js"><link rel="prefetch" href="/devops/public/assets/js/82.35431725.js"><link rel="prefetch" href="/devops/public/assets/js/83.07f4244b.js"><link rel="prefetch" href="/devops/public/assets/js/84.37bc90de.js"><link rel="prefetch" href="/devops/public/assets/js/85.d251bba5.js"><link rel="prefetch" href="/devops/public/assets/js/86.1cb1dad4.js"><link rel="prefetch" href="/devops/public/assets/js/87.34d29dc8.js"><link rel="prefetch" href="/devops/public/assets/js/88.dfb8b260.js"><link rel="prefetch" href="/devops/public/assets/js/89.b74e28db.js"><link rel="prefetch" href="/devops/public/assets/js/9.b7a182ac.js"><link rel="prefetch" href="/devops/public/assets/js/90.373528ee.js"><link rel="prefetch" href="/devops/public/assets/js/91.bc21f840.js"><link rel="prefetch" href="/devops/public/assets/js/92.921870be.js"><link rel="prefetch" href="/devops/public/assets/js/93.d111d771.js"><link rel="prefetch" href="/devops/public/assets/js/94.f0686e6d.js"><link rel="prefetch" href="/devops/public/assets/js/95.7aec6766.js"><link rel="prefetch" href="/devops/public/assets/js/96.2cb3040c.js"><link rel="prefetch" href="/devops/public/assets/js/97.cb8eb073.js"><link rel="prefetch" href="/devops/public/assets/js/98.a5c65365.js"><link rel="prefetch" href="/devops/public/assets/js/99.b1c9961e.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>232</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>35-阿里云</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">35-阿里云</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-云计算基本介绍"><a href="#_1-云计算基本介绍" class="header-anchor">#</a> 1，云计算基本介绍</h3> <p><img src="/devops/public/assets/img/1725874049721.0af9f143.png" alt="1725874049721"></p> <p>什么是云：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>把代码部署到服务器上有如下的选择：
+- 自建机房IDC：公司服务器比较多的
+	- 服务器  5W/台
+	- 要求比较高<span class="token punctuation">..</span>. 
+	- 维护人员，监控<span class="token punctuation">..</span>.
+- 托管IDC：
+    - 按照机柜收费  <span class="token assign-left variable">U</span><span class="token operator">=</span><span class="token number">4</span>.45CM
+    - 出房租，出电费，出网费
+-云服务器
+    - <span class="token number">1</span>小时大概几毛钱
+    - 1G也是几毛钱
+
+
+
+<span class="token number">1.1</span><span class="token punctuation">)</span> 什么是云？
+云是一种”按需付费的模式“，这种模式提供了（计算、存储、网络等资源），这些资源能够被快速提供。
+    <span class="token number">1</span>.包年包月<span class="token punctuation">;</span>
+    <span class="token number">2</span>.按需付费<span class="token punctuation">;</span> SIM流量一样<span class="token punctuation">;</span> 用多少给多少钱<span class="token punctuation">;</span>
+
+云只是一种思想,并不是某种具体的技术<span class="token punctuation">;</span>
+云需要依托于 虚拟化技术才可以实现<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>云的分类：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1.2</span><span class="token punctuation">)</span> 云的分类?
+公有云（阿里云、腾讯云、亚马逊云<span class="token punctuation">(</span>全球最多<span class="token punctuation">)</span>）只有使用权，按需付费（技术层面：数据不安全）
+
+    熊猫TV --<span class="token operator">&gt;</span> 阿里云<span class="token punctuation">;</span>   阿里云投资 --<span class="token operator">&gt;</span> 斗鱼<span class="token punctuation">;</span>
+    熊猫TV --<span class="token operator">&gt;</span> 迁移云上的业务 --<span class="token operator">&gt;</span> 腾讯云<span class="token punctuation">;</span>
+
+私有云（自建机房，自己搭建，所有自行管理 （局限：资源固定））
+    将真实的物理服务器逻辑捆绑成一个虚拟资源池，用户可以根据虚拟资源池按需使用，资源是固定。
+
+	Openstack,Docker,Kubernetes, 私有云<span class="token punctuation">;</span> 
+	vmware,ESXI5.4<span class="token punctuation">(</span>集成了操作系统和虚拟化软件 课下扩展如何安装和使用ESXI<span class="token punctuation">)</span> 在公司, 使用多台性能较高的物理主机, 逻辑组成一个庞大资源池<span class="token punctuation">;</span>
+		根据业务需要,进行按需创建,使用对应的资源<span class="token punctuation">;</span>
+		不对外开发,仅对本公司开放<span class="token punctuation">;</span>
+
+		好处: 数据安全<span class="token punctuation">(</span>金融行业，游戏行业，银行<span class="token punctuation">..</span>.<span class="token punctuation">)</span>,
+		劣势: 
+			<span class="token number">1</span>.自己维护,自己管理,成本高<span class="token punctuation">;</span>  白夜休休模式
+			<span class="token number">2</span>.无法快速的扩展节点<span class="token punctuation">;</span>  <span class="token number">10</span>台机器组成<span class="token punctuation">;</span> <span class="token number">300</span>-400台的<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>那私有云跟传统机房有啥区别啊，都是自己弄物理设备
+	私有云: 多台机器逻辑捆绑在一起<span class="token punctuation">;</span>组成的资源池<span class="token punctuation">;</span> --<span class="token operator">&gt;</span> 系统平台<span class="token punctuation">;</span>
+	传统机房: 物理机器托管在机房<span class="token punctuation">;</span>  在物理机上运行资源<span class="token punctuation">;</span>  --<span class="token operator">&gt;</span> <span class="token number">3</span>台 --<span class="token operator">&gt;</span> MySQL Mha
+	也就是都是这堆物理设备，但是对于它们的运用方式不一样
+
+混合云（主要业务放私有云、当有临时需求的时候使用公有云，使用结束后释放）
+	按需使用、按需付费、保证业务稳定的同时，也能节省一定的成本。
+
+
+两类场景:
+    <span class="token number">1</span>.公司正常的业务运行,资源不够, 借助公有云来快速,高效扩展业务<span class="token punctuation">;</span>
+    <span class="token number">2</span>.重要的业务,核心的业务,在私托有云平台,  官网, OA, 等等 不是很敏感的信息,托管在公有云<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1.3</span><span class="token punctuation">)</span> 为什么要用云？
+    <span class="token number">1</span>）海量资源池灵活调配 <span class="token punctuation">[</span>像大海一样<span class="token operator">|</span>无尽头<span class="token punctuation">]</span>
+    <span class="token number">2</span>）无处不在的网络访问 <span class="token punctuation">[</span>随时随地能访问云资源<span class="token punctuation">]</span>
+    <span class="token number">3</span>）随需应变的自助服务 <span class="token punctuation">[</span>包年包月-电话卡<span class="token operator">|</span>按需付费-流量包<span class="token punctuation">]</span>
+    <span class="token number">4</span>）保证服务的高可用性
+    <span class="token number">5</span>）能实现快速弹性伸缩 <span class="token punctuation">[</span>扩展<span class="token operator">|</span>伸缩<span class="token operator">|</span>自愈<span class="token punctuation">]</span>
+        扩展:  多加一个web节点<span class="token punctuation">;</span>
+        伸缩:  减少一个web节点<span class="token punctuation">;</span>
+        自愈:  一个节点出现问题 自动调用接口创建相同配置的服务器节点
+
+<span class="token number">1.4</span><span class="token punctuation">)</span> 云有哪些厂商?
+    <span class="token number">1</span><span class="token punctuation">)</span> 阿里云 <span class="token operator">|</span> 腾讯云 <span class="token operator">|</span> Ucloud <span class="token operator">|</span> 青云 <span class="token operator">|</span>  <span class="token punctuation">[</span> AWS <span class="token punctuation">]</span> 
+    <span class="token number">2</span><span class="token punctuation">)</span> 华为云 <span class="token operator">|</span> 京东云 <span class="token operator">|</span> 滴滴云 <span class="token operator">|</span> 
+
+<span class="token number">1.5</span><span class="token punctuation">)</span> 云上面的产品名词
+    <span class="token number">1</span>）物理服务器	--<span class="token operator">&gt;</span> 阿里云
+    <span class="token number">2</span>）服务器		--<span class="token operator">&gt;</span> ECS、快照、镜像,克隆<span class="token punctuation">;</span>
+    <span class="token number">3</span>）负载均衡		--<span class="token operator">&gt;</span> SLB
+    <span class="token number">4</span><span class="token punctuation">)</span> 数据库		--<span class="token operator">&gt;</span> RDS
+    <span class="token number">5</span><span class="token punctuation">)</span> 存储服务		--<span class="token operator">&gt;</span> NAS、OSS
+    <span class="token number">5</span><span class="token punctuation">)</span> 防火墙		--<span class="token operator">&gt;</span> 安全组iptables,firewalld、高防IP、WAF
+    <span class="token number">6</span>）远程访问		--<span class="token operator">&gt;</span> VPN <span class="token operator">|</span> JumpServer + OpenVPN
+    <span class="token number">7</span><span class="token punctuation">)</span> 消息队列		--<span class="token operator">&gt;</span> MQ
+    <span class="token number">8</span><span class="token punctuation">)</span> 网络         --<span class="token operator">&gt;</span> 弹性网卡 NAT
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+
+<span class="token number">1.6</span><span class="token punctuation">)</span> 使用阿里云完成本次课程目标？--<span class="token operator">&gt;</span> 企业架构
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><img src="/devops/public/assets/img/1725875697266.4d0042d0.png" alt="1725875697266"></p> <h3 id="_2-ecs的使用"><a href="#_2-ecs的使用" class="header-anchor">#</a> 2，ECS的使用</h3> <p>几个9：https://www.sohu.com/a/169772680_487482</p> <p><img src="/devops/public/assets/img/1725875882467.d34de6f8.png" alt="1725875882467"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>云服务器（Elastic Compute Service，简称 ECS），是一种简单高效、可弹性伸缩的计算服务。比如: 当服务器运行负荷不够时，通常的做法是增加服务器，那么增加服务器的流程和步骤如下：
+	<span class="token number">1</span>.购买硬件，拆开服务器、安装硬件设备。
+	<span class="token number">2</span>.部署系统、部署应用、接入集群。
+	
+  但如果使用云主机，可以实现自动化感知、自动化扩展集群。
+	
+
+ECS云服务逻辑架构	
+		https://help.aliyun.com/document_detail/25367.html?spm<span class="token operator">=</span>a2c4g.11186623.6.553.32895c4ad25YGi
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/devops/public/assets/img/1728869866283.f1ad1487.png" alt="1728869866283"></p> <p><img src="/devops/public/assets/img/1725876102638.33374a39.png" alt="1725876102638"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>ECS地域与可用区说明
+	https://help.aliyun.com/document_detail/188196.html?spm<span class="token operator">=</span>a2c4g.11186623.6.556.3e5e53c0ZQ8lpP
+		地域:		        指的是一个城市<span class="token punctuation">;</span>
+		可用区:		指的是城市下面的区<span class="token punctuation">;</span>
+			
+    <span class="token number">1</span>.相同地域,不同可用区之间的内网是互通的<span class="token punctuation">;</span>
+    <span class="token number">2</span>.不同地域,相同可用区,内网不互通<span class="token punctuation">;</span> 但是我们可以通过技术手段来实现互联互通<span class="token punctuation">;</span>
+    <span class="token number">3</span>.每一个地域,都有一个VPC路由器<span class="token punctuation">;</span>   每一个可用区都需要有一个交换机<span class="token punctuation">;</span>  所有的交换机都是连接的同一个VPC路由器<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p><img src="/devops/public/assets/img/1725876267237.d9efc967.png" alt="1725876267237"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>ECS云主机配置选型
+	web节点: 4c x 16Gb
+	DB节点:  4c x 64Gb  4c x 32Gb  12c x 128GB   建议使用:SSD  性能会受到磁盘的限制<span class="token punctuation">;</span>
+			
+	数据迁移  将物理机的服务 --<span class="token operator">&gt;</span> 云主机 
+	故障案例:
+		4c x 64GB 物理机  磁盘 SATA <span class="token operator">=</span> 400Mbps
+		4c x 64GB 云主机  磁盘 高效盘 100Mbps  <span class="token operator">|</span> SSD 固态盘 <span class="token operator">=</span> 400Mbps
+		<span class="token function">dd</span> <span class="token operator">|</span> hdparm <span class="token parameter variable">-t</span> /dev/vda1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>ECS中的网络简要说明	
+    EIP: 弹性公网IP
+    SLB: 负载均衡
+    NAT: 网关设备
+    VPN: 远程访问服务
+    VPC: 软件路由器 <span class="token punctuation">(</span> 可以创建交换机, 可以在每个可用区都创建 <span class="token punctuation">)</span>
+	
+VPC文档:
+	https://help.aliyun.com/document_detail/54095.html?spm<span class="token operator">=</span><span class="token number">5176.11182174</span>.content.1.4411488295LcKx<span class="token comment">#title-oil-ncn-266</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/devops/public/assets/img/1725876560284.5654dd52.png" alt="1725876560284"></p> <p>首先购买一台<a href="https://so.csdn.net/so/search?q=ECS&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">ECS<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，自定义购买，我们选择按量付费，选华北6乌兰察布，便宜些，随机可用区，1cpu1g的。</p> <p><img src="/devops/public/assets/img/1728871583488.80ed4cff.png" alt="1728871583488"></p> <p><img src="/devops/public/assets/img/1728870948065.785b8920.png" alt="1728870948065"></p> <p>镜像选择CentOS，版本选7.9，系统盘类型选高效云盘，20G ，便宜，企业中肯定是按需求选，选好后下一步即可，注意账户中不得少于100元。</p> <p><img src="/devops/public/assets/img/1728871051636.403068d0.png" alt="1728871051636"></p> <p>公网IP选择不分配公网，因为我们有负载均衡，负载均衡能通过公网访问即可，下面开通的协议端口可以都勾选上，继续下一步。</p> <p><img src="/devops/public/assets/img/1728871240974.529e068c.png" alt="1728871240974"></p> <p>密码这边我们选择自定义密码，实例名称和主机名称一致，填写web01，继续下一步。</p> <p><img src="/devops/public/assets/img/1728871311729.b8961c2c.png" alt="1728871311729"></p> <p><img src="/devops/public/assets/img/1728871875308.6dfd9476.png" alt="1728871875308"></p> <p><img src="/devops/public/assets/img/1728871894222.889bcfec.png" alt="1728871894222"></p> <p>提示创建成功，点击管理控制台，就可以看到创建的实例了。</p> <p>给web01添加磁盘，点击ECS云盘的管理控制台，创建云盘，挂载到ECS实例，选择与web01同地区的乌兰察布，选择，我们的web01实例，云盘付费选择按量付费，同样是高效云盘即可，40G，确认订单。</p> <p><img src="/devops/public/assets/img/1728872025290.8dee32a3.png" alt="1728872025290"></p> <p><img src="/devops/public/assets/img/1728872134263.df66b463.png" alt="1728872134263"></p> <p>下滑选择随实例释放，勾选服务协议，名称修改一下，点击确认订单，确认创建，稍等一会会提示云盘创建完毕。</p> <p><img src="/devops/public/assets/img/1728872215860.8696d82b.png" alt="1728872215860"></p> <p>我们可以通过阿里云去管理我们的服务器，点击实例控制台，右边的远程连接</p> <p><img src="/devops/public/assets/img/1728872264305.8cd8d786.png" alt="1728872264305"></p> <p><img src="/devops/public/assets/img/1728872278030.3a5014d5.png" alt="1728872278030"></p> <p><img src="/devops/public/assets/img/1728872309088.b6db4d0f.png" alt="1728872309088"></p> <p>输入密码登录进去后，我们可以df  -h，去查看下挂载信息，没有查到，不要慌，其实已经在我们的web01中了，我们手动挂载下。</p> <p><img src="/devops/public/assets/img/1728873169707.744f44bc.png" alt="1728873169707"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 /<span class="token punctuation">]</span><span class="token comment"># yum -y install ntfsprogs</span>
+<span class="token punctuation">[</span>root@web01 /<span class="token punctuation">]</span><span class="token comment"># mkfs.ext4 /dev/nvme1n1</span>
+<span class="token punctuation">[</span>root@web01 /<span class="token punctuation">]</span><span class="token comment"># mount /dev/nvme1n1 /mnt</span>
+
+<span class="token punctuation">[</span>root@web01 mnt<span class="token punctuation">]</span><span class="token comment"># df -h</span>
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        969M     <span class="token number">0</span>  969M   <span class="token number">0</span>% /dev
+tmpfs           977M     <span class="token number">0</span>  977M   <span class="token number">0</span>% /dev/shm
+tmpfs           977M   11M  967M   <span class="token number">2</span>% /run
+tmpfs           977M     <span class="token number">0</span>  977M   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/nvme0n1p2   20G  <span class="token number">2</span>.0G   17G  <span class="token number">11</span>% /
+/dev/nvme0n1p1  191M  <span class="token number">9</span>.8M  182M   <span class="token number">6</span>% /boot/efi
+tmpfs           196M     <span class="token number">0</span>  196M   <span class="token number">0</span>% /run/user/0
+/dev/nvme1n1     40G   49M   38G   <span class="token number">1</span>% /mnt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>在云盘管理控制台这里，选择扩容。</p> <p><img src="/devops/public/assets/img/1728873440462.e60d95f7.png" alt="1728873440462"></p> <p>已知晓并备份，继续扩容，我们输入100G，选择在线扩容。</p> <p><img src="/devops/public/assets/img/1728873500062.bc6d4be4.png" alt="1728873500062"></p> <p><img src="/devops/public/assets/img/1728873530173.a40140bc.png" alt="1728873530173"></p> <p>查看：</p> <p><img src="/devops/public/assets/img/1728873621391.2a54e4b8.png" alt="1728873621391"></p> <p>控制台显示了扩容，但是实际并没有扩容。 我们远程连接服务器，再手动操作下，取消挂载，创建文件系统，再重新挂载下。</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 mnt<span class="token punctuation">]</span><span class="token comment"># umount /mnt</span>
+umount: /mnt: target is busy.
+        <span class="token punctuation">(</span>In some cases useful info about processes that use
+         the device is found by lsof<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> or fuser<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">))</span>
+<span class="token punctuation">[</span>root@web01 mnt<span class="token punctuation">]</span><span class="token comment"># cd</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># umount /mnt</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># mkfs.ext4 /dev/nvme1n1</span>
+<span class="token function">mke2fs</span> <span class="token number">1.42</span>.9 <span class="token punctuation">(</span><span class="token number">28</span>-Dec-2013<span class="token punctuation">)</span>
+Filesystem <span class="token assign-left variable">label</span><span class="token operator">=</span>
+OS type: Linux
+Block <span class="token assign-left variable">size</span><span class="token operator">=</span><span class="token number">4096</span> <span class="token punctuation">(</span>log<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+Fragment <span class="token assign-left variable">size</span><span class="token operator">=</span><span class="token number">4096</span> <span class="token punctuation">(</span>log<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token assign-left variable">Stride</span><span class="token operator">=</span><span class="token number">0</span> blocks, Stripe <span class="token assign-left variable">width</span><span class="token operator">=</span><span class="token number">0</span> blocks
+<span class="token number">6553600</span> inodes, <span class="token number">26214400</span> blocks
+<span class="token number">1310720</span> blocks <span class="token punctuation">(</span><span class="token number">5.00</span>%<span class="token punctuation">)</span> reserved <span class="token keyword">for</span> the super user
+First data <span class="token assign-left variable">block</span><span class="token operator">=</span><span class="token number">0</span>
+Maximum filesystem <span class="token assign-left variable">blocks</span><span class="token operator">=</span><span class="token number">2174746624</span>
+<span class="token number">800</span> block <span class="token function">groups</span>
+<span class="token number">32768</span> blocks per group, <span class="token number">32768</span> fragments per group
+<span class="token number">8192</span> inodes per group
+Superblock backups stored on blocks: 
+        <span class="token number">32768</span>, <span class="token number">98304</span>, <span class="token number">163840</span>, <span class="token number">229376</span>, <span class="token number">294912</span>, <span class="token number">819200</span>, <span class="token number">884736</span>, <span class="token number">1605632</span>, <span class="token number">2654208</span>, 
+        <span class="token number">4096000</span>, <span class="token number">7962624</span>, <span class="token number">11239424</span>, <span class="token number">20480000</span>, <span class="token number">23887872</span>
+
+Allocating group tables: <span class="token keyword">done</span>                            
+Writing inode tables: <span class="token keyword">done</span>                            
+Creating journal <span class="token punctuation">(</span><span class="token number">32768</span> blocks<span class="token punctuation">)</span>: <span class="token keyword">done</span>
+Writing superblocks and filesystem accounting information: <span class="token keyword">done</span>   
+
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># mount /dev/nvme1n1 /mnt</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># df -h</span>
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        969M     <span class="token number">0</span>  969M   <span class="token number">0</span>% /dev
+tmpfs           977M     <span class="token number">0</span>  977M   <span class="token number">0</span>% /dev/shm
+tmpfs           977M   11M  967M   <span class="token number">2</span>% /run
+tmpfs           977M     <span class="token number">0</span>  977M   <span class="token number">0</span>% /sys/fs/cgroup
+/dev/nvme0n1p2   20G  <span class="token number">2</span>.1G   17G  <span class="token number">12</span>% /
+/dev/nvme0n1p1  191M  <span class="token number">9</span>.8M  182M   <span class="token number">6</span>% /boot/efi
+tmpfs           196M     <span class="token number">0</span>  196M   <span class="token number">0</span>% /run/user/0
+/dev/nvme1n1     99G   61M   94G   <span class="token number">1</span>% /mnt
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>	<span class="token number">2.4</span>）ECS云主机购买<span class="token operator">|</span>费用选择<span class="token operator">|</span>地域选择<span class="token operator">|</span>实例选择<span class="token operator">|</span>镜像选择<span class="token operator">|</span>  账户中最少100元
+	<span class="token number">2.5</span>）ECS系统设置<span class="token operator">|</span>VPC网络<span class="token operator">|</span>安全组<span class="token operator">|</span>
+	<span class="token number">2.6</span>）ECS远程连接（控制台<span class="token operator">|</span>Xshell<span class="token operator">|</span>重置密码）
+	<span class="token number">2.7</span><span class="token punctuation">)</span> ECS其他操作（添加数据盘<span class="token operator">|</span>扩容磁盘）
+		云盘---<span class="token operator">&gt;</span>创建50G云盘---<span class="token operator">&gt;</span> 挂载到WEB01
+		物理机: 插入磁盘<span class="token punctuation">(</span>物理机支持热插拔<span class="token punctuation">)</span> 分区 格式化 挂载
+		vmware：插入磁盘 重启 分区 格式化挂载
+		
+		云服务器:
+		格式化:
+		<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># mkfs.xfs /dev/vdb </span>
+		meta-data<span class="token operator">=</span>/dev/vdb               <span class="token assign-left variable">isize</span><span class="token operator">=</span><span class="token number">512</span>    <span class="token assign-left variable">agcount</span><span class="token operator">=</span><span class="token number">4</span>, <span class="token assign-left variable">agsize</span><span class="token operator">=</span><span class="token number">3276800</span> blks
+				 <span class="token operator">=</span>                       <span class="token assign-left variable">sectsz</span><span class="token operator">=</span><span class="token number">512</span>   <span class="token assign-left variable">attr</span><span class="token operator">=</span><span class="token number">2</span>, <span class="token assign-left variable">projid32bit</span><span class="token operator">=</span><span class="token number">1</span>
+				 <span class="token operator">=</span>                       <span class="token assign-left variable">crc</span><span class="token operator">=</span><span class="token number">1</span>        <span class="token assign-left variable">finobt</span><span class="token operator">=</span><span class="token number">0</span>, <span class="token assign-left variable">sparse</span><span class="token operator">=</span><span class="token number">0</span>
+		data     <span class="token operator">=</span>                       <span class="token assign-left variable">bsize</span><span class="token operator">=</span><span class="token number">4096</span>   <span class="token assign-left variable">blocks</span><span class="token operator">=</span><span class="token number">13107200</span>, <span class="token assign-left variable">imaxpct</span><span class="token operator">=</span><span class="token number">25</span>
+				 <span class="token operator">=</span>                       <span class="token assign-left variable">sunit</span><span class="token operator">=</span><span class="token number">0</span>      <span class="token assign-left variable">swidth</span><span class="token operator">=</span><span class="token number">0</span> blks
+		naming   <span class="token operator">=</span>version <span class="token number">2</span>              <span class="token assign-left variable">bsize</span><span class="token operator">=</span><span class="token number">4096</span>   ascii-ci<span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">ftype</span><span class="token operator">=</span><span class="token number">1</span>
+		log      <span class="token operator">=</span>internal log           <span class="token assign-left variable">bsize</span><span class="token operator">=</span><span class="token number">4096</span>   <span class="token assign-left variable">blocks</span><span class="token operator">=</span><span class="token number">6400</span>, <span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token number">2</span>
+				 <span class="token operator">=</span>                       <span class="token assign-left variable">sectsz</span><span class="token operator">=</span><span class="token number">512</span>   <span class="token assign-left variable">sunit</span><span class="token operator">=</span><span class="token number">0</span> blks, lazy-count<span class="token operator">=</span><span class="token number">1</span>
+		realtime <span class="token operator">=</span>none                   <span class="token assign-left variable">extsz</span><span class="token operator">=</span><span class="token number">4096</span>   <span class="token assign-left variable">blocks</span><span class="token operator">=</span><span class="token number">0</span>, <span class="token assign-left variable">rtextents</span><span class="token operator">=</span><span class="token number">0</span>
+		挂载：
+		<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># mount /dev/vdb /mnt</span>
+		<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># df -h</span>
+		Filesystem      Size  Used Avail Use% Mounted on
+		devtmpfs        461M     <span class="token number">0</span>  461M   <span class="token number">0</span>% /dev
+		tmpfs           471M     <span class="token number">0</span>  471M   <span class="token number">0</span>% /dev/shm
+		tmpfs           471M  464K  471M   <span class="token number">1</span>% /run
+		tmpfs           471M     <span class="token number">0</span>  471M   <span class="token number">0</span>% /sys/fs/cgroup
+		/dev/vda1        40G  <span class="token number">2</span>.3G   36G   <span class="token number">6</span>% /
+		tmpfs            95M     <span class="token number">0</span>   95M   <span class="token number">0</span>% /run/user/0
+		/dev/vdb         50G   33M   50G   <span class="token number">1</span>% /mnt
+		
+		在线扩容:
+		云盘--<span class="token operator">&gt;</span> 选择50G的数据盘 在线扩容到100G
+		执行命令扩容文件系统
+		<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># xfs_growfs /mnt	</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><p>我们先配置弹性公网IP到web01</p> <p><img src="/devops/public/assets/img/1728873965972.61dd004d.png" alt="1728873965972"></p> <p><img src="/devops/public/assets/img/1728873980398.befa0557.png" alt="1728873980398"></p> <p><img src="/devops/public/assets/img/1728874089912.48003b46.png" alt="1728874089912"></p> <p><img src="/devops/public/assets/img/1728874117781.7174da1b.png" alt="1728874117781"></p> <p><img src="/devops/public/assets/img/1728874158682.9144c221.png" alt="1728874158682"></p> <p><img src="/devops/public/assets/img/1728874175244.5cc040f2.png" alt="1728874175244"></p> <p>使用xshell连接：</p> <p><img src="/devops/public/assets/img/1728874299506.6196a134.png" alt="1728874299506"></p> <p>在web01上安装nginx:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># yum -y install nginx</span>
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/etc/nginx
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># nginx -v</span>
+nginx version: nginx/1.12.2
+
+<span class="token comment"># 删除默认的server</span>
+    server <span class="token punctuation">{</span>
+        listen       <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+        listen       <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:80 default_server<span class="token punctuation">;</span>
+        server_name  _<span class="token punctuation">;</span>
+        root         /usr/share/nginx/html<span class="token punctuation">;</span>
+
+        <span class="token comment"># Load configuration files for the default server block.</span>
+        include /etc/nginx/default.d/*.conf<span class="token punctuation">;</span>
+
+        location / <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span>
+
+<span class="token comment"># 删除后的如下：</span>
+http <span class="token punctuation">{</span>
+    log_format  main  <span class="token string">'$remote_addr - $remote_user [$time_local] &quot;$request&quot; '</span>
+                      <span class="token string">'$status $body_bytes_sent &quot;$http_referer&quot; '</span>
+                      <span class="token string">'&quot;$http_user_agent&quot; &quot;$http_x_forwarded_for&quot;'</span><span class="token punctuation">;</span>
+
+    access_log  /var/log/nginx/access.log  main<span class="token punctuation">;</span>
+
+    sendfile            on<span class="token punctuation">;</span>
+    tcp_nopush          on<span class="token punctuation">;</span>
+    tcp_nodelay         on<span class="token punctuation">;</span>
+    keepalive_timeout   <span class="token number">65</span><span class="token punctuation">;</span>
+    types_hash_max_size <span class="token number">2048</span><span class="token punctuation">;</span>
+
+    include             /etc/nginx/mime.types<span class="token punctuation">;</span>
+    default_type        application/octet-stream<span class="token punctuation">;</span>
+    include /etc/nginx/conf.d/*.conf<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+
+
+
+<span class="token punctuation">[</span>root@web01 conf.d<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/etc/nginx/conf.d
+<span class="token punctuation">[</span>root@web01 conf.d<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+
+<span class="token punctuation">[</span>root@web01 conf.d<span class="token punctuation">]</span><span class="token comment"># cat kod.conf </span>
+ server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name _<span class="token punctuation">;</span>
+        location / <span class="token punctuation">{</span>
+                root /code<span class="token punctuation">;</span>
+                index index.php index.html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+                root /code<span class="token punctuation">;</span>
+                fastcgi_pass <span class="token number">127.0</span>.0.1:9000<span class="token punctuation">;</span>
+                fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+                include fastcgi_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@web01 conf.d<span class="token punctuation">]</span><span class="token comment"># nginx -t</span>
+nginx: <span class="token punctuation">[</span>warn<span class="token punctuation">]</span> conflicting server name <span class="token string">&quot;_&quot;</span> on <span class="token number">0.0</span>.0.0:80, ignored
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@web01 conf.d<span class="token punctuation">]</span><span class="token comment"># systemctl status nginx</span>
+● nginx.service - The nginx HTTP and reverse proxy server
+   Loaded: loaded <span class="token punctuation">(</span>/usr/lib/systemd/system/nginx.service<span class="token punctuation">;</span> disabled<span class="token punctuation">;</span> vendor preset: disabled<span class="token punctuation">)</span>
+   Active: inactive <span class="token punctuation">(</span>dead<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># systemctl start nginx</span>
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># systemctl status nginx</span>
+● nginx.service - The nginx HTTP and reverse proxy server
+   Loaded: loaded <span class="token punctuation">(</span>/usr/lib/systemd/system/nginx.service<span class="token punctuation">;</span> disabled<span class="token punctuation">;</span> vendor preset: disabled<span class="token punctuation">)</span>
+   Active: active <span class="token punctuation">(</span>running<span class="token punctuation">)</span> since Mon <span class="token number">2024</span>-10-14 <span class="token number">11</span>:40:57 CST<span class="token punctuation">;</span> 5s ago
+  Process: <span class="token number">3365</span> <span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/sbin/nginx <span class="token punctuation">(</span>code<span class="token operator">=</span>exited, <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token number">0</span>/SUCCESS<span class="token punctuation">)</span>
+  Process: <span class="token number">3362</span> <span class="token assign-left variable">ExecStartPre</span><span class="token operator">=</span>/usr/sbin/nginx <span class="token parameter variable">-t</span> <span class="token punctuation">(</span>code<span class="token operator">=</span>exited, <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token number">0</span>/SUCCESS<span class="token punctuation">)</span>
+  Process: <span class="token number">3361</span> <span class="token assign-left variable">ExecStartPre</span><span class="token operator">=</span>/usr/bin/rm <span class="token parameter variable">-f</span> /run/nginx.pid <span class="token punctuation">(</span>code<span class="token operator">=</span>exited, <span class="token assign-left variable">status</span><span class="token operator">=</span><span class="token number">0</span>/SUCCESS<span class="token punctuation">)</span>
+ Main PID: <span class="token number">3368</span> <span class="token punctuation">(</span>nginx<span class="token punctuation">)</span>
+   CGroup: /system.slice/nginx.service
+           ├─3368 nginx: master process /usr/sbin/nginx
+           └─3369 nginx: worker process
+
+Oct <span class="token number">14</span> <span class="token number">11</span>:40:57 web01 systemd<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Starting The nginx HTTP and reverse proxy server<span class="token punctuation">..</span>.
+Oct <span class="token number">14</span> <span class="token number">11</span>:40:57 web01 nginx<span class="token punctuation">[</span><span class="token number">3362</span><span class="token punctuation">]</span>: nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+Oct <span class="token number">14</span> <span class="token number">11</span>:40:57 web01 nginx<span class="token punctuation">[</span><span class="token number">3362</span><span class="token punctuation">]</span>: nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+Oct <span class="token number">14</span> <span class="token number">11</span>:40:57 web01 systemd<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Failed to parse PID from <span class="token function">file</span> /run/nginx.pid: Invalid argument
+Oct <span class="token number">14</span> <span class="token number">11</span>:40:57 web01 systemd<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>: Started The nginx HTTP and reverse proxy server.
+<span class="token punctuation">[</span>root@web01 nginx<span class="token punctuation">]</span><span class="token comment"># systemctl enable nginx</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br></div></div><p>测试nginx是否OK</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># pwd</span>
+/code
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">13</span> Oct <span class="token number">14</span> <span class="token number">11</span>:42 <span class="token number">1</span>.html
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># cat 1.html </span>
+<span class="token number">111111111111</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>测试：</p> <p><img src="/devops/public/assets/img/1728877415007.a5d31f03.png" alt="1728877415007"></p> <p>在web01上安装php</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># yum -y install lrzsz</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment">#yum -y install php php-bcmath php-cli php-common php-devel php-embedded php-fpm php-gd php-intl php-mbstring php-mysqlnd php-opcache php-pdo   php-process php-xml php-json</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># systemctl start php-fpm.service</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># systemctl enable php-fpm.service</span>
+
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/php-fpm.d/www.conf    #统一用户</span>
+user <span class="token operator">=</span> nginx
+group <span class="token operator">=</span> nginx
+
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># systemctl restart php-fpm.service</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># netstat -tnulp</span>
+Active Internet connections <span class="token punctuation">(</span>only servers<span class="token punctuation">)</span>
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:22              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">1248</span>/sshd           
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">127.0</span>.0.1:9000          <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">9887</span>/php-fpm: maste 
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:111             <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">724</span>/rpcbind         
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:80              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">3368</span>/nginx: master  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>安装业务</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># wget https://static.kodcloud.com/update/download/kodbox.1.30.zip</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># yum -y install unzip</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># unzip kodbox.1.30.zip -d .</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">32736</span>
+-rw-r--r--  <span class="token number">1</span> root root       <span class="token number">13</span> Oct <span class="token number">14</span> <span class="token number">11</span>:42 <span class="token number">1</span>.html
+drwxr-xr-x  <span class="token number">8</span> root root     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> app
+-rw-r--r--  <span class="token number">1</span> root root   <span class="token number">144987</span> May  <span class="token number">9</span>  <span class="token number">2022</span> Changelog.md
+drwxr-xr-x  <span class="token number">3</span> root root     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> config
+drwxr-xr-x  <span class="token number">3</span> root root     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> data
+-rw-r--r--  <span class="token number">1</span> root root      <span class="token number">139</span> May  <span class="token number">9</span>  <span class="token number">2022</span> index.php
+-rw-r--r--  <span class="token number">1</span> root root <span class="token number">33343049</span> May  <span class="token number">9</span>  <span class="token number">2022</span> kodbox.1.30.zip
+drwxr-xr-x <span class="token number">16</span> root root     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> plugins
+drwxr-xr-x  <span class="token number">6</span> root root     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> static
+
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># chown -R nginx.nginx /code/</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">32736</span>
+-rw-r--r--  <span class="token number">1</span> nginx nginx       <span class="token number">13</span> Oct <span class="token number">14</span> <span class="token number">11</span>:42 <span class="token number">1</span>.html
+drwxr-xr-x  <span class="token number">8</span> nginx nginx     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> app
+-rw-r--r--  <span class="token number">1</span> nginx nginx   <span class="token number">144987</span> May  <span class="token number">9</span>  <span class="token number">2022</span> Changelog.md
+drwxr-xr-x  <span class="token number">3</span> nginx nginx     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> config
+drwxr-xr-x  <span class="token number">3</span> nginx nginx     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> data
+-rw-r--r--  <span class="token number">1</span> nginx nginx      <span class="token number">139</span> May  <span class="token number">9</span>  <span class="token number">2022</span> index.php
+-rw-r--r--  <span class="token number">1</span> nginx nginx <span class="token number">33343049</span> May  <span class="token number">9</span>  <span class="token number">2022</span> kodbox.1.30.zip
+drwxr-xr-x <span class="token number">16</span> nginx nginx     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> plugins
+drwxr-xr-x  <span class="token number">6</span> nginx nginx     <span class="token number">4096</span> May  <span class="token number">9</span>  <span class="token number">2022</span> static
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><img src="/devops/public/assets/img/1728878184095.4a6c9fbd.png" alt="1728878184095"></p> <p>由于我们没有安装数据库，所以我们选择php自带的数据库即可</p> <p><img src="/devops/public/assets/img/1728878228461.83db8fbb.png" alt="1728878228461"></p> <p>输入账号密码，确定，完成安装。</p> <p><img src="/devops/public/assets/img/1728878258875.a62c03ba.png" alt="1728878258875"></p> <p><img src="/devops/public/assets/img/1728878276494.e3933f31.png" alt="1728878276494"></p> <p>正常登录</p> <p><img src="/devops/public/assets/img/1728878303912.59f8bdf7.png" alt="1728878303912"></p> <p>测试上传，没有问题，项目正常运行</p> <p><img src="/devops/public/assets/img/1728878349930.d1d3d400.png" alt="1728878349930"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>    <span class="token number">2.8</span><span class="token punctuation">)</span> ECS搭建kodcloud
+	<span class="token number">2.8</span>.1 
+	   安装Nginx
+	   配置Nginx
+	   server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name _<span class="token punctuation">;</span>
+        location / <span class="token punctuation">{</span>
+                root /code<span class="token punctuation">;</span>
+                index index.php index.html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        location ~ <span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+                root /code<span class="token punctuation">;</span>
+                fastcgi_pass <span class="token number">127.0</span>.0.1:9000<span class="token punctuation">;</span>
+                fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+                include fastcgi_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+
+	   启动Nginx
+	   PHP-FPM 安装
+	   加入开机自启动
+	   下载可道云
+	   <span class="token function">wget</span> https://static.kodcloud.com/update/download/kodbox.1.30.zip
+	   解压到代码目录进行安装
+	   
+	Document： https://help.aliyun.com/product/25365.html?spm<span class="token operator">=</span>a2c4g.11186623.6.540.4db0505cbq8EHp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>参考：</p> <ul><li>https://blog.csdn.net/qq_37510195/article/details/130324416</li> <li>https://blog.csdn.net/qq_62331653/article/details/140218698</li></ul> <h3 id="_3-ecs快照"><a href="#_3-ecs快照" class="header-anchor">#</a> 3，ECS快照</h3> <p><img src="/devops/public/assets/img/1725878643231.284d9234.png" alt="1725878643231"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">3</span>.ECS快照
+	<span class="token number">3.1</span>）快照基本介绍
+	<span class="token number">3.2</span>）快照使用场景
+	<span class="token number">3.3</span>）快照使用方式
+	    手动创建快照
+	    自动创建快照
+	Document：https://help.aliyun.com/document_detail/25391.html?spm<span class="token operator">=</span>a2c4g.11186623.6.823.73175b2cIbssVu
+	测试: 将web01的代码删除 
+		  通过页面无法访问
+		  通过快照恢复再次访问
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>测试快照恢复业务</p> <p><img src="/devops/public/assets/img/1728878431948.531f4166.png" alt="1728878431948"></p> <p><img src="/devops/public/assets/img/1728878513188.67cda9af.png" alt="1728878513188"></p> <p><img src="/devops/public/assets/img/1728878525338.14fb06a6.png" alt="1728878525338"></p> <p>服务器删除代码目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># rm -rf ./*</span>
+<span class="token punctuation">[</span>root@web01 code<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>浏览器访问网址，发现无法访问：</p> <p><img src="/devops/public/assets/img/1728878577963.4ed6e7a7.png" alt="1728878577963"></p> <p>停止实例</p> <p><img src="/devops/public/assets/img/1728878670310.f8d4dcde.png" alt="1728878670310"></p> <p><img src="/devops/public/assets/img/1728878677815.e7dff16f.png" alt="1728878677815"></p> <p><img src="/devops/public/assets/img/1728878699171.e6d9c8e9.png" alt="1728878699171"></p> <p><img src="/devops/public/assets/img/1728878737073.db8251cd.png" alt="1728878737073"></p> <p><img src="/devops/public/assets/img/1728878756215.dd70e044.png" alt="1728878756215"></p> <p>由于我们设置了nginx和php的开机自启动，所以快照恢复启动后，会自动恢复业务。 快照恢复成功后，浏览器再次访问正常显示。</p> <p><img src="/devops/public/assets/img/1728878791786.5b1ed3ac.png" alt="1728878791786"></p> <h3 id="_4-基于快照做镜像"><a href="#_4-基于快照做镜像" class="header-anchor">#</a> 4，基于快照做镜像</h3> <p><img src="/devops/public/assets/img/1725879155981.e02f0ede.png" alt="1725879155981"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">4</span>.ECS镜像
+	<span class="token number">4.1</span>）镜像基本介绍和使用
+	<span class="token number">4.2</span>）镜像的生命周期
+	<span class="token number">4.3</span>）基于快照创建镜像    克隆--<span class="token operator">&gt;</span> <span class="token punctuation">(</span>基于快照--<span class="token operator">&gt;</span>镜像--<span class="token operator">&gt;</span>启动实例<span class="token punctuation">)</span>
+	<span class="token number">4.4</span>）基于镜像启动实例（和此前的应用节点环境一致）
+	<span class="token number">4.3</span>）镜像复制、镜像共享、镜像删除
+	Document：https://help.aliyun.com/document_detail/25389.html?spm<span class="token operator">=</span>a2c4g.11186623.6.737.68f9116diWlmEv
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>快照控制台，创建自定义镜像</p> <p><img src="/devops/public/assets/img/1728878887235.f4cfcf40.png" alt="1728878887235"></p> <p><img src="/devops/public/assets/img/1728878974158.80846916.png" alt="1728878974158"></p> <p><img src="/devops/public/assets/img/1728878992134.27edf5f2.png" alt="1728878992134"></p> <p>创建完成后可以在镜像列表里查看，点击创建实例</p> <p><img src="/devops/public/assets/img/1728879033313.aa9a2117.png" alt="1728879033313"></p> <p>基于镜像创建web02服务器，选择与web01一致的可用区</p> <p><img src="/devops/public/assets/img/1728879077095.fd7e3d16.png" alt="1728879077095"></p> <p><img src="/devops/public/assets/img/1728879128789.744af9ed.png" alt="1728879128789"></p> <p><img src="/devops/public/assets/img/1728879169532.22b32b2f.png" alt="1728879169532"></p> <p><img src="/devops/public/assets/img/1728879189028.ac1f4cfd.png" alt="1728879189028"></p> <p><img src="/devops/public/assets/img/1728879223844.a8bc7a33.png" alt="1728879223844"></p> <p><img src="/devops/public/assets/img/1728879267636.b7046e8e.png" alt="1728879267636"></p> <p><img src="/devops/public/assets/img/1728879330132.8165df4f.png" alt="1728879330132"></p> <p><img src="/devops/public/assets/img/1728879342308.0df51bf5.png" alt="1728879342308"></p> <p>web02这一台没有公网IP。如下：</p> <p><img src="/devops/public/assets/img/1728879411126.fedc578d.png" alt="1728879411126"></p> <p><img src="/devops/public/assets/img/1728879438246.6895f195.png" alt="1728879438246"></p> <p><img src="/devops/public/assets/img/1728879466625.5486e17d.png" alt="1728879466625"></p> <p>目前这两台服务器的IP：</p> <p><img src="/devops/public/assets/img/1728888453025.3fddd98a.png" alt="1728888453025"></p> <p>如果弹性公网IP绑定到了web01上，肯定可以连接到web01上，通过web01就可以连接到web02了。</p> <p><img src="/devops/public/assets/img/1728888571790.29f58355.png" alt="1728888571790"></p> <p><img src="/devops/public/assets/img/1728888598231.e6b6361d.png" alt="1728888598231"></p> <p><img src="/devops/public/assets/img/1728888668532.896709a9.png" alt="1728888668532"></p> <p><img src="/devops/public/assets/img/1728888716783.e25fec39.png" alt="1728888716783"></p> <p>解绑弹性公网IP：</p> <p><img src="/devops/public/assets/img/1728888803129.b83c0ed8.png" alt="1728888803129"></p> <p>创建自动快照策略：</p> <p><img src="/devops/public/assets/img/1728888856658.c8627940.png" alt="1728888856658"></p> <p><img src="/devops/public/assets/img/1728888932481.637d951e.png" alt="1728888932481"></p> <p><img src="/devops/public/assets/img/1728888946691.d52485d2.png" alt="1728888946691"></p> <p><img src="/devops/public/assets/img/1728888993330.768b04b1.png" alt="1728888993330"></p> <p><img src="/devops/public/assets/img/1728889021325.3db65166.png" alt="1728889021325"></p> <p>把上午在web01上面，搞的100G的数据盘卸载了：</p> <p><img src="/devops/public/assets/img/1728889088720.da1c854c.png" alt="1728889088720"></p> <p><img src="/devops/public/assets/img/1728889205833.c1eb33cf.png" alt="1728889205833"></p> <p><img src="/devops/public/assets/img/1728889243289.bee35cae.png" alt="1728889243289"></p> <p><img src="/devops/public/assets/img/1728889268707.01c9bcea.png" alt="1728889268707"></p> <p><img src="/devops/public/assets/img/1728889310720.d0d11c19.png" alt="1728889310720"></p> <p><img src="/devops/public/assets/img/1728889357596.ccf310f7.png" alt="1728889357596"></p> <h3 id="_6-slb负载均衡"><a href="#_6-slb负载均衡" class="header-anchor">#</a> 6，SLB负载均衡</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">5</span>.SLB负载均衡	
+	<span class="token number">5.1</span>）SLB是什么
+	<span class="token number">5.2</span>）SLB负载均衡高可用
+	<span class="token number">5.3</span>）SLB负载均衡应用场景 <span class="token punctuation">[</span>http场景<span class="token operator">|</span>https场景<span class="token operator">|</span>tcp场景<span class="token punctuation">]</span>
+	<span class="token number">5.4</span>）SLB基于域名/URL路径进行转发<span class="token punctuation">(</span>aliyun.example.com<span class="token punctuation">)</span>
+		<span class="token number">1</span>.将/user的请求调度到 web01 <span class="token number">8080</span>端口
+		<span class="token number">2</span>.将/pass的请求调度到 web02 <span class="token number">8080</span>端口
+		<span class="token number">3</span>.如果直接访问该域名，则返回一个默认站点（ecs01 ecs02 kodcloud）
+
+	<span class="token number">5.5</span><span class="token punctuation">)</span> SLB基于不同的域名转发到不同的虚拟服务器组 aliyun.example.com slb.example.com
+		<span class="token number">1</span>.配置后端服务器ecs01、ecs02的Nginx
+		<span class="token number">2</span>.配置slb虚拟资源池，test1资源池（8888） test2资源池（9999）
+		<span class="token number">3</span>.配置dns的解析，将域名都解析至slb负载均衡的公网IP上
+		<span class="token number">4</span>.配置slb转发规则，根据域名调度到不同的服务资源池
+
+	<span class="token number">5.6</span>）作业：
+		<span class="token number">1</span>.阿里云多可用区的高可用解决方案<span class="token punctuation">[</span>无法模拟效果--<span class="token operator">&gt;</span>只有可用区故障才切<span class="token punctuation">]</span>
+		<span class="token number">2</span>.使用两个真实域名 a域名调度到两台服务器  b域名调度两台服务器  如果直接访问slb的公网IP则跳转到a域名
+	Document： https://help.aliyun.com/document_detail/27539.html?spm<span class="token operator">=</span>a2c4g.11186623.6.544.3ad85339qTtOwW
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>传统负载均衡，注意地区与web地区保持一致</p> <p><img src="/devops/public/assets/img/1728889456396.46845bb6.png" alt="1728889456396"></p> <p><img src="/devops/public/assets/img/1728889533062.9a1a9536.png" alt="1728889533062"></p> <p><img src="/devops/public/assets/img/1728889553085.5e529fa6.png" alt="1728889553085"></p> <p>如图配置，选择私网，因为我们有弹性IP，可以绑定到负载均衡上。</p> <p><img src="/devops/public/assets/img/1728889585436.1670ec5d.png" alt="1728889585436"></p> <p><img src="/devops/public/assets/img/1728889638335.e0b72767.png" alt="1728889638335"></p> <p><img src="/devops/public/assets/img/1728889659152.5429dfa4.png" alt="1728889659152"></p> <p><img src="/devops/public/assets/img/1728889686493.08eb0962.png" alt="1728889686493"></p> <p>绑定我们的弹性IP</p> <p><img src="/devops/public/assets/img/1728889789484.948f012b.png" alt="1728889789484"></p> <p><img src="/devops/public/assets/img/1728889835580.374404b3.png" alt="1728889835580"></p> <p><img src="/devops/public/assets/img/1728889855078.59e7507f.png" alt="1728889855078"></p> <p>开始配置：</p> <p><img src="/devops/public/assets/img/1728889939465.a1f09de6.png" alt="1728889939465"></p> <p><img src="/devops/public/assets/img/1728890045185.52c3730d.png" alt="1728890045185"></p> <p><img src="/devops/public/assets/img/1728890104209.65169748.png" alt="1728890104209"></p> <p><img src="/devops/public/assets/img/1728890130731.f762b206.png" alt="1728890130731"></p> <p><img src="/devops/public/assets/img/1728890154573.eb7ec523.png" alt="1728890154573"></p> <p>下一步，下一步，提交即可</p> <p><img src="/devops/public/assets/img/1728890192688.04e17f30.png" alt="1728890192688"></p> <p>访问：<a href="https://vpc.console.aliyun.com/eip/cn-wulanchabu/eips/eip-0jlbhjluw5ycenr4ow10r" target="_blank" rel="noopener noreferrer">39.101.69.67<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="/devops/public/assets/img/1728890256747.e4f8fa20.png" alt="1728890256747"></p> <p>测试：</p> <p><img src="/devops/public/assets/img/1728890447810.cbd262ce.png" alt="1728890447810"></p> <p>只要访问nginx，都有访问日志：</p> <p><img src="/devops/public/assets/img/1728890561317.d0deb83b.png" alt="1728890561317"></p> <p>再去配置四层负载，分别添加5555转发到web01，6666转发到web02</p> <p><img src="/devops/public/assets/img/1728890675783.5ddda9c4.png" alt="1728890675783"></p> <p><img src="/devops/public/assets/img/1728890706314.7810cb3c.png" alt="1728890706314"></p> <p><img src="/devops/public/assets/img/1728890757808.ddbd8416.png" alt="1728890757808"></p> <p><img src="/devops/public/assets/img/1728890781884.534d16ce.png" alt="1728890781884"></p> <p><img src="/devops/public/assets/img/1728890828614.60d4ff97.png" alt="1728890828614"></p> <p>下一步，下一步，提交，配置6666端口转发到web02的22端口</p> <p><img src="/devops/public/assets/img/1728890863708.51acefd7.png" alt="1728890863708"></p> <p><img src="/devops/public/assets/img/1728890880401.f0f848d0.png" alt="1728890880401"></p> <p><img src="/devops/public/assets/img/1728890894649.3259bbc5.png" alt="1728890894649"></p> <p><img src="/devops/public/assets/img/1728890910386.ad827dc7.png" alt="1728890910386"></p> <p><img src="/devops/public/assets/img/1728891012571.a2915bf7.png" alt="1728891012571"></p> <p><img src="/devops/public/assets/img/1728891055992.236bec2f.png" alt="1728891055992"></p> <h3 id="_7-https"><a href="#_7-https" class="header-anchor">#</a> 7，HTTPS</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">11</span>.HTTPS
+	<span class="token number">11.1</span><span class="token punctuation">)</span> 如何购买HTTPS
+	<span class="token number">11.2</span><span class="token punctuation">)</span> 企业购买HTTPS建议说明
+	<span class="token number">11.3</span><span class="token punctuation">)</span> 实战：配置SLB支持HTTPS
+	<span class="token number">11.4</span><span class="token punctuation">)</span> 实战：配置CDN支持HTTPS
+	Document：https://help.aliyun.com/product/28533.html?spm<span class="token operator">=</span>a2c4g.750001.list.180.70497b13IJcDtu
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>申请证书</p> <p><img src="/devops/public/assets/img/1728891457923.47cefe2b.png" alt="1728891457923"></p> <p>填写好相应信息后提交审核</p> <p><img src="/devops/public/assets/img/1728891505216.42ea32d0.png" alt="1728891505216"></p> <p><img src="/devops/public/assets/img/1728891540441.7595eaa9.png" alt="1728891540441"></p> <p>实例控制台，监听配置向导</p> <p><img src="/devops/public/assets/img/1728891578822.490eb224.png" alt="1728891578822"></p> <p>添加创建证书，刚刚申请的，注意不要选错，我这边选成别的域名的了，不再修改图片了</p> <p><img src="/devops/public/assets/img/1728891595599.47795fe2.png" alt="1728891595599"></p> <p>添加服务器，添加端口</p> <p><img src="/devops/public/assets/img/1728891617095.f349e855.png" alt="1728891617095"></p> <p><img src="/devops/public/assets/img/1728891138185.de833a68.png" alt="1728891138185"></p> <p><img src="/devops/public/assets/img/1728891189005.8d60e50e.png" alt="1728891189005"></p> <p><img src="/devops/public/assets/img/1728891203256.9fca7132.png" alt="1728891203256"></p> <p>配置完后，需要在web01和web02上的Nginx敢需要配置，浏览器访问，一直转圈，是因为我们web服务器上的php，不会识别https协议，需要修改我们的web上的配置文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>C:<span class="token punctuation">\</span> ~<span class="token punctuation">]</span><span class="token comment"># ssh 39.101.69.67 5555</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/nginx/conf.d/kod.conf</span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name kod.koten.vip<span class="token punctuation">;</span>
+	location / <span class="token punctuation">{</span>
+                root /code/kod<span class="token punctuation">;</span>
+                index index.php index.html index.htm<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+        location ~<span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+                root /code/kod<span class="token punctuation">;</span>
+                fastcgi_pass <span class="token number">127.0</span>.0.1:9000<span class="token punctuation">;</span>
+                fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+		include fastcgi_params<span class="token punctuation">;</span>
+		fastcgi_param HTTPS on<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>C:<span class="token punctuation">\</span> ~<span class="token punctuation">]</span><span class="token comment"># ssh 39.101.69.67 6666</span>
+<span class="token punctuation">[</span>root@web02 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/nginx/conf.d/kod.conf</span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name kod.koten.vip<span class="token punctuation">;</span>
+	location / <span class="token punctuation">{</span>
+                root /code/kod<span class="token punctuation">;</span>
+                index index.php index.html index.htm<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+        location ~<span class="token punctuation">\</span>.php$ <span class="token punctuation">{</span>
+                root /code/kod<span class="token punctuation">;</span>
+                fastcgi_pass <span class="token number">127.0</span>.0.1:9000<span class="token punctuation">;</span>
+                fastcgi_param SCRIPT_FILENAME <span class="token variable">$document_root</span><span class="token variable">$fastcgi_script_name</span><span class="token punctuation">;</span>
+		include fastcgi_params<span class="token punctuation">;</span>
+		fastcgi_param HTTPS on<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p>浏览器访问，恢复正常，大功告成！</p> <h3 id="_8-练习"><a href="#_8-练习" class="header-anchor">#</a> 8，练习</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.冲100元
+<span class="token number">2</span>.购买ECS <span class="token number">1</span>核1G 20G硬盘  无公网IP地址  页面访问
+<span class="token number">3</span>.绑定弹性公网IP  ssh远程连接
+<span class="token number">4</span>.安装nginx+php服务
+<span class="token number">5</span>.下载kod可道云业务部署
+<span class="token number">6</span>.添加磁盘--<span class="token operator">&gt;</span>50G--<span class="token operator">&gt;</span>在线扩容100G
+<span class="token number">7</span>.对系统盘做快照<span class="token punctuation">(</span>快照策略<span class="token punctuation">)</span>
+<span class="token number">8</span>.基于快照创建镜像
+<span class="token number">9</span>.基于自定义镜像创建ECS--WEB02
+<span class="token number">10</span>.启动WEB01和WEB02 解绑WEB01的公网IP地址并释放
+<span class="token number">11</span>.购买传统型SLB负载均衡 配置80测试，配置证书，配置80转发到443端口
+<span class="token number">12</span>.DNS解析到负载均衡<span class="token punctuation">(</span>无域名直接使用IP远程访问<span class="token punctuation">)</span>
+<span class="token number">13</span>.配置SBL四层转发 SLB:5555----》WEB01:22
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="_9-rds数据库服务-redis"><a href="#_9-rds数据库服务-redis" class="header-anchor">#</a> 9，RDS数据库服务-Redis</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">6</span>.RDS数据库服务-Redis
+	<span class="token number">6.1</span>）RDS-Redis架构
+	<span class="token number">6.2</span>）RDS-Redis实例创建
+		<span class="token number">1</span>.获取redis集群内网地址
+		<span class="token number">2</span>.配置redis集群用户名和密码   <span class="token number">123</span>@qqcom
+		<span class="token number">3</span>.配置谁可以访问redis，设置白名单
+		<span class="token number">4</span>.在web01或者web02测试命令行是否正常连接
+		  yum <span class="token parameter variable">-y</span> <span class="token function">install</span> redis
+		连接方式redis-cli <span class="token parameter variable">-h</span> malu.redis.rds.aliyuncs.com  <span class="token parameter variable">-a</span> <span class="token string">'malu:123@qqcom'</span>
+	<span class="token number">6.3</span>）对接KODE业务 需要RDS实例设置设置免密访问
+	<span class="token number">6.4</span>）RDS实例设置外网连接IP <span class="token punctuation">(</span>使用密码的方式连接,免密会报错<span class="token punctuation">)</span>
+	<span class="token number">6.5</span>）RDS实例设置直连模式
+	<span class="token number">6.6</span>）RDS实例备份与恢复（集群RDB 标准版可以是AOF）
+	<span class="token number">6.7</span><span class="token punctuation">)</span> 实战：实现kodcloud缓存（注意：redis密码不要特殊字符开头）
+	Document： https://help.aliyun.com/product/26340.html?spm<span class="token operator">=</span>a2c4g.11174283.6.34.690852feQTaE4k
+
+	作业：
+		<span class="token number">1</span>.购买标准版-双副本（社区版）Redis实例，测试内网连接
+		<span class="token number">2</span>.配置免秘设置 KOD对接Redis 
+		<span class="token number">3</span>.配置公网连接 在虚拟机的WEB01可以连接Redis集群
+
+	在企业中配置redis的方式: 
+	第一种: 管理页面有自带的接口配置redis
+	第二种: 管理页面没有需要我们找到对应数据库配置文件将信息填写进去
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>redis的文档：https://help.aliyun.com/zh/redis/product-overview/overview-6?spm=a2c4g.11186623.0.0.89be7a03huk7Oe</p> <p><img src="/devops/public/assets/img/1728892369055.dbd2f476.png" alt="1728892369055"></p> <p><img src="/devops/public/assets/img/1728892446016.7766573b.png" alt="1728892446016"></p> <p>购买redis主从版：</p> <p><img src="/devops/public/assets/img/1728892825676.4d1ae40d.png" alt="1728892825676"></p> <p><img src="/devops/public/assets/img/1728892935280.9cbd0d58.png" alt="1728892935280"></p> <p><img src="/devops/public/assets/img/1728892996067.b25c8d26.png" alt="1728892996067"></p> <p><img src="/devops/public/assets/img/1728893087547.cb227670.png" alt="1728893087547"></p> <p><img src="/devops/public/assets/img/1728893109029.3e022364.png" alt="1728893109029"></p> <p><img src="/devops/public/assets/img/1728893121698.98b70174.png" alt="1728893121698"></p> <p><img src="/devops/public/assets/img/1728893193729.4bc3c008.png" alt="1728893193729"></p> <p><img src="/devops/public/assets/img/1728893338723.ebd858ef.png" alt="1728893338723"></p> <p><img src="/devops/public/assets/img/1728893352410.822739e9.png" alt="1728893352410"></p> <p><img src="/devops/public/assets/img/1728893376961.56d3c930.png" alt="1728893376961"></p> <p><img src="/devops/public/assets/img/1728893405679.6f4c9680.png" alt="1728893405679"></p> <p><img src="/devops/public/assets/img/1728893473154.9535ec0f.png" alt="1728893473154"></p> <p><img src="/devops/public/assets/img/1728893483018.3c703efa.png" alt="1728893483018"></p> <p><img src="/devops/public/assets/img/1728893519003.2912aa69.png" alt="1728893519003"></p> <p>测试是否可以连接成功：</p> <p><img src="/devops/public/assets/img/1728893587385.1293494a.png" alt="1728893587385"></p> <p><img src="/devops/public/assets/img/1728893619360.0b5210ba.png" alt="1728893619360"></p> <p><img src="/devops/public/assets/img/1728893724275.531af0dc.png" alt="1728893724275"></p> <p><img src="/devops/public/assets/img/1728893755954.5c015e6b.png" alt="1728893755954"></p> <p><img src="/devops/public/assets/img/1728893796113.0a5dcf3d.png" alt="1728893796113"></p> <p>使用window电脑上的软件连接：</p> <p><img src="/devops/public/assets/img/1728893858261.7ebb18d9.png" alt="1728893858261"></p> <p><img src="/devops/public/assets/img/1728893891976.ce662e32.png" alt="1728893891976"></p> <p>申请公网访问：</p> <p><img src="/devops/public/assets/img/1728893937900.cf41b062.png" alt="1728893937900"></p> <p><img src="/devops/public/assets/img/1728893989712.3f4a7d23.png" alt="1728893989712"></p> <p><img src="/devops/public/assets/img/1728894041858.e6ed0c24.png" alt="1728894041858"></p> <p>还需要把我公司的IP加入白名单：</p> <p><img src="/devops/public/assets/img/1728894142551.292eb199.png" alt="1728894142551"></p> <p>还是不行：</p> <p><img src="/devops/public/assets/img/1728894180527.34295d70.png" alt="1728894180527"></p> <p><img src="/devops/public/assets/img/1728894213309.055945ee.png" alt="1728894213309"></p> <p><img src="/devops/public/assets/img/1728894308561.311d99af.png" alt="1728894308561"></p> <p><img src="/devops/public/assets/img/1728894366416.906972f0.png" alt="1728894366416"></p> <p><img src="/devops/public/assets/img/1728894377649.73c42983.png" alt="1728894377649"></p> <p>在kod中通过专有网络去连接：</p> <p><img src="/devops/public/assets/img/1728894496788.8454c8ec.png" alt="1728894496788"></p> <p><img src="/devops/public/assets/img/1728894518819.2b1e141d.png" alt="1728894518819"></p> <p><img src="/devops/public/assets/img/1728894582960.0b43d636.png" alt="1728894582960"></p> <p>报了php-redis扩展不可用，配置：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>PHP安装redis插件
+yum <span class="token function">install</span> <span class="token parameter variable">-y</span> gcc glibc gcc-c++ pcre-devel openssl-devel patch
+第一步: 下载redis源码包
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># wget http://pecl.php.net/get/redis-4.0.1.tgz</span>
+第二步： 解压代码
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># tar xf redis-4.0.1.tgz </span>
+第三步： 配置
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cd redis-4.0.1/</span>
+<span class="token punctuation">[</span>root@web01:redis-4.0.1<span class="token punctuation">]</span><span class="token comment"># phpize</span>
+<span class="token punctuation">[</span>root@web01:redis-4.0.1<span class="token punctuation">]</span><span class="token comment">#./configure</span>
+第四步： 编译安装
+<span class="token punctuation">[</span>root@web01:redis-4.0.1<span class="token punctuation">]</span><span class="token comment"># make &amp;&amp; make install</span>
+第五步： 开启redis插件功能，配置文件增加以下一行内容
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#grep redis.so /etc/php.ini  -n</span>
+<span class="token number">1357</span>:extension<span class="token operator">=</span>redis.so
+第六步： 重启服务
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#systemctl restart php-fpm</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>测试：</p> <p><img src="/devops/public/assets/img/1728895814419.b915ae16.png" alt="1728895814419"></p> <p><img src="/devops/public/assets/img/1728895845081.872a80b6.png" alt="1728895845081"></p> <p><img src="/devops/public/assets/img/1728895954034.2b2d1cee.png" alt="1728895954034"></p> <p><img src="/devops/public/assets/img/1728895967205.b881060f.png" alt="1728895967205"></p> <p><img src="/devops/public/assets/img/1728895978800.8354e401.png" alt="1728895978800"></p> <p><img src="/devops/public/assets/img/1728896037727.adeb096a.png" alt="1728896037727"></p> <p><img src="/devops/public/assets/img/1728896091790.48b4876c.png" alt="1728896091790"></p> <p>看一下，我是命中了哪一台：</p> <p><img src="/devops/public/assets/img/1728896305877.8fdcfec4.png" alt="1728896305877"></p> <p>测试会话信息：</p> <p><img src="/devops/public/assets/img/1728896520329.c492f12e.png" alt="1728896520329"></p> <h3 id="_10-mysql主从"><a href="#_10-mysql主从" class="header-anchor">#</a> 10，mysql主从</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">7</span>.RDS数据库服务-mysql
+	<span class="token number">7.1</span>）RDS-MySQL架构 主从
+	<span class="token number">7.1</span><span class="token punctuation">)</span> 购买RDS数据库
+	<span class="token number">7.2</span><span class="token punctuation">)</span> 配置白名单（允许谁能连接），获取RDS内网数据库地址
+	<span class="token number">7.3</span><span class="token punctuation">)</span> 创建用户，点击账号管理，创建用户，等待1分钟。
+	<span class="token number">7.4</span><span class="token punctuation">)</span> 通过ecs云主机的内网连接RDB数据库
+	KOD将动态数据写入MySQL集群
+	KOD--<span class="token operator">&gt;</span>后台管理--<span class="token operator">&gt;</span>服务器管理--<span class="token operator">&gt;</span>数据库切换
+	<span class="token number">7.5</span><span class="token punctuation">)</span> 如何配置RDB能通过外网连接
+		<span class="token number">1</span>.设置白名单，才会显示内网RDS可连接地址 rm-2zea2795fzoaqwqlj35890.mysql.rds.aliyuncs.com
+		<span class="token number">2</span>.配置用户名和密码 <span class="token punctuation">(</span>malu:123@qqcom<span class="token punctuation">)</span>
+	    <span class="token number">3</span>.配置外网地址（公司的固定IP<span class="token operator">|</span><span class="token number">0.0</span>.0.0/0）
+	<span class="token number">7.6</span><span class="token punctuation">)</span> 配置RDB读写分离
+	        <span class="token number">1</span>.添加只读实例，购买2台主机
+	        <span class="token number">2</span>.数据库代理-<span class="token operator">&gt;</span>开启代理服务-<span class="token operator">&gt;</span>开启读写分离（自动显示架构图）
+	        <span class="token number">3</span>.让程序直接连接该地址，自动实现了读写分离
+	<span class="token number">7.7</span><span class="token punctuation">)</span> 配置RDB的备份策略， 备份恢复中点击-<span class="token operator">&gt;</span>备份设置，根据实际情况做调整。
+	<span class="token number">7.8</span><span class="token punctuation">)</span> 实践：搭建wordpress、共享数据至RDS
+	Document： https://help.aliyun.com/document_detail/96047.html?spm<span class="token operator">=</span>a2c4g.11174283.6.603.72514c22mb10IC
+	
+作业:
+Redis
+<span class="token number">1</span>.购买Redis主从版
+<span class="token number">2</span>.配置kod免秘钥连接Redis内网接口
+<span class="token number">3</span>.申请公网访问连接
+<span class="token number">4</span>.创建用户名密码 在企业内部进行远程连接公网Redis接口地址 使用keys *进行验证	
+MySQL:
+<span class="token number">1</span>.购买msyql主从版
+<span class="token number">2</span>.配置用户名密码
+<span class="token number">3</span>.通过ECS主机测试和mysql的连通性
+<span class="token number">4</span>.kod业务由内置数据库修改为mysql
+<span class="token number">5</span>.申请公网连接访问
+<span class="token number">6</span>.在企业内部远程测试连接mysql公网地址
+<span class="token number">7</span>.提升主从配置为读写分离版 获取proxy代理地址 通过ECS进行连接测试
+NAS
+<span class="token number">1</span>.购买NAS挂载到ESC的/mnt下
+
+OSS
+<span class="token number">1</span>.创建bucket
+<span class="token number">2</span>.创建子账号 进入bucket--<span class="token operator">&gt;</span>权限控制--<span class="token operator">&gt;</span>访问控制RAM--<span class="token operator">&gt;</span> 访问控制RAM--<span class="token operator">&gt;</span>前往RAM控制台--用户：创建用户
+<span class="token number">3</span>.授权子账号管理bucket
+<span class="token number">4</span>.oss后台存储增加oss存储 上传图片测试
+
+
+<span class="token number">8</span>.NAS存储服务-NFS
+	<span class="token number">10.1</span><span class="token punctuation">)</span> NAS基本介绍
+	<span class="token number">10.2</span><span class="token punctuation">)</span> NAS使用流程
+	<span class="token number">10.3</span><span class="token punctuation">)</span> 实战：共享多ECS静态资源至NAS
+	Document： https://help.aliyun.com/product/27516.html?spm<span class="token operator">=</span>a2c4g.750001.list.20.f8277b13O5C1mf
+
+<span class="token number">15</span>.OSS对象存储
+	<span class="token number">15.1</span><span class="token punctuation">)</span> 什么是对象存储? 
+	<span class="token number">15.2</span><span class="token punctuation">)</span> 对象存储使用场景?
+	<span class="token number">15.3</span><span class="token punctuation">)</span> Kodcloud对接OSS存储构建私有网盘
+	Document：https://help.aliyun.com/product/31815.html?spm<span class="token operator">=</span>a2c4g.11186623.6.540.152f406cjmJWuA	
+	
+	<span class="token number">1</span>.创建bucket
+	<span class="token number">2</span>.创建子账号获取信息
+	  进入bucket--<span class="token operator">&gt;</span>权限控制--<span class="token operator">&gt;</span>访问控制RAM--<span class="token operator">&gt;</span> 访问控制RAM--<span class="token operator">&gt;</span>前往RAM控制台--用户：创建用户
+	  用户登录名称 linux-84@1257536134501215.onaliyun.com
+		AccessKey ID LTAI5tBWSVr1TeM5BJyWkJDp
+		AccessKey Secret EDVEdpsrv2u7kjjnHYopUzvffKOPvi
+	  给账号添加管理存储的权限:
+	  用户--<span class="token operator">&gt;</span>添加权限--<span class="token operator">&gt;</span> 选择AliyunOSSFullAccess
+
+	<span class="token number">3</span>.授权子账号拥有完全控制权限
+	<span class="token number">4</span>.对接kod云平台
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br></div></div><p>然后购买mysql高可用版本：</p> <p><img src="/devops/public/assets/img/1728896813974.fbb23a00.png" alt="1728896813974"></p> <p><img src="/devops/public/assets/img/1728896879769.651e27aa.png" alt="1728896879769"></p> <p><img src="/devops/public/assets/img/1728896963577.73bd9002.png" alt="1728896963577"></p> <p><img src="/devops/public/assets/img/1728897019216.341b5ef3.png" alt="1728897019216"></p> <p><img src="/devops/public/assets/img/1728897059071.d4585453.png" alt="1728897059071"></p> <p><img src="/devops/public/assets/img/1728897238214.e4fa269c.png" alt="1728897238214"></p> <p><img src="/devops/public/assets/img/1728897259465.e49be6a7.png" alt="1728897259465"></p> <p><img src="/devops/public/assets/img/1728897321540.f3f1067a.png" alt="1728897321540"></p> <p><img src="/devops/public/assets/img/1728897339850.16d66a12.png" alt="1728897339850"></p> <p><img src="/devops/public/assets/img/1728897381080.658e11d7.png" alt="1728897381080"></p> <p><img src="/devops/public/assets/img/1728897472696.d09f5dd8.png" alt="1728897472696"></p> <p>通过web01去连接数据库：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># ping rm-0jl983ezb6q054z57.mysql.rds.aliyuncs.com</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># yum -y install mariadb-server</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># mysql -h rm-0jl983ezb6q054z57.mysql.rds.aliyuncs.com -u'malu' -p'123456adminA'</span>
+Welcome to the MariaDB monitor.  Commands end with <span class="token punctuation">;</span> or <span class="token punctuation">\</span>g.
+Your MySQL connection <span class="token function">id</span> is <span class="token number">129</span>
+Server version: <span class="token number">5.7</span>.44-log Source distribution
+
+Copyright <span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token number">2000</span>, <span class="token number">2018</span>, Oracle, MariaDB Corporation Ab and others.
+
+Type <span class="token string">'help;'</span> or <span class="token string">'\h'</span> <span class="token keyword">for</span> help. Type <span class="token string">'\c'</span> to <span class="token function">clear</span> the current input statement.
+
+MySQL <span class="token punctuation">[</span><span class="token punctuation">(</span>none<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> show databases<span class="token punctuation">;</span>
++--------------------+
+<span class="token operator">|</span> Database           <span class="token operator">|</span>
++--------------------+
+<span class="token operator">|</span> information_schema <span class="token operator">|</span>
+<span class="token operator">|</span> __recycle_bin__    <span class="token operator">|</span>
+<span class="token operator">|</span> mysql              <span class="token operator">|</span>
+<span class="token operator">|</span> performance_schema <span class="token operator">|</span>
+<span class="token operator">|</span> sys                <span class="token operator">|</span>
++--------------------+
+<span class="token number">5</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.01</span> sec<span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>申请公网连接mysql:</p> <p><img src="/devops/public/assets/img/1728897756066.cc0530f8.png" alt="1728897756066"></p> <p><img src="/devops/public/assets/img/1728897839956.c3992818.png" alt="1728897839956"></p> <p>画图：</p> <p><img src="/devops/public/assets/img/1728898066285.12c7b328.png" alt="1728898066285"></p> <p><img src="/devops/public/assets/img/1728898146154.8e04a16f.png" alt="1728898146154"></p> <p><img src="/devops/public/assets/img/1728898209588.8ab5b625.png" alt="1728898209588"></p> <p>使用sqlyog连接：</p> <p><img src="/devops/public/assets/img/1728898286857.0d6114ac.png" alt="1728898286857"></p> <p><img src="/devops/public/assets/img/1728898417361.3ef1ff4e.png" alt="1728898417361"></p> <p>把kod业务由内置数据库修改成mysql</p> <p><img src="/devops/public/assets/img/1728898536519.8c17ce99.png" alt="1728898536519"></p> <p><img src="/devops/public/assets/img/1728898556187.c1167291.png" alt="1728898556187"></p> <p><img src="/devops/public/assets/img/1728898645065.39ef92eb.png" alt="1728898645065"></p> <p>这种情况，只能去动代码了。</p> <p><img src="/devops/public/assets/img/1728899420274.a452f4a1.png" alt="1728899420274"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01 config<span class="token punctuation">]</span><span class="token comment"># scp setting_user.php 172.18.229.204:/code/config/setting_user.php</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/devops/public/assets/img/1728899610502.51a6b5d7.png" alt="1728899610502"></p> <p>看数据库：</p> <p><img src="/devops/public/assets/img/1728899630007.cd56ecdb.png" alt="1728899630007"></p> <p>提升主从配置为读写分离版本：</p> <p><img src="/devops/public/assets/img/1728899981691.7d7e632e.png" alt="1728899981691"></p> <p><img src="/devops/public/assets/img/1728900128665.32b37ca8.png" alt="1728900128665"></p> <p><img src="/devops/public/assets/img/1728900151942.1dec60f3.png" alt="1728900151942"></p> <p>再买一台数据库：</p> <p><img src="/devops/public/assets/img/1728900264530.d542a172.png" alt="1728900264530"></p> <p><img src="/devops/public/assets/img/1728900293670.a18828fb.png" alt="1728900293670"></p> <p><img src="/devops/public/assets/img/1728900333516.e5014724.png" alt="1728900333516"></p> <p><img src="/devops/public/assets/img/1728900507945.b1e50d08.png" alt="1728900507945"></p> <p><img src="/devops/public/assets/img/1728900867583.e4b1560a.png" alt="1728900867583"></p> <p><img src="/devops/public/assets/img/1728900929876.e8d500bc.png" alt="1728900929876"></p> <p><img src="/devops/public/assets/img/1728900971962.e09ebdf1.png" alt="1728900971962"></p> <p>尝试登录，没有问题，需要将项目中的配置文件的mysql地址修改成这个，才算使用上，这一点不再演示。</p> <p><img src="/devops/public/assets/img/1728901120356.49564f81.png" alt="1728901120356"></p> <p><img src="/devops/public/assets/img/1728901143269.5dead442.png" alt="1728901143269"></p> <p>释放掉：</p> <p><img src="/devops/public/assets/img/1728901444424.80c5920c.png" alt="1728901444424"></p> <p>找到你买过的所有产品：</p> <p><img src="/devops/public/assets/img/1728901895992.6bf9047f.png" alt="1728901895992"></p> <h3 id="_11-nas"><a href="#_11-nas" class="header-anchor">#</a> 11，NAS</h3> <p>购买：</p> <p><img src="/devops/public/assets/img/1728907924551.d48930f0.png" alt="1728907924551"></p> <p><img src="/devops/public/assets/img/1728908071544.cbd29197.png" alt="1728908071544"></p> <p><img src="/devops/public/assets/img/1728908378938.190d6188.png" alt="1728908378938"></p> <p><img src="/devops/public/assets/img/1728908457633.52dfd29c.png" alt="1728908457633"></p> <p><img src="/devops/public/assets/img/1728908664610.0a91d0eb.png" alt="1728908664610"></p> <p><img src="/devops/public/assets/img/1728908686190.dcc51363.png" alt="1728908686190"></p> <p><img src="/devops/public/assets/img/1728908696517.afd28437.png" alt="1728908696517"></p> <p><img src="/devops/public/assets/img/1728908715877.d7a162fc.png" alt="1728908715877"></p> <p><img src="/devops/public/assets/img/1728908743131.a3fcc5eb.png" alt="1728908743131"></p> <p>web1与web2都挂载下</p> <p><img src="/devops/public/assets/img/1728908978917.93ff5db3.png" alt="1728908978917"></p> <p><img src="/devops/public/assets/img/1728908999504.05efad7a.png" alt="1728908999504"></p> <p><img src="/devops/public/assets/img/1728909044312.0935721f.png" alt="1728909044312"></p> <p>看网盘：</p> <p><img src="/devops/public/assets/img/1728909098301.7c709032.png" alt="1728909098301"></p> <h3 id="_12-oss"><a href="#_12-oss" class="header-anchor">#</a> 12，OSS</h3> <p>创建bucket:</p> <p><img src="/devops/public/assets/img/1728909298384.9bcb2d7a.png" alt="1728909298384"></p> <p><img src="/devops/public/assets/img/1728909378818.8aada39d.png" alt="1728909378818"></p> <p><img src="/devops/public/assets/img/1728909427231.6eb41f39.png" alt="1728909427231"></p> <p><img src="/devops/public/assets/img/1728909476770.20a073b0.png" alt="1728909476770"></p> <p><img src="/devops/public/assets/img/1728909504923.3e3958d5.png" alt="1728909504923"></p> <p><img src="/devops/public/assets/img/1728909529358.7e55be2d.png" alt="1728909529358"></p> <p><img src="/devops/public/assets/img/1728909572323.0046d307.png" alt="1728909572323"></p> <p><img src="/devops/public/assets/img/1728909600559.cc2f3489.png" alt="1728909600559"></p> <p><img src="/devops/public/assets/img/1728909617511.c5e50358.png" alt="1728909617511"></p> <p>授权子账号管理bucket</p> <p><img src="/devops/public/assets/img/1728909670716.40d158c6.png" alt="1728909670716"></p> <p><img src="/devops/public/assets/img/1728909725301.92577483.png" alt="1728909725301"></p> <p><img src="/devops/public/assets/img/1728909780498.c601a94f.png" alt="1728909780498"></p> <p>回到企业网盘中，做一个配置：</p> <p><img src="/devops/public/assets/img/1728909877867.870f5e98.png" alt="1728909877867"></p> <p><img src="/devops/public/assets/img/1728909918299.92fdee3b.png" alt="1728909918299"></p> <p>填写对应数据，填好后点保存，由于有两个web，先配置web02，再配置web01:</p> <p><img src="/devops/public/assets/img/1728910103216.be986ec8.png" alt="1728910103216"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>LTAI5tHjac4pYzbfWYyi8pWW
+Vm2Eu9PvFmM1HUHOUpmCd4aNbgiKGd
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p><img src="/devops/public/assets/img/1728910298841.de0cb902.png" alt="1728910298841"></p> <p><img src="/devops/public/assets/img/1728910315803.1866d2e1.png" alt="1728910315803"></p> <p>web01也配置一下：</p> <p><img src="/devops/public/assets/img/1728910370213.84edf355.png" alt="1728910370213"></p> <p><img src="/devops/public/assets/img/1728910504316.e3bd97bd.png" alt="1728910504316"></p> <p><img src="/devops/public/assets/img/1728910553875.7bc976a7.png" alt="1728910553875"></p> <p>图片上传成功后，如下：</p> <p><img src="/devops/public/assets/img/1728911197647.912e1a52.png" alt="1728911197647"></p> <p>还可以进行图片处理，上传图片上去后，可以加水印，类似于百度图片右下角的水印。</p> <p><img src="/devops/public/assets/img/1728911308152.2aba022d.png" alt="1728911308152"></p> <p><img src="/devops/public/assets/img/1728911845463.da8c71dd.png" alt="1728911845463"></p> <p><img src="/devops/public/assets/img/1728912897051.250f679b.png" alt="1728912897051"></p> <h3 id="_11-dns"><a href="#_11-dns" class="header-anchor">#</a> 11，DNS</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">9</span>.DNS
+	<span class="token number">9.1</span><span class="token punctuation">)</span> DNS基本介绍
+		<span class="token number">1</span>.域名对应IP关系 <span class="token punctuation">(</span>方便记忆<span class="token punctuation">)</span>
+		<span class="token number">2</span>.迁移使用DNS的方式会更加的方便
+	<span class="token number">9.2</span><span class="token punctuation">)</span> DNS分类
+		公网DNS  （万网）	互联网
+		内网DNS	（bind9）   局域网
+	<span class="token number">9.2</span><span class="token punctuation">)</span> DNS解析原理   如何获取的IP地址
+	<span class="token number">9.3</span>）DNS递归查询与迭代查询
+		递归算法： 我向LocalDNS查询域名—<span class="token operator">&gt;</span>localDNS不知道域名对应的IP—<span class="token operator">&gt;</span>但它知道谁知道—<span class="token operator">&gt;</span>他代为帮你去查找--<span class="token operator">&gt;</span>最后在返回结果
+		迭代算法： 我向LocalDNS查询域名—<span class="token operator">&gt;</span>localDNS不知道域名对应的IP—<span class="token operator">&gt;</span>但它知道谁知道—<span class="token operator">&gt;</span>你自己去找它
+	<span class="token number">9.4</span><span class="token punctuation">)</span> DNS几种解析 <span class="token punctuation">(</span>A<span class="token operator">|</span>AAAA<span class="token operator">|</span>CNAME<span class="token punctuation">)</span>
+	<span class="token number">9.3</span><span class="token punctuation">)</span> 配置DNS解析（A记录、CNAME记录）
+	Document：https://help.aliyun.com/product/29697.html?spm<span class="token operator">=</span>a2c4g.11186623.6.540.76984dd5MJZuY8
+
+
+redis会话保持接入kod
+mysql接入到kod
+NAS挂载到两台web
+OSS接入到kod平台
+DNS域名解析
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><img src="/devops/public/assets/img/1728914721767.cf881544.png" alt="1728914721767"></p> <p><img src="/devops/public/assets/img/1728914762840.2bc7ce74.png" alt="1728914762840"></p> <p><img src="/devops/public/assets/img/1728914800915.fbac921d.png" alt="1728914800915"></p> <p><img src="/devops/public/assets/img/1728915208984.774d2b05.png" alt="1728915208984"></p> <p><img src="/devops/public/assets/img/1728915416365.7eefd716.png" alt="1728915416365"></p> <p>这里我将二级域名设为kod，一般都是设为www和@，带@表示可以不加二级域名，直接访问。也可以点新手引导，按提示输入即可。</p> <h3 id="_12-cdn"><a href="#_12-cdn" class="header-anchor">#</a> 12，CDN</h3> <p>参考文章：https://blog.csdn.net/qq_37510195/article/details/130359803?spm=1001.2014.3001.5502</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>malumanman123456.cyou
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">10</span>.CDN
+	<span class="token number">10.1</span><span class="token punctuation">)</span> CDN实现原理
+	<span class="token number">10.2</span>）CDN架构介绍 （回源站<span class="token operator">|</span>CDN根据OSS存储资源缓存）
+	<span class="token number">10.3</span>）CDN其他产品  SCDN（安全与速度）  全站CDN（动态居多）
+	<span class="token number">10.4</span><span class="token punctuation">)</span> 配置CDN场景
+		<span class="token number">1</span>.简单的验证: 先搭建一个可道云,然后检测是否丛源站获取资源,然后配置加速,在验证是否丛不同的CDN节点获取的资源.		
+		<span class="token number">2</span>.分布式缓存：源站提供mp4下载，然后通过不同地域的服务器wget资源，检查是否是从不同地域的边缘节点获取的资源。
+		<span class="token number">3</span>.检测的站点 <span class="token punctuation">(</span> http://tool.chinaz.com/speedtest.aspx  <span class="token operator">|</span> https://tools.ipip.net/ping.php <span class="token punctuation">)</span>
+
+	<span class="token number">10.5</span><span class="token punctuation">)</span> 实践：CDN预热与刷新
+		<span class="token number">1</span>.CDN-缓存配置-缓存过期时间-<span class="token operator">&gt;</span>添加对应格式后缀
+		<span class="token number">2</span>.上传一张图片，使用预热方式缓存，然后替换该图片（名称一致），测试，最后使用刷新，检查是否更新成功。
+		预热的目的: 减少回源率,提高命中率.
+	Document：https://help.aliyun.com/product/27099.html?spm<span class="token operator">=</span>a2c4g.750001.list.74.70497b13IJcDtu
+		  https://docs.qingcloud.com/product/network/cdn
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>当终端用户向www.aliyundoc.com下的指定资源发起请求时，首先向Local DNS（本地DNS）发起请求域名www.aliyundoc.com对应的IP。
+
+Local DNS检查缓存中是否有www.aliyundoc.com的IP地址记录。如果有，则直接返回给终端用户；如果没有，则向网站授权DNS请求域名www.aliyundoc.com的解析记录。
+
+当网站授权DNS解析www.aliyundoc.com后，返回域名的CNAME www.aliyundoc.com.example.com。
+
+Local DNS向阿里云CDN的DNS调度系统请求域名www.aliyundoc.com.example.com的解析记录，阿里云CDN的DNS调度系统将为其分配最佳节点IP地址。
+
+Local DNS获取阿里云CDN的DNS调度系统返回的最佳节点IP地址。
+
+Local DNS将最佳节点IP地址返回给用户，用户获取到最佳节点IP地址。
+
+用户向最佳节点IP地址发起对该资源的访问请求。
+
+如果该最佳节点已缓存该资源，则会将请求的资源直接返回给用户（步骤8），此时请求结束。
+
+如果该最佳节点未缓存该资源或者缓存的资源已经失效，则节点将会向源站发起对该资源的请求。获取源站资源后结合用户自定义配置的缓存策略，将资源缓存到CDN节点并返回给用户（步骤8），此时请求结束。配置缓存策略的操作方法，请参见配置缓存过期时间。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_13-waf"><a href="#_13-waf" class="header-anchor">#</a> 13，WAF</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">12</span>.WAF
+	<span class="token number">12.1</span>）WAF产品基本介绍
+	<span class="token number">12.2</span>）WAF接入网站架构
+	<span class="token number">12.3</span>）WAF+CDN接入网站架构
+	<span class="token number">12.4</span>）实战：WAF+CDN结合使用
+		<span class="token number">1</span>.购买一个WAF
+	Document：https://help.aliyun.com/product/28515.html?spm<span class="token operator">=</span>a2c4g.750001.list.176.4cc17b13wbIbqk
+
+	DDoS 攻击就像是坏人雇了成千上万人堵在奶茶店门口。真正想喝奶茶的人连商店的门都挤不进去。
+	CC 攻击是 DDoS 攻击的一个分支。
+	CC 攻击就是雇一堆人站在奶茶店柜台面前，拉着营业员要这要那，但就是不买，也不走。这导致售货员的注意力被牵制，根本没办法服务正常用户
+	webshell
+	一句话木马
+	
+	云锁WAF  https://yunsuo.qianxin.com/cloud/download
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_14-ess"><a href="#_14-ess" class="header-anchor">#</a> 14，ESS</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">13</span>.ESS
+	<span class="token number">13.1</span><span class="token punctuation">)</span> 什么是弹性伸缩？
+		使用弹性伸缩（Auto Scaling），您可以根据业务需求和策略设置伸缩规则，在业务需求增长时自动为您增加ECS实例以保证计算能力，在业务需求下降时自动减少ECS实例以节约成本。弹性伸缩不仅适合业务量不断波动的应用程序，同时也适合业务量稳定的应用程序。
+	<span class="token number">13.2</span><span class="token punctuation">)</span> 弹性伸缩应用场景
+		某视频公司：春晚或每周五热门节目来临时，负载激增，需及时、自动扩展云计算资源。
+		某视频直播公司：业务负载变化难以预测，需要阿里云自动根据CPU利用率、应用负载、带宽利用率作为衡量指标进行弹性伸缩。
+		某游戏公司：每天中午12点及晚上6点到9点间需求增长，需要定时扩容。
+		某电商：在大促中，临时激增大量云服务器需求，需要在数分钟内实现从创建到可用。
+	<span class="token number">13.3</span><span class="token punctuation">)</span> 弹性伸缩模式
+		定时模式：您自定义自动伸缩发生的时间和频率，如每天 <span class="token number">13</span>：00增加 ECS 实例。
+		动态模式：基于云监控性能指标（如 CPU 利用率），自动增加或减少 ECS 实例。
+		健康模式：如 ECS 实例为非 Running 状态，弹性伸缩将自动移出或释放不健康的 ECS 实例。
+	<span class="token number">13.4</span><span class="token punctuation">)</span> ESS弹性伸缩配置实践
+		配置的流程: 配置好负载均衡--<span class="token operator">&gt;</span>创建伸缩组--<span class="token operator">&gt;</span>添加伸缩配置--<span class="token operator">&gt;</span>添加已有ECS实例--<span class="token operator">&gt;</span>启用伸缩组
+		<span class="token number">1</span><span class="token punctuation">)</span> 创建伸缩组规则
+			<span class="token number">1.1</span><span class="token punctuation">)</span> 添加ECS实例规则 CPU大于80%
+			<span class="token number">1.2</span><span class="token punctuation">)</span> 减少ECS实例规则 CPU小于30%
+		<span class="token number">2</span><span class="token punctuation">)</span> 弹性伸缩规则会在什么时候添加或减少，根据动作来触发.
+			定时任务
+			云上监控
+		<span class="token number">3</span><span class="token punctuation">)</span> 模拟CPU大于百分之80%  <span class="token punctuation">[</span> python脚本 <span class="token punctuation">]</span>
+		    a <span class="token operator">=</span> <span class="token number">0</span>
+		    <span class="token keyword">while</span> <span class="token number">1</span>:
+			    <span class="token assign-left variable">a</span><span class="token operator">+=</span><span class="token number">1</span>
+	Document：https://help.aliyun.com/product/25855.html?spm<span class="token operator">=</span>a2c4g.11186623.6.540.535448595bgK6Y
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="_15-nat"><a href="#_15-nat" class="header-anchor">#</a> 15，NAT</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">14</span>.NAT<span class="token punctuation">(</span>运维<span class="token punctuation">)</span>
+	<span class="token number">14.1</span><span class="token punctuation">)</span> 内网ECS没有购买公网IP，无法上网
+	  方式一、firewalld实现内部主机共享上网（不推荐）
+		<span class="token number">1</span>.购买一台ECS专门用于共享上网，需要有独立公网IP，主机名称为Manager
+		<span class="token number">2</span>.开启Manager服务器firewalld防火墙，打开masquerade路由转发功能
+		<span class="token number">3</span>.找到需要上网的ECS实例所在的VPC网络，添加一条路由规则，去往0.0.0.0/0 下一跳是Manager 这台ECS实例
+
+	  方式二、NAT网关实现内网共享上网	（强烈推荐）
+		<span class="token number">1</span>.购买按量付费的NAT网关
+		<span class="token number">2</span>.购买弹性EIP,将EIP捆绑置NAT网关
+		<span class="token number">3</span>.配置NAT网关的SNAT路由条目，进行地址转换，最后测试连通性
+		注意: NAT网关设备允许多个可用区共用一个NAT网关设备进行上网
+	Document：https://help.aliyun.com/product/44413.html?spm<span class="token operator">=</span>a2c4g.11186623.6.540.47462f2aoaZFjK
+
+	<span class="token number">14.2</span>）解决内网主机无法直连的问题
+		方式一、跳板机方式
+		方式二、负载均衡TCP
+		方式三、NAT网关端口映射<span class="token punctuation">(</span> 需要额外在购买一个弹性公网IP地址 <span class="token punctuation">)</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>目前web01和web02是没有办法上网的：</p> <p><img src="/devops/public/assets/img/1728956617932.7b14187c.png" alt="1728956617932"></p> <p><img src="/devops/public/assets/img/1728956626779.5fa133f0.png" alt="1728956626779"></p> <p>nat操作：</p> <p><img src="/devops/public/assets/img/1728956919078.46f96013.png" alt="1728956919078"></p> <p><img src="/devops/public/assets/img/1728956956473.b50b8b38.png" alt="1728956956473"></p> <p><img src="/devops/public/assets/img/1728956971088.b051e485.png" alt="1728956971088"></p> <p><img src="/devops/public/assets/img/1728956993684.c68a3239.png" alt="1728956993684"></p> <p><img src="/devops/public/assets/img/1728957015106.94e572dc.png" alt="1728957015106"></p> <p><img src="/devops/public/assets/img/1728957085127.d54b9042.png" alt="1728957085127"></p> <p><img src="/devops/public/assets/img/1728957116391.684742e4.png" alt="1728957116391"></p> <p><img src="/devops/public/assets/img/1728957143629.a472cf3a.png" alt="1728957143629"></p> <p><img src="/devops/public/assets/img/1728957210082.4f2f98e7.png" alt="1728957210082"></p> <p><img src="/devops/public/assets/img/1728957443780.63f4495c.png" alt="1728957443780"></p> <p><img src="/devops/public/assets/img/1728957455976.21d09aea.png" alt="1728957455976"></p> <p><img src="/devops/public/assets/img/1728957493340.03f40307.png" alt="1728957493340"></p> <p><img src="/devops/public/assets/img/1728957551853.3d23aee1.png" alt="1728957551853"></p> <p><img src="/devops/public/assets/img/1728957582572.5ff35239.png" alt="1728957582572"></p> <p>测试web01和web02是否可以上网：</p> <p><img src="/devops/public/assets/img/1728957605253.7ef89c8d.png" alt="1728957605253"></p> <p><img src="/devops/public/assets/img/1728957618045.dd326349.png" alt="1728957618045"></p> <p><img src="/devops/public/assets/img/1728957910699.9dd3e994.png" alt="1728957910699"></p> <p><img src="/devops/public/assets/img/1728958057307.c3ff5072.png" alt="1728958057307"></p> <p><img src="/devops/public/assets/img/1728958082856.8c005aad.png" alt="1728958082856"></p> <p><img src="/devops/public/assets/img/1728958177564.cc4df13d.png" alt="1728958177564"></p> <h3 id="_16-阿里云相关面试题"><a href="#_16-阿里云相关面试题" class="header-anchor">#</a> 16，阿里云相关面试题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>用过阿里云吗？
+用过阿里云的ECS SLB Redis MySQL NAS OSS DNS解析 CDN加速<span class="token punctuation">(</span>内容分发网络<span class="token punctuation">)</span>  WAF防护墙  弹性伸缩 NAT网关  证书
+什么是CDN？ 内网分发网络 内容加速的
+CDN加速原理
+如何配置的负载均衡？
+证书公司怎么配置的?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/26/2024, 9:15:52 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_1-云计算基本介绍" class="sidebar-link reco-side-_1-云计算基本介绍" data-v-b57cc07c>1，云计算基本介绍</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_2-ecs的使用" class="sidebar-link reco-side-_2-ecs的使用" data-v-b57cc07c>2，ECS的使用</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_3-ecs快照" class="sidebar-link reco-side-_3-ecs快照" data-v-b57cc07c>3，ECS快照</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_4-基于快照做镜像" class="sidebar-link reco-side-_4-基于快照做镜像" data-v-b57cc07c>4，基于快照做镜像</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_6-slb负载均衡" class="sidebar-link reco-side-_6-slb负载均衡" data-v-b57cc07c>6，SLB负载均衡</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_7-https" class="sidebar-link reco-side-_7-https" data-v-b57cc07c>7，HTTPS</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_8-练习" class="sidebar-link reco-side-_8-练习" data-v-b57cc07c>8，练习</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_9-rds数据库服务-redis" class="sidebar-link reco-side-_9-rds数据库服务-redis" data-v-b57cc07c>9，RDS数据库服务-Redis</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_10-mysql主从" class="sidebar-link reco-side-_10-mysql主从" data-v-b57cc07c>10，mysql主从</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_11-nas" class="sidebar-link reco-side-_11-nas" data-v-b57cc07c>11，NAS</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_12-oss" class="sidebar-link reco-side-_12-oss" data-v-b57cc07c>12，OSS</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_11-dns" class="sidebar-link reco-side-_11-dns" data-v-b57cc07c>11，DNS</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_12-cdn" class="sidebar-link reco-side-_12-cdn" data-v-b57cc07c>12，CDN</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_13-waf" class="sidebar-link reco-side-_13-waf" data-v-b57cc07c>13，WAF</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_14-ess" class="sidebar-link reco-side-_14-ess" data-v-b57cc07c>14，ESS</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_15-nat" class="sidebar-link reco-side-_15-nat" data-v-b57cc07c>15，NAT</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/35-%E9%98%BF%E9%87%8C%E4%BA%91/%E9%98%BF%E9%87%8C%E4%BA%91.html#_16-阿里云相关面试题" class="sidebar-link reco-side-_16-阿里云相关面试题" data-v-b57cc07c>16，阿里云相关面试题</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.86aff7dd.js" defer></script><script src="/devops/public/assets/js/113.82199a69.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/16.4e3fe668.js" defer></script>
+  </body>
+</html>

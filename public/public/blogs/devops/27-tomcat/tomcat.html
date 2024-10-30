@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>27-tomcat | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.86aff7dd.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.82199a69.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/131.c0729626.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.45391833.js"><link rel="prefetch" href="/devops/public/assets/js/100.cf8565ef.js"><link rel="prefetch" href="/devops/public/assets/js/101.8a4bacc6.js"><link rel="prefetch" href="/devops/public/assets/js/102.695543b8.js"><link rel="prefetch" href="/devops/public/assets/js/103.4f6122ca.js"><link rel="prefetch" href="/devops/public/assets/js/104.f41d384f.js"><link rel="prefetch" href="/devops/public/assets/js/105.5ac3284a.js"><link rel="prefetch" href="/devops/public/assets/js/106.17b2a7aa.js"><link rel="prefetch" href="/devops/public/assets/js/107.65c7a01c.js"><link rel="prefetch" href="/devops/public/assets/js/108.58b9bfd7.js"><link rel="prefetch" href="/devops/public/assets/js/109.db00d83f.js"><link rel="prefetch" href="/devops/public/assets/js/11.d0fc4f3f.js"><link rel="prefetch" href="/devops/public/assets/js/110.778a0069.js"><link rel="prefetch" href="/devops/public/assets/js/111.f363cf54.js"><link rel="prefetch" href="/devops/public/assets/js/112.3d4eec93.js"><link rel="prefetch" href="/devops/public/assets/js/114.c1908e94.js"><link rel="prefetch" href="/devops/public/assets/js/115.7b0b3e1d.js"><link rel="prefetch" href="/devops/public/assets/js/116.f4329d97.js"><link rel="prefetch" href="/devops/public/assets/js/117.6458fba7.js"><link rel="prefetch" href="/devops/public/assets/js/118.3c5eb28f.js"><link rel="prefetch" href="/devops/public/assets/js/119.3e43d492.js"><link rel="prefetch" href="/devops/public/assets/js/12.cf024d8c.js"><link rel="prefetch" href="/devops/public/assets/js/120.8edb8b37.js"><link rel="prefetch" href="/devops/public/assets/js/121.f1daf9cc.js"><link rel="prefetch" href="/devops/public/assets/js/122.1392990a.js"><link rel="prefetch" href="/devops/public/assets/js/123.594ef8b6.js"><link rel="prefetch" href="/devops/public/assets/js/124.78c7f925.js"><link rel="prefetch" href="/devops/public/assets/js/125.f23a2b2b.js"><link rel="prefetch" href="/devops/public/assets/js/126.066eb994.js"><link rel="prefetch" href="/devops/public/assets/js/127.01cb7847.js"><link rel="prefetch" href="/devops/public/assets/js/128.116cbd62.js"><link rel="prefetch" href="/devops/public/assets/js/129.1a30f99b.js"><link rel="prefetch" href="/devops/public/assets/js/13.1cfd6ba0.js"><link rel="prefetch" href="/devops/public/assets/js/130.db61a817.js"><link rel="prefetch" href="/devops/public/assets/js/132.826244ba.js"><link rel="prefetch" href="/devops/public/assets/js/133.011935ba.js"><link rel="prefetch" href="/devops/public/assets/js/134.cae3440a.js"><link rel="prefetch" href="/devops/public/assets/js/135.8a9a72a0.js"><link rel="prefetch" href="/devops/public/assets/js/136.c90ca54a.js"><link rel="prefetch" href="/devops/public/assets/js/137.8edfe481.js"><link rel="prefetch" href="/devops/public/assets/js/138.7d289872.js"><link rel="prefetch" href="/devops/public/assets/js/139.e5c30af7.js"><link rel="prefetch" href="/devops/public/assets/js/14.ad6057c0.js"><link rel="prefetch" href="/devops/public/assets/js/140.3cc72f4a.js"><link rel="prefetch" href="/devops/public/assets/js/141.4d70c207.js"><link rel="prefetch" href="/devops/public/assets/js/142.419bceb5.js"><link rel="prefetch" href="/devops/public/assets/js/143.5f8c26d1.js"><link rel="prefetch" href="/devops/public/assets/js/144.ee0e1be3.js"><link rel="prefetch" href="/devops/public/assets/js/145.2da55411.js"><link rel="prefetch" href="/devops/public/assets/js/146.ca8f7d0d.js"><link rel="prefetch" href="/devops/public/assets/js/147.9a6d5129.js"><link rel="prefetch" href="/devops/public/assets/js/148.a67dd46d.js"><link rel="prefetch" href="/devops/public/assets/js/149.e9a00072.js"><link rel="prefetch" href="/devops/public/assets/js/15.def2b642.js"><link rel="prefetch" href="/devops/public/assets/js/150.e64d2e0b.js"><link rel="prefetch" href="/devops/public/assets/js/151.106515de.js"><link rel="prefetch" href="/devops/public/assets/js/152.463ac6d0.js"><link rel="prefetch" href="/devops/public/assets/js/153.bbcaf173.js"><link rel="prefetch" href="/devops/public/assets/js/154.26f53ef4.js"><link rel="prefetch" href="/devops/public/assets/js/155.ae34734c.js"><link rel="prefetch" href="/devops/public/assets/js/156.488b1538.js"><link rel="prefetch" href="/devops/public/assets/js/157.3ded7356.js"><link rel="prefetch" href="/devops/public/assets/js/158.0f2c4349.js"><link rel="prefetch" href="/devops/public/assets/js/159.6a95e903.js"><link rel="prefetch" href="/devops/public/assets/js/16.4e3fe668.js"><link rel="prefetch" href="/devops/public/assets/js/160.c678d160.js"><link rel="prefetch" href="/devops/public/assets/js/161.c79b746a.js"><link rel="prefetch" href="/devops/public/assets/js/162.5d709ff0.js"><link rel="prefetch" href="/devops/public/assets/js/163.1d2fe855.js"><link rel="prefetch" href="/devops/public/assets/js/164.3231157a.js"><link rel="prefetch" href="/devops/public/assets/js/165.e046b30a.js"><link rel="prefetch" href="/devops/public/assets/js/166.3876c921.js"><link rel="prefetch" href="/devops/public/assets/js/167.70e67254.js"><link rel="prefetch" href="/devops/public/assets/js/168.0d3f8e47.js"><link rel="prefetch" href="/devops/public/assets/js/169.46997b70.js"><link rel="prefetch" href="/devops/public/assets/js/17.04d821f9.js"><link rel="prefetch" href="/devops/public/assets/js/170.f43d5156.js"><link rel="prefetch" href="/devops/public/assets/js/171.635faa90.js"><link rel="prefetch" href="/devops/public/assets/js/172.2cac5c3f.js"><link rel="prefetch" href="/devops/public/assets/js/173.e3737b26.js"><link rel="prefetch" href="/devops/public/assets/js/174.50717dc0.js"><link rel="prefetch" href="/devops/public/assets/js/175.4b24eee6.js"><link rel="prefetch" href="/devops/public/assets/js/176.417cffbe.js"><link rel="prefetch" href="/devops/public/assets/js/177.2ee307c4.js"><link rel="prefetch" href="/devops/public/assets/js/178.9041245f.js"><link rel="prefetch" href="/devops/public/assets/js/179.41fcbbcb.js"><link rel="prefetch" href="/devops/public/assets/js/18.b576cb51.js"><link rel="prefetch" href="/devops/public/assets/js/180.c53d3905.js"><link rel="prefetch" href="/devops/public/assets/js/181.308dc969.js"><link rel="prefetch" href="/devops/public/assets/js/182.808e8c47.js"><link rel="prefetch" href="/devops/public/assets/js/183.32a8f52b.js"><link rel="prefetch" href="/devops/public/assets/js/184.0c29c558.js"><link rel="prefetch" href="/devops/public/assets/js/185.71ab7938.js"><link rel="prefetch" href="/devops/public/assets/js/186.9194d03c.js"><link rel="prefetch" href="/devops/public/assets/js/187.4c760ea1.js"><link rel="prefetch" href="/devops/public/assets/js/188.aa344b05.js"><link rel="prefetch" href="/devops/public/assets/js/189.82519a42.js"><link rel="prefetch" href="/devops/public/assets/js/19.c45b1ba4.js"><link rel="prefetch" href="/devops/public/assets/js/190.01e4ff16.js"><link rel="prefetch" href="/devops/public/assets/js/191.6b3692d7.js"><link rel="prefetch" href="/devops/public/assets/js/192.1d4f0133.js"><link rel="prefetch" href="/devops/public/assets/js/193.f970d2a7.js"><link rel="prefetch" href="/devops/public/assets/js/194.db5a2d70.js"><link rel="prefetch" href="/devops/public/assets/js/195.a5e1255a.js"><link rel="prefetch" href="/devops/public/assets/js/196.fbe3bf8e.js"><link rel="prefetch" href="/devops/public/assets/js/197.7987b641.js"><link rel="prefetch" href="/devops/public/assets/js/198.dc16d883.js"><link rel="prefetch" href="/devops/public/assets/js/199.c1449578.js"><link rel="prefetch" href="/devops/public/assets/js/20.6b80775e.js"><link rel="prefetch" href="/devops/public/assets/js/200.8e8146d1.js"><link rel="prefetch" href="/devops/public/assets/js/201.41f1e415.js"><link rel="prefetch" href="/devops/public/assets/js/202.22aa46cf.js"><link rel="prefetch" href="/devops/public/assets/js/203.1365c4fe.js"><link rel="prefetch" href="/devops/public/assets/js/204.dcd590e2.js"><link rel="prefetch" href="/devops/public/assets/js/205.4dffec8d.js"><link rel="prefetch" href="/devops/public/assets/js/206.6f102810.js"><link rel="prefetch" href="/devops/public/assets/js/207.ff9fa0ae.js"><link rel="prefetch" href="/devops/public/assets/js/208.31cd3e7f.js"><link rel="prefetch" href="/devops/public/assets/js/209.9674efe2.js"><link rel="prefetch" href="/devops/public/assets/js/21.c7a1735f.js"><link rel="prefetch" href="/devops/public/assets/js/210.d6ffa4eb.js"><link rel="prefetch" href="/devops/public/assets/js/211.78964744.js"><link rel="prefetch" href="/devops/public/assets/js/212.633341d7.js"><link rel="prefetch" href="/devops/public/assets/js/213.9d85b1b9.js"><link rel="prefetch" href="/devops/public/assets/js/214.853e1f5e.js"><link rel="prefetch" href="/devops/public/assets/js/215.250acf5d.js"><link rel="prefetch" href="/devops/public/assets/js/216.dd502fd2.js"><link rel="prefetch" href="/devops/public/assets/js/217.27d20f63.js"><link rel="prefetch" href="/devops/public/assets/js/218.c2a56486.js"><link rel="prefetch" href="/devops/public/assets/js/219.c7b62c1f.js"><link rel="prefetch" href="/devops/public/assets/js/22.278b9a12.js"><link rel="prefetch" href="/devops/public/assets/js/220.c5b76849.js"><link rel="prefetch" href="/devops/public/assets/js/221.ca896923.js"><link rel="prefetch" href="/devops/public/assets/js/222.19f1703d.js"><link rel="prefetch" href="/devops/public/assets/js/223.956f2b67.js"><link rel="prefetch" href="/devops/public/assets/js/224.304537c5.js"><link rel="prefetch" href="/devops/public/assets/js/225.a13aebd0.js"><link rel="prefetch" href="/devops/public/assets/js/226.a3636db6.js"><link rel="prefetch" href="/devops/public/assets/js/227.542bf1cb.js"><link rel="prefetch" href="/devops/public/assets/js/228.18831269.js"><link rel="prefetch" href="/devops/public/assets/js/229.bb0aa3b6.js"><link rel="prefetch" href="/devops/public/assets/js/23.fa037677.js"><link rel="prefetch" href="/devops/public/assets/js/230.9e51c7a1.js"><link rel="prefetch" href="/devops/public/assets/js/231.60a84287.js"><link rel="prefetch" href="/devops/public/assets/js/232.98f9d224.js"><link rel="prefetch" href="/devops/public/assets/js/233.62237c81.js"><link rel="prefetch" href="/devops/public/assets/js/234.42c84a1a.js"><link rel="prefetch" href="/devops/public/assets/js/235.0e093e12.js"><link rel="prefetch" href="/devops/public/assets/js/236.5e78345f.js"><link rel="prefetch" href="/devops/public/assets/js/237.2acb7e77.js"><link rel="prefetch" href="/devops/public/assets/js/238.b1c416d0.js"><link rel="prefetch" href="/devops/public/assets/js/239.792174fd.js"><link rel="prefetch" href="/devops/public/assets/js/24.019dd9a9.js"><link rel="prefetch" href="/devops/public/assets/js/240.7609d279.js"><link rel="prefetch" href="/devops/public/assets/js/241.1d4c5fde.js"><link rel="prefetch" href="/devops/public/assets/js/242.d5b98f64.js"><link rel="prefetch" href="/devops/public/assets/js/243.cdbcb67d.js"><link rel="prefetch" href="/devops/public/assets/js/244.61e8cec8.js"><link rel="prefetch" href="/devops/public/assets/js/245.f40f95f7.js"><link rel="prefetch" href="/devops/public/assets/js/246.6454b808.js"><link rel="prefetch" href="/devops/public/assets/js/247.84e98eb2.js"><link rel="prefetch" href="/devops/public/assets/js/248.caec6070.js"><link rel="prefetch" href="/devops/public/assets/js/249.6f1e6b70.js"><link rel="prefetch" href="/devops/public/assets/js/25.7cc76123.js"><link rel="prefetch" href="/devops/public/assets/js/250.9af75980.js"><link rel="prefetch" href="/devops/public/assets/js/251.4e6ab307.js"><link rel="prefetch" href="/devops/public/assets/js/252.67136418.js"><link rel="prefetch" href="/devops/public/assets/js/253.80320e88.js"><link rel="prefetch" href="/devops/public/assets/js/254.3c4b0161.js"><link rel="prefetch" href="/devops/public/assets/js/255.ac6987fc.js"><link rel="prefetch" href="/devops/public/assets/js/256.d77ba4b3.js"><link rel="prefetch" href="/devops/public/assets/js/26.9f0fdf72.js"><link rel="prefetch" href="/devops/public/assets/js/27.461b9804.js"><link rel="prefetch" href="/devops/public/assets/js/28.0c9b09d1.js"><link rel="prefetch" href="/devops/public/assets/js/29.8253373e.js"><link rel="prefetch" href="/devops/public/assets/js/3.f68b281f.js"><link rel="prefetch" href="/devops/public/assets/js/30.5e9428db.js"><link rel="prefetch" href="/devops/public/assets/js/31.4d87ce5a.js"><link rel="prefetch" href="/devops/public/assets/js/32.cb8db418.js"><link rel="prefetch" href="/devops/public/assets/js/33.29150823.js"><link rel="prefetch" href="/devops/public/assets/js/34.fd093637.js"><link rel="prefetch" href="/devops/public/assets/js/35.876b592e.js"><link rel="prefetch" href="/devops/public/assets/js/36.6b75fa19.js"><link rel="prefetch" href="/devops/public/assets/js/37.d1219eb5.js"><link rel="prefetch" href="/devops/public/assets/js/38.f0d71203.js"><link rel="prefetch" href="/devops/public/assets/js/39.b311c04c.js"><link rel="prefetch" href="/devops/public/assets/js/4.048f10c6.js"><link rel="prefetch" href="/devops/public/assets/js/40.8bf0f75a.js"><link rel="prefetch" href="/devops/public/assets/js/41.840cff26.js"><link rel="prefetch" href="/devops/public/assets/js/42.6e4f90d9.js"><link rel="prefetch" href="/devops/public/assets/js/43.1e0d8706.js"><link rel="prefetch" href="/devops/public/assets/js/44.b1bbc659.js"><link rel="prefetch" href="/devops/public/assets/js/45.df88b117.js"><link rel="prefetch" href="/devops/public/assets/js/46.5968145e.js"><link rel="prefetch" href="/devops/public/assets/js/47.932a22cc.js"><link rel="prefetch" href="/devops/public/assets/js/48.0f8a1a35.js"><link rel="prefetch" href="/devops/public/assets/js/49.ba790a81.js"><link rel="prefetch" href="/devops/public/assets/js/5.46e7e081.js"><link rel="prefetch" href="/devops/public/assets/js/50.27c91206.js"><link rel="prefetch" href="/devops/public/assets/js/51.c590048d.js"><link rel="prefetch" href="/devops/public/assets/js/52.484d1686.js"><link rel="prefetch" href="/devops/public/assets/js/53.68f806da.js"><link rel="prefetch" href="/devops/public/assets/js/54.075e1350.js"><link rel="prefetch" href="/devops/public/assets/js/55.f4dc2d0d.js"><link rel="prefetch" href="/devops/public/assets/js/56.4efd5cc6.js"><link rel="prefetch" href="/devops/public/assets/js/57.300d08f0.js"><link rel="prefetch" href="/devops/public/assets/js/58.67c8c486.js"><link rel="prefetch" href="/devops/public/assets/js/59.f8fa932f.js"><link rel="prefetch" href="/devops/public/assets/js/6.563dcc3b.js"><link rel="prefetch" href="/devops/public/assets/js/60.8eb6cb80.js"><link rel="prefetch" href="/devops/public/assets/js/61.78f56324.js"><link rel="prefetch" href="/devops/public/assets/js/62.0ffc75ed.js"><link rel="prefetch" href="/devops/public/assets/js/63.26c9992c.js"><link rel="prefetch" href="/devops/public/assets/js/64.7e083b2c.js"><link rel="prefetch" href="/devops/public/assets/js/65.bb611593.js"><link rel="prefetch" href="/devops/public/assets/js/66.9a5b44b4.js"><link rel="prefetch" href="/devops/public/assets/js/67.fa29edfb.js"><link rel="prefetch" href="/devops/public/assets/js/68.70146672.js"><link rel="prefetch" href="/devops/public/assets/js/69.c3ee37b7.js"><link rel="prefetch" href="/devops/public/assets/js/7.651b7833.js"><link rel="prefetch" href="/devops/public/assets/js/70.7bc778c1.js"><link rel="prefetch" href="/devops/public/assets/js/71.9e6c1527.js"><link rel="prefetch" href="/devops/public/assets/js/72.70a6fcc6.js"><link rel="prefetch" href="/devops/public/assets/js/73.b78cef61.js"><link rel="prefetch" href="/devops/public/assets/js/74.08400541.js"><link rel="prefetch" href="/devops/public/assets/js/75.277c6c1c.js"><link rel="prefetch" href="/devops/public/assets/js/76.3f6f041f.js"><link rel="prefetch" href="/devops/public/assets/js/77.081a5ad0.js"><link rel="prefetch" href="/devops/public/assets/js/78.f20a423c.js"><link rel="prefetch" href="/devops/public/assets/js/79.24ed7e81.js"><link rel="prefetch" href="/devops/public/assets/js/8.82c44eeb.js"><link rel="prefetch" href="/devops/public/assets/js/80.e7f805d4.js"><link rel="prefetch" href="/devops/public/assets/js/81.288855e0.js"><link rel="prefetch" href="/devops/public/assets/js/82.35431725.js"><link rel="prefetch" href="/devops/public/assets/js/83.07f4244b.js"><link rel="prefetch" href="/devops/public/assets/js/84.37bc90de.js"><link rel="prefetch" href="/devops/public/assets/js/85.d251bba5.js"><link rel="prefetch" href="/devops/public/assets/js/86.1cb1dad4.js"><link rel="prefetch" href="/devops/public/assets/js/87.34d29dc8.js"><link rel="prefetch" href="/devops/public/assets/js/88.dfb8b260.js"><link rel="prefetch" href="/devops/public/assets/js/89.b74e28db.js"><link rel="prefetch" href="/devops/public/assets/js/9.b7a182ac.js"><link rel="prefetch" href="/devops/public/assets/js/90.373528ee.js"><link rel="prefetch" href="/devops/public/assets/js/91.bc21f840.js"><link rel="prefetch" href="/devops/public/assets/js/92.921870be.js"><link rel="prefetch" href="/devops/public/assets/js/93.d111d771.js"><link rel="prefetch" href="/devops/public/assets/js/94.f0686e6d.js"><link rel="prefetch" href="/devops/public/assets/js/95.7aec6766.js"><link rel="prefetch" href="/devops/public/assets/js/96.2cb3040c.js"><link rel="prefetch" href="/devops/public/assets/js/97.cb8eb073.js"><link rel="prefetch" href="/devops/public/assets/js/98.a5c65365.js"><link rel="prefetch" href="/devops/public/assets/js/99.b1c9961e.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>232</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>27-tomcat</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">27-tomcat</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-tomcat安装"><a href="#_1-tomcat安装" class="header-anchor">#</a> 1，Tomcat安装</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>卸载默认java:
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -qa|grep jdk|grep -v copy|xargs yum -y remove</span>
+
+<span class="token number">1</span>.安装JDK  微信群下载JDK181
+
+上传JDK安装
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ll</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">170023183</span> Aug <span class="token number">20</span> 09:31 jdk-8u181-linux-x64.rpm
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -ivh jdk-8u181-linux-x64.rpm</span>
+
+验证jdk是否成功：
+<span class="token punctuation">[</span>root@web02-8:~<span class="token punctuation">]</span><span class="token comment">#java -version</span>
+<span class="token function">java</span> version <span class="token string">&quot;1.8.0_181&quot;</span>
+Java<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> SE Runtime Environment <span class="token punctuation">(</span>build <span class="token number">1.8</span>.0_181-b13<span class="token punctuation">)</span>
+Java HotSpot<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> <span class="token number">64</span>-Bit Server VM <span class="token punctuation">(</span>build <span class="token number">25.181</span>-b13, mixed mode<span class="token punctuation">)</span>
+
+<span class="token number">2</span>.安装Tomcat
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment"># wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.93/bin/apache-tomcat-9.0.93.tar.gz</span>
+
+<span class="token number">3</span>.创建存放Tomcat代码的目录
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#mkdir /soft</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#tar xf apache-tomcat-9.0.93.tar.gz  -C /soft/</span>
+
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat &gt;1.txt&lt;&lt;EOF</span>
+<span class="token operator">&gt;</span> <span class="token number">1</span>
+<span class="token operator">&gt;</span> <span class="token number">3</span>
+<span class="token operator">&gt;</span> <span class="token number">5</span>
+<span class="token operator">&gt;</span> malu
+<span class="token operator">&gt;</span> EOF
+
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cat 1.txt </span>
+<span class="token number">1</span>
+<span class="token number">3</span>
+<span class="token number">5</span>
+malu
+
+<span class="token punctuation">[</span>root@web01:soft<span class="token punctuation">]</span><span class="token comment">#mv apache-tomcat-9.0.93 tomcat</span>
+
+配置tomcat的systemctl
+<span class="token function">cat</span> <span class="token operator">&gt;</span>/usr/lib/systemd/system/tomcat.service<span class="token operator">&lt;&lt;</span><span class="token string">'EOF'
+[Unit]
+Description=Apache Tomcat Server
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Type=forking
+ExecStart=/soft/tomcat/bin/startup.sh
+ExecStop=/soft/tomcat/bin/shutdown.sh
+ExecReStart=/soft/tomcat/bin/shutdown.sh  &amp;&amp; sleep2  &amp;&amp; /soft/tomcat/bin/startup.sh
+
+[Install]
+WantedBy=multi-user.target
+EOF</span>
+
+<span class="token comment"># 加载systemctl配置</span>
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#systemctl daemon-reload</span>
+
+启动Tomcat
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#systemctl start tomcat</span>
+
+查看是否启动成功
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#netstat -tnulp</span>
+Active Internet connections <span class="token punctuation">(</span>only servers<span class="token punctuation">)</span>         
+tcp6       <span class="token number">0</span>      <span class="token number">0</span> :::8080                 :::*                    LISTEN      <span class="token number">2813</span>/java
+
+也可以看进程号，看一下tomcat是否启动成功
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ps axu|grep tomcat</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br></div></div><p>配置文件：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>tomcat软件目录结构：
+
+bin             ---主要包含启动和关闭tomcat的脚本（启停java脚本依赖jar包文件）
+conf            ---tomcat配置文件的目录<span class="token punctuation">(</span>站点配置：server.xml<span class="token punctuation">)</span>
+lib             ---tomcat运行时需要加载的jar包
+logs            ---tomcat日志存放位置
+temp            ---tomcat临时存放文件路径
+webapps         ---tomcat默认站点目录
+work            ---tomcat运行时产生的缓存文件
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_2-自定义server"><a href="#_2-自定义server" class="header-anchor">#</a> 2，自定义server</h3> <ul><li>nginx 静态资源  默认找index.html</li> <li>tomcat 动态资源 默认找index.jsp</li></ul> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#cat server.xml</span>
+<span class="token operator">&lt;</span>?xml <span class="token assign-left variable">version</span><span class="token operator">=</span><span class="token string">&quot;1.0&quot;</span> <span class="token assign-left variable">encoding</span><span class="token operator">=</span><span class="token string">&quot;UTF-8&quot;</span>?<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>Server <span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token string">&quot;8005&quot;</span> <span class="token assign-left variable">shutdown</span><span class="token operator">=</span><span class="token string">&quot;SHUTDOWN&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Listener <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.startup.VersionLoggerListener&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Listener <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.core.AprLifecycleListener&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Listener <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.core.JreMemoryLeakPreventionListener&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Listener <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.mbeans.GlobalResourcesLifecycleListener&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>Listener <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.core.ThreadLocalLeakPreventionListener&quot;</span> /<span class="token operator">&gt;</span>
+
+  <span class="token operator">&lt;</span>GlobalNamingResources<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Resource <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;UserDatabase&quot;</span> <span class="token assign-left variable">auth</span><span class="token operator">=</span><span class="token string">&quot;Container&quot;</span>
+              <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.UserDatabase&quot;</span>
+              <span class="token assign-left variable">description</span><span class="token operator">=</span><span class="token string">&quot;User database that can be updated and saved&quot;</span>
+              <span class="token assign-left variable">factory</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.users.MemoryUserDatabaseFactory&quot;</span>
+              <span class="token assign-left variable">pathname</span><span class="token operator">=</span><span class="token string">&quot;conf/tomcat-users.xml&quot;</span> /<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/GlobalNamingResources<span class="token operator">&gt;</span>
+
+  <span class="token operator">&lt;</span>Service <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;Catalina&quot;</span><span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>Connector <span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token string">&quot;8080&quot;</span> <span class="token assign-left variable">protocol</span><span class="token operator">=</span><span class="token string">&quot;HTTP/1.1&quot;</span>
+               <span class="token assign-left variable">connectionTimeout</span><span class="token operator">=</span><span class="token string">&quot;20000&quot;</span>
+               <span class="token assign-left variable">redirectPort</span><span class="token operator">=</span><span class="token string">&quot;8443&quot;</span>
+               <span class="token assign-left variable">maxParameterCount</span><span class="token operator">=</span><span class="token string">&quot;1000&quot;</span>
+               /<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>Engine <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;Catalina&quot;</span> <span class="token assign-left variable">defaultHost</span><span class="token operator">=</span><span class="token string">&quot;localhost&quot;</span><span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>Realm <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.realm.LockOutRealm&quot;</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>Realm <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.realm.UserDatabaseRealm&quot;</span>
+               <span class="token assign-left variable">resourceName</span><span class="token operator">=</span><span class="token string">&quot;UserDatabase&quot;</span>/<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Realm<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;localhost&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;webapps&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;localhost_access_log&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.txt&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+
+      <span class="token operator">&lt;</span><span class="token operator">!</span>--自定义server diy.malu.com--<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;diy.malu.com&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/tomcat/&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;diy.malu.com&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.log&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+
+    <span class="token operator">&lt;</span>/Engine<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>/Service<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/Server<span class="token operator">&gt;</span>
+
+重启服务
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#systemctl restart tomcat</span>
+
+配置Tomcat的代码文件，必须把资源放到ROOT中，和nginx不一样
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#mkdir /mycode/tomcat/ROOT -p</span>
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#echo tomcat.... &gt; /mycode/tomcat/ROOT/index.html</span>
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#cat /mycode/tomcat/ROOT/index.html</span>
+tomcat<span class="token punctuation">..</span><span class="token punctuation">..</span>
+
+
+配置hosts解析
+<span class="token number">10.0</span>.0.7  diy.malu.com 
+
+访问：
+diy.malu.com:8080/index.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br></div></div><p><img src="/devops/public/assets/img/1724926294885.8c0ea1bc.png" alt="1724926294885"></p> <h3 id="_3-配置location匹配"><a href="#_3-配置location匹配" class="header-anchor">#</a> 3，配置location匹配</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>配置location匹配
+<span class="token comment">#访问diy.malu.com/tt 则去访问/code/tt下的资源</span>
+      <span class="token operator">&lt;</span><span class="token operator">!</span>--自定义server diy.malu.com--<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;diy.malu.com&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/tomcat/&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Context <span class="token assign-left variable">docBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/tt&quot;</span> <span class="token assign-left variable">path</span><span class="token operator">=</span><span class="token string">&quot;/tt&quot;</span> <span class="token assign-left variable">reloadable</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> /<span class="token operator">&gt;</span>  <span class="token comment"># 使用context类似location</span>
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;diy.malu.com&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.log&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#mkdir /mycode/tt</span>
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#echo ttttt..... &gt; /mycode/tt/index.html</span>
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#cat /code/tt/index.html</span>
+ttttt<span class="token punctuation">..</span><span class="token punctuation">..</span>.
+
+重启服务
+<span class="token punctuation">[</span>root@web01:tomcat<span class="token punctuation">]</span><span class="token comment">#systemctl restart tomcat</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>访问测试:</p> <p><img src="/devops/public/assets/img/1724981490596.dc22065e.png" alt="1724981490596"></p> <h3 id="_4-补充nginx-location匹配路径"><a href="#_4-补充nginx-location匹配路径" class="header-anchor">#</a> 4，补充Nginx location匹配路径</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat static.conf </span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+        server_name pic.malu.com<span class="token punctuation">;</span>
+        root /code<span class="token punctuation">;</span>
+        index index.html<span class="token punctuation">;</span>
+
+
+    location ~ .*<span class="token punctuation">\</span>.<span class="token punctuation">(</span>jpg<span class="token operator">|</span>png<span class="token operator">|</span>gif<span class="token operator">|</span>svg<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    	root /aa/tt/<span class="token punctuation">;</span>       <span class="token comment"># 绝对路径</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+
+访问测试：
+<span class="token number">10.0</span>.0.7/d.png
+
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#tail -f /var/log/nginx/error.log</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>日志:</p> <p><img src="/devops/public/assets/img/1724911120784.cdf4a085.png" alt="1724911120784"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>nginx路径匹配
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat static.conf </span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+        server_name pic.malu.com<span class="token punctuation">;</span>
+        root /code<span class="token punctuation">;</span>
+        index index.html<span class="token punctuation">;</span>
+
+
+    	location  /abc <span class="token punctuation">{</span>
+   			root /code<span class="token punctuation">;</span>
+        	index  index.html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+
+访问测试 访问abc实际访问的是 /code/abc路径
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p><img src="/devops/public/assets/img/1724911382452.1d107c25.png" alt="1724911382452"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Nginx路径配置之alias
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat static.conf </span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span> default_server<span class="token punctuation">;</span>
+        server_name pic.malu.com<span class="token punctuation">;</span>
+        root /code<span class="token punctuation">;</span>
+        index index.html<span class="token punctuation">;</span>
+
+
+    location  /abc <span class="token punctuation">{</span>
+    <span class="token builtin class-name">alias</span>  /code<span class="token punctuation">;</span>
+        index  index.html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@web01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+访问测试:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><img src="/devops/public/assets/img/1724911474749.1411c647.png" alt="1724911474749"></p> <h3 id="_5-tomcat部署zrlog博客"><a href="#_5-tomcat部署zrlog博客" class="header-anchor">#</a> 5，Tomcat部署zrlog博客</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.修改tomcat配置文件
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#pwd</span>
+/soft/tomcat/conf
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#vim server.xml</span>
+<span class="token punctuation">..</span>.
+      <span class="token operator">&lt;</span><span class="token operator">!</span>--zrlog配置--<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;www.zrlog.com&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/zrlog/&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;www.zrlog.com&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.log&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#systemctl restart tomcat</span>
+
+
+<span class="token number">2</span>.下载zrlog代码
+启动后tomcat自动将代码目录创建
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#ll /mycode/zrlog/</span>
+total <span class="token number">0</span>
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#cd /mycode/zrlog/</span>
+windows上传代码
+<span class="token punctuation">[</span>root@web01:zrlog<span class="token punctuation">]</span><span class="token comment">#mv zrlog-2.2.1-efbe9f9-release.war ROOT.war</span>
+<span class="token punctuation">[</span>root@web01:zrlog<span class="token punctuation">]</span><span class="token comment">#ll</span>
+total <span class="token number">10980</span>
+drwxr-x--- <span class="token number">9</span> root root      <span class="token number">126</span> Aug <span class="token number">20</span> <span class="token number">11</span>:53 ROOT
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">11243048</span> Aug <span class="token number">20</span> <span class="token number">11</span>:52 ROOT.war
+
+
+
+<span class="token number">3</span>.安装zrlog
+hosts解析
+<span class="token number">10.0</span>.0.7  www.zrlog.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><p><img src="/devops/public/assets/img/1724911582138.db116d5f.png" alt="1724911582138"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>创建数据库zrlog
+<span class="token punctuation">[</span>root@db01:~<span class="token punctuation">]</span><span class="token comment">#mysql -uroot -p123456Abc.com -e &quot;create  database zrlog charset utf8;&quot;</span>
+<span class="token punctuation">[</span>root@db01:~<span class="token punctuation">]</span><span class="token comment">#mysql -uroot -p123456Abc.com -e &quot;show  databases&quot;</span>
++--------------------+
+<span class="token operator">|</span> Database           <span class="token operator">|</span>
++--------------------+
+<span class="token operator">|</span> hehe               <span class="token operator">|</span>
+<span class="token operator">|</span> information_schema <span class="token operator">|</span>
+<span class="token operator">|</span> mysql              <span class="token operator">|</span>
+<span class="token operator">|</span> performance_schema <span class="token operator">|</span>
+<span class="token operator">|</span> she                <span class="token operator">|</span>
+<span class="token operator">|</span> wordpress          <span class="token operator">|</span>
+<span class="token operator">|</span> zh                 <span class="token operator">|</span>
+<span class="token operator">|</span> zrlog              <span class="token operator">|</span>
++--------------------+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><img src="/devops/public/assets/img/1724983340215.c85a7d7e.png" alt="1724983340215"></p> <p><img src="/devops/public/assets/img/1724983384395.2cc46b72.png" alt="1724983384395"></p> <p><img src="/devops/public/assets/img/1724983393658.18665b69.png" alt="1724983393658"></p> <p><img src="/devops/public/assets/img/1724983408076.76783b80.png" alt="1724983408076"></p> <p><img src="/devops/public/assets/img/1724983465330.0a602538.png" alt="1724983465330"></p> <p>要实现的架构图：</p> <p><img src="/devops/public/assets/img/1724911912439.b847824d.png" alt="1724911912439"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>快速扩展web02
+安装JDK
+卸载默认java:
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -qa|grep jdk|grep -v copy|xargs yum -y remove</span>
+
+<span class="token number">1</span>.安装JDK  微信群下载JDK181
+
+上传JDK安装
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ll</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">170023183</span> Aug <span class="token number">20</span> 09:31 jdk-8u181-linux-x64.rpm
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rpm -ivh jdk-8u181-linux-x64.rpm</span>
+验证jdk是否成功：
+<span class="token punctuation">[</span>root@web02-8:~<span class="token punctuation">]</span><span class="token comment">#java -version</span>
+<span class="token function">java</span> version <span class="token string">&quot;1.8.0_181&quot;</span>
+Java<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> SE Runtime Environment <span class="token punctuation">(</span>build <span class="token number">1.8</span>.0_181-b13<span class="token punctuation">)</span>
+Java HotSpot<span class="token punctuation">(</span>TM<span class="token punctuation">)</span> <span class="token number">64</span>-Bit Server VM <span class="token punctuation">(</span>build <span class="token number">25.181</span>-b13, mixed mode<span class="token punctuation">)</span>
+
+
+<span class="token number">1</span>.tomcat目录
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#scp -r /soft/ 10.0.0.8:/</span>
+<span class="token number">2</span>.代码目录   web02下面需要有一个mycode目录
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#scp -r /mycode/zrlog/ 10.0.0.8:/mycode/</span>
+<span class="token number">3</span>.启动方式
+<span class="token punctuation">[</span>root@web02:~<span class="token punctuation">]</span><span class="token comment">#cat /usr/lib/systemd/system/tomcat.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+<span class="token assign-left variable">Description</span><span class="token operator">=</span>Apache Tomcat Server
+<span class="token assign-left variable">After</span><span class="token operator">=</span>network.target remote-fs.target nss-lookup.target
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>forking
+<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/soft/tomcat/bin/startup.sh
+<span class="token assign-left variable">ExecStop</span><span class="token operator">=</span>/soft/tomcat/bin/shutdown.sh
+<span class="token assign-left variable">ExecRestart</span><span class="token operator">=</span>/soft/tomcat/bin/shutdown.sh  <span class="token operator">&amp;&amp;</span> <span class="token function">sleep</span> <span class="token number">1</span>  <span class="token operator">&amp;&amp;</span> /soft/tomcat/bin/startup.sh
+
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+<span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target
+
+<span class="token punctuation">[</span>root@web02:~<span class="token punctuation">]</span><span class="token comment">#systemctl daemon-reload</span>
+
+启动Tomcat
+<span class="token punctuation">[</span>root@web02:~<span class="token punctuation">]</span><span class="token comment">#systemctl start tomcat</span>
+
+配置host解析：
+<span class="token number">10.0</span>.0.8  www.zrlog.com
+
+测试：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><p><img src="/devops/public/assets/img/1724984294356.8307079e.png" alt="1724984294356"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>加入负载均衡:
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat zrlog.conf</span>
+upstream zrlog <span class="token punctuation">{</span>
+	server <span class="token number">10.0</span>.0.7:8080<span class="token punctuation">;</span>
+	server <span class="token number">10.0</span>.0.8:8080<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">443</span> ssl<span class="token punctuation">;</span>
+        server_name www.zrlog.com<span class="token punctuation">;</span>
+ 	ssl_certificate   /etc/nginx/ssl/server.crt<span class="token punctuation">;</span>
+        ssl_certificate_key  /etc/nginx/ssl/server.key<span class="token punctuation">;</span>
+	ssl_session_cache shared:SSL:10m<span class="token punctuation">;</span> <span class="token comment">#在建立完ssl握手后如果断开连接，在session_timeout时间内再次连接，是不需要再次获取公钥建立握手的，可以服用之前的连接</span>
+    ssl_session_timeout 1440m<span class="token punctuation">;</span>  <span class="token comment">#ssl连接断开后的超时时间</span>
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:<span class="token operator">!</span>NULL:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>MD5:<span class="token operator">!</span>ADH:<span class="token operator">!</span>RC4<span class="token punctuation">;</span>  <span class="token comment">#配置加密协议</span>
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2<span class="token punctuation">;</span>  <span class="token comment">#使用TLS版本协议</span>
+    ssl_prefer_server_ciphers on<span class="token punctuation">;</span>  <span class="token comment">#nginx决定使用哪些协议与浏览器通信</span>
+
+        location / <span class="token punctuation">{</span>
+        proxy_pass http://zrlog<span class="token punctuation">;</span>
+	include proxy_params<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">#配置将用户访问http请求强制跳转https</span>
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name www.zrlog.com<span class="token punctuation">;</span>
+        <span class="token builtin class-name">return</span> <span class="token number">302</span> https://<span class="token variable">$server_name</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+
+HOSTS解析
+<span class="token number">10.0</span>.0.5 www.zrlog.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><p>测试：</p> <p><img src="/devops/public/assets/img/1724984754376.67c1dedc.png" alt="1724984754376"></p> <h3 id="_6-tomcat实现session写入redis"><a href="#_6-tomcat实现session写入redis" class="header-anchor">#</a> 6，Tomcat实现session写入Redis</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.配置WEB01的Tomcat
+      <span class="token operator">&lt;</span><span class="token operator">!</span>--自定义session--<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;www.session.com&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/session/&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;session.malu.com&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.log&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+      
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#systemctl restart tomcat</span>
+<span class="token number">2</span>.写入会话的代码
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment">#cd /mycode/session/</span>
+<span class="token punctuation">[</span>root@web01:session<span class="token punctuation">]</span><span class="token comment">#mkdir ROOT</span>
+<span class="token punctuation">[</span>root@web01:conf<span class="token punctuation">]</span><span class="token comment"># cd ROOT</span>
+<span class="token punctuation">[</span>root@web01:ROOT<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@web01:ROOT<span class="token punctuation">]</span><span class="token comment">#vim index.jsp</span>
+<span class="token punctuation">[</span>root@web01:ROOT<span class="token punctuation">]</span><span class="token comment">#cat index.jsp </span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>%
+        //HttpSession session <span class="token operator">=</span> request.getSession<span class="token punctuation">(</span>true<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System.out.println<span class="token punctuation">(</span>session.getCreationTime<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+        out.println<span class="token punctuation">(</span><span class="token string">&quot;&lt;br&gt; web01 SESSION ID:&quot;</span> + session.getId<span class="token punctuation">(</span><span class="token punctuation">)</span> + <span class="token string">&quot;&lt;br&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        out.println<span class="token punctuation">(</span><span class="token string">&quot;Session created time is :&quot;</span> + session.getCreationTime<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        + <span class="token string">&quot;&lt;br&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        %<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+
+访问页面:
+<span class="token number">10.0</span>.0.7 www.session.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><p><img src="/devops/public/assets/img/1724985630419.62e86d36.png" alt="1724985630419"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>WEB02配置
+<span class="token punctuation">[</span>root@web02:conf<span class="token punctuation">]</span><span class="token comment">#vim server.xml</span>
+      <span class="token operator">&lt;</span><span class="token operator">!</span>--自定义session--<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Host <span class="token assign-left variable">name</span><span class="token operator">=</span><span class="token string">&quot;www.session.com&quot;</span>  <span class="token assign-left variable">appBase</span><span class="token operator">=</span><span class="token string">&quot;/mycode/session/&quot;</span>
+            <span class="token assign-left variable">unpackWARs</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span> <span class="token assign-left variable">autoDeploy</span><span class="token operator">=</span><span class="token string">&quot;true&quot;</span><span class="token operator">&gt;</span>
+
+        <span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;org.apache.catalina.valves.AccessLogValve&quot;</span> <span class="token assign-left variable">directory</span><span class="token operator">=</span><span class="token string">&quot;logs&quot;</span>
+               <span class="token assign-left variable">prefix</span><span class="token operator">=</span><span class="token string">&quot;session.malu.com&quot;</span> <span class="token assign-left variable">suffix</span><span class="token operator">=</span><span class="token string">&quot;.log&quot;</span>
+               <span class="token assign-left variable">pattern</span><span class="token operator">=</span><span class="token string">&quot;%h %l %u %t &amp;quot;%r&amp;quot; %s %b&quot;</span> /<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>/Host<span class="token operator">&gt;</span>
+
+<span class="token punctuation">[</span>root@web02:conf<span class="token punctuation">]</span><span class="token comment">#systemctl restart tomcat</span>
+<span class="token punctuation">[</span>root@web02:conf<span class="token punctuation">]</span><span class="token comment">#cd /mycode/session/</span>
+<span class="token punctuation">[</span>root@web02:session<span class="token punctuation">]</span><span class="token comment">#mkdir ROOT</span>
+<span class="token punctuation">[</span>root@web02:session<span class="token punctuation">]</span><span class="token comment">#cd ROOT/</span>
+<span class="token punctuation">[</span>root@web02:ROOT<span class="token punctuation">]</span><span class="token comment">#vim index.jsp</span>
+<span class="token punctuation">[</span>root@web02:ROOT<span class="token punctuation">]</span><span class="token comment">#cat index.jsp </span>
+<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>%
+    //HttpSession session <span class="token operator">=</span> request.getSession<span class="token punctuation">(</span>true<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    System.out.println<span class="token punctuation">(</span>session.getCreationTime<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">;</span>
+    out.println<span class="token punctuation">(</span><span class="token string">&quot;&lt;br&gt; WEB02 SESSION ID:&quot;</span> + session.getId<span class="token punctuation">(</span><span class="token punctuation">)</span> + <span class="token string">&quot;&lt;br&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    out.println<span class="token punctuation">(</span><span class="token string">&quot;Session created time is :&quot;</span> + session.getCreationTime<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    + <span class="token string">&quot;&lt;br&gt;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    %<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/body<span class="token operator">&gt;</span>
+
+访问测试
+<span class="token number">10.0</span>.0.8 www.session.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p><img src="/devops/public/assets/img/1724985781788.10d1366d.png" alt="1724985781788"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>接入负载均衡
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#cat session.conf </span>
+upstream sess <span class="token punctuation">{</span>
+        server <span class="token number">172.16</span>.1.7:8080<span class="token punctuation">;</span>
+        server <span class="token number">172.16</span>.1.8:8080<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+server <span class="token punctuation">{</span>
+        listen <span class="token number">80</span><span class="token punctuation">;</span>
+        server_name www.session.com<span class="token punctuation">;</span>
+
+        location / <span class="token punctuation">{</span>
+                proxy_pass http://sess<span class="token punctuation">;</span>
+                proxy_set_header Host <span class="token variable">$http_host</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /etc/nginx/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /etc/nginx/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@lb01:conf.d<span class="token punctuation">]</span><span class="token comment">#systemctl restart nginx</span>
+
+解析测试
+<span class="token number">10.0</span>.0.5 www.session.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p><img src="/devops/public/assets/img/1724985923075.5861ce5b.png" alt="1724985923075"></p> <p>配置session会话:</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>WEB01配置
+<span class="token number">1</span>.下载第三方redis插件
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#ll tomcat-cluster-redis-session-manager.zip </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">921429</span> Aug <span class="token number">20</span> <span class="token number">16</span>:06 tomcat-cluster-redis-session-manager.zip
+解压
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#unzip tomcat-cluster-redis-session-manager.zip</span>
+
+<span class="token number">2</span>.拷贝
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#cp tomcat-cluster-redis-session-manager/lib/* /soft/tomcat/lib/</span>
+
+<span class="token number">3</span>.拷贝conf下的redis.properties文件,到tomcat的conf文件
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># cp tomcat-cluster-redis-session-manager/conf/redis-data-cache.properties /soft/tomcat/conf/</span>
+
+<span class="token number">4</span>.将配置文件中连接redis地址修改为如下地址即可
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># vim /soft/tomcat/conf/redis-data-cache.properties</span>
+<span class="token assign-left variable">redis.hosts</span><span class="token operator">=</span><span class="token number">172.16</span>.1.51:6379
+
+<span class="token number">5</span>.添加如下两行至tomcat/conf/context.xml  <span class="token punctuation">(</span>添加在<span class="token operator">&lt;</span>/Context<span class="token operator">&gt;</span> 上一行 <span class="token punctuation">)</span>
+<span class="token comment"># 粘贴至倒数第二行</span>
+<span class="token punctuation">[</span>root@web01 ~<span class="token punctuation">]</span><span class="token comment"># vim /soft/tomcat/conf/context.xml</span>
+<span class="token operator">&lt;</span>Valve <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;tomcat.request.session.redis.SessionHandlerValve&quot;</span> /<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>Manager <span class="token assign-left variable">className</span><span class="token operator">=</span><span class="token string">&quot;tomcat.request.session.redis.SessionManager&quot;</span> /<span class="token operator">&gt;</span>
+
+同步给WEB02
+<span class="token punctuation">[</span>root@web01:~<span class="token punctuation">]</span><span class="token comment">#rsync -avz --delete /soft/tomcat/  10.0.0.8:/soft/tomcat/</span>
+
+web01 和 web02 重启Tomcat
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>测试：</p> <p><img src="/devops/public/assets/img/1724987086305.9bb3287f.png" alt="1724987086305"></p></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/26/2024, 9:15:52 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_1-tomcat安装" class="sidebar-link reco-side-_1-tomcat安装" data-v-b57cc07c>1，Tomcat安装</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_2-自定义server" class="sidebar-link reco-side-_2-自定义server" data-v-b57cc07c>2，自定义server</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_3-配置location匹配" class="sidebar-link reco-side-_3-配置location匹配" data-v-b57cc07c>3，配置location匹配</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_4-补充nginx-location匹配路径" class="sidebar-link reco-side-_4-补充nginx-location匹配路径" data-v-b57cc07c>4，补充Nginx location匹配路径</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_5-tomcat部署zrlog博客" class="sidebar-link reco-side-_5-tomcat部署zrlog博客" data-v-b57cc07c>5，Tomcat部署zrlog博客</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/27-tomcat/tomcat.html#_6-tomcat实现session写入redis" class="sidebar-link reco-side-_6-tomcat实现session写入redis" data-v-b57cc07c>6，Tomcat实现session写入Redis</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.86aff7dd.js" defer></script><script src="/devops/public/assets/js/113.82199a69.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/131.c0729626.js" defer></script>
+  </body>
+</html>

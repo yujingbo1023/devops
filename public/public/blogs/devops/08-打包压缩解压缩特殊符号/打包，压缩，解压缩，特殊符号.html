@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>08-打包，压缩，解压缩，特殊符号 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.86aff7dd.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.82199a69.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/214.853e1f5e.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.45391833.js"><link rel="prefetch" href="/devops/public/assets/js/100.cf8565ef.js"><link rel="prefetch" href="/devops/public/assets/js/101.8a4bacc6.js"><link rel="prefetch" href="/devops/public/assets/js/102.695543b8.js"><link rel="prefetch" href="/devops/public/assets/js/103.4f6122ca.js"><link rel="prefetch" href="/devops/public/assets/js/104.f41d384f.js"><link rel="prefetch" href="/devops/public/assets/js/105.5ac3284a.js"><link rel="prefetch" href="/devops/public/assets/js/106.17b2a7aa.js"><link rel="prefetch" href="/devops/public/assets/js/107.65c7a01c.js"><link rel="prefetch" href="/devops/public/assets/js/108.58b9bfd7.js"><link rel="prefetch" href="/devops/public/assets/js/109.db00d83f.js"><link rel="prefetch" href="/devops/public/assets/js/11.d0fc4f3f.js"><link rel="prefetch" href="/devops/public/assets/js/110.778a0069.js"><link rel="prefetch" href="/devops/public/assets/js/111.f363cf54.js"><link rel="prefetch" href="/devops/public/assets/js/112.3d4eec93.js"><link rel="prefetch" href="/devops/public/assets/js/114.c1908e94.js"><link rel="prefetch" href="/devops/public/assets/js/115.7b0b3e1d.js"><link rel="prefetch" href="/devops/public/assets/js/116.f4329d97.js"><link rel="prefetch" href="/devops/public/assets/js/117.6458fba7.js"><link rel="prefetch" href="/devops/public/assets/js/118.3c5eb28f.js"><link rel="prefetch" href="/devops/public/assets/js/119.3e43d492.js"><link rel="prefetch" href="/devops/public/assets/js/12.cf024d8c.js"><link rel="prefetch" href="/devops/public/assets/js/120.8edb8b37.js"><link rel="prefetch" href="/devops/public/assets/js/121.f1daf9cc.js"><link rel="prefetch" href="/devops/public/assets/js/122.1392990a.js"><link rel="prefetch" href="/devops/public/assets/js/123.594ef8b6.js"><link rel="prefetch" href="/devops/public/assets/js/124.78c7f925.js"><link rel="prefetch" href="/devops/public/assets/js/125.f23a2b2b.js"><link rel="prefetch" href="/devops/public/assets/js/126.066eb994.js"><link rel="prefetch" href="/devops/public/assets/js/127.01cb7847.js"><link rel="prefetch" href="/devops/public/assets/js/128.116cbd62.js"><link rel="prefetch" href="/devops/public/assets/js/129.1a30f99b.js"><link rel="prefetch" href="/devops/public/assets/js/13.1cfd6ba0.js"><link rel="prefetch" href="/devops/public/assets/js/130.db61a817.js"><link rel="prefetch" href="/devops/public/assets/js/131.c0729626.js"><link rel="prefetch" href="/devops/public/assets/js/132.826244ba.js"><link rel="prefetch" href="/devops/public/assets/js/133.011935ba.js"><link rel="prefetch" href="/devops/public/assets/js/134.cae3440a.js"><link rel="prefetch" href="/devops/public/assets/js/135.8a9a72a0.js"><link rel="prefetch" href="/devops/public/assets/js/136.c90ca54a.js"><link rel="prefetch" href="/devops/public/assets/js/137.8edfe481.js"><link rel="prefetch" href="/devops/public/assets/js/138.7d289872.js"><link rel="prefetch" href="/devops/public/assets/js/139.e5c30af7.js"><link rel="prefetch" href="/devops/public/assets/js/14.ad6057c0.js"><link rel="prefetch" href="/devops/public/assets/js/140.3cc72f4a.js"><link rel="prefetch" href="/devops/public/assets/js/141.4d70c207.js"><link rel="prefetch" href="/devops/public/assets/js/142.419bceb5.js"><link rel="prefetch" href="/devops/public/assets/js/143.5f8c26d1.js"><link rel="prefetch" href="/devops/public/assets/js/144.ee0e1be3.js"><link rel="prefetch" href="/devops/public/assets/js/145.2da55411.js"><link rel="prefetch" href="/devops/public/assets/js/146.ca8f7d0d.js"><link rel="prefetch" href="/devops/public/assets/js/147.9a6d5129.js"><link rel="prefetch" href="/devops/public/assets/js/148.a67dd46d.js"><link rel="prefetch" href="/devops/public/assets/js/149.e9a00072.js"><link rel="prefetch" href="/devops/public/assets/js/15.def2b642.js"><link rel="prefetch" href="/devops/public/assets/js/150.e64d2e0b.js"><link rel="prefetch" href="/devops/public/assets/js/151.106515de.js"><link rel="prefetch" href="/devops/public/assets/js/152.463ac6d0.js"><link rel="prefetch" href="/devops/public/assets/js/153.bbcaf173.js"><link rel="prefetch" href="/devops/public/assets/js/154.26f53ef4.js"><link rel="prefetch" href="/devops/public/assets/js/155.ae34734c.js"><link rel="prefetch" href="/devops/public/assets/js/156.488b1538.js"><link rel="prefetch" href="/devops/public/assets/js/157.3ded7356.js"><link rel="prefetch" href="/devops/public/assets/js/158.0f2c4349.js"><link rel="prefetch" href="/devops/public/assets/js/159.6a95e903.js"><link rel="prefetch" href="/devops/public/assets/js/16.4e3fe668.js"><link rel="prefetch" href="/devops/public/assets/js/160.c678d160.js"><link rel="prefetch" href="/devops/public/assets/js/161.c79b746a.js"><link rel="prefetch" href="/devops/public/assets/js/162.5d709ff0.js"><link rel="prefetch" href="/devops/public/assets/js/163.1d2fe855.js"><link rel="prefetch" href="/devops/public/assets/js/164.3231157a.js"><link rel="prefetch" href="/devops/public/assets/js/165.e046b30a.js"><link rel="prefetch" href="/devops/public/assets/js/166.3876c921.js"><link rel="prefetch" href="/devops/public/assets/js/167.70e67254.js"><link rel="prefetch" href="/devops/public/assets/js/168.0d3f8e47.js"><link rel="prefetch" href="/devops/public/assets/js/169.46997b70.js"><link rel="prefetch" href="/devops/public/assets/js/17.04d821f9.js"><link rel="prefetch" href="/devops/public/assets/js/170.f43d5156.js"><link rel="prefetch" href="/devops/public/assets/js/171.635faa90.js"><link rel="prefetch" href="/devops/public/assets/js/172.2cac5c3f.js"><link rel="prefetch" href="/devops/public/assets/js/173.e3737b26.js"><link rel="prefetch" href="/devops/public/assets/js/174.50717dc0.js"><link rel="prefetch" href="/devops/public/assets/js/175.4b24eee6.js"><link rel="prefetch" href="/devops/public/assets/js/176.417cffbe.js"><link rel="prefetch" href="/devops/public/assets/js/177.2ee307c4.js"><link rel="prefetch" href="/devops/public/assets/js/178.9041245f.js"><link rel="prefetch" href="/devops/public/assets/js/179.41fcbbcb.js"><link rel="prefetch" href="/devops/public/assets/js/18.b576cb51.js"><link rel="prefetch" href="/devops/public/assets/js/180.c53d3905.js"><link rel="prefetch" href="/devops/public/assets/js/181.308dc969.js"><link rel="prefetch" href="/devops/public/assets/js/182.808e8c47.js"><link rel="prefetch" href="/devops/public/assets/js/183.32a8f52b.js"><link rel="prefetch" href="/devops/public/assets/js/184.0c29c558.js"><link rel="prefetch" href="/devops/public/assets/js/185.71ab7938.js"><link rel="prefetch" href="/devops/public/assets/js/186.9194d03c.js"><link rel="prefetch" href="/devops/public/assets/js/187.4c760ea1.js"><link rel="prefetch" href="/devops/public/assets/js/188.aa344b05.js"><link rel="prefetch" href="/devops/public/assets/js/189.82519a42.js"><link rel="prefetch" href="/devops/public/assets/js/19.c45b1ba4.js"><link rel="prefetch" href="/devops/public/assets/js/190.01e4ff16.js"><link rel="prefetch" href="/devops/public/assets/js/191.6b3692d7.js"><link rel="prefetch" href="/devops/public/assets/js/192.1d4f0133.js"><link rel="prefetch" href="/devops/public/assets/js/193.f970d2a7.js"><link rel="prefetch" href="/devops/public/assets/js/194.db5a2d70.js"><link rel="prefetch" href="/devops/public/assets/js/195.a5e1255a.js"><link rel="prefetch" href="/devops/public/assets/js/196.fbe3bf8e.js"><link rel="prefetch" href="/devops/public/assets/js/197.7987b641.js"><link rel="prefetch" href="/devops/public/assets/js/198.dc16d883.js"><link rel="prefetch" href="/devops/public/assets/js/199.c1449578.js"><link rel="prefetch" href="/devops/public/assets/js/20.6b80775e.js"><link rel="prefetch" href="/devops/public/assets/js/200.8e8146d1.js"><link rel="prefetch" href="/devops/public/assets/js/201.41f1e415.js"><link rel="prefetch" href="/devops/public/assets/js/202.22aa46cf.js"><link rel="prefetch" href="/devops/public/assets/js/203.1365c4fe.js"><link rel="prefetch" href="/devops/public/assets/js/204.dcd590e2.js"><link rel="prefetch" href="/devops/public/assets/js/205.4dffec8d.js"><link rel="prefetch" href="/devops/public/assets/js/206.6f102810.js"><link rel="prefetch" href="/devops/public/assets/js/207.ff9fa0ae.js"><link rel="prefetch" href="/devops/public/assets/js/208.31cd3e7f.js"><link rel="prefetch" href="/devops/public/assets/js/209.9674efe2.js"><link rel="prefetch" href="/devops/public/assets/js/21.c7a1735f.js"><link rel="prefetch" href="/devops/public/assets/js/210.d6ffa4eb.js"><link rel="prefetch" href="/devops/public/assets/js/211.78964744.js"><link rel="prefetch" href="/devops/public/assets/js/212.633341d7.js"><link rel="prefetch" href="/devops/public/assets/js/213.9d85b1b9.js"><link rel="prefetch" href="/devops/public/assets/js/215.250acf5d.js"><link rel="prefetch" href="/devops/public/assets/js/216.dd502fd2.js"><link rel="prefetch" href="/devops/public/assets/js/217.27d20f63.js"><link rel="prefetch" href="/devops/public/assets/js/218.c2a56486.js"><link rel="prefetch" href="/devops/public/assets/js/219.c7b62c1f.js"><link rel="prefetch" href="/devops/public/assets/js/22.278b9a12.js"><link rel="prefetch" href="/devops/public/assets/js/220.c5b76849.js"><link rel="prefetch" href="/devops/public/assets/js/221.ca896923.js"><link rel="prefetch" href="/devops/public/assets/js/222.19f1703d.js"><link rel="prefetch" href="/devops/public/assets/js/223.956f2b67.js"><link rel="prefetch" href="/devops/public/assets/js/224.304537c5.js"><link rel="prefetch" href="/devops/public/assets/js/225.a13aebd0.js"><link rel="prefetch" href="/devops/public/assets/js/226.a3636db6.js"><link rel="prefetch" href="/devops/public/assets/js/227.542bf1cb.js"><link rel="prefetch" href="/devops/public/assets/js/228.18831269.js"><link rel="prefetch" href="/devops/public/assets/js/229.bb0aa3b6.js"><link rel="prefetch" href="/devops/public/assets/js/23.fa037677.js"><link rel="prefetch" href="/devops/public/assets/js/230.9e51c7a1.js"><link rel="prefetch" href="/devops/public/assets/js/231.60a84287.js"><link rel="prefetch" href="/devops/public/assets/js/232.98f9d224.js"><link rel="prefetch" href="/devops/public/assets/js/233.62237c81.js"><link rel="prefetch" href="/devops/public/assets/js/234.42c84a1a.js"><link rel="prefetch" href="/devops/public/assets/js/235.0e093e12.js"><link rel="prefetch" href="/devops/public/assets/js/236.5e78345f.js"><link rel="prefetch" href="/devops/public/assets/js/237.2acb7e77.js"><link rel="prefetch" href="/devops/public/assets/js/238.b1c416d0.js"><link rel="prefetch" href="/devops/public/assets/js/239.792174fd.js"><link rel="prefetch" href="/devops/public/assets/js/24.019dd9a9.js"><link rel="prefetch" href="/devops/public/assets/js/240.7609d279.js"><link rel="prefetch" href="/devops/public/assets/js/241.1d4c5fde.js"><link rel="prefetch" href="/devops/public/assets/js/242.d5b98f64.js"><link rel="prefetch" href="/devops/public/assets/js/243.cdbcb67d.js"><link rel="prefetch" href="/devops/public/assets/js/244.61e8cec8.js"><link rel="prefetch" href="/devops/public/assets/js/245.f40f95f7.js"><link rel="prefetch" href="/devops/public/assets/js/246.6454b808.js"><link rel="prefetch" href="/devops/public/assets/js/247.84e98eb2.js"><link rel="prefetch" href="/devops/public/assets/js/248.caec6070.js"><link rel="prefetch" href="/devops/public/assets/js/249.6f1e6b70.js"><link rel="prefetch" href="/devops/public/assets/js/25.7cc76123.js"><link rel="prefetch" href="/devops/public/assets/js/250.9af75980.js"><link rel="prefetch" href="/devops/public/assets/js/251.4e6ab307.js"><link rel="prefetch" href="/devops/public/assets/js/252.67136418.js"><link rel="prefetch" href="/devops/public/assets/js/253.80320e88.js"><link rel="prefetch" href="/devops/public/assets/js/254.3c4b0161.js"><link rel="prefetch" href="/devops/public/assets/js/255.ac6987fc.js"><link rel="prefetch" href="/devops/public/assets/js/256.d77ba4b3.js"><link rel="prefetch" href="/devops/public/assets/js/26.9f0fdf72.js"><link rel="prefetch" href="/devops/public/assets/js/27.461b9804.js"><link rel="prefetch" href="/devops/public/assets/js/28.0c9b09d1.js"><link rel="prefetch" href="/devops/public/assets/js/29.8253373e.js"><link rel="prefetch" href="/devops/public/assets/js/3.f68b281f.js"><link rel="prefetch" href="/devops/public/assets/js/30.5e9428db.js"><link rel="prefetch" href="/devops/public/assets/js/31.4d87ce5a.js"><link rel="prefetch" href="/devops/public/assets/js/32.cb8db418.js"><link rel="prefetch" href="/devops/public/assets/js/33.29150823.js"><link rel="prefetch" href="/devops/public/assets/js/34.fd093637.js"><link rel="prefetch" href="/devops/public/assets/js/35.876b592e.js"><link rel="prefetch" href="/devops/public/assets/js/36.6b75fa19.js"><link rel="prefetch" href="/devops/public/assets/js/37.d1219eb5.js"><link rel="prefetch" href="/devops/public/assets/js/38.f0d71203.js"><link rel="prefetch" href="/devops/public/assets/js/39.b311c04c.js"><link rel="prefetch" href="/devops/public/assets/js/4.048f10c6.js"><link rel="prefetch" href="/devops/public/assets/js/40.8bf0f75a.js"><link rel="prefetch" href="/devops/public/assets/js/41.840cff26.js"><link rel="prefetch" href="/devops/public/assets/js/42.6e4f90d9.js"><link rel="prefetch" href="/devops/public/assets/js/43.1e0d8706.js"><link rel="prefetch" href="/devops/public/assets/js/44.b1bbc659.js"><link rel="prefetch" href="/devops/public/assets/js/45.df88b117.js"><link rel="prefetch" href="/devops/public/assets/js/46.5968145e.js"><link rel="prefetch" href="/devops/public/assets/js/47.932a22cc.js"><link rel="prefetch" href="/devops/public/assets/js/48.0f8a1a35.js"><link rel="prefetch" href="/devops/public/assets/js/49.ba790a81.js"><link rel="prefetch" href="/devops/public/assets/js/5.46e7e081.js"><link rel="prefetch" href="/devops/public/assets/js/50.27c91206.js"><link rel="prefetch" href="/devops/public/assets/js/51.c590048d.js"><link rel="prefetch" href="/devops/public/assets/js/52.484d1686.js"><link rel="prefetch" href="/devops/public/assets/js/53.68f806da.js"><link rel="prefetch" href="/devops/public/assets/js/54.075e1350.js"><link rel="prefetch" href="/devops/public/assets/js/55.f4dc2d0d.js"><link rel="prefetch" href="/devops/public/assets/js/56.4efd5cc6.js"><link rel="prefetch" href="/devops/public/assets/js/57.300d08f0.js"><link rel="prefetch" href="/devops/public/assets/js/58.67c8c486.js"><link rel="prefetch" href="/devops/public/assets/js/59.f8fa932f.js"><link rel="prefetch" href="/devops/public/assets/js/6.563dcc3b.js"><link rel="prefetch" href="/devops/public/assets/js/60.8eb6cb80.js"><link rel="prefetch" href="/devops/public/assets/js/61.78f56324.js"><link rel="prefetch" href="/devops/public/assets/js/62.0ffc75ed.js"><link rel="prefetch" href="/devops/public/assets/js/63.26c9992c.js"><link rel="prefetch" href="/devops/public/assets/js/64.7e083b2c.js"><link rel="prefetch" href="/devops/public/assets/js/65.bb611593.js"><link rel="prefetch" href="/devops/public/assets/js/66.9a5b44b4.js"><link rel="prefetch" href="/devops/public/assets/js/67.fa29edfb.js"><link rel="prefetch" href="/devops/public/assets/js/68.70146672.js"><link rel="prefetch" href="/devops/public/assets/js/69.c3ee37b7.js"><link rel="prefetch" href="/devops/public/assets/js/7.651b7833.js"><link rel="prefetch" href="/devops/public/assets/js/70.7bc778c1.js"><link rel="prefetch" href="/devops/public/assets/js/71.9e6c1527.js"><link rel="prefetch" href="/devops/public/assets/js/72.70a6fcc6.js"><link rel="prefetch" href="/devops/public/assets/js/73.b78cef61.js"><link rel="prefetch" href="/devops/public/assets/js/74.08400541.js"><link rel="prefetch" href="/devops/public/assets/js/75.277c6c1c.js"><link rel="prefetch" href="/devops/public/assets/js/76.3f6f041f.js"><link rel="prefetch" href="/devops/public/assets/js/77.081a5ad0.js"><link rel="prefetch" href="/devops/public/assets/js/78.f20a423c.js"><link rel="prefetch" href="/devops/public/assets/js/79.24ed7e81.js"><link rel="prefetch" href="/devops/public/assets/js/8.82c44eeb.js"><link rel="prefetch" href="/devops/public/assets/js/80.e7f805d4.js"><link rel="prefetch" href="/devops/public/assets/js/81.288855e0.js"><link rel="prefetch" href="/devops/public/assets/js/82.35431725.js"><link rel="prefetch" href="/devops/public/assets/js/83.07f4244b.js"><link rel="prefetch" href="/devops/public/assets/js/84.37bc90de.js"><link rel="prefetch" href="/devops/public/assets/js/85.d251bba5.js"><link rel="prefetch" href="/devops/public/assets/js/86.1cb1dad4.js"><link rel="prefetch" href="/devops/public/assets/js/87.34d29dc8.js"><link rel="prefetch" href="/devops/public/assets/js/88.dfb8b260.js"><link rel="prefetch" href="/devops/public/assets/js/89.b74e28db.js"><link rel="prefetch" href="/devops/public/assets/js/9.b7a182ac.js"><link rel="prefetch" href="/devops/public/assets/js/90.373528ee.js"><link rel="prefetch" href="/devops/public/assets/js/91.bc21f840.js"><link rel="prefetch" href="/devops/public/assets/js/92.921870be.js"><link rel="prefetch" href="/devops/public/assets/js/93.d111d771.js"><link rel="prefetch" href="/devops/public/assets/js/94.f0686e6d.js"><link rel="prefetch" href="/devops/public/assets/js/95.7aec6766.js"><link rel="prefetch" href="/devops/public/assets/js/96.2cb3040c.js"><link rel="prefetch" href="/devops/public/assets/js/97.cb8eb073.js"><link rel="prefetch" href="/devops/public/assets/js/98.a5c65365.js"><link rel="prefetch" href="/devops/public/assets/js/99.b1c9961e.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>232</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>08-打包，压缩，解压缩，特殊符号</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">08-打包，压缩，解压缩，特殊符号</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-打包压缩"><a href="#_1-打包压缩" class="header-anchor">#</a> 1，打包压缩</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">tar</span>
+语法结构:
+    <span class="token function">tar</span> 参数选项  包的名称  文件1 文件2
+    <span class="token function">tar</span> 参数选项  框子 香蕉 黄瓜 茄子
+    <span class="token function">tar</span> zcvf test.tar.gz 文件/目录
+    <span class="token parameter variable">-z</span> 使用gzip打包
+    <span class="token parameter variable">-c</span> create 创建
+    <span class="token parameter variable">-v</span> verbose 显示过程
+    <span class="token parameter variable">-f</span> 指定文件名称
+
+    简写: <span class="token parameter variable">-zcf</span> 
+    
+解压缩:
+		 xf  解压压缩包
+		 <span class="token parameter variable">-C</span>  指定解压到哪个目录
+扩展:
+	     tf  查看压缩包
+	     <span class="token parameter variable">--exclude</span><span class="token operator">=</span>file <span class="token comment"># 排除文件</span>
+		 
+为什么压缩打包?
+<span class="token number">1</span>.节省空间
+<span class="token number">2</span>.方便备份传输 节省网络带宽
+<span class="token number">3</span>.减少磁盘IO
+
+环境准备:
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 a.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 b.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 c.log
+
+
+案例1.打包当前的a.log 为test.tar.gz
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># tar zcvf test.tar.gz a.log </span>
+a.log
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 a.log
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 b.log
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 c.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">108</span> Jul <span class="token number">11</span> <span class="token number">11</span>:09 test.tar.gz
+
+
+案例2.打包a b c .log 三个文件为all.tar.gz
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># tar zcvf all.tar.gz a.log b.log c.log </span>
+a.log
+b.log
+c.log
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">8</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">125</span> Jul <span class="token number">11</span> <span class="token number">11</span>:10 all.tar.gz
+
+或者用*
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># tar zcvf all.tar.gz *.log</span>
+
+案例3.打包压缩目录 /etc/目录 为etc.tar.gz
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># tar zcvf etc.tar.gz /etc</span>
+
+案例4.打包多个目录 malu <span class="token builtin class-name">test</span>
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># mkdir malu test</span>
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># tar zcvf dir.tar.gz malu/ test</span>
+malu/
+test/
+<span class="token punctuation">[</span>root@malu:test<span class="token punctuation">]</span><span class="token comment"># ll</span>
+-rw-r--r-- <span class="token number">1</span> root root     <span class="token number">126</span> Jul <span class="token number">11</span> <span class="token number">11</span>:12 dir.tar.gz
+
+
+案例5.尽量到相对路径在打包，打包/etc/hosts /etc/passwd 
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar zcvf h.tar.gz /etc/hosts</span>
+tar: Removing leading `/' from member names
+/etc/hosts
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">8</span>
+-rwxr-xr-x <span class="token number">1</span> root root  <span class="token number">12</span> Jul <span class="token number">10</span> <span class="token number">18</span>:09 a.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">168</span> Jul <span class="token number">11</span> <span class="token number">11</span>:13 h.tar.gz
+drwxr-xr-x <span class="token number">4</span> root root <span class="token number">144</span> Jul <span class="token number">11</span> <span class="token number">11</span>:12 <span class="token builtin class-name">test</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># cd /etc/</span>
+<span class="token punctuation">[</span>root@malu:etc<span class="token punctuation">]</span><span class="token comment"># tar zcvf h.tar.gz hosts passwd</span>
+hosts
+<span class="token function">passwd</span>
+<span class="token punctuation">[</span>root@malu:etc<span class="token punctuation">]</span><span class="token comment"># ll h.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">950</span> Jul <span class="token number">11</span> <span class="token number">11</span>:15 h.tar.gz
+
+
+
+案例6.打包a.txt文件为a.tar.gz 放在/opt/目录下   
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">8</span>
+-rwxr-xr-x <span class="token number">1</span> root root  <span class="token number">12</span> Jul <span class="token number">10</span> <span class="token number">18</span>:09 a.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">168</span> Jul <span class="token number">11</span> <span class="token number">11</span>:13 h.tar.gz
+drwxr-xr-x <span class="token number">4</span> root root <span class="token number">144</span> Jul <span class="token number">11</span> <span class="token number">11</span>:12 <span class="token builtin class-name">test</span>
+
+打包
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar zcvf /opt/a.tar.gz  a.txt</span>
+a.txt
+
+查看/opt目录
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll /opt/</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">10</span> <span class="token number">15</span>:53 <span class="token number">1</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">121</span> Jul <span class="token number">11</span> <span class="token number">11</span>:20 a.tar.gz
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">10</span> <span class="token number">16</span>:00 a.txt
+
+
+解压缩:
+案例1.解压c.tar.gz到当前的目录
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># rm -f a.txt</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar xf c.tar.gz </span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">24</span>
+-rwxr-xr-x <span class="token number">1</span> root root    <span class="token number">12</span> Jul <span class="token number">10</span> <span class="token number">18</span>:09 a.txt
+
+案例2.解压/opt/a.tar.gz 到当前的目录
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">4</span> root root <span class="token number">144</span> Jul <span class="token number">11</span> <span class="token number">11</span>:12 <span class="token builtin class-name">test</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll /opt/a.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">121</span> Jul <span class="token number">11</span> <span class="token number">11</span>:20 /opt/a.tar.gz
+
+解压:
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar xf /opt/a.tar.gz   # 直接回车默认解压到当前的位置</span>
+
+
+案例3.解压test目录下的all.tar.gz 到/opt
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll test/all.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">125</span> Jul <span class="token number">11</span> <span class="token number">11</span>:10 test/all.tar.gz
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># rm -rf /opt/*</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll /opt/</span>
+total <span class="token number">0</span>
+
+方法1:
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># cd /opt/</span>
+<span class="token punctuation">[</span>root@malu:opt<span class="token punctuation">]</span><span class="token comment"># tar xf /root/test/all.tar.gz </span>
+<span class="token punctuation">[</span>root@malu:opt<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 a.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 b.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 c.log
+
+方法2: 使用参数-C 指定解压的位置
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar xf test/all.tar.gz -C /opt/</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll /opt/</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 a.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 b.log
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">10</span>:33 c.log
+
+
+案例4.查看压缩包内的文件
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar tf test/all.tar.gz </span>
+a.log
+b.log
+c.log
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># tar tf test/dir.tar.gz </span>
+malu/
+test/
+
+
+
+centos排除文件打包:
+<span class="token punctuation">[</span>root@linuxnc malu<span class="token punctuation">]</span><span class="token comment"># touch a.txt b.txt c.txt</span>
+<span class="token punctuation">[</span>root@linuxnc malu<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:36 a.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:36 b.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:36 c.txt
+<span class="token punctuation">[</span>root@linuxnc malu<span class="token punctuation">]</span><span class="token comment"># tar zcvf all.tar.gz *.txt --exclude=c.txt</span>
+a.txt
+b.txt
+<span class="token punctuation">[</span>root@linuxnc malu<span class="token punctuation">]</span><span class="token comment"># tar tf all.tar.gz </span>
+a.txt
+b.txt
+
+
+<span class="token function">tar</span> 重点:
+打包:
+    <span class="token function">tar</span> <span class="token parameter variable">-zcvf</span>  test.tar.gz file1 <span class="token function">file</span> /etc/hosts
+    <span class="token function">tar</span> <span class="token parameter variable">-zcvf</span>  /opt/test.tar.gz file1 /etc/hosts
+解压:
+	<span class="token function">tar</span> xf  test.tar.gz 解压到当前的目录
+	<span class="token function">tar</span> xf /opt/test.tar.gz 解压到当前的目录
+	<span class="token function">tar</span> xf test.tar.gz <span class="token parameter variable">-C</span> /opt  指定解压到/opt目录
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br></div></div><h3 id="_2-zip打包压缩"><a href="#_2-zip打包压缩" class="header-anchor">#</a> 2，zip打包压缩</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>打包压缩:
+语法结构:		
+	  压缩打包: <span class="token function">zip</span>  all.zip file1  file2
+	  压缩包的位置: <span class="token function">zip</span> /opt/all.zip file1 file2
+	  解压：   <span class="token function">unzip</span> all.zip
+	  指定位置解压: <span class="token function">unzip</span> all.zip <span class="token parameter variable">-d</span> /opt/
+
+案例1.打包所有的文件为all.zip
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># zip all.zip *.txt</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">1</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">2</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">3</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">4</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">574</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 all.zip
+
+案例2.打包1.txt为test.zip 后放在/opt目录
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># zip /opt/test.zip 1.txt </span>
+  adding: <span class="token number">1</span>.txt <span class="token punctuation">(</span>stored <span class="token number">0</span>%<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll /opt/</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">160</span> Jul <span class="token number">11</span> <span class="token number">11</span>:49 test.zip
+
+案例3.解压all.zip到当前目录
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># rm -rf *.txt</span>
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">574</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 all.zip
+
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># unzip all.zip </span>
+Archive:  all.zip
+ extracting: <span class="token number">1</span>.txt                   
+ extracting: <span class="token number">2</span>.txt                   
+ extracting: <span class="token number">3</span>.txt                   
+ extracting: <span class="token number">4</span>.txt                   
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">4</span>
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">1</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">2</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">3</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root   <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 <span class="token number">4</span>.txt
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">574</span> Jul <span class="token number">11</span> <span class="token number">11</span>:47 all.zip
+
+
+案例4.解压all.tar.gz 到/tmp目录下
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># unzip all.zip -d /tmp/</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h3 id="_3-特殊符号"><a href="#_3-特殊符号" class="header-anchor">#</a> 3，特殊符号</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">;</span> 命令的分隔符 不管前面的命令执行是否成功，都会继续往后执行
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># touc 1.txt;mkdir malu;ls -l</span>
+-bash: touc: <span class="token builtin class-name">command</span> not found
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Jul <span class="token number">11</span> <span class="token number">11</span>:53 malu
+
+<span class="token operator">&amp;&amp;</span> 命令的分隔符 前面的命令必须执行成功，才会执行后面的命令
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># touc 1.txt &amp;&amp; mkdir malu &amp;&amp; ls -l</span>
+-bash: touc: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># touch 1.txt &amp;&amp; mkdir malu &amp;&amp; ls -l</span>
+total <span class="token number">0</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">0</span> Jul <span class="token number">11</span> <span class="token number">11</span>:55 <span class="token number">1</span>.txt
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Jul <span class="token number">11</span> <span class="token number">11</span>:55 malu
+
+<span class="token function">ifdown</span> ens33 <span class="token operator">&amp;&amp;</span> <span class="token function">ifup</span> ens33
+
+<span class="token operator">||</span> 命令的分隔符 前面的命令必须执行失败，才会执行后面的命令
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># touc 1.txt || mkdir malu </span>
+-bash: touc: <span class="token builtin class-name">command</span> not found
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Jul <span class="token number">11</span> <span class="token number">11</span>:56 malu
+
+目录不存在则创建:
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># cd malu || mkdir malu</span>
+-bash: cd: malu: No such <span class="token function">file</span> or directory
+<span class="token punctuation">[</span>root@malu:~<span class="token punctuation">]</span><span class="token comment"># ll</span>
+total <span class="token number">0</span>
+drwxr-xr-x <span class="token number">2</span> root root <span class="token number">6</span> Jul <span class="token number">11</span> <span class="token number">11</span>:57 malu
+
+
+单引号双引号不加引号的区别 与变量有关
+<span class="token builtin class-name">echo</span> <span class="token variable">$name</span>  <span class="token builtin class-name">echo</span> <span class="token string">&quot;<span class="token variable">$name</span>&quot;</span> 输出变量
+<span class="token builtin class-name">echo</span> <span class="token string">'$name'</span>              输出<span class="token variable">$name</span>字符
+单引号所见即所得，不会解析变量
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div></div></section> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/26/2024, 9:15:52 PM</span></div></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/08-%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%BC%A9%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/%E6%89%93%E5%8C%85%EF%BC%8C%E5%8E%8B%E7%BC%A9%EF%BC%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%EF%BC%8C%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.html#_1-打包压缩" class="sidebar-link reco-side-_1-打包压缩" data-v-b57cc07c>1，打包压缩</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/08-%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%BC%A9%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/%E6%89%93%E5%8C%85%EF%BC%8C%E5%8E%8B%E7%BC%A9%EF%BC%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%EF%BC%8C%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.html#_2-zip打包压缩" class="sidebar-link reco-side-_2-zip打包压缩" data-v-b57cc07c>2，zip打包压缩</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/08-%E6%89%93%E5%8C%85%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%BC%A9%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7/%E6%89%93%E5%8C%85%EF%BC%8C%E5%8E%8B%E7%BC%A9%EF%BC%8C%E8%A7%A3%E5%8E%8B%E7%BC%A9%EF%BC%8C%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7.html#_3-特殊符号" class="sidebar-link reco-side-_3-特殊符号" data-v-b57cc07c>3，特殊符号</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.86aff7dd.js" defer></script><script src="/devops/public/assets/js/113.82199a69.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/214.853e1f5e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>docker02 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.7e421333.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.90efb9ac.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/247.3c8a077d.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.3cac1fec.js"><link rel="prefetch" href="/devops/public/assets/js/100.cd929d06.js"><link rel="prefetch" href="/devops/public/assets/js/101.a52df383.js"><link rel="prefetch" href="/devops/public/assets/js/102.fc9f4482.js"><link rel="prefetch" href="/devops/public/assets/js/103.806a5d74.js"><link rel="prefetch" href="/devops/public/assets/js/104.a1c3549e.js"><link rel="prefetch" href="/devops/public/assets/js/105.97ca4c96.js"><link rel="prefetch" href="/devops/public/assets/js/106.b3902c16.js"><link rel="prefetch" href="/devops/public/assets/js/107.a572937a.js"><link rel="prefetch" href="/devops/public/assets/js/108.9b01563e.js"><link rel="prefetch" href="/devops/public/assets/js/109.e4bed6fe.js"><link rel="prefetch" href="/devops/public/assets/js/11.db24e667.js"><link rel="prefetch" href="/devops/public/assets/js/110.56d36ca3.js"><link rel="prefetch" href="/devops/public/assets/js/111.6bbc24c6.js"><link rel="prefetch" href="/devops/public/assets/js/112.596d2402.js"><link rel="prefetch" href="/devops/public/assets/js/114.20a3c780.js"><link rel="prefetch" href="/devops/public/assets/js/115.fcb68a7e.js"><link rel="prefetch" href="/devops/public/assets/js/116.c23e5413.js"><link rel="prefetch" href="/devops/public/assets/js/117.0657c274.js"><link rel="prefetch" href="/devops/public/assets/js/118.ec9a0405.js"><link rel="prefetch" href="/devops/public/assets/js/119.a4c0f82b.js"><link rel="prefetch" href="/devops/public/assets/js/12.4cbaa7f8.js"><link rel="prefetch" href="/devops/public/assets/js/120.eaf60540.js"><link rel="prefetch" href="/devops/public/assets/js/121.223979bc.js"><link rel="prefetch" href="/devops/public/assets/js/122.a2a2f96e.js"><link rel="prefetch" href="/devops/public/assets/js/123.aa28180a.js"><link rel="prefetch" href="/devops/public/assets/js/124.7b99a56d.js"><link rel="prefetch" href="/devops/public/assets/js/125.407b03c0.js"><link rel="prefetch" href="/devops/public/assets/js/126.b198c63e.js"><link rel="prefetch" href="/devops/public/assets/js/127.5a77f058.js"><link rel="prefetch" href="/devops/public/assets/js/128.f911a9fe.js"><link rel="prefetch" href="/devops/public/assets/js/129.3569e48e.js"><link rel="prefetch" href="/devops/public/assets/js/13.743c978d.js"><link rel="prefetch" href="/devops/public/assets/js/130.efb9cbcb.js"><link rel="prefetch" href="/devops/public/assets/js/131.5f4ac405.js"><link rel="prefetch" href="/devops/public/assets/js/132.68311406.js"><link rel="prefetch" href="/devops/public/assets/js/133.714bb4a1.js"><link rel="prefetch" href="/devops/public/assets/js/134.f13bdf50.js"><link rel="prefetch" href="/devops/public/assets/js/135.1add34af.js"><link rel="prefetch" href="/devops/public/assets/js/136.28678844.js"><link rel="prefetch" href="/devops/public/assets/js/137.21a26c03.js"><link rel="prefetch" href="/devops/public/assets/js/138.8099e8b0.js"><link rel="prefetch" href="/devops/public/assets/js/139.75edea36.js"><link rel="prefetch" href="/devops/public/assets/js/14.7b85ad8b.js"><link rel="prefetch" href="/devops/public/assets/js/140.53ed92f3.js"><link rel="prefetch" href="/devops/public/assets/js/141.ad2b0727.js"><link rel="prefetch" href="/devops/public/assets/js/142.6d3a36a6.js"><link rel="prefetch" href="/devops/public/assets/js/143.56e39ae1.js"><link rel="prefetch" href="/devops/public/assets/js/144.4bf4bbbe.js"><link rel="prefetch" href="/devops/public/assets/js/145.df88c8ba.js"><link rel="prefetch" href="/devops/public/assets/js/146.23f1e3ce.js"><link rel="prefetch" href="/devops/public/assets/js/147.aa05473c.js"><link rel="prefetch" href="/devops/public/assets/js/148.8ac1da82.js"><link rel="prefetch" href="/devops/public/assets/js/149.da9de491.js"><link rel="prefetch" href="/devops/public/assets/js/15.d5a4ff3b.js"><link rel="prefetch" href="/devops/public/assets/js/150.666e1367.js"><link rel="prefetch" href="/devops/public/assets/js/151.8d60498c.js"><link rel="prefetch" href="/devops/public/assets/js/152.9380e3b0.js"><link rel="prefetch" href="/devops/public/assets/js/153.5a406f13.js"><link rel="prefetch" href="/devops/public/assets/js/154.49471a17.js"><link rel="prefetch" href="/devops/public/assets/js/155.54335341.js"><link rel="prefetch" href="/devops/public/assets/js/156.c03aef80.js"><link rel="prefetch" href="/devops/public/assets/js/157.3c9e39a1.js"><link rel="prefetch" href="/devops/public/assets/js/158.98d4b565.js"><link rel="prefetch" href="/devops/public/assets/js/159.a03396ea.js"><link rel="prefetch" href="/devops/public/assets/js/16.f9732262.js"><link rel="prefetch" href="/devops/public/assets/js/160.33d75785.js"><link rel="prefetch" href="/devops/public/assets/js/161.9da58a7e.js"><link rel="prefetch" href="/devops/public/assets/js/162.a3ada3ba.js"><link rel="prefetch" href="/devops/public/assets/js/163.b966aa06.js"><link rel="prefetch" href="/devops/public/assets/js/164.68a55c01.js"><link rel="prefetch" href="/devops/public/assets/js/165.3169cb62.js"><link rel="prefetch" href="/devops/public/assets/js/166.433853a7.js"><link rel="prefetch" href="/devops/public/assets/js/167.d5ecea75.js"><link rel="prefetch" href="/devops/public/assets/js/168.3454482f.js"><link rel="prefetch" href="/devops/public/assets/js/169.5f18a1ef.js"><link rel="prefetch" href="/devops/public/assets/js/17.1ade2c5b.js"><link rel="prefetch" href="/devops/public/assets/js/170.27492ffd.js"><link rel="prefetch" href="/devops/public/assets/js/171.6d83a3bc.js"><link rel="prefetch" href="/devops/public/assets/js/172.6d683d4a.js"><link rel="prefetch" href="/devops/public/assets/js/173.8b6b8b66.js"><link rel="prefetch" href="/devops/public/assets/js/174.9fb92ddd.js"><link rel="prefetch" href="/devops/public/assets/js/175.b8023ed1.js"><link rel="prefetch" href="/devops/public/assets/js/176.84191465.js"><link rel="prefetch" href="/devops/public/assets/js/177.a8fe295c.js"><link rel="prefetch" href="/devops/public/assets/js/178.c4041fe5.js"><link rel="prefetch" href="/devops/public/assets/js/179.911beb86.js"><link rel="prefetch" href="/devops/public/assets/js/18.28958d7b.js"><link rel="prefetch" href="/devops/public/assets/js/180.0760f5f3.js"><link rel="prefetch" href="/devops/public/assets/js/181.e5c3ac79.js"><link rel="prefetch" href="/devops/public/assets/js/182.743d9a6f.js"><link rel="prefetch" href="/devops/public/assets/js/183.d5ed837f.js"><link rel="prefetch" href="/devops/public/assets/js/184.564e0f40.js"><link rel="prefetch" href="/devops/public/assets/js/185.4dfd265f.js"><link rel="prefetch" href="/devops/public/assets/js/186.f429fe05.js"><link rel="prefetch" href="/devops/public/assets/js/187.7799869f.js"><link rel="prefetch" href="/devops/public/assets/js/188.561a5660.js"><link rel="prefetch" href="/devops/public/assets/js/189.4c22b271.js"><link rel="prefetch" href="/devops/public/assets/js/19.6493edb1.js"><link rel="prefetch" href="/devops/public/assets/js/190.caf4e63d.js"><link rel="prefetch" href="/devops/public/assets/js/191.4141675e.js"><link rel="prefetch" href="/devops/public/assets/js/192.8d0a5f0b.js"><link rel="prefetch" href="/devops/public/assets/js/193.61b82353.js"><link rel="prefetch" href="/devops/public/assets/js/194.21b73497.js"><link rel="prefetch" href="/devops/public/assets/js/195.7c914a71.js"><link rel="prefetch" href="/devops/public/assets/js/196.ba0bfb8e.js"><link rel="prefetch" href="/devops/public/assets/js/197.ddbb04e1.js"><link rel="prefetch" href="/devops/public/assets/js/198.5d852e4a.js"><link rel="prefetch" href="/devops/public/assets/js/199.7363256c.js"><link rel="prefetch" href="/devops/public/assets/js/20.690728a0.js"><link rel="prefetch" href="/devops/public/assets/js/200.613765fd.js"><link rel="prefetch" href="/devops/public/assets/js/201.8089a178.js"><link rel="prefetch" href="/devops/public/assets/js/202.4abd447b.js"><link rel="prefetch" href="/devops/public/assets/js/203.c1a82fe2.js"><link rel="prefetch" href="/devops/public/assets/js/204.57bd3fc5.js"><link rel="prefetch" href="/devops/public/assets/js/205.37bc9ff7.js"><link rel="prefetch" href="/devops/public/assets/js/206.110c8c4e.js"><link rel="prefetch" href="/devops/public/assets/js/207.38c7388d.js"><link rel="prefetch" href="/devops/public/assets/js/208.9ac4f283.js"><link rel="prefetch" href="/devops/public/assets/js/209.713c43f2.js"><link rel="prefetch" href="/devops/public/assets/js/21.4f950c50.js"><link rel="prefetch" href="/devops/public/assets/js/210.6258adfa.js"><link rel="prefetch" href="/devops/public/assets/js/211.90ec8c06.js"><link rel="prefetch" href="/devops/public/assets/js/212.8c26a7ec.js"><link rel="prefetch" href="/devops/public/assets/js/213.815d4e90.js"><link rel="prefetch" href="/devops/public/assets/js/214.7b1e8e31.js"><link rel="prefetch" href="/devops/public/assets/js/215.6cfa1c17.js"><link rel="prefetch" href="/devops/public/assets/js/216.773c7b16.js"><link rel="prefetch" href="/devops/public/assets/js/217.d38b8c52.js"><link rel="prefetch" href="/devops/public/assets/js/218.dd20dc06.js"><link rel="prefetch" href="/devops/public/assets/js/219.7d49bca0.js"><link rel="prefetch" href="/devops/public/assets/js/22.2de32be6.js"><link rel="prefetch" href="/devops/public/assets/js/220.a614ab61.js"><link rel="prefetch" href="/devops/public/assets/js/221.9ad32d34.js"><link rel="prefetch" href="/devops/public/assets/js/222.0a5bb2cd.js"><link rel="prefetch" href="/devops/public/assets/js/223.4b037069.js"><link rel="prefetch" href="/devops/public/assets/js/224.0cb768c7.js"><link rel="prefetch" href="/devops/public/assets/js/225.60cd5edd.js"><link rel="prefetch" href="/devops/public/assets/js/226.6c56fd17.js"><link rel="prefetch" href="/devops/public/assets/js/227.12abeffb.js"><link rel="prefetch" href="/devops/public/assets/js/228.3c89fa63.js"><link rel="prefetch" href="/devops/public/assets/js/229.e311aec2.js"><link rel="prefetch" href="/devops/public/assets/js/23.c3b6477a.js"><link rel="prefetch" href="/devops/public/assets/js/230.105bb2df.js"><link rel="prefetch" href="/devops/public/assets/js/231.81761156.js"><link rel="prefetch" href="/devops/public/assets/js/232.33bacedd.js"><link rel="prefetch" href="/devops/public/assets/js/233.679504e7.js"><link rel="prefetch" href="/devops/public/assets/js/234.dcb3b368.js"><link rel="prefetch" href="/devops/public/assets/js/235.44c93692.js"><link rel="prefetch" href="/devops/public/assets/js/236.156a4513.js"><link rel="prefetch" href="/devops/public/assets/js/237.cd03f4ab.js"><link rel="prefetch" href="/devops/public/assets/js/238.43b6fbd3.js"><link rel="prefetch" href="/devops/public/assets/js/239.778f1d3f.js"><link rel="prefetch" href="/devops/public/assets/js/24.e123a927.js"><link rel="prefetch" href="/devops/public/assets/js/240.7841a2cc.js"><link rel="prefetch" href="/devops/public/assets/js/241.8cb35dac.js"><link rel="prefetch" href="/devops/public/assets/js/242.c1dce3b4.js"><link rel="prefetch" href="/devops/public/assets/js/243.61ccb1bb.js"><link rel="prefetch" href="/devops/public/assets/js/244.f8f5711e.js"><link rel="prefetch" href="/devops/public/assets/js/245.5d4371cd.js"><link rel="prefetch" href="/devops/public/assets/js/246.d8966dca.js"><link rel="prefetch" href="/devops/public/assets/js/248.b84ba65f.js"><link rel="prefetch" href="/devops/public/assets/js/249.3baf93b5.js"><link rel="prefetch" href="/devops/public/assets/js/25.c11f6be0.js"><link rel="prefetch" href="/devops/public/assets/js/250.a127289d.js"><link rel="prefetch" href="/devops/public/assets/js/251.4e5c11ab.js"><link rel="prefetch" href="/devops/public/assets/js/252.4d3bbc3b.js"><link rel="prefetch" href="/devops/public/assets/js/253.16c8019c.js"><link rel="prefetch" href="/devops/public/assets/js/254.36a975b2.js"><link rel="prefetch" href="/devops/public/assets/js/255.7e75f310.js"><link rel="prefetch" href="/devops/public/assets/js/256.e3f62882.js"><link rel="prefetch" href="/devops/public/assets/js/257.06ec1ea0.js"><link rel="prefetch" href="/devops/public/assets/js/258.a3971b13.js"><link rel="prefetch" href="/devops/public/assets/js/259.7a224ea1.js"><link rel="prefetch" href="/devops/public/assets/js/26.b6d5f7ad.js"><link rel="prefetch" href="/devops/public/assets/js/260.69ccb7d2.js"><link rel="prefetch" href="/devops/public/assets/js/27.f96841de.js"><link rel="prefetch" href="/devops/public/assets/js/28.ce32b8fb.js"><link rel="prefetch" href="/devops/public/assets/js/29.6b19411e.js"><link rel="prefetch" href="/devops/public/assets/js/3.b57e418d.js"><link rel="prefetch" href="/devops/public/assets/js/30.650e7953.js"><link rel="prefetch" href="/devops/public/assets/js/31.86915b97.js"><link rel="prefetch" href="/devops/public/assets/js/32.4631d08f.js"><link rel="prefetch" href="/devops/public/assets/js/33.e12dcfce.js"><link rel="prefetch" href="/devops/public/assets/js/34.8eba3665.js"><link rel="prefetch" href="/devops/public/assets/js/35.b098483e.js"><link rel="prefetch" href="/devops/public/assets/js/36.add8ce12.js"><link rel="prefetch" href="/devops/public/assets/js/37.f6ae609d.js"><link rel="prefetch" href="/devops/public/assets/js/38.e8067cb0.js"><link rel="prefetch" href="/devops/public/assets/js/39.c4d5c8dc.js"><link rel="prefetch" href="/devops/public/assets/js/4.b09a61a7.js"><link rel="prefetch" href="/devops/public/assets/js/40.4ac9ed3c.js"><link rel="prefetch" href="/devops/public/assets/js/41.cb62752b.js"><link rel="prefetch" href="/devops/public/assets/js/42.4762fbfd.js"><link rel="prefetch" href="/devops/public/assets/js/43.7ab10532.js"><link rel="prefetch" href="/devops/public/assets/js/44.5c255030.js"><link rel="prefetch" href="/devops/public/assets/js/45.da73dbb0.js"><link rel="prefetch" href="/devops/public/assets/js/46.a5cefa26.js"><link rel="prefetch" href="/devops/public/assets/js/47.60710c5c.js"><link rel="prefetch" href="/devops/public/assets/js/48.2eb77352.js"><link rel="prefetch" href="/devops/public/assets/js/49.82d40d3c.js"><link rel="prefetch" href="/devops/public/assets/js/5.651ca305.js"><link rel="prefetch" href="/devops/public/assets/js/50.690aea92.js"><link rel="prefetch" href="/devops/public/assets/js/51.31358e38.js"><link rel="prefetch" href="/devops/public/assets/js/52.3c5e908c.js"><link rel="prefetch" href="/devops/public/assets/js/53.636b2c3d.js"><link rel="prefetch" href="/devops/public/assets/js/54.4f9295d9.js"><link rel="prefetch" href="/devops/public/assets/js/55.544d958d.js"><link rel="prefetch" href="/devops/public/assets/js/56.96f17650.js"><link rel="prefetch" href="/devops/public/assets/js/57.ff0799bf.js"><link rel="prefetch" href="/devops/public/assets/js/58.1070b26b.js"><link rel="prefetch" href="/devops/public/assets/js/59.95f03b62.js"><link rel="prefetch" href="/devops/public/assets/js/6.b5453c6c.js"><link rel="prefetch" href="/devops/public/assets/js/60.3ab6cc13.js"><link rel="prefetch" href="/devops/public/assets/js/61.3651c40a.js"><link rel="prefetch" href="/devops/public/assets/js/62.4be1a174.js"><link rel="prefetch" href="/devops/public/assets/js/63.bd9ff0d1.js"><link rel="prefetch" href="/devops/public/assets/js/64.c57cea58.js"><link rel="prefetch" href="/devops/public/assets/js/65.a106d70f.js"><link rel="prefetch" href="/devops/public/assets/js/66.cd3d2121.js"><link rel="prefetch" href="/devops/public/assets/js/67.fa9bad19.js"><link rel="prefetch" href="/devops/public/assets/js/68.b4d3ccc5.js"><link rel="prefetch" href="/devops/public/assets/js/69.2bf96338.js"><link rel="prefetch" href="/devops/public/assets/js/7.d80e6a48.js"><link rel="prefetch" href="/devops/public/assets/js/70.c3517032.js"><link rel="prefetch" href="/devops/public/assets/js/71.232a7b32.js"><link rel="prefetch" href="/devops/public/assets/js/72.242fc049.js"><link rel="prefetch" href="/devops/public/assets/js/73.22a347c8.js"><link rel="prefetch" href="/devops/public/assets/js/74.e78e7eeb.js"><link rel="prefetch" href="/devops/public/assets/js/75.18968609.js"><link rel="prefetch" href="/devops/public/assets/js/76.54665efa.js"><link rel="prefetch" href="/devops/public/assets/js/77.6503a8e6.js"><link rel="prefetch" href="/devops/public/assets/js/78.4798f501.js"><link rel="prefetch" href="/devops/public/assets/js/79.92184400.js"><link rel="prefetch" href="/devops/public/assets/js/8.ba98d7ab.js"><link rel="prefetch" href="/devops/public/assets/js/80.25f8711d.js"><link rel="prefetch" href="/devops/public/assets/js/81.0eb8ba54.js"><link rel="prefetch" href="/devops/public/assets/js/82.b4b2b9bb.js"><link rel="prefetch" href="/devops/public/assets/js/83.203fe11e.js"><link rel="prefetch" href="/devops/public/assets/js/84.16d007fe.js"><link rel="prefetch" href="/devops/public/assets/js/85.e86dbdc0.js"><link rel="prefetch" href="/devops/public/assets/js/86.fdfc863d.js"><link rel="prefetch" href="/devops/public/assets/js/87.7b044839.js"><link rel="prefetch" href="/devops/public/assets/js/88.b13eb8df.js"><link rel="prefetch" href="/devops/public/assets/js/89.beac33ff.js"><link rel="prefetch" href="/devops/public/assets/js/9.50968082.js"><link rel="prefetch" href="/devops/public/assets/js/90.5384487a.js"><link rel="prefetch" href="/devops/public/assets/js/91.91a69f4c.js"><link rel="prefetch" href="/devops/public/assets/js/92.f94d7516.js"><link rel="prefetch" href="/devops/public/assets/js/93.a913f2df.js"><link rel="prefetch" href="/devops/public/assets/js/94.d9f5d97d.js"><link rel="prefetch" href="/devops/public/assets/js/95.b6f8c046.js"><link rel="prefetch" href="/devops/public/assets/js/96.15ad077f.js"><link rel="prefetch" href="/devops/public/assets/js/97.ee529392.js"><link rel="prefetch" href="/devops/public/assets/js/98.3a8065a3.js"><link rel="prefetch" href="/devops/public/assets/js/99.36589eef.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>236</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>docker02</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">docker02</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-面试题"><a href="#_1-面试题" class="header-anchor">#</a> 1，面试题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Q42:如何获取docker镜像?
+	<span class="token number">1</span>）从官方获取
+	<span class="token number">2</span>）第三方获取
+	<span class="token number">3</span>）本地加载
+
+--------------------------------
+
+Q43:镜像和容器的区别是啥?
+定义：
+	镜像：镜像是一个只读的模板，用于创建容器。它包含了运行某个应用所需的所有代码、库、依赖关系和配置文件。镜像是静态的，不会改变。
+	容器：容器是镜像的一个具体实例，可以看作是镜像的运行时环境。容器是动态的，可以读写数据，并可以在运行时与其他容器或外部环境进行交互。
+
+使用场景：
+	镜像：用于分发和共享应用的软件包，可以在不同环境中保持一致性。
+	容器：用于运行应用程序和服务，处理实时的操作和数据。
+	
+--------------------------------
+
+Q44:如何获取docker容器20分钟内产生的日志呢?
+<span class="token function">docker</span> <span class="token function">ps</span>  <span class="token comment"># 查看当前运行的容器</span>
+<span class="token function">docker</span> logs my_container <span class="token parameter variable">--since</span> 20m <span class="token comment"># --since 20m 参数表示从当前时间向前推 20 分钟获取日志。</span>
+
+更精确的时间范围，可以使用 <span class="token parameter variable">--since</span> 和 <span class="token parameter variable">--until</span> 参数，格式为 <span class="token string">&quot;YYYY-MM-DD HH:MM:SS&quot;</span>。
+<span class="token function">docker</span> logs my_container <span class="token parameter variable">--since</span> <span class="token string">&quot;2023-10-01 12:00:00&quot;</span> <span class="token parameter variable">--until</span> <span class="token string">&quot;2023-10-01 12:20:00&quot;</span>
+
+如果你想实时查看日志并监控容器的输出，可以使用 <span class="token parameter variable">-f</span> 参数：
+<span class="token function">docker</span> logs <span class="token parameter variable">-f</span> my_container
+
+--------------------------------
+
+Q45:docker容器做端口映射的原理是如何的?容器内访问外网数据流程是如何的?
+
+<span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">-p</span> <span class="token number">8080</span>:80 my_container
+<span class="token number">8080</span> 是主机端口，80 是容器内部的端口。这个命令的意思是将主机的 <span class="token number">8080</span> 端口映射到容器的 <span class="token number">80</span> 端口。
+Docker 启动时会在主机上配置 iptables 规则，以便将进来的流量转发到容器内部。具体来说，当主机上的某个端口（如 <span class="token number">8080</span>）收到流量时，iptables 会将这个流量转发到相应的容器 IP 地址和端口（如 <span class="token number">80</span>）。同时，容器内部的服务也可以访问主机和外部网络。
+
+工作流程
+启动容器：使用 <span class="token function">docker</span> run 命令启动容器并指定端口映射。
+配置 iptables：Docker 创建相应的 iptables 规则，将主机端口与容器端口进行绑定。
+接收流量：当请求到达主机的指定端口时，iptables 规则会将请求转发到相应的容器。
+容器处理请求：容器内部的服务处理请求并将响应返回给主机，最终返回到客户端。
+
+----------------
+容器内访问外网数据流程是如何的?
+
+出站流量：
+容器内的应用程序发起请求（如 HTTP 请求）到外部 IP 地址。
+请求被发送到 Docker 网桥（docker0）。
+Docker 使用 NAT 规则将容器的私有 IP 地址（如 <span class="token number">172.17</span>.x.x）转换为主机的公共 IP 地址，确保外部网络看到的是主机的 IP。
+
+入站响应：
+外部服务器将响应发送到主机的公共 IP 地址及 Docker 映射的端口。
+Docker 的 NAT 规则会将响应流量重新映射到相应的容器 IP 地址，确保数据能够正确返回到发起请求的容器。
+
+- docker容器访问外网的流程
+    - 容器的eth0<span class="token punctuation">[</span>容器内<span class="token punctuation">]</span>
+    - vethXXXX<span class="token punctuation">[</span>宿主机，是容器eth0的对端设备<span class="token punctuation">]</span>
+    - docker0<span class="token punctuation">[</span>容器的网关，vethXXXX的桥接设备<span class="token punctuation">]</span>
+    - ens33<span class="token punctuation">[</span>需要开启内核转发功能，出去时需要走SNAT，回来时是DNAT技术，底层写了iptables规则<span class="token punctuation">]</span>
+--------------------------------
+
+Q46:docker容器有几种状态?
+
+Created（已创建）：
+容器已经创建，但尚未启动。此状态表明容器的文件系统和网络设置已准备好，但没有运行任何进程。
+
+Running（运行中）：
+容器正在运行，包含一个或多个正在执行的进程。在这个状态下，容器可以接受请求并处理任务。
+
+Paused（已暂停）：
+容器的进程被暂停，所有运行中的进程将被挂起。这个状态常用于临时停止容器而不释放其资源。可以通过 <span class="token function">docker</span> unpause 命令恢复运行。
+
+Exited（已退出）：
+容器的主进程已停止运行。此状态可以由多种原因引起，例如正常完成、出现错误或手动停止。可以通过 <span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span> 命令查看退出的容器及其退出码。
+
+Dead（已死亡）：
+容器处于一种无法恢复的状态，通常是由于错误或系统问题导致的。此状态通常不常见，表示容器无法正常运行或已经崩溃。
+
+Restarting（正在重启）：
+容器正在重启中。这通常是由于设置了重启策略（如 <span class="token parameter variable">--restart</span> always）并且容器崩溃后自动尝试重启的情况。
+
+--------------------------------
+
+Q47:<span class="token string">&quot;docker run&quot;</span>底层做了哪些事情?
+执行 <span class="token function">docker</span> run 命令时，Docker 系统会完成以下主要步骤：
+查找并拉取镜像（如必要）。
+创建新的容器文件系统和 ID。
+配置网络和分配 IP 地址。
+设置控制组以限制资源。
+挂载卷并设置文件系统选项。
+初始化并执行容器主进程。
+配置日志记录机制。
+启动容器并监控其状态。
+这些步骤确保了容器的创建、配置和运行高效且隔离，同时也提供了对资源的管理和监控。
+
+--------------------------------
+
+Q48:简单陈述下虚拟机和容器的区别?最少说出5点?
+架构：
+虚拟机是在物理硬件上运行完整的操作系统（OS）。容器共享宿主机的操作系统内核，并在其上运行应用程序。容器是轻量级的，不需要完整的操作系统，只需包含应用程序及其依赖项。
+
+启动时间：
+虚拟机：启动整个操作系统和虚拟硬件，启动时间通常较长，可能需要几分钟。
+容器启动速度非常快，通常只需几秒钟，因为它们只需启动应用程序进程。
+
+资源利用：
+虚拟机需要分配一定的资源（CPU、内存、存储），并且由于完整的操作系统，相对资源消耗较高。
+容器更轻量，多个容器可以共享相同的操作系统内核，从而更高效地利用资源，允许在同一台主机上运行更多的容器。
+
+隔离级别：
+虚拟机提供了更强的隔离性，每个虚拟机都有自己的操作系统和内核，可以完全隔离不同的工作负载。
+容器之间的隔离性较弱，因为它们共享宿主机内核。虽然容器在文件系统和进程空间上是隔离的，但仍存在一定的安全风险。
+
+管理和部署：
+虚拟机的管理和部署通常使用虚拟化管理工具
+容器通常使用容器编排工具（如 Kubernetes）进行管理，能够更灵活地进行自动化部署和扩展，适合微服务架构。
+--------------------------------
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br></div></div><h3 id="_2-docker命令"><a href="#_2-docker命令" class="header-anchor">#</a> 2，docker命令</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>- docker的架构
+    - <span class="token function">docker</span> client: 客户端
+    	一般指的是向docker服务端发起请求的一方，比如使用docker命令。
+    - <span class="token function">docker</span> daemon: 服务端
+    	一般需要守护运行一个服务，对应的是dockerd命令。
+    - <span class="token function">docker</span> hub: registry<span class="token punctuation">(</span>镜像仓库<span class="token punctuation">)</span>
+    	存储镜像的地方，此处特指官方镜像仓库，也可以使用第三方镜像仓库，自建仓库等。			
+	
+	- 镜像管理命令:
+		- <span class="token function">docker</span> image pull
+			<span class="token function">docker</span> pull
+		- <span class="token function">docker</span> image <span class="token function">ls</span><span class="token operator">|</span>list
+			<span class="token function">docker</span> images
+		- <span class="token function">docker</span> image <span class="token function">rm</span> 
+			<span class="token function">docker</span> rmi
+		- <span class="token function">docker</span> image save
+			<span class="token function">docker</span> save 
+		- <span class="token function">docker</span> image load 
+			<span class="token function">docker</span> load 
+			
+	- 容器管理命令:
+		- <span class="token function">docker</span> container <span class="token function">ls</span><span class="token operator">|</span><span class="token function">ps</span><span class="token operator">|</span>list
+			<span class="token function">docker</span> <span class="token function">ps</span> 
+		- <span class="token function">docker</span> container create
+			<span class="token function">docker</span> create 
+		- <span class="token function">docker</span> container start
+			<span class="token function">docker</span> start 
+		- <span class="token function">docker</span> container stop
+			<span class="token function">docker</span> stop
+		- <span class="token function">docker</span> container restart
+			<span class="token function">docker</span> restart
+		- <span class="token function">docker</span> container <span class="token function">rename</span>
+			<span class="token function">docker</span> <span class="token function">rename</span> 
+		- <span class="token function">docker</span> container run 
+			<span class="token function">docker</span> run 
+		- <span class="token function">docker</span> container inspect
+			<span class="token function">docker</span> inspect 
+		- <span class="token function">docker</span> container <span class="token function">cp</span>
+			<span class="token function">docker</span> <span class="token function">cp</span> 
+		- <span class="token function">docker</span> container <span class="token builtin class-name">exec</span> 
+			<span class="token function">docker</span> <span class="token builtin class-name">exec</span> 
+		- <span class="token function">docker</span> container logs
+			<span class="token function">docker</span> logs
+		- <span class="token function">docker</span> container pause
+			<span class="token function">docker</span> pause
+		- <span class="token function">docker</span> container unpause
+			<span class="token function">docker</span> unpause
+		- <span class="token function">docker</span> container <span class="token function">rm</span> 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><h3 id="_3-docker单机网络类型"><a href="#_3-docker单机网络类型" class="header-anchor">#</a> 3，docker单机网络类型</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.docker的单机网络类型有5种
+- none：
+    容器不分配网卡。
+
+- host:
+    使用宿主机网络，也是无需分配网卡，直接宿主机的网络，性能最高。
+
+- bridge:
+    桥接模式，会为容器分配虚拟网卡。工作机制有点类似于VM的NAT模式，
+    默认就是桥接模式。
+
+- container:
+    和一个已经存在的容器共享网络。
+
+- custom:
+    单机自定义网络，内置了DNS解析功能，可以实现基于容器名称相互访问。
+    可以将容器名称解析为对应的IP地址。
+    
+<span class="token number">2</span>.创建docker容器并指定网络类型
+<span class="token number">2.1</span> 查看当前宿主机的网络列表
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME      DRIVER    SCOPE
+5f6a8a87d231   bridge    bridge    <span class="token builtin class-name">local</span>
+685d60f843e1   <span class="token function">host</span>      <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+2c941c0f5d1a   none      null      <span class="token builtin class-name">local</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2.2</span> 创建容器指定网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -id --name malu-bridge --network bridge alpine</span>
+23006b5c4c97c4993fe06935482e9e9c4a0792214fab584c02f38165bf2b9334
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -id --name malu-default alpine</span>
+8f60ef3133ac8dfc37335459b15a9eaf63756f001a2483d1695ea0fd2b99b339
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -id --name malu-none --network none alpine</span>
+ed5b1a1f4021cb5141d28fd17423f8f6aae0b1809a0f98386d3b4f12e941836b
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -id --name malu-host --network host alpine</span>
+158ec6925d48488f02309f981cbb56bd5cd6f6c40c18e4196b06050d8a09776c
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -id --name malu-container --network container:malu-bridge alpine</span>
+81a61bf0c75bce6494cb2161738fca2b9fa98e126ee6733b31319647d4bc1427
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps </span>
+CONTAINER ID   IMAGE     COMMAND     CREATED              STATUS              PORTS     NAMES
+81a61bf0c75b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">2</span> seconds ago        Up <span class="token number">2</span> seconds                  malu-container
+158ec6925d48   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">44</span> seconds ago       Up <span class="token number">44</span> seconds                 malu-host
+ed5b1a1f4021   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">52</span> seconds ago       Up <span class="token number">52</span> seconds                 malu-none
+8f60ef3133ac   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   About a minute ago   Up About a minute             malu-default
+23006b5c4c97   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">2</span> minutes ago        Up <span class="token number">2</span> minutes                  malu-bridge
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment">#  </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">2.3</span> 验证各容器的网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-bridge ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+<span class="token number">44</span>: eth0@if45: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue state UP 
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">172.17</span>.0.2/16 brd <span class="token number">172.17</span>.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-default ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+<span class="token number">46</span>: eth0@if47: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue state UP 
+    link/ether 02:42:ac:11:00:03 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">172.17</span>.0.3/16 brd <span class="token number">172.17</span>.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-none ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-container ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+<span class="token number">44</span>: eth0@if45: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue state UP 
+    link/ether 02:42:ac:11:00:02 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">172.17</span>.0.2/16 brd <span class="token number">172.17</span>.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-host ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:73:9f:a8 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">10.0</span>.0.101/24 brd <span class="token number">10.0</span>.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe73:9fa8/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">3</span>: docker0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue state UP 
+    link/ether 02:42:8a:5c:9d:39 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">172.17</span>.0.1/16 brd <span class="token number">172.17</span>.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:8aff:fe5c:9d39/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">45</span>: veth3b22119@if44: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue master docker0 state UP 
+    link/ether 4e:86:ed:69:45:38 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::4c86:edff:fe69:4538/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">47</span>: veth62b92ee@if46: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc noqueue master docker0 state UP 
+    link/ether fa:f1:96:26:fd:dd brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::f8f1:96ff:fe26:fddd/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">2.4</span> 查看各个网络的详细信息
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect bridge </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect host </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect none </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="_4-docker自定义网络基本管理"><a href="#_4-docker自定义网络基本管理" class="header-anchor">#</a> 4，docker自定义网络基本管理</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.查看现有的网络列表
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME      DRIVER    SCOPE
+c9fc886c17f1   bridge    bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>      <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none      null      <span class="token builtin class-name">local</span>
+
+<span class="token number">2</span>.查看网络的详细信息
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect bridge host none</span>
+
+<span class="token number">3</span>.创建自定义网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create -d bridge --gateway 172.20.0.254 --subnet 172.20.0.0/16 --ip-range 172.20.100.0/24 malu-linux94-net</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME               DRIVER    SCOPE
+c9fc886c17f1   bridge             bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>               <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+3781c2d112a8   malu-linux94-net   bridge    <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none               null      <span class="token builtin class-name">local</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ifconfig</span>
+br-3781c2d112a8: <span class="token assign-left variable">flags</span><span class="token operator">=</span><span class="token number">409</span><span class="token operator"><span class="token file-descriptor important">9</span>&lt;</span>UP,BROADCAST,MULTICAST<span class="token operator">&gt;</span>  mtu <span class="token number">1500</span>
+        inet <span class="token number">172.20</span>.0.254  netmask <span class="token number">255.255</span>.0.0  broadcast <span class="token number">172.20</span>.255.255
+
+相关参数说明:
+	gateway:
+		网关地址。	
+	subnet:
+		子网地址。	
+	ip-range:
+		容器分配的IP地址范围。
+		
+<span class="token number">4</span>.创建容器使用自定义网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -it --name c1 --network malu-linux94-net alpine</span>
+/ <span class="token comment"># ifconfig</span>
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:14:64:00  
+          inet addr:172.20.100.0  Bcast:172.20.255.255  Mask:255.255.0.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:30 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:4309 <span class="token punctuation">(</span><span class="token number">4.2</span> KiB<span class="token punctuation">)</span>  TX bytes:0 <span class="token punctuation">(</span><span class="token number">0.0</span> B<span class="token punctuation">)</span>
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 <span class="token punctuation">(</span><span class="token number">0.0</span> B<span class="token punctuation">)</span>  TX bytes:0 <span class="token punctuation">(</span><span class="token number">0.0</span> B<span class="token punctuation">)</span>
+
+/ <span class="token comment"># route -n</span>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+<span class="token number">0.0</span>.0.0         <span class="token number">172.20</span>.0.254    <span class="token number">0.0</span>.0.0         UG    <span class="token number">0</span>      <span class="token number">0</span>        <span class="token number">0</span> eth0
+<span class="token number">172.20</span>.0.0      <span class="token number">0.0</span>.0.0         <span class="token number">255.255</span>.0.0     U     <span class="token number">0</span>      <span class="token number">0</span>        <span class="token number">0</span> eth0
+
+<span class="token number">5</span>.再开一个终端测试ping
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -it --name c2 --network malu-linux94-net alpine</span>
+/ <span class="token comment"># ping -c 3 c1</span>
+PING c1 <span class="token punctuation">(</span><span class="token number">172.20</span>.100.0<span class="token punctuation">)</span>: <span class="token number">56</span> data bytes
+<span class="token number">64</span> bytes from <span class="token number">172.20</span>.100.0: <span class="token assign-left variable">seq</span><span class="token operator">=</span><span class="token number">0</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">1.090</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.20</span>.100.0: <span class="token assign-left variable">seq</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.136</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.20</span>.100.0: <span class="token assign-left variable">seq</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.094</span> ms
+
+--- c1 <span class="token function">ping</span> statistics ---
+<span class="token number">3</span> packets transmitted, <span class="token number">3</span> packets received, <span class="token number">0</span>% packet loss
+round-trip min/avg/max <span class="token operator">=</span> <span class="token number">0.094</span>/0.440/1.090 ms
+/ <span class="token comment"># ifconfig</span>
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:14:64:01  
+          inet addr:172.20.100.1  Bcast:172.20.255.255  Mask:255.255.0.0
+
+<span class="token number">6</span>.再开一个终端查看网络的详细信息
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect malu-linux94-net</span>
+
+<span class="token number">7</span>.将自定义网络加入到一个正在运行的容器
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it c3 sh</span>
+/ <span class="token comment"># ifconfig </span>
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:04  
+          inet addr:172.17.0.4  Bcast:172.17.255.255  Mask:255.255.0.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:17 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:2192 <span class="token punctuation">(</span><span class="token number">2.1</span> KiB<span class="token punctuation">)</span>  TX bytes:0 <span class="token punctuation">(</span><span class="token number">0.0</span> B<span class="token punctuation">)</span>
+<span class="token comment"># 添加网络后的网卡信息</span>
+eth1      Link encap:Ethernet  HWaddr 02:42:AC:14:64:02  
+          inet addr:172.20.100.2  Bcast:172.20.255.255  Mask:255.255.0.0
+          
+          
+<span class="token number">8</span>.将网络从一个正在运行的容器中移除
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network disconnect malu-linux94-net c3</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it c3 sh</span>
+/ <span class="token comment"># ifconfig</span>
+eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:04  
+          inet addr:172.17.0.4  Bcast:172.17.255.255  Mask:255.255.0.0
+
+<span class="token number">9</span>.移除所有未使用的网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create xixi</span>
+aa1d22d0b0b65c8d982f3a7d9c9d95bfc873bcfafefb456c752ff81ffe2a6ba9
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create haha</span>
+29986c257542784bf5d8cc8d94019a41e98f7b79b0e6e7e5640e923dbe95aee8
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME               DRIVER    SCOPE
+c9fc886c17f1   bridge             bridge    <span class="token builtin class-name">local</span>
+29986c257542   haha               bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>               <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+3781c2d112a8   malu-linux94-net   bridge    <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none               null      <span class="token builtin class-name">local</span>
+aa1d22d0b0b6   xixi               bridge    <span class="token builtin class-name">local</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network prune -f</span>
+Deleted Networks:
+xixi
+haha
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME               DRIVER    SCOPE
+c9fc886c17f1   bridge             bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>               <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+3781c2d112a8   malu-linux94-net   bridge    <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none               null      <span class="token builtin class-name">local</span>
+
+<span class="token number">10</span>.移除指定网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create hehe</span>
+05d128f917b2ff65d0ecc43a2dc9e493a941f6e50c847ba78d35f646e23a319c
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create linux94</span>
+89852c07f042abe4284a03d08692fef45686b46e03d7b11c994f60394d862d0e
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create haha</span>
+64ce5ceb9402dd21e013d351d86b9e9cfb553b1ebbd2fcebb049700741c8744d
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME               DRIVER    SCOPE
+c9fc886c17f1   bridge             bridge    <span class="token builtin class-name">local</span>
+64ce5ceb9402   haha               bridge    <span class="token builtin class-name">local</span>
+05d128f917b2   hehe               bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>               <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+89852c07f042   linux94            bridge    <span class="token builtin class-name">local</span>
+3781c2d112a8   malu-linux94-net   bridge    <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none               null      <span class="token builtin class-name">local</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network rm hehe haha </span>
+hehe
+haha
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network ls</span>
+NETWORK ID     NAME               DRIVER    SCOPE
+c9fc886c17f1   bridge             bridge    <span class="token builtin class-name">local</span>
+d6799c4c51d8   <span class="token function">host</span>               <span class="token function">host</span>      <span class="token builtin class-name">local</span>
+89852c07f042   linux94            bridge    <span class="token builtin class-name">local</span>
+3781c2d112a8   malu-linux94-net   bridge    <span class="token builtin class-name">local</span>
+ea4f7f3bb80b   none               null      <span class="token builtin class-name">local</span>
+<span class="token comment"># 如果网络正在被使用，则无法移除！</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network rm  malu-linux94-net  </span>
+Error response from daemon: error <span class="token keyword">while</span> removing network: network malu-linux94-net <span class="token function">id</span> 3781c2d112a8db30ba86ad4edc4d783611ddbba0e3116bbc2f89eabd100ae6e6 has active endpoints
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br></div></div><h3 id="_5-docker指定启动命令command"><a href="#_5-docker指定启动命令command" class="header-anchor">#</a> 5，docker指定启动命令COMMAND</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.启动命令可以被修改
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name c1 -id alpine</span>
+cadcf69d7a20ace6c5028bcc542b874414cf8d10b0c8dc25d96be2d779b205b8
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name c2 -d alpine sleep 30</span>
+0399b56885029780c01626aca163738f466bd1232ad27427a94f9e5b88ffcb70
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name c3 -d alpine tail -f /etc/hosts</span>
+bf9e807caaaa1c91536391c56d1ffafeb1d77d223f1f638820f13081b00c3d28
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND                CREATED          STATUS                    PORTS     NAMES
+bf9e807caaaa   alpine    <span class="token string">&quot;tail -f /etc/hosts&quot;</span>   <span class="token number">10</span> seconds ago   Up <span class="token number">9</span> seconds                        c3
+0399b5688502   alpine    <span class="token string">&quot;sleep 30&quot;</span>             <span class="token number">31</span> seconds ago   Exited <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token number">1</span> second ago             c2
+cadcf69d7a20   alpine    <span class="token string">&quot;/bin/sh&quot;</span> 
+
+<span class="token number">2</span>.启动命令可以被修改<span class="token string">&quot;部分&quot;</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name c4 -d registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1</span>
+e848ef558465ea31e5615978efa0c3db30ee645202ee111aabd78ad7c38a6329
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name c5 -d registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 sleep 30</span>
+d403e62acae31fa1cd193d0e001961c34506c0a2d609999bd41acec488f1f8d0
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE                                                       COMMAND                  CREATED         STATUS                       PORTS     NAMES
+004cb0555df1   registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1   <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   <span class="token number">3</span> seconds ago   Exited <span class="token punctuation">(</span><span class="token number">127</span><span class="token punctuation">)</span> <span class="token number">2</span> seconds ago             c5
+50073d4651cf   registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1   <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   <span class="token number">6</span> seconds ago   Up <span class="token number">5</span> seconds                 <span class="token number">80</span>/tcp    c4
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a --no-trunc</span>
+CONTAINER ID                                                       IMAGE                                                       COMMAND                                          CREATED          STATUS                        PORTS     NAMES
+004cb0555df1cb53044e56863d0e3cdfdabf43ba42dac745bf4a95b39dd51bc8   registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1   <span class="token string">&quot;/docker-entrypoint.sh sleep30&quot;</span>                  <span class="token number">13</span> seconds ago   Exited <span class="token punctuation">(</span><span class="token number">127</span><span class="token punctuation">)</span> <span class="token number">12</span> seconds ago             c5
+50073d4651cfab85e2fb445c46749aaaf67858a7e3fff45d40b37f5842a8b6fd   registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1   <span class="token string">&quot;/docker-entrypoint.sh nginx -g 'daemon off;'&quot;</span>   <span class="token number">16</span> seconds ago   Up <span class="token number">15</span> seconds                 <span class="token number">80</span>/tcp    c4
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f &quot;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&quot; c4</span>
+<span class="token number">172.17</span>.0.2
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f &quot;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&quot; c5</span>
+<span class="token number">172.17</span>.0.3
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ping 172.17.0.2</span>
+PING <span class="token number">172.17</span>.0.2 <span class="token punctuation">(</span><span class="token number">172.17</span>.0.2<span class="token punctuation">)</span> <span class="token number">56</span><span class="token punctuation">(</span><span class="token number">84</span><span class="token punctuation">)</span> bytes of data.
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.2: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">1.30</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.2: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.055</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.2: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">3</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.056</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.2: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">4</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.052</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.2: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">5</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.050</span> ms
+^C
+--- <span class="token number">172.17</span>.0.2 <span class="token function">ping</span> statistics ---
+<span class="token number">5</span> packets transmitted, <span class="token number">5</span> received, <span class="token number">0</span>% packet loss, <span class="token function">time</span> 4075ms
+rtt min/avg/max/mdev <span class="token operator">=</span> <span class="token number">0.050</span>/0.302/1.300/0.498 ms
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ^C</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ping 172.17.0.3</span>
+PING <span class="token number">172.17</span>.0.3 <span class="token punctuation">(</span><span class="token number">172.17</span>.0.3<span class="token punctuation">)</span> <span class="token number">56</span><span class="token punctuation">(</span><span class="token number">84</span><span class="token punctuation">)</span> bytes of data.
+From <span class="token number">172.17</span>.0.1 <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">1</span> Destination Host Unreachable
+From <span class="token number">172.17</span>.0.1 <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">5</span> Destination Host Unreachable
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker start c5</span>
+c5
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f &quot;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&quot; c5</span>
+<span class="token number">172.17</span>.0.3
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ping 172.17.0.3</span>
+PING <span class="token number">172.17</span>.0.3 <span class="token punctuation">(</span><span class="token number">172.17</span>.0.3<span class="token punctuation">)</span> <span class="token number">56</span><span class="token punctuation">(</span><span class="token number">84</span><span class="token punctuation">)</span> bytes of data.
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.3: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">1</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.085</span> ms
+<span class="token number">64</span> bytes from <span class="token number">172.17</span>.0.3: <span class="token assign-left variable">icmp_seq</span><span class="token operator">=</span><span class="token number">2</span> <span class="token assign-left variable">ttl</span><span class="token operator">=</span><span class="token number">64</span> <span class="token assign-left variable">time</span><span class="token operator">=</span><span class="token number">0.065</span> ms
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c4 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 nginx: master process nginx <span class="token parameter variable">-g</span> daemon off<span class="token punctuation">;</span>
+   <span class="token number">32</span> nginx     <span class="token number">0</span>:00 nginx: worker process
+   <span class="token number">33</span> nginx     <span class="token number">0</span>:00 nginx: worker process
+   <span class="token number">34</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c5 ps -ef</span>
+Error response from daemon: Container 095cac17d07b5938fe3dbd33446fb43ecc4566118b2a5afdc46e649f2afe12c2 is not running
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker start c5</span>
+c5
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c5 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">sleep</span> <span class="token number">60</span>
+    <span class="token number">7</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c5 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">sleep</span> <span class="token number">60</span>
+    <span class="token number">6</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c5 nginx</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">12</span><span class="token comment">#12: using the &quot;epoll&quot; event method</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">12</span><span class="token comment">#12: nginx/1.20.1</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">12</span><span class="token comment">#12: built by gcc 10.2.1 20201203 (Alpine 10.2.1_pre1) </span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">12</span><span class="token comment">#12: OS: Linux 5.15.0-119-generic</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">12</span><span class="token comment">#12: getrlimit(RLIMIT_NOFILE): 524288:524288</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">18</span><span class="token comment">#18: start worker processes</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">18</span><span class="token comment">#18: start worker process 19</span>
+<span class="token number">2024</span>/11/05 <span class="token number">12</span>:44:06 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">18</span><span class="token comment">#18: start worker process 20</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec c5 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">sleep</span> <span class="token number">60</span>
+   <span class="token number">18</span> root      <span class="token number">0</span>:00 nginx: master process nginx
+   <span class="token number">19</span> nginx     <span class="token number">0</span>:00 nginx: worker process
+   <span class="token number">20</span> nginx     <span class="token number">0</span>:00 nginx: worker process
+   <span class="token number">21</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+   
+温馨提示:
+	- <span class="token number">1</span>.容器启动时可以自定义启动命令，若启动命令运行结束，则容器会处于Exited状态<span class="token punctuation">;</span>
+	- <span class="token number">2</span>.有的容器的启动命令是不可用被修改的，貌似我们的启动命令只能作为参数传递，这和后面学的Dockefile章节指令相关<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br></div></div><h3 id="_6-docker容器的重启策略"><a href="#_6-docker容器的重启策略" class="header-anchor">#</a> 6，docker容器的重启策略</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.四种重启策略概述
+always:
+	只要容器退出，始终重启容器。
+	
+no:
+	只要容器退出，则使用不重启容器，默认就是这种模式。
+
+on-failure<span class="token punctuation">[</span>:max<span class="token punctuation">]</span>
+	当容器异常退出时，就会触发重启，可以指定重启的次数，若不指定次数，则等效于<span class="token string">&quot;always&quot;</span>。
+
+unless-stopped:
+	在重启docke服务前，若容器处于Up状态，则始终会启动容器，若容器处于Exited状态，则使用不重启容器。
+	
+
+<span class="token number">2</span>.实战案例
+<span class="token number">2.1</span> 创建容器 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -id --name malu-alway --restart always alpine</span>
+bbfb93829b82c9727e3e1e2369d511d779231bf6d84a19e1a22f7589c21e29cf
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -id --name malu-no --restart no alpine</span>
+7d175043b1308744a3f66c5a8579e790c6072f8fa696ae1ddaeb207696c099f9
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -id --name malu-on-failure --restart on-failure alpine</span>
+289b1791c472e9ad196e9d5bd12d0d073c235bf32ac90f1c87dfa5a8fde0cfdc
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -id --name malu-on-failure-max --restart on-failure:3 alpine</span>
+a1003271914b70e536f86c8dd6ccf5b774e337f90ab770ccad20619ac63e7900
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -id --name malu-unless-stopped --restart unless-stopped alpine</span>
+b94c9c98bc8fec39a7a74077a1cd45763eb7a330de42fe292a9e34a17db0c41d
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED              STATUS              PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">8</span> seconds ago        Up <span class="token number">7</span> seconds                  malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">35</span> seconds ago       Up <span class="token number">34</span> seconds                 malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">53</span> seconds ago       Up <span class="token number">52</span> seconds                 malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   About a minute ago   Up About a minute             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   About a minute ago   Up About a minute             malu-alway
+
+<span class="token number">2.2</span> 重启docker服务测试
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+IMAGE     COMMAND     CREATED              STATUS                        PORTS     NAMES
+alpine    <span class="token string">&quot;/bin/sh&quot;</span>   About a minute ago   Up <span class="token number">11</span> seconds                           malu-unless-stopped
+alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">2</span> minutes ago        Up <span class="token number">10</span> seconds                           malu-on-failure-max
+alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">2</span> minutes ago        Up <span class="token number">10</span> seconds                           malu-on-failure
+alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">2</span> minutes ago        Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">13</span> seconds ago             malu-no
+alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">3</span> minutes ago        Up <span class="token number">11</span> seconds                           malu-alway
+
+<span class="token number">2.3</span> 停止所有的容器再次重启docker
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker stop $(docker ps -qa)</span>
+b94c9c98bc8f
+a1003271914b
+289b1791c472
+7d175043b130
+bbfb93829b82
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED         STATUS                       PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">6</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">7</span> seconds ago             malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">6</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">7</span> seconds ago             malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">6</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">7</span> seconds ago             malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">7</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">4</span> minutes ago             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">7</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">7</span> seconds ago             malu-alway
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED         STATUS                        PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">6</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">47</span> seconds ago             malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">7</span> minutes ago   Up <span class="token number">9</span> seconds                            malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">7</span> minutes ago   Up <span class="token number">9</span> seconds                            malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">7</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">5</span> minutes ago              malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">8</span> minutes ago   Up <span class="token number">9</span> seconds                            malu-alway
+
+<span class="token number">2.4</span> 模拟异常退出，重新杀死进程4次
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker start malu-unless-stopped  malu-no </span>
+malu-unless-stopped
+malu-no
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS         PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">8</span> minutes ago    Up <span class="token number">4</span> seconds             malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">9</span> minutes ago    Up <span class="token number">2</span> minutes             malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">9</span> minutes ago    Up <span class="token number">2</span> minutes             malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">9</span> minutes ago    Up <span class="token number">4</span> seconds             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">10</span> minutes ago   Up <span class="token number">2</span> minutes             malu-alway
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} malu-no</span>
+<span class="token number">67405</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} malu-alway</span>
+<span class="token number">67071</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} malu-on-failure</span>
+<span class="token number">67072</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} malu-on-failure-max</span>
+<span class="token number">67134</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} malu-unless-stopped</span>
+<span class="token number">67345</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># kill -9 67405 67071 67072 67134 67345</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                       PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">10</span> minutes ago   Up <span class="token number">4</span> seconds                           malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">11</span> minutes ago   Up <span class="token number">4</span> seconds                           malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">11</span> minutes ago   Up <span class="token number">5</span> seconds                           malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">11</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">7</span> seconds ago             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">12</span> minutes ago   Up <span class="token number">5</span> seconds                           malu-alway
+
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} `docker ps -q`</span>
+<span class="token number">67842</span>
+<span class="token number">67789</span>
+<span class="token number">67719</span>
+<span class="token number">67718</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># kill -9 67842 67789 67719 67718</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                       PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">12</span> minutes ago   Up <span class="token number">3</span> seconds                           malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">13</span> minutes ago   Up <span class="token number">2</span> seconds                           malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">13</span> minutes ago   Up <span class="token number">2</span> seconds                           malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">13</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">14</span> minutes ago   Up <span class="token number">2</span> seconds                           malu-alway
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.RestartCount}} malu-on-failure-max</span>
+<span class="token number">2</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.HostConfig.RestartPolicy.MaximumRetryCount}} malu-on-failure-max</span>
+<span class="token number">3</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f {{.State.Pid}} `docker ps -q`</span>
+<span class="token number">68192</span>
+<span class="token number">68334</span>
+<span class="token number">68270</span>
+<span class="token number">68224</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># kill -9 68192 68334 68270 68224</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                       PORTS     NAMES
+b94c9c98bc8f   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">15</span> minutes ago   Up <span class="token number">3</span> seconds                           malu-unless-stopped
+a1003271914b   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">15</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">2</span> seconds                           malu-on-failure-max
+289b1791c472   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">15</span> minutes ago   Up <span class="token number">3</span> seconds                           malu-on-failure
+7d175043b130   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">16</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">4</span> minutes ago             malu-no
+bbfb93829b82   alpine    <span class="token string">&quot;/bin/sh&quot;</span>   <span class="token number">16</span> minutes ago   Up <span class="token number">2</span> seconds                           malu-alway
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br></div></div><h3 id="_7-wordpress案例"><a href="#_7-wordpress案例" class="header-anchor">#</a> 7，wordpress案例</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>练习:
+- <span class="token number">1</span>.创建一个自定义网络名称为<span class="token string">&quot;linux94&quot;</span><span class="token punctuation">;</span>
+- <span class="token number">2</span>.将WordPress和MySQL部署在同一个自定义网络中<span class="token punctuation">;</span>
+- <span class="token number">3</span>.重启docker服务，始终保证wordpress能够正常访问？
+	
+检查方式:
+- <span class="token number">1</span>.仅查看WordPress和MySQL容器的IP地址<span class="token punctuation">;</span>
+- <span class="token number">2</span>.重启docker服务并验证wordpress服务是否正常<span class="token punctuation">;</span>
+
+<span class="token number">1</span>.创建一个名为linux94的网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create linux94</span>
+341bbaba78b2ee4a38f15768203728296b3f2ad0fb3c64a987920da520df8807
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network inspect linux94 </span>
+
+<span class="token number">2</span>.启动数据库
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container run -d --network linux94 --restart always -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e  MYSQL_DATABASE=malu -e MYSQL_USER=linux94 -e MYSQL_PASSWORD=123456 --name mysql-server mysql:8.0.36-oracle</span>
+
+<span class="token number">3</span>.启动wordpress
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -dp 80:80 --network linux94 --restart always --name wp -e WORDPRESS_DB_HOST=mysql-server -e WORDPRESS_DB_USER=linux94 -e WORDPRESS_DB_PASSWORD=123456 -e WORDPRESS_DB_NAME=malu wordpress:latest</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE                 COMMAND                  CREATED              STATUS              PORTS                               NAMES
+215ed9629d88   wordpress:latest      <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   <span class="token number">20</span> seconds ago       Up <span class="token number">19</span> seconds       <span class="token number">0.0</span>.0.0:80-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp, :::80-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp   wp
+7c26ce952978   mysql:8.0.36-oracle   <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   About a minute ago   Up About a minute   <span class="token number">3306</span>/tcp, <span class="token number">33060</span>/tcp                 mysql-server
+
+<span class="token number">4</span>.重启docker服务验证服务是否可用 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+CONTAINER ID   IMAGE                 COMMAND                  CREATED              STATUS         PORTS                               NAMES
+215ed9629d88   wordpress:latest      <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   About a minute ago   Up <span class="token number">3</span> seconds   <span class="token number">0.0</span>.0.0:80-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp, :::80-<span class="token operator">&gt;</span><span class="token number">80</span>/tcp   wp
+7c26ce952978   mysql:8.0.36-oracle   <span class="token string">&quot;docker-entrypoint.s…&quot;</span>   <span class="token number">2</span> minutes ago        Up <span class="token number">3</span> seconds   <span class="token number">3306</span>/tcp, <span class="token number">33060</span>/tcp                 mysql-server
+
+<span class="token number">6</span>.查看IP地址
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker container inspect -f &quot;{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}&quot; wp mysql-server </span>
+<span class="token number">172.18</span>.0.3
+<span class="token number">172.18</span>.0.2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="_8-zabbix案例"><a href="#_8-zabbix案例" class="header-anchor">#</a> 8，zabbix案例</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>官方文档:
+	https://www.zabbix.com/documentation/current/en/manual/installation/containers
+	
+<span class="token number">1</span>.创建zabbix网络
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create --subnet 172.20.0.0/16 --ip-range 172.20.240.0/20 zabbix-net</span>
+e66dfc17c7822ce0275f95b2449a8f0a1dd97d3585bf86028907209fc983a480
+
+<span class="token number">2</span>.启动一个空的数据库实例
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name mysql-server -t \</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span><span class="token string">&quot;zabbix&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_USER</span><span class="token operator">=</span><span class="token string">&quot;linux94&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;oldboyedu&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;123456&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">--network</span><span class="token operator">=</span>zabbix-net <span class="token punctuation">\</span>
+             <span class="token parameter variable">--restart</span> unless-stopped <span class="token punctuation">\</span>
+             <span class="token parameter variable">-d</span> mysql:8.0.36-oracle <span class="token punctuation">\</span>
+             --character-set-server<span class="token operator">=</span>utf8 --collation-server<span class="token operator">=</span>utf8_bin <span class="token punctuation">\</span>
+             --default-authentication-plugin<span class="token operator">=</span>mysql_native_passwor
+             
+<span class="token number">3</span>.启动JAVA Gateway网关 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name zabbix-java-gateway -t \</span>
+             <span class="token parameter variable">--network</span><span class="token operator">=</span>zabbix-net <span class="token punctuation">\</span>
+             <span class="token parameter variable">--restart</span> unless-stopped <span class="token punctuation">\</span>
+             <span class="token parameter variable">-d</span> zabbix/zabbix-java-gateway:alpine-7.0-latest
+
+<span class="token number">4</span>.启动zabbix server服务端 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name zabbix-server-mysql -t \</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">DB_SERVER_HOST</span><span class="token operator">=</span><span class="token string">&quot;mysql-server&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span><span class="token string">&quot;zabbix&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_USER</span><span class="token operator">=</span><span class="token string">&quot;linux94&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;oldboyedu&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;123456&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">ZBX_JAVAGATEWAY</span><span class="token operator">=</span><span class="token string">&quot;zabbix-java-gateway&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">--network</span><span class="token operator">=</span>zabbix-net <span class="token punctuation">\</span>
+             <span class="token parameter variable">-p</span> <span class="token number">10051</span>:10051 <span class="token punctuation">\</span>
+             <span class="token parameter variable">--restart</span> unless-stopped <span class="token punctuation">\</span>
+             <span class="token parameter variable">-d</span> zabbix/zabbix-server-mysql:alpine-7.0-latest
+
+<span class="token number">5</span>.启动zabbix的WebUI
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run --name zabbix-web-nginx-mysql -t \</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">ZBX_SERVER_HOST</span><span class="token operator">=</span><span class="token string">&quot;zabbix-server-mysql&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">DB_SERVER_HOST</span><span class="token operator">=</span><span class="token string">&quot;mysql-server&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span><span class="token string">&quot;zabbix&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_USER</span><span class="token operator">=</span><span class="token string">&quot;linux94&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;oldboyedu&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">-e</span> <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span><span class="token string">&quot;123456&quot;</span> <span class="token punctuation">\</span>
+             <span class="token parameter variable">--network</span><span class="token operator">=</span>zabbix-net <span class="token punctuation">\</span>
+             <span class="token parameter variable">-p</span> <span class="token number">80</span>:8080 <span class="token punctuation">\</span>
+             <span class="token parameter variable">--restart</span> unless-stopped <span class="token punctuation">\</span>
+             <span class="token parameter variable">-d</span> zabbix/zabbix-web-nginx-mysql:alpine-7.0-latest
+
+<span class="token number">6</span>.检查容器是否正常运行
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -a</span>
+
+<span class="token number">7</span>.访问zabbix的WebUI测试
+http://10.0.0.101/
+
+用户名: Admin  密  码: zabbix 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><h3 id="_9-es案例"><a href="#_9-es案例" class="header-anchor">#</a> 9，ES案例</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>	es的配置文件参考
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it es01 bash</span>
+<span class="token punctuation">..</span>.
+<span class="token function">cat</span> <span class="token operator">&gt;</span> /usr/share/elasticsearch/config/elasticsearch.yml <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+cluster.name: &quot;oldboyedu-linux94-es-cluster&quot;
+node.name: es01
+network.host: 0.0.0.0
+discovery.seed_hosts: [&quot;es01&quot;, &quot;es02&quot;,&quot;es03&quot;]
+cluster.initial_master_nodes: [&quot;es01&quot;]
+xpack.security.enabled: false
+EOF</span>
+
+<span class="token number">1</span>.本地导入镜像
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># wget http://192.168.13.253/Resources/Docker/images/ElasticStack/8.15.3/oldboyedu-elasticsearch-v8.15.3.tar.gz</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker load -i oldboyedu-elasticsearch-v8.15.3.tar.gz </span>
+
+
+<span class="token number">2</span>.创建自定义网络 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker network create elastic</span>
+774c883ac95933fb3d1ea7c7f49b5a3c64f99a12c26248e86ad434ae3b74b6bb
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">3</span>.修改内核参数 
+<span class="token number">3.1</span> 临时修改
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># sysctl -q vm.max_map_count</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">65530</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># sysctl -w vm.max_map_count=262144</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">262144</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># sysctl -q vm.max_map_count</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">262144</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3.2</span> 永久修改则需要修改配置文件:
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/sysctl.d/es.conf</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">524288</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># sysctl -p /etc/sysctl.d/es.conf </span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">524288</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># sysctl -q vm.max_map_count</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">524288</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	
+<span class="token number">4</span>.后台启动elasticSearch 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -e node.name=es01 --name es01 -d --net elastic -p 9200:9200 -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.15.3</span>
+23a7df629ac4ee64842b210613fb2a08ee958077121306fb72cd9913822b16a5
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+	如果没有加-d选项，终端会有如下信息：（后台启动看不到，因此下一步需要重置elastic用户的密码）
+<span class="token punctuation">..</span>.
+✅ Elasticsearch security features have been automatically configured<span class="token operator">!</span>
+✅ Authentication is enabled and cluster connections are encrypted.
+
+ℹ️  Password <span class="token keyword">for</span> the elastic user <span class="token punctuation">(</span>reset with <span class="token variable"><span class="token variable">`</span>bin/elasticsearch-reset-password <span class="token parameter variable">-u</span> elastic<span class="token variable">`</span></span><span class="token punctuation">)</span>:
+  OyXu2_UUoem676Fi7w*T
+
+ℹ️  HTTP CA certificate SHA-256 fingerprint:
+  a48551225f775d1f76a4e68002725234bbb1efaacb94b24d0495fddcb5098d43
+
+ℹ️  Configure Kibana to use this cluster:
+• Run Kibana and click the configuration <span class="token function">link</span> <span class="token keyword">in</span> the terminal when Kibana starts.
+• Copy the following enrollment token and <span class="token function">paste</span> it into Kibana <span class="token keyword">in</span> your browser <span class="token punctuation">(</span>valid <span class="token keyword">for</span> the next <span class="token number">30</span> minutes<span class="token punctuation">)</span>:
+  <span class="token assign-left variable">eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6ImE0ODU1MTIyNWY3NzVkMWY3NmE0ZTY4MDAyNzI1MjM0YmJiMWVmYWFjYjk0YjI0ZDA0OTVmZGRjYjUwOThkNDMiLCJrZXkiOiJVN2ZiX0pJQkF3SXJpUk5vTFZFRDpBWFlYM0t5ZFNZdThjcHFtTmItRzJBIn0</span><span class="token operator">=</span>
+
+ℹ️ Configure other nodes to <span class="token function">join</span> this cluster:
+• Copy the following enrollment token and start new Elasticsearch nodes with <span class="token variable"><span class="token variable">`</span>bin/elasticsearch --enrollment-token <span class="token operator">&lt;</span>token<span class="token operator">&gt;</span><span class="token variable">`</span></span> <span class="token punctuation">(</span>valid <span class="token keyword">for</span> the next <span class="token number">30</span> minutes<span class="token punctuation">)</span>:
+  <span class="token assign-left variable">eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6ImE0ODU1MTIyNWY3NzVkMWY3NmE0ZTY4MDAyNzI1MjM0YmJiMWVmYWFjYjk0YjI0ZDA0OTVmZGRjYjUwOThkNDMiLCJrZXkiOiJVcmZiX0pJQkF3SXJpUk5vTFZFQzpmakNvNFRmUVJuTzFxd0tOY19IWjhnIn0</span><span class="token operator">=</span>
+
+  If you're running <span class="token keyword">in</span> Docker, copy the enrollment token and run:
+  <span class="token variable"><span class="token variable">`</span><span class="token function">docker</span> run <span class="token parameter variable">-e</span> <span class="token string">&quot;ENROLLMENT_TOKEN=&lt;token&gt;&quot;</span> docker.elastic.co/elasticsearch/elasticsearch:8.15.3<span class="token variable">`</span></span>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+	<span class="token number">5</span>.重置elastic用户的密码
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic</span>
+WARNING: Owner of <span class="token function">file</span> <span class="token punctuation">[</span>/usr/share/elasticsearch/config/users<span class="token punctuation">]</span> used to be <span class="token punctuation">[</span>root<span class="token punctuation">]</span>, but now is <span class="token punctuation">[</span>elasticsearch<span class="token punctuation">]</span>
+WARNING: Owner of <span class="token function">file</span> <span class="token punctuation">[</span>/usr/share/elasticsearch/config/users_roles<span class="token punctuation">]</span> used to be <span class="token punctuation">[</span>root<span class="token punctuation">]</span>, but now is <span class="token punctuation">[</span>elasticsearch<span class="token punctuation">]</span>
+This tool will reset the password of the <span class="token punctuation">[</span>elastic<span class="token punctuation">]</span> user to an autogenerated value.
+The password will be printed <span class="token keyword">in</span> the console.
+Please confirm that you would like to <span class="token builtin class-name">continue</span> <span class="token punctuation">[</span>y/N<span class="token punctuation">]</span>y  <span class="token comment">#  此处需要输入字母&quot;y&quot;</span>
+
+
+Password <span class="token keyword">for</span> the <span class="token punctuation">[</span>elastic<span class="token punctuation">]</span> user successfully reset.
+New value: <span class="token operator">=</span>n<span class="token operator">=</span>GIMZ6l*<span class="token operator">=</span>QVg8YsziN
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+	<span class="token number">6</span>.基于重置的密码访问ES集群 <span class="token punctuation">(</span>基于密码访问<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># curl -k https://172.18.0.2:9200 -u elastic:=n=GIMZ6l*=QVg8YsziN</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;name&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;es01&quot;</span>,
+  <span class="token string">&quot;cluster_name&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;docker-cluster&quot;</span>,
+  <span class="token string">&quot;cluster_uuid&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;4yWc67R-Rja9zhGL_7lVFg&quot;</span>,
+  <span class="token string">&quot;version&quot;</span> <span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;number&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;8.15.3&quot;</span>,
+    <span class="token string">&quot;build_flavor&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;default&quot;</span>,
+    <span class="token string">&quot;build_type&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;docker&quot;</span>,
+    <span class="token string">&quot;build_hash&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;f97532e680b555c3a05e73a74c28afb666923018&quot;</span>,
+    <span class="token string">&quot;build_date&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;2024-10-09T22:08:00.328917561Z&quot;</span>,
+    <span class="token string">&quot;build_snapshot&quot;</span> <span class="token builtin class-name">:</span> false,
+    <span class="token string">&quot;lucene_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;9.11.1&quot;</span>,
+    <span class="token string">&quot;minimum_wire_compatibility_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;7.17.0&quot;</span>,
+    <span class="token string">&quot;minimum_index_compatibility_version&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;7.0.0&quot;</span>
+  <span class="token punctuation">}</span>,
+  <span class="token string">&quot;tagline&quot;</span> <span class="token builtin class-name">:</span> <span class="token string">&quot;You Know, for Search&quot;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># curl -k https://172.18.0.2:9200/_cat/nodes -u elastic:=n=GIMZ6l*=QVg8YsziN</span>
+<span class="token number">172.18</span>.0.2 <span class="token number">25</span> <span class="token number">91</span> <span class="token number">13</span> <span class="token number">0.50</span> <span class="token number">0.40</span> <span class="token number">0.26</span> cdfhilmrstw * es01
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+	<span class="token number">7</span>.使用现有节点为新节点生成注册令牌。
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s node</span>
+<span class="token assign-left variable">eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjdlM2Y5NTJhN2ZjY2E2NDM2NDY4NmEyMzNhZjJhZTZjMTU4YjFmYWY3ODM1OTE1YTQ4OTE2MTNlMmIxYzRmYTEiLCJrZXkiOiI1cVRoX0pJQkxFNUtDcGhWZXBrNjp1SkFkc2JBeFJZdVFYY1lsUjF0U0ZRIn0</span><span class="token operator">=</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+	<span class="token number">8</span>.基于新的token加入现有的ES集群环境
+<span class="token function">docker</span> run <span class="token parameter variable">-e</span> <span class="token assign-left variable">ENROLLMENT_TOKEN</span><span class="token operator">=</span><span class="token string">&quot;&lt;token&gt;&quot;</span> <span class="token parameter variable">--name</span> es02 <span class="token parameter variable">--net</span> elastic <span class="token parameter variable">-it</span> <span class="token parameter variable">-m</span> 1GB docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+	
+举个例子:
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run  -e node.name=es02 -e ENROLLMENT_TOKEN=&quot;eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjdlM2Y5NTJhN2ZjY2E2NDM2NDY4NmEyMzNhZjJhZTZjMTU4YjFmYWY3ODM1OTE1YTQ4OTE2MTNlMmIxYzRmYTEiLCJrZXkiOiI1cVRoX0pJQkxFNUtDcGhWZXBrNjp1SkFkc2JBeFJZdVFYY1lsUjF0U0ZRIn0=&quot; -d --name es02 --net elastic -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.15.3</span>
+	
+
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run  -e node.name=es03 -e ENROLLMENT_TOKEN=&quot;eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjdlM2Y5NTJhN2ZjY2E2NDM2NDY4NmEyMzNhZjJhZTZjMTU4YjFmYWY3ODM1OTE1YTQ4OTE2MTNlMmIxYzRmYTEiLCJrZXkiOiI1cVRoX0pJQkxFNUtDcGhWZXBrNjp1SkFkc2JBeFJZdVFYY1lsUjF0U0ZRIn0=&quot; -d --name es03 --net elastic -it -m 1GB docker.elastic.co/elasticsearch/elasticsearch:8.15.3</span>
+	
+ 
+ 
+	<span class="token number">8</span>.验证节点是否加入成功 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># curl -u elastic:=n=GIMZ6l*=QVg8YsziN -k https://172.18.0.2:9200/_cat/nodes</span>
+<span class="token number">172.18</span>.0.2 <span class="token number">52</span> <span class="token number">88</span> <span class="token number">62</span> <span class="token number">2.59</span> <span class="token number">0.96</span> <span class="token number">0.46</span> cdfhilmrstw * es01
+<span class="token number">172.18</span>.0.4 <span class="token number">20</span> <span class="token number">93</span> <span class="token number">75</span> <span class="token number">2.59</span> <span class="token number">0.96</span> <span class="token number">0.46</span> cdfhilmrstw - es03
+<span class="token number">172.18</span>.0.3 <span class="token number">31</span> <span class="token number">94</span> <span class="token number">62</span> <span class="token number">2.59</span> <span class="token number">0.96</span> <span class="token number">0.46</span> cdfhilmrstw - es02
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+
+- 单机部署kibana环境
+参考环境:
+	https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html<span class="token comment">#run-kibana-docker</span>
+
+	<span class="token number">1</span>.准备ES集群
+
+
+	<span class="token number">2</span>.导入镜像
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># wget http://192.168.13.253/Resources/Docker/images/ElasticStack/8.15.3/oldboyedu-kibana-v8.15.3.tar.gz</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker load -i oldboyedu-kibana-v8.15.3.tar.gz</span>
+
+
+	<span class="token number">3</span>.运行kibana服务 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker run -d --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.15.3</span>
+d07d257658300f0979613788af79c21dc39fc048a5e81f7b60a2b0c43a66f93b
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	<span class="token number">4</span>.为kibana生成token
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it es01 /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana</span>
+<span class="token assign-left variable">eyJ2ZXIiOiI4LjE0LjAiLCJhZHIiOlsiMTcyLjE4LjAuMjo5MjAwIl0sImZnciI6IjdlM2Y5NTJhN2ZjY2E2NDM2NDY4NmEyMzNhZjJhZTZjMTU4YjFmYWY3ODM1OTE1YTQ4OTE2MTNlMmIxYzRmYTEiLCJrZXkiOiI2S1RvX0pJQkxFNUtDcGhWZ0ptcDpJT3dkdmhXOFJzdVJxYmZ2Rlh4VHFRIn0</span><span class="token operator">=</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	
+	<span class="token number">5</span>.访问kibana的WebUI并输入token
+http://10.0.0.101:5601/
+
+
+	<span class="token number">6</span>.获取kibana的校验码
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it kibana kibana-verification-code</span>
+Kibana is currently running with legacy OpenSSL providers enabled<span class="token operator">!</span> For details and instructions on how to disable see https://www.elastic.co/guide/en/kibana/8.15/production.html<span class="token comment">#openssl-legacy-provider</span>
+Your verification code is:  <span class="token number">821</span> <span class="token number">370</span> 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+	<span class="token number">7</span>.等待验证成功，使用elastic进行用户的登录
+修改密码为: <span class="token number">123456</span>
+
+
+
+温馨提示:
+	如果密码忘记，可以重置密码: 
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> <span class="token parameter variable">-it</span> es01 /usr/share/elasticsearch/bin/elasticsearch-reset-password <span class="token parameter variable">-u</span> elastic
+
+
+
+	<span class="token number">8</span>.修改kibana的配置文件为中文
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it kibana  bash</span>
+kibana@d07d25765830:~$ 
+kibana@d07d25765830:~$ <span class="token builtin class-name">echo</span> i18n.locale: <span class="token punctuation">\</span>&quot;zh-CN<span class="token punctuation">\</span>&quot; <span class="token operator">&gt;&gt;</span> /usr/share/kibana/config/kibana.yml 
+kibana@d07d25765830:~$ 
+kibana@d07d25765830:~$ <span class="token function">tail</span> <span class="token parameter variable">-1</span> /usr/share/kibana/config/kibana.yml
+i18n.locale: <span class="token string">&quot;zh-CN&quot;</span>
+kibana@d07d25765830:~$ 
+kibana@d07d25765830:~$ <span class="token builtin class-name">exit</span> 
+<span class="token builtin class-name">exit</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker restart kibana   # 重启服务使得配置生效</span>
+kibana
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_1-面试题" class="sidebar-link reco-side-_1-面试题" data-v-b57cc07c>1，面试题</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_2-docker命令" class="sidebar-link reco-side-_2-docker命令" data-v-b57cc07c>2，docker命令</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_3-docker单机网络类型" class="sidebar-link reco-side-_3-docker单机网络类型" data-v-b57cc07c>3，docker单机网络类型</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_4-docker自定义网络基本管理" class="sidebar-link reco-side-_4-docker自定义网络基本管理" data-v-b57cc07c>4，docker自定义网络基本管理</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_5-docker指定启动命令command" class="sidebar-link reco-side-_5-docker指定启动命令command" data-v-b57cc07c>5，docker指定启动命令COMMAND</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_6-docker容器的重启策略" class="sidebar-link reco-side-_6-docker容器的重启策略" data-v-b57cc07c>6，docker容器的重启策略</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_7-wordpress案例" class="sidebar-link reco-side-_7-wordpress案例" data-v-b57cc07c>7，wordpress案例</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_8-zabbix案例" class="sidebar-link reco-side-_8-zabbix案例" data-v-b57cc07c>8，zabbix案例</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/47-docker/docker.html#_9-es案例" class="sidebar-link reco-side-_9-es案例" data-v-b57cc07c>9，ES案例</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.7e421333.js" defer></script><script src="/devops/public/assets/js/113.90efb9ac.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/247.3c8a077d.js" defer></script>
+  </body>
+</html>

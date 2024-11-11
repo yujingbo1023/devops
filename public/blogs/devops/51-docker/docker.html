@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1，面试题 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.28103306.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.27412706.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/141.389976c7.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.2355f1cd.js"><link rel="prefetch" href="/devops/public/assets/js/100.f6ad0e9e.js"><link rel="prefetch" href="/devops/public/assets/js/101.696507e5.js"><link rel="prefetch" href="/devops/public/assets/js/102.b067b5e3.js"><link rel="prefetch" href="/devops/public/assets/js/103.f22a09d5.js"><link rel="prefetch" href="/devops/public/assets/js/104.9de19c42.js"><link rel="prefetch" href="/devops/public/assets/js/105.33ffcab9.js"><link rel="prefetch" href="/devops/public/assets/js/106.49d07509.js"><link rel="prefetch" href="/devops/public/assets/js/107.460cd233.js"><link rel="prefetch" href="/devops/public/assets/js/108.c99be344.js"><link rel="prefetch" href="/devops/public/assets/js/109.00c119c5.js"><link rel="prefetch" href="/devops/public/assets/js/11.49eaa678.js"><link rel="prefetch" href="/devops/public/assets/js/110.d421651e.js"><link rel="prefetch" href="/devops/public/assets/js/111.f6c7ca5a.js"><link rel="prefetch" href="/devops/public/assets/js/112.8393443a.js"><link rel="prefetch" href="/devops/public/assets/js/114.a275d4cd.js"><link rel="prefetch" href="/devops/public/assets/js/115.d817c533.js"><link rel="prefetch" href="/devops/public/assets/js/116.e22157b8.js"><link rel="prefetch" href="/devops/public/assets/js/117.23109c42.js"><link rel="prefetch" href="/devops/public/assets/js/118.51a3bcc9.js"><link rel="prefetch" href="/devops/public/assets/js/119.46ee73e9.js"><link rel="prefetch" href="/devops/public/assets/js/12.14ab8645.js"><link rel="prefetch" href="/devops/public/assets/js/120.32d72bca.js"><link rel="prefetch" href="/devops/public/assets/js/121.7a2ae156.js"><link rel="prefetch" href="/devops/public/assets/js/122.7f1313de.js"><link rel="prefetch" href="/devops/public/assets/js/123.ea1da4b9.js"><link rel="prefetch" href="/devops/public/assets/js/124.94b5d60e.js"><link rel="prefetch" href="/devops/public/assets/js/125.d541725c.js"><link rel="prefetch" href="/devops/public/assets/js/126.8c67bb8b.js"><link rel="prefetch" href="/devops/public/assets/js/127.6ad0a226.js"><link rel="prefetch" href="/devops/public/assets/js/128.af28bf34.js"><link rel="prefetch" href="/devops/public/assets/js/129.24f46b00.js"><link rel="prefetch" href="/devops/public/assets/js/13.ea00228f.js"><link rel="prefetch" href="/devops/public/assets/js/130.f3603eed.js"><link rel="prefetch" href="/devops/public/assets/js/131.2acc4a62.js"><link rel="prefetch" href="/devops/public/assets/js/132.e83c37e0.js"><link rel="prefetch" href="/devops/public/assets/js/133.e846519a.js"><link rel="prefetch" href="/devops/public/assets/js/134.72f0cd52.js"><link rel="prefetch" href="/devops/public/assets/js/135.cc9bc693.js"><link rel="prefetch" href="/devops/public/assets/js/136.3486f2c1.js"><link rel="prefetch" href="/devops/public/assets/js/137.1967d170.js"><link rel="prefetch" href="/devops/public/assets/js/138.2c0f075b.js"><link rel="prefetch" href="/devops/public/assets/js/139.df9ef210.js"><link rel="prefetch" href="/devops/public/assets/js/14.d1af91f2.js"><link rel="prefetch" href="/devops/public/assets/js/140.43cb38b1.js"><link rel="prefetch" href="/devops/public/assets/js/142.c701d474.js"><link rel="prefetch" href="/devops/public/assets/js/143.1f89bcd4.js"><link rel="prefetch" href="/devops/public/assets/js/144.2403d734.js"><link rel="prefetch" href="/devops/public/assets/js/145.9ca6a379.js"><link rel="prefetch" href="/devops/public/assets/js/146.4d96a855.js"><link rel="prefetch" href="/devops/public/assets/js/147.96e83382.js"><link rel="prefetch" href="/devops/public/assets/js/148.725e9e0f.js"><link rel="prefetch" href="/devops/public/assets/js/149.ea7e7ea0.js"><link rel="prefetch" href="/devops/public/assets/js/15.9cd50001.js"><link rel="prefetch" href="/devops/public/assets/js/150.44cb5023.js"><link rel="prefetch" href="/devops/public/assets/js/151.162ba89e.js"><link rel="prefetch" href="/devops/public/assets/js/152.253ffdc6.js"><link rel="prefetch" href="/devops/public/assets/js/153.95e5600c.js"><link rel="prefetch" href="/devops/public/assets/js/154.e843df76.js"><link rel="prefetch" href="/devops/public/assets/js/155.017651a0.js"><link rel="prefetch" href="/devops/public/assets/js/156.bc5f1afa.js"><link rel="prefetch" href="/devops/public/assets/js/157.62750ef9.js"><link rel="prefetch" href="/devops/public/assets/js/158.12816d9c.js"><link rel="prefetch" href="/devops/public/assets/js/159.f65aefd6.js"><link rel="prefetch" href="/devops/public/assets/js/16.83cc8599.js"><link rel="prefetch" href="/devops/public/assets/js/160.9e3b870f.js"><link rel="prefetch" href="/devops/public/assets/js/161.2ffb8829.js"><link rel="prefetch" href="/devops/public/assets/js/162.fc902af3.js"><link rel="prefetch" href="/devops/public/assets/js/163.1ce261a1.js"><link rel="prefetch" href="/devops/public/assets/js/164.cadd6c0c.js"><link rel="prefetch" href="/devops/public/assets/js/165.2fe27746.js"><link rel="prefetch" href="/devops/public/assets/js/166.ed3f8d80.js"><link rel="prefetch" href="/devops/public/assets/js/167.bbf5336a.js"><link rel="prefetch" href="/devops/public/assets/js/168.5d3efa55.js"><link rel="prefetch" href="/devops/public/assets/js/169.46ed82e1.js"><link rel="prefetch" href="/devops/public/assets/js/17.8fd55213.js"><link rel="prefetch" href="/devops/public/assets/js/170.1a4a0c1c.js"><link rel="prefetch" href="/devops/public/assets/js/171.a57bf822.js"><link rel="prefetch" href="/devops/public/assets/js/172.633217bd.js"><link rel="prefetch" href="/devops/public/assets/js/173.74d13a35.js"><link rel="prefetch" href="/devops/public/assets/js/174.b5151bd8.js"><link rel="prefetch" href="/devops/public/assets/js/175.5949328a.js"><link rel="prefetch" href="/devops/public/assets/js/176.8303daa5.js"><link rel="prefetch" href="/devops/public/assets/js/177.5326bd43.js"><link rel="prefetch" href="/devops/public/assets/js/178.dbcd16c1.js"><link rel="prefetch" href="/devops/public/assets/js/179.9faebe0a.js"><link rel="prefetch" href="/devops/public/assets/js/18.f7755189.js"><link rel="prefetch" href="/devops/public/assets/js/180.b7a0d0b5.js"><link rel="prefetch" href="/devops/public/assets/js/181.260afac6.js"><link rel="prefetch" href="/devops/public/assets/js/182.1e595cd4.js"><link rel="prefetch" href="/devops/public/assets/js/183.45cdd476.js"><link rel="prefetch" href="/devops/public/assets/js/184.865dc281.js"><link rel="prefetch" href="/devops/public/assets/js/185.98829410.js"><link rel="prefetch" href="/devops/public/assets/js/186.51261003.js"><link rel="prefetch" href="/devops/public/assets/js/187.a4404287.js"><link rel="prefetch" href="/devops/public/assets/js/188.37b0a7c9.js"><link rel="prefetch" href="/devops/public/assets/js/189.4382a87a.js"><link rel="prefetch" href="/devops/public/assets/js/19.c220b742.js"><link rel="prefetch" href="/devops/public/assets/js/190.1925bc24.js"><link rel="prefetch" href="/devops/public/assets/js/191.8a1eb7e8.js"><link rel="prefetch" href="/devops/public/assets/js/192.36d8fb17.js"><link rel="prefetch" href="/devops/public/assets/js/193.a98e0b8b.js"><link rel="prefetch" href="/devops/public/assets/js/194.b2f3bf84.js"><link rel="prefetch" href="/devops/public/assets/js/195.12b566f1.js"><link rel="prefetch" href="/devops/public/assets/js/196.32ac678b.js"><link rel="prefetch" href="/devops/public/assets/js/197.c70372ce.js"><link rel="prefetch" href="/devops/public/assets/js/198.3586e37a.js"><link rel="prefetch" href="/devops/public/assets/js/199.df982d34.js"><link rel="prefetch" href="/devops/public/assets/js/20.7c8e3974.js"><link rel="prefetch" href="/devops/public/assets/js/200.7bff5ecf.js"><link rel="prefetch" href="/devops/public/assets/js/201.a8731abd.js"><link rel="prefetch" href="/devops/public/assets/js/202.be8d4c67.js"><link rel="prefetch" href="/devops/public/assets/js/203.ed1472c6.js"><link rel="prefetch" href="/devops/public/assets/js/204.83a209a0.js"><link rel="prefetch" href="/devops/public/assets/js/205.6bc65ce5.js"><link rel="prefetch" href="/devops/public/assets/js/206.d42a440a.js"><link rel="prefetch" href="/devops/public/assets/js/207.5682e689.js"><link rel="prefetch" href="/devops/public/assets/js/208.70ce056c.js"><link rel="prefetch" href="/devops/public/assets/js/209.b4c5fab9.js"><link rel="prefetch" href="/devops/public/assets/js/21.b3f26af0.js"><link rel="prefetch" href="/devops/public/assets/js/210.38087e85.js"><link rel="prefetch" href="/devops/public/assets/js/211.072c21ab.js"><link rel="prefetch" href="/devops/public/assets/js/212.2691eba4.js"><link rel="prefetch" href="/devops/public/assets/js/213.89f4c1a6.js"><link rel="prefetch" href="/devops/public/assets/js/214.4492965c.js"><link rel="prefetch" href="/devops/public/assets/js/215.51bee7ff.js"><link rel="prefetch" href="/devops/public/assets/js/216.06470828.js"><link rel="prefetch" href="/devops/public/assets/js/217.97da850c.js"><link rel="prefetch" href="/devops/public/assets/js/218.8226ce81.js"><link rel="prefetch" href="/devops/public/assets/js/219.a3d3a8b7.js"><link rel="prefetch" href="/devops/public/assets/js/22.8eb1c9a5.js"><link rel="prefetch" href="/devops/public/assets/js/220.5c213c5e.js"><link rel="prefetch" href="/devops/public/assets/js/221.e27b300a.js"><link rel="prefetch" href="/devops/public/assets/js/222.f2770cd1.js"><link rel="prefetch" href="/devops/public/assets/js/223.a4d46cb3.js"><link rel="prefetch" href="/devops/public/assets/js/224.297a3dae.js"><link rel="prefetch" href="/devops/public/assets/js/225.3979b123.js"><link rel="prefetch" href="/devops/public/assets/js/226.d96c6a5c.js"><link rel="prefetch" href="/devops/public/assets/js/227.9b79ae08.js"><link rel="prefetch" href="/devops/public/assets/js/228.6a349a94.js"><link rel="prefetch" href="/devops/public/assets/js/229.de0ac89d.js"><link rel="prefetch" href="/devops/public/assets/js/23.d515c36e.js"><link rel="prefetch" href="/devops/public/assets/js/230.a295e140.js"><link rel="prefetch" href="/devops/public/assets/js/231.af32101a.js"><link rel="prefetch" href="/devops/public/assets/js/232.931da4dd.js"><link rel="prefetch" href="/devops/public/assets/js/233.92cd47fc.js"><link rel="prefetch" href="/devops/public/assets/js/234.5461e0e7.js"><link rel="prefetch" href="/devops/public/assets/js/235.e183c848.js"><link rel="prefetch" href="/devops/public/assets/js/236.9d0b81bd.js"><link rel="prefetch" href="/devops/public/assets/js/237.10575201.js"><link rel="prefetch" href="/devops/public/assets/js/238.629c6ef5.js"><link rel="prefetch" href="/devops/public/assets/js/239.728d2233.js"><link rel="prefetch" href="/devops/public/assets/js/24.aae5de0f.js"><link rel="prefetch" href="/devops/public/assets/js/240.c89f2e19.js"><link rel="prefetch" href="/devops/public/assets/js/241.aaf7a490.js"><link rel="prefetch" href="/devops/public/assets/js/242.42e74e3b.js"><link rel="prefetch" href="/devops/public/assets/js/243.348491db.js"><link rel="prefetch" href="/devops/public/assets/js/244.7c6b55ef.js"><link rel="prefetch" href="/devops/public/assets/js/245.284fd7a7.js"><link rel="prefetch" href="/devops/public/assets/js/246.f241fbe1.js"><link rel="prefetch" href="/devops/public/assets/js/247.71a82174.js"><link rel="prefetch" href="/devops/public/assets/js/248.de8fd46b.js"><link rel="prefetch" href="/devops/public/assets/js/249.cfd9f7ee.js"><link rel="prefetch" href="/devops/public/assets/js/25.ccef8efa.js"><link rel="prefetch" href="/devops/public/assets/js/250.070d8f99.js"><link rel="prefetch" href="/devops/public/assets/js/251.ff5a3213.js"><link rel="prefetch" href="/devops/public/assets/js/252.71ad4337.js"><link rel="prefetch" href="/devops/public/assets/js/253.01dc528c.js"><link rel="prefetch" href="/devops/public/assets/js/254.c5a65e3c.js"><link rel="prefetch" href="/devops/public/assets/js/255.067efc7b.js"><link rel="prefetch" href="/devops/public/assets/js/256.ce2d0b8b.js"><link rel="prefetch" href="/devops/public/assets/js/257.20223d0c.js"><link rel="prefetch" href="/devops/public/assets/js/258.7ef6f1fe.js"><link rel="prefetch" href="/devops/public/assets/js/259.a575f284.js"><link rel="prefetch" href="/devops/public/assets/js/26.68aa115c.js"><link rel="prefetch" href="/devops/public/assets/js/260.2522ddff.js"><link rel="prefetch" href="/devops/public/assets/js/261.604f6c39.js"><link rel="prefetch" href="/devops/public/assets/js/262.5aa7f981.js"><link rel="prefetch" href="/devops/public/assets/js/27.34f21c4e.js"><link rel="prefetch" href="/devops/public/assets/js/28.63e3c7ed.js"><link rel="prefetch" href="/devops/public/assets/js/29.4dcf32ae.js"><link rel="prefetch" href="/devops/public/assets/js/3.1f995075.js"><link rel="prefetch" href="/devops/public/assets/js/30.555e38ca.js"><link rel="prefetch" href="/devops/public/assets/js/31.d20ee572.js"><link rel="prefetch" href="/devops/public/assets/js/32.aa5f769f.js"><link rel="prefetch" href="/devops/public/assets/js/33.c0a126d4.js"><link rel="prefetch" href="/devops/public/assets/js/34.b8bf6708.js"><link rel="prefetch" href="/devops/public/assets/js/35.72f57892.js"><link rel="prefetch" href="/devops/public/assets/js/36.3cfa22c9.js"><link rel="prefetch" href="/devops/public/assets/js/37.9e0408d5.js"><link rel="prefetch" href="/devops/public/assets/js/38.b4c21835.js"><link rel="prefetch" href="/devops/public/assets/js/39.249a89e3.js"><link rel="prefetch" href="/devops/public/assets/js/4.d5f85984.js"><link rel="prefetch" href="/devops/public/assets/js/40.df24eade.js"><link rel="prefetch" href="/devops/public/assets/js/41.6be3bb48.js"><link rel="prefetch" href="/devops/public/assets/js/42.6e85a506.js"><link rel="prefetch" href="/devops/public/assets/js/43.c224e7e3.js"><link rel="prefetch" href="/devops/public/assets/js/44.1f3cdf42.js"><link rel="prefetch" href="/devops/public/assets/js/45.a75144ab.js"><link rel="prefetch" href="/devops/public/assets/js/46.111de9cb.js"><link rel="prefetch" href="/devops/public/assets/js/47.3243468c.js"><link rel="prefetch" href="/devops/public/assets/js/48.93797012.js"><link rel="prefetch" href="/devops/public/assets/js/49.7741937d.js"><link rel="prefetch" href="/devops/public/assets/js/5.67912e83.js"><link rel="prefetch" href="/devops/public/assets/js/50.2e3a4856.js"><link rel="prefetch" href="/devops/public/assets/js/51.91c7ab0b.js"><link rel="prefetch" href="/devops/public/assets/js/52.523c6cf5.js"><link rel="prefetch" href="/devops/public/assets/js/53.a7dfae93.js"><link rel="prefetch" href="/devops/public/assets/js/54.59203b12.js"><link rel="prefetch" href="/devops/public/assets/js/55.74329901.js"><link rel="prefetch" href="/devops/public/assets/js/56.1996c141.js"><link rel="prefetch" href="/devops/public/assets/js/57.fc3d7ab9.js"><link rel="prefetch" href="/devops/public/assets/js/58.bd7669d5.js"><link rel="prefetch" href="/devops/public/assets/js/59.c7e3bfd9.js"><link rel="prefetch" href="/devops/public/assets/js/6.e5b9a373.js"><link rel="prefetch" href="/devops/public/assets/js/60.47feb7c7.js"><link rel="prefetch" href="/devops/public/assets/js/61.079bee3b.js"><link rel="prefetch" href="/devops/public/assets/js/62.ed89b89f.js"><link rel="prefetch" href="/devops/public/assets/js/63.ecbe0ddb.js"><link rel="prefetch" href="/devops/public/assets/js/64.8c902dc0.js"><link rel="prefetch" href="/devops/public/assets/js/65.bd801b87.js"><link rel="prefetch" href="/devops/public/assets/js/66.3aa1baf4.js"><link rel="prefetch" href="/devops/public/assets/js/67.ce9e4215.js"><link rel="prefetch" href="/devops/public/assets/js/68.0ef01c0d.js"><link rel="prefetch" href="/devops/public/assets/js/69.50255698.js"><link rel="prefetch" href="/devops/public/assets/js/7.bd5195c6.js"><link rel="prefetch" href="/devops/public/assets/js/70.ec7e3c94.js"><link rel="prefetch" href="/devops/public/assets/js/71.1fb290ee.js"><link rel="prefetch" href="/devops/public/assets/js/72.a69d84fd.js"><link rel="prefetch" href="/devops/public/assets/js/73.838f9b5b.js"><link rel="prefetch" href="/devops/public/assets/js/74.6fb338b5.js"><link rel="prefetch" href="/devops/public/assets/js/75.aeb2efd1.js"><link rel="prefetch" href="/devops/public/assets/js/76.0a40be39.js"><link rel="prefetch" href="/devops/public/assets/js/77.4e488482.js"><link rel="prefetch" href="/devops/public/assets/js/78.414d49ea.js"><link rel="prefetch" href="/devops/public/assets/js/79.a6c4c7d4.js"><link rel="prefetch" href="/devops/public/assets/js/8.81a25c23.js"><link rel="prefetch" href="/devops/public/assets/js/80.aa59f21d.js"><link rel="prefetch" href="/devops/public/assets/js/81.5b323446.js"><link rel="prefetch" href="/devops/public/assets/js/82.3fe79c96.js"><link rel="prefetch" href="/devops/public/assets/js/83.faa97aa3.js"><link rel="prefetch" href="/devops/public/assets/js/84.a8a5d302.js"><link rel="prefetch" href="/devops/public/assets/js/85.062fcead.js"><link rel="prefetch" href="/devops/public/assets/js/86.e2133d81.js"><link rel="prefetch" href="/devops/public/assets/js/87.567674c0.js"><link rel="prefetch" href="/devops/public/assets/js/88.c9492539.js"><link rel="prefetch" href="/devops/public/assets/js/89.a9968527.js"><link rel="prefetch" href="/devops/public/assets/js/9.6229eb26.js"><link rel="prefetch" href="/devops/public/assets/js/90.c29cc326.js"><link rel="prefetch" href="/devops/public/assets/js/91.3ba21402.js"><link rel="prefetch" href="/devops/public/assets/js/92.bffa7852.js"><link rel="prefetch" href="/devops/public/assets/js/93.13eab358.js"><link rel="prefetch" href="/devops/public/assets/js/94.972947a7.js"><link rel="prefetch" href="/devops/public/assets/js/95.ad1ea305.js"><link rel="prefetch" href="/devops/public/assets/js/96.5e49571c.js"><link rel="prefetch" href="/devops/public/assets/js/97.e921b547.js"><link rel="prefetch" href="/devops/public/assets/js/98.99620795.js"><link rel="prefetch" href="/devops/public/assets/js/99.c9e8f53c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>238</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">1，面试题</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h3 id="_1-面试题"><a href="#_1-面试题" class="header-anchor">#</a> 1，面试题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Q68:了解哪些docker镜像仓库产品呢?
+
+-------------
+
+Q69:harbor如何实现高可用架构呢?keepalived采用哪种工作模式?
+
+-------------
+
+Q70:docker如何登录和退出一个私有的镜像仓库呢?
+
+-------------
+
+Q71:如何将一个镜像推送到harbor仓库呢?
+
+-------------
+
+Q72:harbor主从是如何实现镜像同步的呢?需要做哪些配置?
+
+-------------
+
+Q73:docker-compose如何推送镜像到harbor呢?
+
+-------------
+
+Q74:harbor迁移docker registry时有遇到哪些问题?
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_2-推送镜像到阿里云"><a href="#_2-推送镜像到阿里云" class="header-anchor">#</a> 2，推送镜像到阿里云</h3> <p>harbor除了推送给harbor节点，还可以与很多hub仓库互通，我这里列举下推送至阿里云镜像</p> <p><img src="/devops/public/assets/img/1731154494454.0cc54b95.png" alt="1731154494454"></p> <p>上面有很多镜像可以供我们使用</p> <p><img src="/devops/public/assets/img/1731154511500.feb551ed.png" alt="1731154511500"></p> <p>我们也可以把它当做仓库，把自己镜像推送上去，我这边创建个人版实例给大家展示</p> <p><img src="/devops/public/assets/img/1731154523396.f3c874a1.png" alt="1731154523396"></p> <p><img src="/devops/public/assets/img/1731154529748.bda4d82c.png" alt="1731154529748"></p> <p>命名空间随机起，仓库名称一般是项目的名字哈，我这边随意</p> <p><img src="/devops/public/assets/img/1731154545671.535e8a66.png" alt="1731154545671"></p> <p>有很多代码源可以选择，我们在Linux终端上传，选择本地仓库即可</p> <p><img src="/devops/public/assets/img/1731154559350.32c93db1.png" alt="1731154559350"></p> <p><img src="/devops/public/assets/img/1731154580348.e9a4e25f.png" alt="1731154580348"></p> <p>镜像仓库里，基本信息里有代码可以供我们推送和拉取</p> <p><img src="/devops/public/assets/img/1731154593344.9d574dee.png" alt="1731154593344"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@Docker01 ~<span class="token punctuation">]</span><span class="token comment"># docker login --username=admin registry.cn-hangzhou.aliyuncs.com</span>
+Password: 
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+ 
+Login Succeeded
+<span class="token punctuation">[</span>root@Docker01 ~<span class="token punctuation">]</span><span class="token comment"># docker tag nginx:1.14.2 registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse:v1.0</span>
+<span class="token punctuation">[</span>root@Docker01 ~<span class="token punctuation">]</span><span class="token comment"># docker push registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse:v1.0</span>
+The push refers to repository <span class="token punctuation">[</span>registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse<span class="token punctuation">]</span>
+82ae01d5004e: Pushed 
+b8f18c3b860b: Pushed 
+5dacd731af1b: Pushed 
+v1.0: digest: sha256:706446e9c6667c0880d5da3f39c09a6c7d2114f5a5d6b74a2fafd24ae30d2078 size: <span class="token number">948</span>
+<span class="token punctuation">[</span>root@Docker01 ~<span class="token punctuation">]</span><span class="token comment"># docker logout registry.cn-hangzhou.aliyuncs.com</span>
+Removing login credentials <span class="token keyword">for</span> registry.cn-hangzhou.aliyuncs.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>推送后可以上传我们的版本</p> <p><img src="/devops/public/assets/img/1731154621582.5bf5c777.png" alt="1731154621582"></p> <p>当然，我们也可以去拉取，虽然是私有的，但是我们可以登录自己的账号拉取，注意账号用完及时删除，不然会很危险！！！存放账号密码的文件只是做了base64的加密！</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@Docker02 ~<span class="token punctuation">]</span><span class="token comment"># docker login --username=admin registry.cn-hangzhou.aliyuncs.com</span>
+<span class="token punctuation">[</span>root@Docker02 ~<span class="token punctuation">]</span><span class="token comment"># docker pull registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse:v1.0</span>
+v1.0: Pulling from kotenspace/kotenwarehouse
+Digest: sha256:706446e9c6667c0880d5da3f39c09a6c7d2114f5a5d6b74a2fafd24ae30d2078
+Status: Downloaded newer image <span class="token keyword">for</span> registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse:v1.0
+registry.cn-hangzhou.aliyuncs.com/kotenspace/kotenwarehouse:v1.0
+<span class="token punctuation">[</span>root@Docker02 ~<span class="token punctuation">]</span><span class="token comment"># docker logout registry.cn-hangzhou.aliyuncs.com</span>
+Removing login credentials <span class="token keyword">for</span> registry.cn-hangzhou.aliyuncs.com
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>如果删除仓库，里面的镜像也会随之消失，跟harbor不一样，这个可以直接删外面，harbor需要先删里面的镜像再删外面项目。</p> <p><img src="/devops/public/assets/img/1731154647039.c72cb91a.png" alt="1731154647039"></p> <h3 id="_3-harbor的https配置"><a href="#_3-harbor的https配置" class="header-anchor">#</a> 3，harbor的https配置</h3> <p>1、在阿里云申请免费的证书并下载下来</p> <p><img src="/devops/public/assets/img/1731154975856.777c35a5.png" alt="1731154975856"></p> <p>观察harbor配置文件，发现需要下载cert和key</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># cat -n /koten/softwares/harbor/harbor.yml</span>
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+    <span class="token number">17</span>	<span class="token comment">#  certificate: /your/certificate/path</span>
+    <span class="token number">18</span>	<span class="token comment">#  private_key: /your/private/key/path</span>
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><img src="/devops/public/assets/img/1731155015642.99d92798.png" alt="1731155015642"></p> <p>2、将证书和key放入harbor下的目录，然后在配置文件里修改下路径，重启harbor</p> <p><img src="/devops/public/assets/img/1731155032722.a56605aa.png" alt="1731155032722"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># cd /koten/softwares/harbor/</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># mkdir -p certs/official</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># cd certs/official</span>
+<span class="token punctuation">[</span>root@Docker01 official<span class="token punctuation">]</span><span class="token comment"># ls</span>
+www.koten.vip.key  www.koten.vip_public.crt
+<span class="token punctuation">[</span>root@Docker01 official<span class="token punctuation">]</span><span class="token comment"># cd ../../</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># cat harbor.yml</span>
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+hostname: www.koten.vip
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+https:
+<span class="token comment">#  # https port for harbor, default is 443</span>
+  port: <span class="token number">443</span>
+<span class="token comment">#  # The path of cert and key files for nginx</span>
+  certificate: /koten/softwares/harbor/certs/official/www.koten.vip_public.crt <span class="token comment">#最好是写绝对路径</span>
+  private_key: /koten/softwares/harbor/certs/official/www.koten.vip.key
+<span class="token punctuation">..</span><span class="token punctuation">..</span><span class="token punctuation">..</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># ./install.sh</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>修改linux和windows的hosts文件</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">10.0</span>.0.201 www.koten.vip
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>浏览器访问成功显示HTTPS证书</p> <p><img src="/devops/public/assets/img/1731155111677.483144f6.png" alt="1731155111677"></p> <p>Linux作为客户端登录会提示缺少证书认证（有的时候官方的证书不提示），我们需要把证书和秘钥放到/etc/docker/certs.d/www.koten.vip下就可以了</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># docker login www.koten.vip</span>
+Username: admin
+Password: 
+Error response from daemon: Get <span class="token string">&quot;https://www.koten.vip/v2/&quot;</span><span class="token builtin class-name">:</span> x509: certificate signed by unknown authority
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># mkdir -p /etc/docker/certs.d/www.koten.vip</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># cp certs/official/www.koten.vip_public.crt /etc/docker/certs.d/www.koten.vip/www.koten.vip.cert    #注意此处更名</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># cp certs/official/www.koten.vip.key /etc/docker/certs.d/www.koten.vip/</span>
+<span class="token punctuation">[</span>root@Docker01 harbor<span class="token punctuation">]</span><span class="token comment"># docker login www.koten.vip</span>
+Username: admin
+Password: 
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+ 
+Login Succeeded
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_4-containerd介绍"><a href="#_4-containerd介绍" class="header-anchor">#</a> 4，containerd介绍</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>- <span class="token number">2013</span>年docker开源，IT界的福音，备受关注
+- <span class="token number">2014.06</span> Google有15年的容器编排Borg<span class="token punctuation">(</span>博格，商业产品<span class="token punctuation">)</span>使用经验，并将K8S<span class="token punctuation">(</span>基于borg系统使用go语言研发<span class="token punctuation">)</span>底层基于docker作为容器运行时开源
+- <span class="token number">2014.12</span> <span class="token function">docker</span> inc公司推出了K8S竞品，docker swarm
+- Google kubernets vs <span class="token function">docker</span> inc swarm 【3年对抗赛】 <span class="token number">2017</span>年年底结束，k8s完胜。（k8s <span class="token number">72</span>% vs swarm %13）
+	- <span class="token number">2014</span> coreOS 公司推出了rkt容器管理工具并站队K8S
+	- <span class="token number">2015</span> Google公司将K8S开源并贡献给了CNCF组织，成为该组织的第一个毕业项目。
+	- <span class="token number">2015</span> <span class="token function">docker</span> inc公司推出了OCI提议，主要针对容器运行时和镜像规范，并开源了runc。
+	- <span class="token number">2016</span> Google推出了CRI规范，目前市面上没有任何产品可以满足，于是就开源了docker-shim组件（会调用docker接口并满足cri规范）支持CRI接口<span class="token punctuation">;</span>
+	- <span class="token number">2016</span>，RedHat公司基于cri-o（既符合CRI也符合OCI规范）开发框架让rkt容器管理工具支持CRI接口<span class="token punctuation">;</span>
+	- <span class="token number">2017</span>，docker inc公司将containerd从docker engine剥离，并将containerd开源给了CNCF组织，
+		- containerd底层调用runc，因此该产品是支持OCI提议的<span class="token punctuation">;</span>
+		- containerd组件本身不支持CRI，因此社区大佬们（包含国内外）集体开发cri-containerd组件，最后合并到containerd项目
+- <span class="token number">2018</span> 年国内开始流程K8S，各大云厂商已经开始大规模使用K8S集群，
+	- 阿里云的ACK的SAAS产品
+	- 腾讯云的TKE的SAAS产品
+	- 华为云的CCE的SAAS产品
+	- ucloud的UK8S的SAAS产品
+	- 亚马逊的Amazon EKS的SAAS产品
+	- 京东云，百度云等 
+- <span class="token number">2018</span>年，coreOS公司被Redhat以2.5亿美元收购。
+- <span class="token number">2018</span>年10月29日，IBM宣布以340亿美元的价格收购Red Hat。
+	- 曾经一度，Docker方面的炒作非常猛。
+	- Docker从Greylock Partners、Insight Partners和红杉资本等大牌投资者处筹资超过2.7亿美元，
+	- <span class="token number">2018</span>年估值达到最高峰：13.2亿美元。
+- <span class="token number">2019</span>年2，Docker一分为二，将企业业务出售给了云咨询公司Mirantis（对于OpenStack代码贡献量非常大，能排到前3）。
+- <span class="token number">2020</span>年，Google宣布K8S将在1.22+版本后弃用docker容器运行时，当时年底发布的最新版是1.20.X<span class="token punctuation">;</span> 
+- <span class="token number">2020</span>年3月11日公布的，当时Docker宣布被云计算软件巨头微软（Microsoft）以 <span class="token number">6.7</span>亿美元收购。
+- <span class="token number">2021</span>年底 K8S <span class="token number">1.23</span>的RC版本发布<span class="token punctuation">;</span>
+- <span class="token number">2022</span>年初，K8S <span class="token number">1.24</span>横空出世，直接将docker-shim组件移除，而是使用containerd作为容器运行时<span class="token punctuation">;</span>
+- <span class="token number">2023</span>年初，K8S <span class="token number">1.27</span>.X发布<span class="token punctuation">;</span>
+- <span class="token number">2023</span>年3月，K8S <span class="token number">1.23</span>.17 发布了最后一个支持docker-shim的版本。
+	- docker和Mirantis公司作为合作伙伴，将维护该项目，运维小伙伴如果需要在K8S <span class="token number">1.24</span>及以后的版本使用docker的话，需要单独cri-docker组件。
+- <span class="token number">2024</span>年初，K8S <span class="token number">1.30</span>.x版本发布
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>什么是containerd
+
+早在2016年3月，Docker <span class="token number">1.11</span>的Docker Engine里就包含了containerd，而现在则是把containerd从Docker Engine里彻底剥离出来，作为一个独立的开源项目独立发展，目标是提供一个更加开放，稳定的容器运行基础设施。和原先包含在Docker Engine里containerd相比，独立的containerd将具有更多的功能，可以涵盖整个容器运行时管理的所有需求。
+
+然而，containerd并不是直接面向最终用户的，而是主要用于集成到更上层的系统里，比如Swarm，kubernetes，Mesos等容器编排系统。
+
+containerd以Daemon的形式运行在系统上，通过暴露底层的gRPC API，上层系统可以通过这些API管理机器上的容器。
+
+每个containerd只负责一台机器，pull精选，对容器的操作<span class="token punctuation">(</span>启动，停止等<span class="token punctuation">)</span>，网络，存储都是由containerd完成。具体运行容器由runC负责，实际上只要是负责OCI规范的容器都可以支持。
+
+对于容器编排服务来说，运行时只需要使用containerd + runC，更加轻量，容易管理。
+	- contained更专注于容器的生命周期管理，容器的存储管理，容器的网络管理。
+	- runC是实际的容器运行工具。
+
+独立之后containerd的特性严禁可以和Docker Engine分开，专注容器运行时管理，可以更稳定。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>为什么要学习containerd
+
+众所周知，K8S已经是云原生的基础设施，对于传统运维在就业找工作时，都会或多或少接触到K8S相关面试题。
+
+而在K8S <span class="token number">1.24</span>之后的版本官方已经将原有的docker-shim容器运行时弃用，而是改用containerd作为容器运行时。
+
+因此，很多企业也在转型使用containerd，因此课程设计上，也要紧跟企业的步伐，我们要对标企业。因此在Docker的后续课程中引入containerd的知识板块。
+
+当然，并不是说学习containerd就不用学习docker了，事实上，大多数公司依旧是在使用docker作为容器管理工具哟。小孩子才做选择题，咱们成年人自然都得学习。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="_5-二进制安装containerd"><a href="#_5-二进制安装containerd" class="header-anchor">#</a> 5，二进制安装containerd</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>基于二进制方式安装
+
+<span class="token number">1</span>.下载containerd<span class="token punctuation">(</span>containerd1.6 建议生产环境使用，因为这是一个长期支持版本。<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll cri-containerd-1.6.36-linux-amd64.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">114180226</span> Nov  <span class="token number">9</span> <span class="token number">20</span>:38 cri-containerd-1.6.36-linux-amd64.tar.gz
+
+<span class="token number">2</span>.解压软件包 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ls etc opt usr</span>
+etc:
+crictl.yaml  systemd
+
+opt:
+containerd
+
+usr:
+<span class="token builtin class-name">local</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+
+如上所示，解压软件包后会声场三个目录，作用说明如下:
+- etc
+	存放的是containerd服务管理配置文件及cni虚拟网卡配置文件。
+
+- opt
+	存放的是GCE环境中使用containerd配置文件及CNI插件。
+
+- usr
+	存放的是containerd运行时文件，包含runC。
+	
+<span class="token number">3</span>.拷贝containerd运行时文件到宿主机指定路径
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/local/bin/</span>
+total <span class="token number">8</span>
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> ./
+drwxr-xr-x <span class="token number">10</span> root root <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> <span class="token punctuation">..</span>/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp usr/local/bin/containerd /usr/local/bin/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/local/bin/</span>
+total <span class="token number">52560</span>
+drwxr-xr-x  <span class="token number">2</span> root root     <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">20</span>:43 ./
+drwxr-xr-x <span class="token number">10</span> root root     <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> <span class="token punctuation">..</span>/
+-rwxr-xr-x  <span class="token number">1</span> root root <span class="token number">53812896</span> Nov  <span class="token number">9</span> <span class="token number">20</span>:43 containerd*
+
+<span class="token number">4</span>.拷贝containerd的systemd的配置文件
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp etc/systemd/system/containerd.service /usr/lib/systemd/system/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/lib/systemd/system/containerd.service </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">1270</span> Nov  <span class="token number">9</span> <span class="token number">20</span>:44 /usr/lib/systemd/system/containerd.service
+
+<span class="token number">5</span>.查看containerd帮助信息
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># containerd --help</span>
+NAME:
+   containerd - 
+                    __        _                     __
+  _________  ____  / /_____ _<span class="token punctuation">(</span>_<span class="token punctuation">)</span>___  ___  _________/ /
+ / ___/ __ <span class="token punctuation">\</span>/ __ <span class="token punctuation">\</span>/ __/ __ `/ / __ <span class="token punctuation">\</span>/ _ <span class="token punctuation">\</span>/ ___/ __  /
+/ /__/ /_/ / / / / /_/ /_/ / / / / /  __/ /  / /_/ /
+<span class="token punctuation">\</span>___/<span class="token punctuation">\</span>____/_/ /_/<span class="token punctuation">\</span>__/<span class="token punctuation">\</span>__,_/_/_/ /_/<span class="token punctuation">\</span>___/_/   <span class="token punctuation">\</span>__,_/
+
+high performance container runtime
+
+
+USAGE:
+   containerd <span class="token punctuation">[</span>global options<span class="token punctuation">]</span> <span class="token builtin class-name">command</span> <span class="token punctuation">[</span>command options<span class="token punctuation">]</span> <span class="token punctuation">[</span>arguments<span class="token punctuation">..</span>.<span class="token punctuation">]</span>
+
+VERSION:
+   v1.6.36
+
+<span class="token number">6</span>.生成配置文件
+<span class="token number">6.1</span>.创建配置文件目录
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># mkdir /etc/containerd</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">6.2</span>.生成默认的配置文件
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># containerd config default &gt; /etc/containerd/config.toml</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /etc/containerd/config.toml </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">7002</span> Nov  <span class="token number">9</span> <span class="token number">20</span>:46 /etc/containerd/config.toml
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">6.3</span>.修改Cgroup的管理者为systemd组件
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># grep SystemdCgroup /etc/containerd/config.toml </span>
+            SystemdCgroup <span class="token operator">=</span> <span class="token boolean">false</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># sed -ri 's#(SystemdCgroup = )false#\1true#' /etc/containerd/config.toml</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># grep SystemdCgroup /etc/containerd/config.toml </span>
+            SystemdCgroup <span class="token operator">=</span> <span class="token boolean">true</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">6.4</span> 修改pause的基础镜像名称
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># grep sandbox_image /etc/containerd/config.toml</span>
+    sandbox_image <span class="token operator">=</span> <span class="token string">&quot;registry.k8s.io/pause:3.6&quot;</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># sed -i 's#registry.k8s.io/pause:3.6#registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6#' /etc/containerd/config.toml</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># grep sandbox_image /etc/containerd/config.toml</span>
+    sandbox_image <span class="token operator">=</span> <span class="token string">&quot;registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6&quot;</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7</span>.启动containerd服务
+<span class="token number">7.1</span> 启动containerd服务
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># systemctl enable --now containerd</span>
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7.2</span>.查看服务的状态
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># systemctl status containerd</span>
+
+<span class="token number">8</span>.拷贝ctr客户端工具及runc容器运行时
+<span class="token number">8.1</span>.拷贝ctr客户端工具到<span class="token environment constant">PATH</span>环境变量
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp usr/local/bin/ctr /usr/bin/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/bin/ctr</span>
+lrwxrwxrwx <span class="token number">1</span> root root <span class="token number">26</span> Nov  <span class="token number">6</span> <span class="token number">22</span>:33 /usr/bin/ctr -<span class="token operator">&gt;</span> /malu/softwares/docker/ctr*
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">8.2</span>.查看contrainerd服务版本信息
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr version</span>
+Client:
+  Version:  v1.6.36
+  Revision: 88c3d9bc5b5a193f40b7c14fa996d23532d6f956
+  Go version: go1.22.7
+
+Server:
+  Version:  v1.6.36
+  Revision: 88c3d9bc5b5a193f40b7c14fa996d23532d6f956
+  UUID: <span class="token number">60090764</span>-0408-4136-8421-57a473e4701d
+  
+<span class="token number">8.3</span> 拷贝容器的运行时，用于后期启动容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp usr/local/bin/containerd-shim-runc-v2 /usr/bin/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/bin/containerd-shim-runc-v2 </span>
+lrwxrwxrwx <span class="token number">1</span> root root <span class="token number">46</span> Nov  <span class="token number">6</span> <span class="token number">22</span>:33 /usr/bin/containerd-shim-runc-v2 -<span class="token operator">&gt;</span> /malu/softwares/docker/containerd-shim-runc-v2*
+
+<span class="token number">9</span>.安装runC
+<span class="token number">9.1</span>  下载runC软件包
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># wget https://github.com/opencontainers/runc/releases/download/v1.1.15/runc.amd64</span>
+
+<span class="token number">9.2</span> 拷贝runC到环境变量并添加执行权限
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># mv runc.amd64 runc-v1-1-15.amd64</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># mv runc-v1-1-15.amd64 /usr/sbin/runc</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># chmod +x /usr/sbin/runc </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/sbin/runc </span>
+-rwxr-xr-x <span class="token number">1</span> root root <span class="token number">11085664</span> Nov  <span class="token number">9</span> <span class="token number">21</span>:12 /usr/sbin/runc*
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">9.3</span> 检查runc的版本号【此版本相比于内置的contained略高一个版本，默认是: <span class="token number">1.1</span>.14】
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># runc -v</span>
+runc version <span class="token number">1.1</span>.15
+commit: v1.1.15-0-gbc20cb44
+spec: <span class="token number">1.0</span>.2-dev
+go: go1.22.3
+libseccomp: <span class="token number">2.5</span>.5
+
+
+- ctr命令解读
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr --help</span>
+NAME:
+   ctr - 
+        __
+  _____/ /______
+ / ___/ __/ ___/
+/ /__/ /_/ /
+<span class="token punctuation">\</span>___/<span class="token punctuation">\</span>__/_/
+
+containerd CLI
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br></div></div><h3 id="_6-使用ctr管理镜像"><a href="#_6-使用ctr管理镜像" class="header-anchor">#</a> 6，使用ctr管理镜像</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.下载镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i pull registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1</span>
+
+<span class="token number">2</span>.查看本地镜像列表
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls    </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr image ls    </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr images ls    </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.查看镜像的目录结构
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /mnt/</span>
+total <span class="token number">8</span>
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> ./
+drwxr-xr-x <span class="token number">21</span> root root <span class="token number">4096</span> Nov  <span class="token number">2</span> <span class="token number">21</span>:49 <span class="token punctuation">..</span>/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -      
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i mount registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 /mnt/</span>
+sha256:1d14ebb5d571f4ae7b23885c1936c7ccf7ccea25d9abe47adef4bbb08b02b0c1
+/mnt/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /mnt/</span>
+total <span class="token number">84</span>
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">21</span>:16 ./
+drwxr-xr-x <span class="token number">21</span> root root <span class="token number">4096</span> Nov  <span class="token number">2</span> <span class="token number">21</span>:49 <span class="token punctuation">..</span>/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> bin/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> dev/
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">13</span>  <span class="token number">2021</span> docker-entrypoint.d/
+-rwxrwxr-x  <span class="token number">1</span> root root <span class="token number">1202</span> Nov <span class="token number">13</span>  <span class="token number">2021</span> docker-entrypoint.sh*
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">13</span>  <span class="token number">2021</span> etc/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> home/
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> lib/
+drwxr-xr-x  <span class="token number">5</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> media/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> mnt/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> opt/
+dr-xr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> proc/
+drwx------  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> root/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> run/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> sbin/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> srv/
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> sys/
+drwxrwxrwt  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">13</span>  <span class="token number">2021</span> tmp/
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> usr/
+drwxr-xr-x  <span class="token number">1</span> root root <span class="token number">4096</span> Nov <span class="token number">12</span>  <span class="token number">2021</span> var/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># umount /mnt/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /mnt/</span>
+total <span class="token number">8</span>
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> ./
+drwxr-xr-x <span class="token number">21</span> root root <span class="token number">4096</span> Nov  <span class="token number">2</span> <span class="token number">21</span>:49 <span class="token punctuation">..</span>/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">4</span>.导出镜像到本地
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i export malu-apps-v1.tar.gz registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll -h malu-apps-v1.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">9</span>.7M Nov  <span class="token number">9</span> <span class="token number">21</span>:20 malu-apps-v1.tar.gz
+
+<span class="token number">5</span>.删除镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -      
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i rm registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1</span>
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF TYPE DIGEST SIZE PLATFORMS LABELS 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">6</span>.导入镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i import malu-apps-v1.tar.gz</span>
+unpacking registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 <span class="token punctuation">(</span>sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c<span class="token punctuation">)</span><span class="token punctuation">..</span>.done
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -
+
+<span class="token number">7</span>.给镜像打标签
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -      
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i tag registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 malu-linux94:v1</span>
+malu-linux94:v1
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+malu-linux94:v1                                           application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -      
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -      
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">8</span>.检查现有镜像以确保所有内容在本地可用
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i check</span>
+REF                                                       TYPE                                                 DIGEST                                                                  STATUS         SIZE            UNPACKED 
+malu-linux94:v1                                           application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c complete <span class="token punctuation">(</span><span class="token number">8</span>/8<span class="token punctuation">)</span> <span class="token number">9.6</span> MiB/9.6 MiB <span class="token boolean">true</span>
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c complete <span class="token punctuation">(</span><span class="token number">8</span>/8<span class="token punctuation">)</span> <span class="token number">9.6</span> MiB/9.6 MiB <span class="token boolean">true</span>
+
+<span class="token number">9</span>.给镜像打标签
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i label malu-linux94:v1 shool=bd,class=001</span>
+<span class="token assign-left variable">shool</span><span class="token operator">=</span>bd,class<span class="token operator">=</span>001
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS             
+malu-linux94:v1                                           application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 <span class="token assign-left variable">shool</span><span class="token operator">=</span>bd,class<span class="token operator">=</span>001 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -                  
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br></div></div><h3 id="_7-使用ctr管理容器"><a href="#_7-使用ctr管理容器" class="header-anchor">#</a> 7，使用ctr管理容器</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.创建容器并指定容器名称
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c create registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 c1</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.查看容器列表
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c ls</span>
+CONTAINER    IMAGE                                                        RUNTIME                  
+c1           registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1    io.containerd.runc.v2    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.查看容器的详细信息
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c info c1</span>
+<span class="token punctuation">{</span>
+    <span class="token string">&quot;ID&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;c1&quot;</span>,
+    <span class="token string">&quot;Labels&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;com.docker.compose.project&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;dockerfile&quot;</span>,
+        <span class="token string">&quot;com.docker.compose.service&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;apps_v1&quot;</span>,
+        <span class="token string">&quot;com.docker.compose.version&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;2.23.0&quot;</span>,
+        <span class="token string">&quot;io.containerd.image.config.stop-signal&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;SIGQUIT&quot;</span>,
+        <span class="token string">&quot;maintainer&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;NGINX Docker Maintainers <span class="token entity" title="\u003c">\u003c</span>docker-maint@nginx.com<span class="token entity" title="\u003e">\u003e</span>&quot;</span>
+    <span class="token punctuation">}</span>,
+<span class="token punctuation">..</span>.
+
+<span class="token number">4</span>.启动容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c ls</span>
+CONTAINER    IMAGE                                                        RUNTIME                  
+c1           registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1    io.containerd.runc.v2    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK    PID    STATUS    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task start -d c1</span>
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking <span class="token keyword">for</span> shell scripts <span class="token keyword">in</span> /docker-entrypoint.d/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK    PID     STATUS    
+c1      <span class="token number">4000</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">5</span>.查看容器对应宿主机的PID
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK    PID     STATUS    
+c1      <span class="token number">4000</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ps c1</span>
+PID     INFO
+<span class="token number">4000</span>    -
+<span class="token number">4038</span>    -
+<span class="token number">4039</span>    -
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ps -ef | egrep &quot;4000|4038|4039&quot; | grep -v grep</span>
+root        <span class="token number">4000</span>    <span class="token number">3980</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: master process nginx <span class="token parameter variable">-g</span> daemon off<span class="token punctuation">;</span>
+systemd+    <span class="token number">4038</span>    <span class="token number">4000</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: worker process
+systemd+    <span class="token number">4039</span>    <span class="token number">4000</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: worker process
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ps -ef | grep 4000</span>
+root        <span class="token number">4000</span>    <span class="token number">3980</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: master process nginx <span class="token parameter variable">-g</span> daemon off<span class="token punctuation">;</span>
+systemd+    <span class="token number">4038</span>    <span class="token number">4000</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: worker process
+systemd+    <span class="token number">4039</span>    <span class="token number">4000</span>  <span class="token number">0</span> <span class="token number">21</span>:28 ?        00:00:00 nginx: worker process
+root        <span class="token number">4070</span>    <span class="token number">2190</span>  <span class="token number">0</span> <span class="token number">21</span>:30 pts/1    00:00:00 <span class="token function">grep</span> <span class="token parameter variable">--color</span><span class="token operator">=</span>auto <span class="token number">4000</span>
+
+<span class="token number">6</span>.在容器中执行命令【很明显，containerd内置的并没有网络组件，需要单独安装哟~】
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task exec --exec-id $RANDOM c1 ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task exec --exec-id 110 c1 ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+
+<span class="token number">7</span>.启动新容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr run -d --net-host registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task exec --exec-id $RANDOM xiuxian ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:08:5c:f7 brd ff:ff:ff:ff:ff:ff
+    inet <span class="token number">10.0</span>.0.102/24 brd <span class="token number">10.0</span>.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe08:5cf7/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+       
+<span class="token number">8</span>.暂停容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task pause xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    PAUSED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">9</span>.恢复暂停
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    PAUSED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task resume xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">10</span>.停止容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task kill xiuxian   # 相当于优雅终止，可能需要等待10s左右</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    RUNNING
+xiuxian    <span class="token number">4160</span>    STOPPED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task kill --signal 9 c1 # 相当于kill -9</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    STOPPED
+xiuxian    <span class="token number">4160</span>    STOPPED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">10</span>.删除容器 【在删除容器之前要先停止容器】
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+c1         <span class="token number">4000</span>    STOPPED
+xiuxian    <span class="token number">4160</span>    STOPPED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c rm c1</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK       PID     STATUS    
+xiuxian    <span class="token number">4160</span>    STOPPED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr c rm xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr task ls</span>
+TASK    PID    STATUS    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br></div></div><h3 id="_8-使用ctr管理命令空间"><a href="#_8-使用ctr管理命令空间" class="header-anchor">#</a> 8，使用ctr管理命令空间</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.查看现有的名称空间 【注意，在containerd环境部署完成时，没有名称空间，当你拉取镜像时，会自动创建一个default名称空间】
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS 
+default        
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.创建名称空间 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns c malu</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns c linux94 school=bd</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS    
+default           
+linux94 <span class="token assign-left variable">school</span><span class="token operator">=</span>bd 
+malu              
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.给名称空间打标签 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns label malu address=zz</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS     
+default            
+linux94 <span class="token assign-left variable">school</span><span class="token operator">=</span>bd  
+malu    <span class="token assign-left variable">address</span><span class="token operator">=</span>zz 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">4</span>.删除空的名称空间
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS     
+default            
+linux94 <span class="token assign-left variable">school</span><span class="token operator">=</span>bd  
+malu    <span class="token assign-left variable">address</span><span class="token operator">=</span>zz 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns rm linux94</span>
+linux94
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS     
+default            
+malu    <span class="token assign-left variable">address</span><span class="token operator">=</span>zz 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">5</span>.查看指定名称空间下的镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS             
+malu-linux94:v1                                           application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 <span class="token assign-left variable">shool</span><span class="token operator">=</span>bd,class<span class="token operator">=</span>001 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -                  
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n default i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS             
+malu-linux94:v1                                           application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 <span class="token assign-left variable">shool</span><span class="token operator">=</span>bd,class<span class="token operator">=</span>001 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -                  
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">6</span>.往指定的名称空间拉镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr ns ls</span>
+NAME    LABELS     
+default            
+malu    <span class="token assign-left variable">address</span><span class="token operator">=</span>zz 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu i pull registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v2</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v2 application/vnd.docker.distribution.manifest.v2+json sha256:3ac38ee6161e11f2341eda32be95dcc6746f587880f923d2d24a54c3a525227e <span class="token number">9.6</span> MiB linux/amd64 -      
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7</span>.在指定名称空间运行容器 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu run -d --net-host registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v2 xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu task ls</span>
+TASK       PID     STATUS    
+xiuxian    <span class="token number">4532</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">8</span>.删除指定名称空间的容器
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu task ls</span>
+TASK       PID     STATUS    
+xiuxian    <span class="token number">4532</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu task kill --signal 9 xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu c rm xiuxian</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu task ls</span>
+TASK    PID    STATUS    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu c ls</span>
+CONTAINER    IMAGE    RUNTIME    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">9</span>.与其它Containerd容器共享命名空间【烧脑，选择性理解即可】
+<span class="token number">9.1</span> 导入镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll malu-apps-v1.tar.gz </span>
+-rw------- <span class="token number">1</span> root root <span class="token number">8091136</span> Nov  <span class="token number">6</span> <span class="token number">22</span>:59 malu-apps-v1.tar.gz 
+
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 i import malu-apps-v1.tar.gz  # 如果ns不存在，则会自动创建</span>
+unpacking registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 <span class="token punctuation">(</span>sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c<span class="token punctuation">)</span><span class="token punctuation">..</span>.done
+
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 i ls</span>
+REF                                                       TYPE                                                 DIGEST                                                                  SIZE    PLATFORMS   LABELS 
+registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 application/vnd.docker.distribution.manifest.v2+json sha256:3bee216f250cfd2dbda1744d6849e27118845b8f4d55dda3ca3c6c1227cc2e5c <span class="token number">9.6</span> MiB linux/amd64 -  
+
+<span class="token number">9.2</span> 启动c1容器，运行tail <span class="token parameter variable">-f</span> /etc/hosts作为启动命令
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 run -d registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 c1 tail -f /etc/hosts</span>
+<span class="token number">127.0</span>.0.1	localhost localhost.localdomain
+::1		localhost localhost.localdomain
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 task ls</span>
+TASK    PID     STATUS    
+c1      <span class="token number">4741</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 task exec --exec-id $RANDOM c1 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">tail</span> <span class="token parameter variable">-f</span> /etc/hosts
+    <span class="token number">7</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">9.3</span> 新启动一个c2的容器，将sleep <span class="token number">3600</span>作为启动容器，并和已经存在的c1共享底层的<span class="token string">&quot;进程名称空间&quot;</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 run -d --with-ns &quot;pid:/proc/4741/ns/pid&quot; registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v1 c2 sleep 3600</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 task ls</span>
+TASK    PID     STATUS    
+c2      <span class="token number">4824</span>    RUNNING
+c1      <span class="token number">4741</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">9.4</span> 最终发现两个容器指向了同一块内存地址，因此查看进程信息是相同的！
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /proc/4824/ns/pid</span>
+lrwxrwxrwx <span class="token number">1</span> root root <span class="token number">0</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:02 /proc/4824/ns/pid -<span class="token operator">&gt;</span> <span class="token string">'pid:[4026532667]'</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /proc/4741/ns/pid</span>
+lrwxrwxrwx <span class="token number">1</span> root root <span class="token number">0</span> Nov  <span class="token number">9</span> <span class="token number">21</span>:59 /proc/4741/ns/pid -<span class="token operator">&gt;</span> <span class="token string">'pid:[4026532667]'</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 task exec --exec-id $RANDOM c1 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">tail</span> <span class="token parameter variable">-f</span> /etc/hosts
+   <span class="token number">14</span> root      <span class="token number">0</span>:00 <span class="token function">sleep</span> <span class="token number">3600</span>
+   <span class="token number">20</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n linux66 task exec --exec-id $RANDOM c2 ps -ef</span>
+PID   <span class="token environment constant">USER</span>     TIME  COMMAND
+    <span class="token number">1</span> root      <span class="token number">0</span>:00 <span class="token function">tail</span> <span class="token parameter variable">-f</span> /etc/hosts
+   <span class="token number">14</span> root      <span class="token number">0</span>:00 <span class="token function">sleep</span> <span class="token number">3600</span>
+   <span class="token number">26</span> root      <span class="token number">0</span>:00 <span class="token function">ps</span> <span class="token parameter variable">-ef</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br></div></div><h3 id="_9-使用ctr实现容器数据持久化"><a href="#_9-使用ctr实现容器数据持久化" class="header-anchor">#</a> 9，使用ctr实现容器数据持久化</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.创建容器并指定挂载点 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># mkdir /data</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu run -d --mount type=bind,src=/data,dst=/usr/share/nginx/html,options=rbind:rw registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/apps:v2   c11</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu task ls</span>
+TASK    PID     STATUS    
+c11     <span class="token number">4936</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.在本地拷贝创建数据，进入容器验证 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp /etc/fstab /data/</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /data/</span>
+total <span class="token number">12</span>
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:05 ./
+drwxr-xr-x <span class="token number">22</span> root root <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:04 <span class="token punctuation">..</span>/
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">657</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:05 fstab
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu tasks exec --exec-id $RANDOM -t c11 sh</span>
+/ <span class="token comment"># </span>
+/ <span class="token comment"># ls -l /usr/share/nginx/html/</span>
+total <span class="token number">4</span>
+-rw-r--r--    <span class="token number">1</span> root     root           <span class="token number">657</span> Nov  <span class="token number">9</span> <span class="token number">14</span>:05 fstab
+/ <span class="token comment"># </span>
+/ <span class="token comment"># echo www.xx.com &gt; /usr/share/nginx/html/index.html</span>
+/ <span class="token comment"># </span>
+/ <span class="token comment"># ls -l /usr/share/nginx/html/</span>
+total <span class="token number">8</span>
+-rw-r--r--    <span class="token number">1</span> root     root           <span class="token number">657</span> Nov  <span class="token number">9</span> <span class="token number">14</span>:05 fstab
+-rw-r--r--    <span class="token number">1</span> root     root            <span class="token number">11</span> Nov  <span class="token number">9</span> <span class="token number">14</span>:06 index.html
+/ <span class="token comment"># exit</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /data/</span>
+total <span class="token number">16</span>
+drwxr-xr-x  <span class="token number">2</span> root root <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:06 ./
+drwxr-xr-x <span class="token number">22</span> root root <span class="token number">4096</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:04 <span class="token punctuation">..</span>/
+-rw-r--r--  <span class="token number">1</span> root root  <span class="token number">657</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:05 fstab
+-rw-r--r--  <span class="token number">1</span> root root   <span class="token number">11</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:06 index.html
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># more /data/index.html </span>
+www.xx.com
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.删除容器观察宿主机的数据目录是否丢失 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu tasks ls</span>
+TASK    PID     STATUS    
+c11     <span class="token number">4936</span>    RUNNING
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu tasks kill c11</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu tasks ls</span>
+TASK    PID     STATUS    
+c11     <span class="token number">4936</span>    STOPPED
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu c rm c11</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n malu c ls</span>
+CONTAINER    IMAGE    RUNTIME    
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ls -l /data/  # 尽管容器被删除，但是数据依旧存在，从而实现数据的持久化。</span>
+total <span class="token number">8</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">657</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:05 fstab
+-rw-r--r-- <span class="token number">1</span> root root  <span class="token number">11</span> Nov  <span class="token number">9</span> <span class="token number">22</span>:06 index.html
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br></div></div><h3 id="_10-ctr实现harbor镜像的推送和拉取"><a href="#_10-ctr实现harbor镜像的推送和拉取" class="header-anchor">#</a> 10，ctr实现harbor镜像的推送和拉取</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>需要配置https。
+
+如果没有配置https，可以使用docker拉取：
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker pull 10.0.0.102/malu-elk/elasticsearch:8.15.3</span>
+
+然后保存：
+<span class="token function">docker</span> save <span class="token parameter variable">-o</span> elasticsearch_8.15.3.tar <span class="token number">10.0</span>.0.102/malu-elk/elasticsearch:8.15.3
+
+使用 ctr 导入镜像：
+ctr images <span class="token function">import</span> elasticsearch_8.15.3.tar
+这样可以绕过 containerd 对 HTTP 的限制。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>如果配置了https:
+
+<span class="token number">1</span>.配置hosts解析 
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># echo 10.0.0.102 www.malu.com &gt;&gt; /etc/hosts</span>
+
+
+<span class="token number">2</span>.拉取镜像 
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n harbor i pull www.malu.com/malu-elk/elasticsearch:8.15.3</span>
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n harbor i ls</span>
+     
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">3</span>.推送镜像到harbor仓库
+<span class="token number">3.1</span> harbor新建项目 
+项目名称为<span class="token string">&quot;malu-containerd&quot;</span>。
+		
+<span class="token number">3.2</span> 给镜像打标签
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n harbor i tag www.malu.com/malu-elk/elasticsearch:8.15.3 www.malu.com/malu-containerd/es:v8.15.3</span>
+www.malu.com/malu-containerd/es:v8.15.3
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3.3</span> 推送镜像到harbor仓库 
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># ctr -n harbor i push -u admin:1 www.malu.com/malu-containerd/es:v8.15.3                                     </span>
+<span class="token punctuation">[</span>root@containerd103 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3.4</span> 验证harbor是否有镜像
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h3 id="_11-编写containerd一键部署脚本"><a href="#_11-编写containerd一键部署脚本" class="header-anchor">#</a> 11，编写containerd一键部署脚本</h3> <p><img src="/devops/public/assets/img/1731164001259.7aab5eba.png" alt="1731164001259"></p> <p><img src="/devops/public/assets/img/1731164011024.89a5231b.png" alt="1731164011024"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token shebang important">#!/bin/bash</span>
+
+
+<span class="token assign-left variable">CONTAINERD_VERSION</span><span class="token operator">=</span><span class="token number">1.6</span>.36
+<span class="token assign-left variable">CONTAINERD_FILENAME</span><span class="token operator">=</span>cri-containerd-cni-<span class="token variable">${CONTAINERD_VERSION}</span>-linux-amd64.tar.gz
+<span class="token assign-left variable">CONTAINERD_URL</span><span class="token operator">=</span>https://github.com/containerd/containerd/releases/download/v<span class="token variable">${CONTAINERD_VERSION}</span>/<span class="token variable">${CONTAINERD_FILENAME}</span>
+<span class="token assign-left variable">CONTAINERD_BASEDIR</span><span class="token operator">=</span>/usr/local/bin/
+<span class="token assign-left variable">CONTAINERD_SCRIPTS</span><span class="token operator">=</span>/usr/lib/systemd/system/
+<span class="token assign-left variable">CONTAINERD_CONFIG</span><span class="token operator">=</span>/etc/containerd
+<span class="token assign-left variable">RUNC_VERSION</span><span class="token operator">=</span><span class="token number">1.1</span>.15
+<span class="token assign-left variable">RUNC_FILENAME</span><span class="token operator">=</span>runc.amd64
+<span class="token assign-left variable">RUN_URL</span><span class="token operator">=</span>https://github.com/opencontainers/runc/releases/download/v<span class="token variable">${RUNC_VERSION}</span>/<span class="token variable">${RUNC_FILENAME}</span>
+<span class="token assign-left variable">RUNC_BASEDIR</span><span class="token operator">=</span>/usr/sbin
+<span class="token assign-left variable">DOWNLOAD</span><span class="token operator">=</span>./download
+
+
+<span class="token keyword">function</span> <span class="token function-name function">prepare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-f</span> <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">$1</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span>
+    <span class="token function">wget</span> <span class="token parameter variable">-T</span> <span class="token number">3</span>  <span class="token parameter variable">-t</span> <span class="token number">2</span> <span class="token variable">$2</span> <span class="token parameter variable">-O</span> <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">$1</span>
+  <span class="token keyword">fi</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token variable">$?</span> <span class="token operator">!=</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token keyword">then</span>
+   <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">$1</span>
+   <span class="token builtin class-name">echo</span> <span class="token string">&quot;不好意思，由于网络波动原因，无法下载<span class="token variable">${1}</span>软件包，程序已退出!请稍后再试......&quot;</span>
+   <span class="token builtin class-name">exit</span> <span class="token number">100</span>
+ <span class="token keyword">fi</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function-name function">InstallContainerd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   prepare <span class="token variable">${CONTAINERD_FILENAME}</span>  <span class="token variable">${CONTAINERD_URL}</span>
+   
+   <span class="token function">tar</span> xf <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">${CONTAINERD_FILENAME}</span> <span class="token parameter variable">-C</span> <span class="token variable">${CONTAINERD_BASEDIR}</span> usr/local/bin/<span class="token punctuation">{</span>containerd,ctr,containerd-shim-runc-v2<span class="token punctuation">}</span>  --strip-components<span class="token operator">=</span><span class="token number">3</span>
+   <span class="token function">tar</span> xf <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">${CONTAINERD_FILENAME}</span> <span class="token parameter variable">-C</span> <span class="token variable">${CONTAINERD_SCRIPTS}</span> etc/systemd/system/containerd.service --strip-components<span class="token operator">=</span><span class="token number">3</span>
+   
+   <span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token operator">!</span> <span class="token parameter variable">-f</span> <span class="token variable">${CONTAINERD_CONFIG}</span> <span class="token punctuation">]</span> <span class="token punctuation">;</span><span class="token keyword">then</span> 
+      <span class="token function">install</span> <span class="token parameter variable">-d</span> <span class="token variable">${CONTAINERD_CONFIG}</span>
+   <span class="token keyword">fi</span>
+
+   containerd config default <span class="token operator">&gt;</span> /etc/containerd/config.toml
+   
+   <span class="token function">sed</span> <span class="token parameter variable">-ri</span> <span class="token string">'s#(SystemdCgroup = )false#\1true#'</span> /etc/containerd/config.toml 
+   <span class="token function">sed</span> <span class="token parameter variable">-i</span> <span class="token string">'s#registry.k8s.io/pause:3.6#registry.cn-hangzhou.aliyuncs.com/google_containers/pause:3.6#'</span> /etc/containerd/config.toml
+   systemctl <span class="token builtin class-name">enable</span> <span class="token parameter variable">--now</span> containerd
+
+   prepare <span class="token variable">${RUNC_FILENAME}</span> <span class="token variable">${RUN_URL}</span>
+
+   <span class="token function">cp</span> <span class="token variable">${DOWNLOAD}</span>/<span class="token variable">${RUNC_FILENAME}</span> <span class="token variable">${RUNC_BASEDIR}</span>/runc
+   <span class="token function">chmod</span> +x <span class="token variable">${RUNC_BASEDIR}</span>/runc
+
+   tput setaf <span class="token number">3</span>
+   ctr version
+   <span class="token builtin class-name">echo</span> 
+   runc <span class="token parameter variable">-v</span>
+   <span class="token builtin class-name">echo</span> 
+   <span class="token builtin class-name">echo</span> <span class="token string">&quot;安装成功,欢迎使用二进制contianed安装脚本，欢迎下次使用!&quot;</span>
+   tput setaf <span class="token number">2</span>
+
+
+<span class="token punctuation">}</span>
+
+
+
+<span class="token keyword">function</span> <span class="token function-name function">UninstallContainerd</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token function">rm</span> <span class="token parameter variable">-f</span> <span class="token variable">${RUNC_BASEDIR}</span>/runc /etc/containerd/config.toml <span class="token punctuation">\</span>
+     <span class="token variable">${CONTAINERD_BASEDIR}</span>/<span class="token punctuation">{</span>containerd,ctr,containerd-shim-runc-v2<span class="token punctuation">}</span> <span class="token punctuation">\</span>
+     <span class="token variable">${CONTAINERD_SCRIPTS}</span>/containerd.service
+
+  tput setaf <span class="token number">5</span>
+  <span class="token builtin class-name">echo</span> <span class="token string">&quot;卸载成功,欢迎再次使用二进制containerd安装脚本哟~&quot;</span>
+  tput setaf <span class="token number">7</span>
+
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function-name function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token keyword">case</span> <span class="token variable">$1</span> <span class="token keyword">in</span>
+     <span class="token function">install</span><span class="token operator">|</span>i<span class="token punctuation">)</span>
+      InstallContainerd
+      <span class="token punctuation">;</span><span class="token punctuation">;</span>
+      remove<span class="token operator">|</span>r<span class="token punctuation">)</span>
+      UninstallContainerd
+      <span class="token punctuation">;</span><span class="token punctuation">;</span>
+     *<span class="token punctuation">)</span>
+       <span class="token builtin class-name">echo</span> <span class="token string">&quot;Invalid parameter, Usage: <span class="token variable">$0</span> install|remove&quot;</span>
+       <span class="token punctuation">;</span><span class="token punctuation">;</span>
+   <span class="token keyword">esac</span>
+<span class="token punctuation">}</span>
+
+main <span class="token variable">$1</span>                                   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ll autoinstall-containerd-v1.6.36.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">160313898</span> Nov  <span class="token number">8</span> <span class="token number">18</span>:01 autoinstall-containerd-v1.6.36.tar.gz
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># tar xf autoinstall-containerd-v1.6.36.tar.gz </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ./install-containerd.sh i</span>
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Client:
+  Version:  v1.6.36
+  Revision: 88c3d9bc5b5a193f40b7c14fa996d23532d6f956
+  Go version: go1.22.7
+
+Server:
+  Version:  v1.6.36
+  Revision: 88c3d9bc5b5a193f40b7c14fa996d23532d6f956
+  UUID: 589efe11-5d4f-419b-aedd-53fd2ddbec79
+
+runc version <span class="token number">1.1</span>.15
+commit: v1.1.15-0-gbc20cb44
+spec: <span class="token number">1.0</span>.2-dev
+go: go1.22.3
+libseccomp: <span class="token number">2.5</span>.5
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_1-面试题" class="sidebar-link reco-side-_1-面试题" data-v-b57cc07c>1，面试题</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_2-推送镜像到阿里云" class="sidebar-link reco-side-_2-推送镜像到阿里云" data-v-b57cc07c>2，推送镜像到阿里云</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_3-harbor的https配置" class="sidebar-link reco-side-_3-harbor的https配置" data-v-b57cc07c>3，harbor的https配置</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_4-containerd介绍" class="sidebar-link reco-side-_4-containerd介绍" data-v-b57cc07c>4，containerd介绍</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_5-二进制安装containerd" class="sidebar-link reco-side-_5-二进制安装containerd" data-v-b57cc07c>5，二进制安装containerd</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_6-使用ctr管理镜像" class="sidebar-link reco-side-_6-使用ctr管理镜像" data-v-b57cc07c>6，使用ctr管理镜像</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_7-使用ctr管理容器" class="sidebar-link reco-side-_7-使用ctr管理容器" data-v-b57cc07c>7，使用ctr管理容器</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_8-使用ctr管理命令空间" class="sidebar-link reco-side-_8-使用ctr管理命令空间" data-v-b57cc07c>8，使用ctr管理命令空间</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_9-使用ctr实现容器数据持久化" class="sidebar-link reco-side-_9-使用ctr实现容器数据持久化" data-v-b57cc07c>9，使用ctr实现容器数据持久化</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_10-ctr实现harbor镜像的推送和拉取" class="sidebar-link reco-side-_10-ctr实现harbor镜像的推送和拉取" data-v-b57cc07c>10，ctr实现harbor镜像的推送和拉取</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/51-docker/docker.html#_11-编写containerd一键部署脚本" class="sidebar-link reco-side-_11-编写containerd一键部署脚本" data-v-b57cc07c>11，编写containerd一键部署脚本</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.28103306.js" defer></script><script src="/devops/public/assets/js/113.27412706.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/141.389976c7.js" defer></script>
+  </body>
+</html>

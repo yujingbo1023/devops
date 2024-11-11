@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1，面试题 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.28103306.js" as="script"><link rel="preload" href="/devops/public/assets/js/113.27412706.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/117.23109c42.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.2355f1cd.js"><link rel="prefetch" href="/devops/public/assets/js/100.f6ad0e9e.js"><link rel="prefetch" href="/devops/public/assets/js/101.696507e5.js"><link rel="prefetch" href="/devops/public/assets/js/102.b067b5e3.js"><link rel="prefetch" href="/devops/public/assets/js/103.f22a09d5.js"><link rel="prefetch" href="/devops/public/assets/js/104.9de19c42.js"><link rel="prefetch" href="/devops/public/assets/js/105.33ffcab9.js"><link rel="prefetch" href="/devops/public/assets/js/106.49d07509.js"><link rel="prefetch" href="/devops/public/assets/js/107.460cd233.js"><link rel="prefetch" href="/devops/public/assets/js/108.c99be344.js"><link rel="prefetch" href="/devops/public/assets/js/109.00c119c5.js"><link rel="prefetch" href="/devops/public/assets/js/11.49eaa678.js"><link rel="prefetch" href="/devops/public/assets/js/110.d421651e.js"><link rel="prefetch" href="/devops/public/assets/js/111.f6c7ca5a.js"><link rel="prefetch" href="/devops/public/assets/js/112.8393443a.js"><link rel="prefetch" href="/devops/public/assets/js/114.a275d4cd.js"><link rel="prefetch" href="/devops/public/assets/js/115.d817c533.js"><link rel="prefetch" href="/devops/public/assets/js/116.e22157b8.js"><link rel="prefetch" href="/devops/public/assets/js/118.51a3bcc9.js"><link rel="prefetch" href="/devops/public/assets/js/119.46ee73e9.js"><link rel="prefetch" href="/devops/public/assets/js/12.14ab8645.js"><link rel="prefetch" href="/devops/public/assets/js/120.32d72bca.js"><link rel="prefetch" href="/devops/public/assets/js/121.7a2ae156.js"><link rel="prefetch" href="/devops/public/assets/js/122.7f1313de.js"><link rel="prefetch" href="/devops/public/assets/js/123.ea1da4b9.js"><link rel="prefetch" href="/devops/public/assets/js/124.94b5d60e.js"><link rel="prefetch" href="/devops/public/assets/js/125.d541725c.js"><link rel="prefetch" href="/devops/public/assets/js/126.8c67bb8b.js"><link rel="prefetch" href="/devops/public/assets/js/127.6ad0a226.js"><link rel="prefetch" href="/devops/public/assets/js/128.af28bf34.js"><link rel="prefetch" href="/devops/public/assets/js/129.24f46b00.js"><link rel="prefetch" href="/devops/public/assets/js/13.ea00228f.js"><link rel="prefetch" href="/devops/public/assets/js/130.f3603eed.js"><link rel="prefetch" href="/devops/public/assets/js/131.2acc4a62.js"><link rel="prefetch" href="/devops/public/assets/js/132.e83c37e0.js"><link rel="prefetch" href="/devops/public/assets/js/133.e846519a.js"><link rel="prefetch" href="/devops/public/assets/js/134.72f0cd52.js"><link rel="prefetch" href="/devops/public/assets/js/135.cc9bc693.js"><link rel="prefetch" href="/devops/public/assets/js/136.3486f2c1.js"><link rel="prefetch" href="/devops/public/assets/js/137.1967d170.js"><link rel="prefetch" href="/devops/public/assets/js/138.2c0f075b.js"><link rel="prefetch" href="/devops/public/assets/js/139.df9ef210.js"><link rel="prefetch" href="/devops/public/assets/js/14.d1af91f2.js"><link rel="prefetch" href="/devops/public/assets/js/140.43cb38b1.js"><link rel="prefetch" href="/devops/public/assets/js/141.389976c7.js"><link rel="prefetch" href="/devops/public/assets/js/142.c701d474.js"><link rel="prefetch" href="/devops/public/assets/js/143.1f89bcd4.js"><link rel="prefetch" href="/devops/public/assets/js/144.2403d734.js"><link rel="prefetch" href="/devops/public/assets/js/145.9ca6a379.js"><link rel="prefetch" href="/devops/public/assets/js/146.4d96a855.js"><link rel="prefetch" href="/devops/public/assets/js/147.96e83382.js"><link rel="prefetch" href="/devops/public/assets/js/148.725e9e0f.js"><link rel="prefetch" href="/devops/public/assets/js/149.ea7e7ea0.js"><link rel="prefetch" href="/devops/public/assets/js/15.9cd50001.js"><link rel="prefetch" href="/devops/public/assets/js/150.44cb5023.js"><link rel="prefetch" href="/devops/public/assets/js/151.162ba89e.js"><link rel="prefetch" href="/devops/public/assets/js/152.253ffdc6.js"><link rel="prefetch" href="/devops/public/assets/js/153.95e5600c.js"><link rel="prefetch" href="/devops/public/assets/js/154.e843df76.js"><link rel="prefetch" href="/devops/public/assets/js/155.017651a0.js"><link rel="prefetch" href="/devops/public/assets/js/156.bc5f1afa.js"><link rel="prefetch" href="/devops/public/assets/js/157.62750ef9.js"><link rel="prefetch" href="/devops/public/assets/js/158.12816d9c.js"><link rel="prefetch" href="/devops/public/assets/js/159.f65aefd6.js"><link rel="prefetch" href="/devops/public/assets/js/16.83cc8599.js"><link rel="prefetch" href="/devops/public/assets/js/160.9e3b870f.js"><link rel="prefetch" href="/devops/public/assets/js/161.2ffb8829.js"><link rel="prefetch" href="/devops/public/assets/js/162.fc902af3.js"><link rel="prefetch" href="/devops/public/assets/js/163.1ce261a1.js"><link rel="prefetch" href="/devops/public/assets/js/164.cadd6c0c.js"><link rel="prefetch" href="/devops/public/assets/js/165.2fe27746.js"><link rel="prefetch" href="/devops/public/assets/js/166.ed3f8d80.js"><link rel="prefetch" href="/devops/public/assets/js/167.bbf5336a.js"><link rel="prefetch" href="/devops/public/assets/js/168.5d3efa55.js"><link rel="prefetch" href="/devops/public/assets/js/169.46ed82e1.js"><link rel="prefetch" href="/devops/public/assets/js/17.8fd55213.js"><link rel="prefetch" href="/devops/public/assets/js/170.1a4a0c1c.js"><link rel="prefetch" href="/devops/public/assets/js/171.a57bf822.js"><link rel="prefetch" href="/devops/public/assets/js/172.633217bd.js"><link rel="prefetch" href="/devops/public/assets/js/173.74d13a35.js"><link rel="prefetch" href="/devops/public/assets/js/174.b5151bd8.js"><link rel="prefetch" href="/devops/public/assets/js/175.5949328a.js"><link rel="prefetch" href="/devops/public/assets/js/176.8303daa5.js"><link rel="prefetch" href="/devops/public/assets/js/177.5326bd43.js"><link rel="prefetch" href="/devops/public/assets/js/178.dbcd16c1.js"><link rel="prefetch" href="/devops/public/assets/js/179.9faebe0a.js"><link rel="prefetch" href="/devops/public/assets/js/18.f7755189.js"><link rel="prefetch" href="/devops/public/assets/js/180.b7a0d0b5.js"><link rel="prefetch" href="/devops/public/assets/js/181.260afac6.js"><link rel="prefetch" href="/devops/public/assets/js/182.1e595cd4.js"><link rel="prefetch" href="/devops/public/assets/js/183.45cdd476.js"><link rel="prefetch" href="/devops/public/assets/js/184.865dc281.js"><link rel="prefetch" href="/devops/public/assets/js/185.98829410.js"><link rel="prefetch" href="/devops/public/assets/js/186.51261003.js"><link rel="prefetch" href="/devops/public/assets/js/187.a4404287.js"><link rel="prefetch" href="/devops/public/assets/js/188.37b0a7c9.js"><link rel="prefetch" href="/devops/public/assets/js/189.4382a87a.js"><link rel="prefetch" href="/devops/public/assets/js/19.c220b742.js"><link rel="prefetch" href="/devops/public/assets/js/190.1925bc24.js"><link rel="prefetch" href="/devops/public/assets/js/191.8a1eb7e8.js"><link rel="prefetch" href="/devops/public/assets/js/192.36d8fb17.js"><link rel="prefetch" href="/devops/public/assets/js/193.a98e0b8b.js"><link rel="prefetch" href="/devops/public/assets/js/194.b2f3bf84.js"><link rel="prefetch" href="/devops/public/assets/js/195.12b566f1.js"><link rel="prefetch" href="/devops/public/assets/js/196.32ac678b.js"><link rel="prefetch" href="/devops/public/assets/js/197.c70372ce.js"><link rel="prefetch" href="/devops/public/assets/js/198.3586e37a.js"><link rel="prefetch" href="/devops/public/assets/js/199.df982d34.js"><link rel="prefetch" href="/devops/public/assets/js/20.7c8e3974.js"><link rel="prefetch" href="/devops/public/assets/js/200.7bff5ecf.js"><link rel="prefetch" href="/devops/public/assets/js/201.a8731abd.js"><link rel="prefetch" href="/devops/public/assets/js/202.be8d4c67.js"><link rel="prefetch" href="/devops/public/assets/js/203.ed1472c6.js"><link rel="prefetch" href="/devops/public/assets/js/204.83a209a0.js"><link rel="prefetch" href="/devops/public/assets/js/205.6bc65ce5.js"><link rel="prefetch" href="/devops/public/assets/js/206.d42a440a.js"><link rel="prefetch" href="/devops/public/assets/js/207.5682e689.js"><link rel="prefetch" href="/devops/public/assets/js/208.70ce056c.js"><link rel="prefetch" href="/devops/public/assets/js/209.b4c5fab9.js"><link rel="prefetch" href="/devops/public/assets/js/21.b3f26af0.js"><link rel="prefetch" href="/devops/public/assets/js/210.38087e85.js"><link rel="prefetch" href="/devops/public/assets/js/211.072c21ab.js"><link rel="prefetch" href="/devops/public/assets/js/212.2691eba4.js"><link rel="prefetch" href="/devops/public/assets/js/213.89f4c1a6.js"><link rel="prefetch" href="/devops/public/assets/js/214.4492965c.js"><link rel="prefetch" href="/devops/public/assets/js/215.51bee7ff.js"><link rel="prefetch" href="/devops/public/assets/js/216.06470828.js"><link rel="prefetch" href="/devops/public/assets/js/217.97da850c.js"><link rel="prefetch" href="/devops/public/assets/js/218.8226ce81.js"><link rel="prefetch" href="/devops/public/assets/js/219.a3d3a8b7.js"><link rel="prefetch" href="/devops/public/assets/js/22.8eb1c9a5.js"><link rel="prefetch" href="/devops/public/assets/js/220.5c213c5e.js"><link rel="prefetch" href="/devops/public/assets/js/221.e27b300a.js"><link rel="prefetch" href="/devops/public/assets/js/222.f2770cd1.js"><link rel="prefetch" href="/devops/public/assets/js/223.a4d46cb3.js"><link rel="prefetch" href="/devops/public/assets/js/224.297a3dae.js"><link rel="prefetch" href="/devops/public/assets/js/225.3979b123.js"><link rel="prefetch" href="/devops/public/assets/js/226.d96c6a5c.js"><link rel="prefetch" href="/devops/public/assets/js/227.9b79ae08.js"><link rel="prefetch" href="/devops/public/assets/js/228.6a349a94.js"><link rel="prefetch" href="/devops/public/assets/js/229.de0ac89d.js"><link rel="prefetch" href="/devops/public/assets/js/23.d515c36e.js"><link rel="prefetch" href="/devops/public/assets/js/230.a295e140.js"><link rel="prefetch" href="/devops/public/assets/js/231.af32101a.js"><link rel="prefetch" href="/devops/public/assets/js/232.931da4dd.js"><link rel="prefetch" href="/devops/public/assets/js/233.92cd47fc.js"><link rel="prefetch" href="/devops/public/assets/js/234.5461e0e7.js"><link rel="prefetch" href="/devops/public/assets/js/235.e183c848.js"><link rel="prefetch" href="/devops/public/assets/js/236.9d0b81bd.js"><link rel="prefetch" href="/devops/public/assets/js/237.10575201.js"><link rel="prefetch" href="/devops/public/assets/js/238.629c6ef5.js"><link rel="prefetch" href="/devops/public/assets/js/239.728d2233.js"><link rel="prefetch" href="/devops/public/assets/js/24.aae5de0f.js"><link rel="prefetch" href="/devops/public/assets/js/240.c89f2e19.js"><link rel="prefetch" href="/devops/public/assets/js/241.aaf7a490.js"><link rel="prefetch" href="/devops/public/assets/js/242.42e74e3b.js"><link rel="prefetch" href="/devops/public/assets/js/243.348491db.js"><link rel="prefetch" href="/devops/public/assets/js/244.7c6b55ef.js"><link rel="prefetch" href="/devops/public/assets/js/245.284fd7a7.js"><link rel="prefetch" href="/devops/public/assets/js/246.f241fbe1.js"><link rel="prefetch" href="/devops/public/assets/js/247.71a82174.js"><link rel="prefetch" href="/devops/public/assets/js/248.de8fd46b.js"><link rel="prefetch" href="/devops/public/assets/js/249.cfd9f7ee.js"><link rel="prefetch" href="/devops/public/assets/js/25.ccef8efa.js"><link rel="prefetch" href="/devops/public/assets/js/250.070d8f99.js"><link rel="prefetch" href="/devops/public/assets/js/251.ff5a3213.js"><link rel="prefetch" href="/devops/public/assets/js/252.71ad4337.js"><link rel="prefetch" href="/devops/public/assets/js/253.01dc528c.js"><link rel="prefetch" href="/devops/public/assets/js/254.c5a65e3c.js"><link rel="prefetch" href="/devops/public/assets/js/255.067efc7b.js"><link rel="prefetch" href="/devops/public/assets/js/256.ce2d0b8b.js"><link rel="prefetch" href="/devops/public/assets/js/257.20223d0c.js"><link rel="prefetch" href="/devops/public/assets/js/258.7ef6f1fe.js"><link rel="prefetch" href="/devops/public/assets/js/259.a575f284.js"><link rel="prefetch" href="/devops/public/assets/js/26.68aa115c.js"><link rel="prefetch" href="/devops/public/assets/js/260.2522ddff.js"><link rel="prefetch" href="/devops/public/assets/js/261.604f6c39.js"><link rel="prefetch" href="/devops/public/assets/js/262.5aa7f981.js"><link rel="prefetch" href="/devops/public/assets/js/27.34f21c4e.js"><link rel="prefetch" href="/devops/public/assets/js/28.63e3c7ed.js"><link rel="prefetch" href="/devops/public/assets/js/29.4dcf32ae.js"><link rel="prefetch" href="/devops/public/assets/js/3.1f995075.js"><link rel="prefetch" href="/devops/public/assets/js/30.555e38ca.js"><link rel="prefetch" href="/devops/public/assets/js/31.d20ee572.js"><link rel="prefetch" href="/devops/public/assets/js/32.aa5f769f.js"><link rel="prefetch" href="/devops/public/assets/js/33.c0a126d4.js"><link rel="prefetch" href="/devops/public/assets/js/34.b8bf6708.js"><link rel="prefetch" href="/devops/public/assets/js/35.72f57892.js"><link rel="prefetch" href="/devops/public/assets/js/36.3cfa22c9.js"><link rel="prefetch" href="/devops/public/assets/js/37.9e0408d5.js"><link rel="prefetch" href="/devops/public/assets/js/38.b4c21835.js"><link rel="prefetch" href="/devops/public/assets/js/39.249a89e3.js"><link rel="prefetch" href="/devops/public/assets/js/4.d5f85984.js"><link rel="prefetch" href="/devops/public/assets/js/40.df24eade.js"><link rel="prefetch" href="/devops/public/assets/js/41.6be3bb48.js"><link rel="prefetch" href="/devops/public/assets/js/42.6e85a506.js"><link rel="prefetch" href="/devops/public/assets/js/43.c224e7e3.js"><link rel="prefetch" href="/devops/public/assets/js/44.1f3cdf42.js"><link rel="prefetch" href="/devops/public/assets/js/45.a75144ab.js"><link rel="prefetch" href="/devops/public/assets/js/46.111de9cb.js"><link rel="prefetch" href="/devops/public/assets/js/47.3243468c.js"><link rel="prefetch" href="/devops/public/assets/js/48.93797012.js"><link rel="prefetch" href="/devops/public/assets/js/49.7741937d.js"><link rel="prefetch" href="/devops/public/assets/js/5.67912e83.js"><link rel="prefetch" href="/devops/public/assets/js/50.2e3a4856.js"><link rel="prefetch" href="/devops/public/assets/js/51.91c7ab0b.js"><link rel="prefetch" href="/devops/public/assets/js/52.523c6cf5.js"><link rel="prefetch" href="/devops/public/assets/js/53.a7dfae93.js"><link rel="prefetch" href="/devops/public/assets/js/54.59203b12.js"><link rel="prefetch" href="/devops/public/assets/js/55.74329901.js"><link rel="prefetch" href="/devops/public/assets/js/56.1996c141.js"><link rel="prefetch" href="/devops/public/assets/js/57.fc3d7ab9.js"><link rel="prefetch" href="/devops/public/assets/js/58.bd7669d5.js"><link rel="prefetch" href="/devops/public/assets/js/59.c7e3bfd9.js"><link rel="prefetch" href="/devops/public/assets/js/6.e5b9a373.js"><link rel="prefetch" href="/devops/public/assets/js/60.47feb7c7.js"><link rel="prefetch" href="/devops/public/assets/js/61.079bee3b.js"><link rel="prefetch" href="/devops/public/assets/js/62.ed89b89f.js"><link rel="prefetch" href="/devops/public/assets/js/63.ecbe0ddb.js"><link rel="prefetch" href="/devops/public/assets/js/64.8c902dc0.js"><link rel="prefetch" href="/devops/public/assets/js/65.bd801b87.js"><link rel="prefetch" href="/devops/public/assets/js/66.3aa1baf4.js"><link rel="prefetch" href="/devops/public/assets/js/67.ce9e4215.js"><link rel="prefetch" href="/devops/public/assets/js/68.0ef01c0d.js"><link rel="prefetch" href="/devops/public/assets/js/69.50255698.js"><link rel="prefetch" href="/devops/public/assets/js/7.bd5195c6.js"><link rel="prefetch" href="/devops/public/assets/js/70.ec7e3c94.js"><link rel="prefetch" href="/devops/public/assets/js/71.1fb290ee.js"><link rel="prefetch" href="/devops/public/assets/js/72.a69d84fd.js"><link rel="prefetch" href="/devops/public/assets/js/73.838f9b5b.js"><link rel="prefetch" href="/devops/public/assets/js/74.6fb338b5.js"><link rel="prefetch" href="/devops/public/assets/js/75.aeb2efd1.js"><link rel="prefetch" href="/devops/public/assets/js/76.0a40be39.js"><link rel="prefetch" href="/devops/public/assets/js/77.4e488482.js"><link rel="prefetch" href="/devops/public/assets/js/78.414d49ea.js"><link rel="prefetch" href="/devops/public/assets/js/79.a6c4c7d4.js"><link rel="prefetch" href="/devops/public/assets/js/8.81a25c23.js"><link rel="prefetch" href="/devops/public/assets/js/80.aa59f21d.js"><link rel="prefetch" href="/devops/public/assets/js/81.5b323446.js"><link rel="prefetch" href="/devops/public/assets/js/82.3fe79c96.js"><link rel="prefetch" href="/devops/public/assets/js/83.faa97aa3.js"><link rel="prefetch" href="/devops/public/assets/js/84.a8a5d302.js"><link rel="prefetch" href="/devops/public/assets/js/85.062fcead.js"><link rel="prefetch" href="/devops/public/assets/js/86.e2133d81.js"><link rel="prefetch" href="/devops/public/assets/js/87.567674c0.js"><link rel="prefetch" href="/devops/public/assets/js/88.c9492539.js"><link rel="prefetch" href="/devops/public/assets/js/89.a9968527.js"><link rel="prefetch" href="/devops/public/assets/js/9.6229eb26.js"><link rel="prefetch" href="/devops/public/assets/js/90.c29cc326.js"><link rel="prefetch" href="/devops/public/assets/js/91.3ba21402.js"><link rel="prefetch" href="/devops/public/assets/js/92.bffa7852.js"><link rel="prefetch" href="/devops/public/assets/js/93.13eab358.js"><link rel="prefetch" href="/devops/public/assets/js/94.972947a7.js"><link rel="prefetch" href="/devops/public/assets/js/95.ad1ea305.js"><link rel="prefetch" href="/devops/public/assets/js/96.5e49571c.js"><link rel="prefetch" href="/devops/public/assets/js/97.e921b547.js"><link rel="prefetch" href="/devops/public/assets/js/98.99620795.js"><link rel="prefetch" href="/devops/public/assets/js/99.c9e8f53c.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>238</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/base/" class="nav-link"><i class="undefined"></i>
+  base
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88></h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">1，面试题</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h3 id="_1-面试题"><a href="#_1-面试题" class="header-anchor">#</a> 1，面试题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Q63:用过哪些Dockefile指令? 一个Dockefile可以写多少个FROM指令?如果有多个FROM一般用在啥场景呢?
+
+-----------------------------
+
+Q64:ADD和COPY有啥区别?CMD和ENTRYPOINT有啥区别?ARG和ENV有啥区别?
+
+-----------------------------
+
+Q65:Dockerfile做过哪些优化呢?
+
+-----------------------------
+
+Q66:docker-compose的作用是啥?如何启动服务?如何止服务呢?
+
+-----------------------------
+
+Q67:多阶段构建最终镜像的大小以哪个阶段为准呢?如何查看中间构建的镜像呢?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_2-镜像仓库"><a href="#_2-镜像仓库" class="header-anchor">#</a> 2，镜像仓库</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>什么是私有仓库:
+	不对全世界开放的镜像仓库，一般是公司内部使用的私有镜像仓库。
+	
+为什么需要私有仓库:
+	<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>安全性问题:
+		官方镜像仓库大家都可以访问，若都放在官方，那自然大家都能拿到你们公司的自建镜像。
+	<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>访问速度:
+		官方的服务器在国外，访问速度可想而知，有时候甚至官方网站都打不开。
+	
+主流的私有仓库:
+	<span class="token function">docker</span> registry:
+		是一个轻量级的私有镜像仓库，基本上，基本上不占用内存，很适合学习环境中使用。
+		上传的镜像会被进行压缩处理，没有提供较好的WebUI，维护起来比较麻烦，尤其是删除镜像。
+		
+	harbor:
+		基于官方的<span class="token string">&quot;docker registry&quot;</span>进行二次开发，是一个适合企业级使用的镜像仓库。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="_3-docker-registry"><a href="#_3-docker-registry" class="header-anchor">#</a> 3，docker registry</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.部署私有的镜像仓库
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker run -d --name malu-registry --restart always --network host  registry:2.8.3</span>
+b56465b327df785a54e70d9e1fff5b200c674f77ba2ed611e8a2b3740bb5fbf0
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker ps -l</span>
+CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS         PORTS     NAMES
+b56465b327df   registry:2.8.3   <span class="token string">&quot;/entrypoint.sh /etc…&quot;</span>   <span class="token number">6</span> seconds ago   Up <span class="token number">6</span> seconds             malu-registry
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ss -tnulp|grep 5000</span>
+tcp   LISTEN <span class="token number">0</span>      <span class="token number">4096</span>               *:5000             *:*    users:<span class="token variable"><span class="token punctuation">((</span>&quot;registry&quot;<span class="token punctuation">,</span>pid<span class="token operator">=</span><span class="token number">143816</span><span class="token punctuation">,</span>fd<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">))</span></span>     
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.访问WebUI（WebUI并不太友好）
+http://10.0.0.102:5000/v2/_catalog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p><img src="/devops/public/assets/img/1731111879461.310bfe6c.png" alt="1731111879461"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token function">docker</span> registry的镜像拉取和推送
+<span class="token number">1</span>.配置信任
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/docker/daemon.json </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/docker/daemon.json </span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.102:5000&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl daemon-reload </span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker info|grep Insecure -A 2</span>
+ Insecure Registries:
+  <span class="token number">10.0</span>.0.102:5000
+  <span class="token number">127.0</span>.0.0/8
+
+<span class="token comment"># 以上步骤表示，凡是推送到&quot;10.0.0.102:5000&quot;的仓库，均使用http协议，默认采用了https协议。</span>
+
+<span class="token number">2</span>.将本地的镜像打tag，前缀改为私有仓库的地址，并指定项目地址<span class="token punctuation">(</span>此处特指： oldboyedu-linux94<span class="token punctuation">)</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker image ls</span>
+REPOSITORY                                               TAG                       IMAGE ID       CREATED         SIZE
+<span class="token punctuation">..</span><span class="token punctuation">..</span>
+consul                                                   <span class="token number">1.15</span>.4                    <span class="token number">686495461132</span>   <span class="token number">7</span> months ago    155MB
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker tag consul:1.15.4 10.0.0.102:5000/malu-linux94/consul:1.15.4</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker image ls</span>
+REPOSITORY                                               TAG                       IMAGE ID       CREATED         SIZE
+<span class="token punctuation">..</span><span class="token punctuation">..</span>
+<span class="token number">10.0</span>.0.102:5000/malu-linux94/consul                      <span class="token number">1.15</span>.4                    <span class="token number">686495461132</span>   <span class="token number">7</span> months ago    155MB
+
+<span class="token number">3</span>.将镜像推送到远程仓库
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-linux94/consul:1.15.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102:5000/malu-linux94/consul<span class="token punctuation">]</span>
+3c2c29381cce: Pushed 
+47df63e9300d: Pushed 
+900903efedf8: Pushed 
+0bcede05b11d: Pushed 
+11e0fa40fa1e: Pushed 
+2879a4821959: Pushed 
+<span class="token number">1.15</span>.4: digest: sha256:a9ea68f555f30bc89d31529bd87d03865a32f8281d19873e194c24e5f31ec074 size: <span class="token number">1570</span>
+
+注意：如果没有推送上去，可能是配置了代理：
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl cat docker</span>
+<span class="token comment"># /lib/systemd/system/docker.service</span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>
+<span class="token assign-left variable">Description</span><span class="token operator">=</span>oldboyedu linux Docke Engine
+<span class="token assign-left variable">Documentation</span><span class="token operator">=</span>https://docs.docker.com,https://www.oldboyedu.com
+<span class="token assign-left variable">Wants</span><span class="token operator">=</span>network-online.target
+
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>
+<span class="token assign-left variable">Type</span><span class="token operator">=</span>notify
+<span class="token assign-left variable">ExecStart</span><span class="token operator">=</span>/usr/bin/dockerd
+<span class="token comment">#Environment=&quot;HTTP_PROXY=http://10.0.0.1:7890&quot;  # 注释掉代理</span>
+<span class="token comment">#Environment=&quot;HTTPS_PROXY=http://10.0.0.1:7890&quot;   # 注释掉代理</span>
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>
+<span class="token assign-left variable">WantedBy</span><span class="token operator">=</span>multi-user.target
+
+<span class="token number">4</span>.在WebUI访问验证
+http://10.0.0.102:5000/v2/_catalog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br></div></div><p><img src="/devops/public/assets/img/1731112685692.724b8cc6.png" alt="1731112685692"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">5</span>.在任何客户端拉取镜像
+<span class="token comment"># 配置信任</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/docker/daemon.json </span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;registry-mirrors&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;https://hub.atomgit.com/&quot;</span>,<span class="token string">&quot;https://dockerhub.icu/&quot;</span>,<span class="token string">&quot;https://doublezonline.cloud/&quot;</span>,<span class="token string">&quot;https://lynn520.xyz/&quot;</span>,<span class="token string">&quot;https://docker.fxxk.dedyn.io/&quot;</span><span class="token punctuation">]</span>,
+  <span class="token string">&quot;exec-opts&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;native.cgroupdriver=systemd&quot;</span><span class="token punctuation">]</span>,
+  <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.102:5000&quot;</span><span class="token punctuation">]</span>	
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># systemctl daemon-reload </span>
+
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker pull 10.0.0.102:5000/malu-linux94/consul:1.15.4</span>
+<span class="token number">1.15</span>.4: Pulling from malu-linux94/consul
+d078792c4f91: Pull complete 
+fbdc56b403c6: Pull complete 
+c0e228c45cba: Pull complete 
+d9a4cda1fc71: Pull complete 
+a23041e1d950: Pull complete 
+27d6d74a7c1d: Pull complete 
+Digest: sha256:a9ea68f555f30bc89d31529bd87d03865a32f8281d19873e194c24e5f31ec074
+Status: Downloaded newer image <span class="token keyword">for</span> <span class="token number">10.0</span>.0.102:5000/malu-linux94/consul:1.15.4
+<span class="token number">10.0</span>.0.102:5000/malu-linux94/consul:1.15.4
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker image ls 10.0.0.102:5000/malu-linux94/consul</span>
+REPOSITORY                            TAG       IMAGE ID       CREATED        SIZE
+<span class="token number">10.0</span>.0.102:5000/malu-linux94/consul   <span class="token number">1.15</span>.4    <span class="token number">686495461132</span>   <span class="token number">7</span> months ago   155MB
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+----------------------
+
+注意：没有配置不信任的仓库。默认采用的是https协议。
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker pull 10.0.0.102:5000/malu-linux94/consul:1.15.4</span>
+Error response from daemon: Get <span class="token string">&quot;https://10.0.0.102:5000/v2/&quot;</span><span class="token builtin class-name">:</span> http: server gave HTTP response to HTTPS client
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token comment"># docker-registry是一款轻量级的镜像仓库</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker stats malu-registry </span>
+
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O   BLOCK I/O   PIDS
+b56465b327df   malu-registry   <span class="token number">0.00</span>%     <span class="token number">5</span>.723MiB / <span class="token number">3</span>.785GiB   <span class="token number">0.15</span>%     0B / 0B   0B / 0B     <span class="token number">6</span>
+
+CONTAINER ID   NAME            CPU %     MEM USAGE / LIMIT     MEM %     NET I/O   BLOCK I/O   PIDS
+b56465b327df   malu-registry   <span class="token number">0.00</span>%     <span class="token number">5</span>.723MiB / <span class="token number">3</span>.785GiB   <span class="token number">0.15</span>%     0B / 0B   0B / 0B     <span class="token number">6</span>
+
+
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it malu-registry sh</span>
+/ <span class="token comment"># cd /var/lib/registry/docker/registry/v2/repositories/</span>
+/var/lib/registry/docker/registry/v2/repositories <span class="token comment"># ls</span>
+malu-linux94
+/var/lib/registry/docker/registry/v2/repositories <span class="token comment"># cd malu-linux94/</span>
+/var/lib/registry/docker/registry/v2/repositories/malu-linux94 <span class="token comment"># ls</span>
+consul
+/var/lib/registry/docker/registry/v2/repositories/malu-linux94 <span class="token comment"># cd consul/</span>
+/var/lib/registry/docker/registry/v2/repositories/malu-linux94/consul <span class="token comment"># ls</span>
+_layers     _manifests  _uploads
+/var/lib/registry/docker/registry/v2/repositories/malu-linux94/consul <span class="token comment"># cd /etc/docker/registry/</span>
+/etc/docker/registry <span class="token comment"># ls</span>
+config.yml
+/etc/docker/registry <span class="token comment"># </span>
+
+docker-registry实现镜像仓库回收
+<span class="token number">1</span>.删除元数据信息，删除后，在UI界面就看不到了
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-registry rm -rf /var/lib/registry/docker/registry/v2/repositories/malu-linux94</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.回收数据
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker exec malu-registry registry garbage-collect /etc/docker/registry/config.yml</span>
+
+<span class="token number">3</span>.如果删除了镜像，再次推送时可能无法推送，而是说镜像已经存在，解决方案就是重启服务端容器
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-linux94/consul:1.15.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102:5000/malu-linux94/consul<span class="token punctuation">]</span>
+3c2c29381cce: Layer already exists 
+47df63e9300d: Layer already exists 
+900903efedf8: Layer already exists 
+0bcede05b11d: Layer already exists 
+11e0fa40fa1e: Layer already exists 
+2879a4821959: Layer already exists 
+<span class="token number">1.15</span>.4: digest: sha256:a9ea68f555f30bc89d31529bd87d03865a32f8281d19873e194c24e5f31ec074 size: <span class="token number">1570</span>
+
+
+<span class="token number">4</span>.解决方案就是重启registry 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker restart malu-registry </span>
+malu-registry
+
+<span class="token number">5</span>.再次推送发现可以推送成功
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-linux94/consul:1.15.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102:5000/malu-linux94/consul<span class="token punctuation">]</span>
+3c2c29381cce: Pushed 
+47df63e9300d: Pushed 
+900903efedf8: Pushed 
+0bcede05b11d: Pushed 
+11e0fa40fa1e: Pushed 
+2879a4821959: Pushed 
+<span class="token number">1.15</span>.4: digest: sha256:a9ea68f555f30bc89d31529bd87d03865a32f8281d19873e194c24e5f31ec074 size: <span class="token number">1570</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br></div></div><p>查看：</p> <p><img src="/devops/public/assets/img/1731113423152.07a5b124.png" alt="1731113423152"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>部署registry，将MySQL，WordPress，ES的镜像推送到私有的镜像仓库，并使用WebUI查看。
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker image tag wordpress:latest 10.0.0.102:5000/malu-lnmp/wordpress</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-lnmp/wordpress</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker tag mysql:8.0.36-oracle 10.0.0.102:5000/malu-lnmp/mysql:8.0.36-oracle</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-lnmp/mysql:8.0.36-oracle</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker tag docker.elastic.co/elasticsearch/elasticsearch:8.15.3 10.0.0.102:5000/malu-elk/elasticsearch:8.15.3</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/malu-elk/elasticsearch:8.15.3 </span>
+
+查看：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p><img src="/devops/public/assets/img/1731113743816.c7e0ed07.png" alt="1731113743816"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>没有指定任何项目，尽管可以推送到registry仓库，后期harbor迁移时，可能无法完成迁移！！！【因此不建议这样操作！】
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker tag alpine:latest 10.0.0.102:5000/alpine:latest</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102:5000/alpine:latest </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102:5000/alpine<span class="token punctuation">]</span>
+63ca1fbb43ae: Pushed 
+latest: digest: sha256:33735bd63cf84d7e388d9f6d297d348c523c044410f553bd878c6d7829612735 size: <span class="token number">528</span>
+
+查看：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><img src="/devops/public/assets/img/1731113918576.0b13486e.png" alt="1731113918576"></p> <h3 id="_4-harbor部署"><a href="#_4-harbor部署" class="header-anchor">#</a> 4，harbor部署</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.下载harbor
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll harbor-offline-installer-v2.7.4.tgz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">755720642</span> Nov  <span class="token number">2</span> <span class="token number">21</span>:29 harbor-offline-installer-v2.7.4.tgz
+
+
+<span class="token number">2</span>.解压软件包
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># tar xf harbor-offline-installer-v2.7.4.tgz -C /malu/softwares/</span>
+
+
+<span class="token number">3</span>.准备配置文件
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cp /malu/softwares/harbor/harbor.yml{.tmpl,&quot;&quot;}</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ll /malu/softwares/harbor/harbor.yml*</span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">12330</span> Nov  <span class="token number">9</span> <span class="token number">10</span>:18 /malu/softwares/harbor/harbor.yml
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">12330</span> Nov <span class="token number">29</span>  <span class="token number">2023</span> /malu/softwares/harbor/harbor.yml.tmpl
+
+
+<span class="token number">4</span>.修改harbor的配置文件
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/harbor/harbor.yml</span>
+<span class="token punctuation">..</span>.
+  <span class="token number">5</span> <span class="token comment"># hostname: reg.mydomain.com</span>
+  <span class="token number">6</span> hostname: <span class="token number">10.0</span>.0.102       
+  <span class="token punctuation">..</span>.
+ <span class="token number">14</span> <span class="token comment">#https:                                                                                                                                                  </span>
+ <span class="token number">15</span> <span class="token comment">#  # https port for harbor, default is 443</span>
+ <span class="token number">16</span> <span class="token comment">#  port: 443</span>
+ <span class="token number">17</span> <span class="token comment">#  # The path of cert and key files for nginx</span>
+ <span class="token number">18</span> <span class="token comment">#  certificate: /your/certificate/path</span>
+ <span class="token number">19</span> <span class="token comment">#  private_key: /your/private/key/path</span>
+
+ <span class="token punctuation">..</span>.
+ <span class="token number">35</span> <span class="token comment"># harbor_admin_password: Harbor12345</span>
+ <span class="token number">36</span> harbor_admin_password: <span class="token number">1</span>        
+ 
+ <span class="token punctuation">..</span>.
+ <span class="token number">55</span> <span class="token comment"># data_volume: /data</span>
+ <span class="token number">56</span> data_volume: /malu/data/harbor    
+
+
+<span class="token number">5</span>.安装harbor
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cd /malu/softwares/harbor/</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># ./install.sh --with-chartmuseum</span>
+
+<span class="token comment"># 必须保证这10个容器都是UP状态</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose ps -a</span>
+NAME                IMAGE                                COMMAND                  SERVICE       CREATED          STATUS                             PORTS
+chartmuseum         goharbor/chartmuseum-photon:v2.7.4   <span class="token string">&quot;./docker-entrypoint…&quot;</span>   chartmuseum   <span class="token number">16</span> seconds ago   Up <span class="token number">13</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+harbor-core         goharbor/harbor-core:v2.7.4          <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   core          <span class="token number">16</span> seconds ago   Up <span class="token number">12</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+harbor-db           goharbor/harbor-db:v2.7.4            <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   postgresql    <span class="token number">16</span> seconds ago   Up <span class="token number">13</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+harbor-jobservice   goharbor/harbor-jobservice:v2.7.4    <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   jobservice    <span class="token number">16</span> seconds ago   Up <span class="token number">8</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>    
+harbor-log          goharbor/harbor-log:v2.7.4           <span class="token string">&quot;/bin/sh -c /usr/loc…&quot;</span>   log           <span class="token number">16</span> seconds ago   Up <span class="token number">15</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   <span class="token number">127.0</span>.0.1:1514-<span class="token operator">&gt;</span><span class="token number">10514</span>/tcp
+harbor-portal       goharbor/harbor-portal:v2.7.4        <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   portal        <span class="token number">16</span> seconds ago   Up <span class="token number">13</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+nginx               goharbor/nginx-photon:v2.7.4         <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   proxy         <span class="token number">16</span> seconds ago   Up <span class="token number">10</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   <span class="token number">0.0</span>.0.0:80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp, :::80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp
+redis               goharbor/redis-photon:v2.7.4         <span class="token string">&quot;redis-server /etc/r…&quot;</span>   redis         <span class="token number">16</span> seconds ago   Up <span class="token number">13</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+registry            goharbor/registry-photon:v2.7.4      <span class="token string">&quot;/home/harbor/entryp…&quot;</span>   registry      <span class="token number">16</span> seconds ago   Up <span class="token number">14</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>   
+registryctl         goharbor/harbor-registryctl:v2.7.4   <span class="token string">&quot;/home/harbor/start.…&quot;</span>   registryctl   <span class="token number">16</span> seconds ago   Up <span class="token number">13</span> seconds <span class="token punctuation">(</span>health: starting<span class="token punctuation">)</span>
+
+<span class="token number">6</span>.访问harbor的WebUI
+http://10.0.0.102/harbor/projects
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br></div></div><p><img src="/devops/public/assets/img/1731119171210.9bb7a9c5.png" alt="1731119171210"></p> <p><img src="/devops/public/assets/img/1731119179603.ed724f4d.png" alt="1731119179603"></p> <h3 id="_5-harbor的基本使用"><a href="#_5-harbor的基本使用" class="header-anchor">#</a> 5，harbor的基本使用</h3> <p>创建项目：</p> <p><img src="/devops/public/assets/img/1731119344737.c0c82979.png" alt="1731119344737"></p> <p><img src="/devops/public/assets/img/1731119349033.f8b6ee91.png" alt="1731119349033"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.客户端配置
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/docker/daemon.json </span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># cat /etc/docker/daemon.json </span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.102:5000&quot;</span>,<span class="token string">&quot;10.0.0.102&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+
+<span class="token number">2</span>.给镜像打tag
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker tag consul:1.15.4 10.0.0.102/malu-linux/consul:1.15.4</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker image ls 10.0.0.102/malu-linux/consul</span>
+REPOSITORY                     TAG       IMAGE ID       CREATED        SIZE
+<span class="token number">10.0</span>.0.102/malu-linux/consul   <span class="token number">1.15</span>.4    <span class="token number">686495461132</span>   <span class="token number">7</span> months ago   155MB
+
+
+<span class="token number">3</span>.登录harbor仓库
+<span class="token number">3.1</span> 交互式登录【推荐】
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker login 10.0.0.102</span>
+Username: admin  <span class="token comment"># 输入用户名</span>
+Password:   <span class="token comment"># 输入密码，输入密码时看不见输入字符！</span>
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker login 10.0.0.102</span>
+Username: admin
+Password: 
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># more /root/.docker/config.json </span>
+<span class="token punctuation">{</span>
+	<span class="token string">&quot;auths&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+		<span class="token string">&quot;10.0.0.102&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+			<span class="token string">&quot;auth&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;YWRtaW46MQ==&quot;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker logout 10.0.0.102</span>
+Removing login credentials <span class="token keyword">for</span> <span class="token number">10.0</span>.0.102
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># more /root/.docker/config.json </span>
+<span class="token punctuation">{</span>
+	<span class="token string">&quot;auths&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token number">3.2</span> 非交互式登录【不推荐】
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker login -u admin -p 1 10.0.0.102</span>
+WARNING<span class="token operator">!</span> Using <span class="token parameter variable">--password</span> via the CLI is insecure. Use --password-stdin.
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># more /root/.docker/config.json </span>
+<span class="token punctuation">{</span>
+	<span class="token string">&quot;auths&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+		<span class="token string">&quot;10.0.0.102&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+			<span class="token string">&quot;auth&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;YWRtaW46MQ==&quot;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># echo YWRtaW46MQ== | base64 -d</span>
+admin:1<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># echo YWRtaW46MQ== | base64 -d | more  # 不难发现，你的密码被泄露了~</span>
+admin:1
+
+
+<span class="token number">4</span>.推送镜像
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102/malu-linux/consul:1.15.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102/malu-linux/consul<span class="token punctuation">]</span>
+3c2c29381cce: Pushed 
+47df63e9300d: Pushed 
+900903efedf8: Pushed 
+<span class="token punctuation">..</span><span class="token punctuation">..</span>
+
+温馨提示:
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102/oldboyedu-linux/consul:1.15.4  # 如果出现这种情况，就是没有配置登录认证</span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102/malu-linux/consul<span class="token punctuation">]</span>
+4790ffa53023: Preparing 
+64709b3e3342: Preparing 
+7c38af3f5d78: Preparing 
+1f5985c9b558: Preparing 
+4b0cc1466682: Preparing 
+2879a4821959: Waiting 
+unauthorized: unauthorized to access repository: oldboyedu-linux/consul, action: push: unauthorized to access repository: oldboyedu-linux/consul, action: push
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">5</span>.推送镜像完成后立刻退出【避免密码泄露，尤其是生产环境和其他同事公用环境的时候】
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># docker logout 10.0.0.102</span>
+Removing login credentials <span class="token keyword">for</span> <span class="token number">10.0</span>.0.102
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># more /root/.docker/config.json </span>
+<span class="token punctuation">{</span>
+	<span class="token string">&quot;auths&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br></div></div><p><img src="/devops/public/assets/img/1731119805028.810e2acf.png" alt="1731119805028"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">7</span>.其他客户端拉取镜像，【需要配置信任仓库，参考第一步】
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># cat /etc/docker/daemon.json </span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;registry-mirrors&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;https://hub.atomgit.com/&quot;</span>,<span class="token string">&quot;https://dockerhub.icu/&quot;</span>,<span class="token string">&quot;https://doublezonline.cloud/&quot;</span>,<span class="token string">&quot;https://lynn520.xyz/&quot;</span>,<span class="token string">&quot;https://docker.fxxk.dedyn.io/&quot;</span><span class="token punctuation">]</span>,
+  <span class="token string">&quot;exec-opts&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;native.cgroupdriver=systemd&quot;</span><span class="token punctuation">]</span>,
+  <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.102:5000&quot;</span>,<span class="token string">&quot;10.0.0.102&quot;</span><span class="token punctuation">]</span>	
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl daemon-reload </span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+
+拉取：
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker image ls 10.0.0.102/malu-linux/consul</span>
+REPOSITORY                     TAG       IMAGE ID       CREATED        SIZE
+<span class="token number">10.0</span>.0.102/malu-linux/consul   <span class="token number">1.15</span>.4    <span class="token number">686495461132</span>   <span class="token number">7</span> months ago   155MB
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="_6-镜像仓库迁移"><a href="#_6-镜像仓库迁移" class="header-anchor">#</a> 6，镜像仓库迁移</h3> <p>docker registry中的镜像：</p> <p><img src="/devops/public/assets/img/1731120647288.155282c8.png" alt="1731120647288"></p> <p>删除harbor中的项目：</p> <p><img src="/devops/public/assets/img/1731120680996.8d56a8fa.png" alt="1731120680996"></p> <p><img src="/devops/public/assets/img/1731120692564.9151f106.png" alt="1731120692564"></p> <p><img src="/devops/public/assets/img/1731120773314.293d5436.png" alt="1731120773314"></p> <p>开始迁移：</p> <p><img src="/devops/public/assets/img/1731120884837.46ddf148.png" alt="1731120884837"></p> <p><img src="/devops/public/assets/img/1731120942607.11f56468.png" alt="1731120942607"></p> <p><img src="/devops/public/assets/img/1731120968584.32aa3914.png" alt="1731120968584"></p> <p><img src="/devops/public/assets/img/1731120998064.58d72206.png" alt="1731120998064"></p> <h3 id="_7-迁移可能出现的问题"><a href="#_7-迁移可能出现的问题" class="header-anchor">#</a> 7，迁移可能出现的问题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>harbor迁移docker registry镜像仓库存在的问题解决方案
+<span class="token number">1</span>.harbor服务不正常而不自知<span class="token punctuation">;</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose ps -a</span>
+NAME                IMAGE                                COMMAND                  SERVICE       CREATED       STATUS                 PORTS
+chartmuseum         goharbor/chartmuseum-photon:v2.7.4   <span class="token string">&quot;./docker-entrypoint…&quot;</span>   chartmuseum   <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+harbor-core         goharbor/harbor-core:v2.7.4          <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   core          <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+harbor-db           goharbor/harbor-db:v2.7.4            <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   postgresql    <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+harbor-jobservice   goharbor/harbor-jobservice:v2.7.4    <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   jobservice    <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+harbor-log          goharbor/harbor-log:v2.7.4           <span class="token string">&quot;/bin/sh -c /usr/loc…&quot;</span>   log           <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   <span class="token number">127.0</span>.0.1:1514-<span class="token operator">&gt;</span><span class="token number">10514</span>/tcp
+harbor-portal       goharbor/harbor-portal:v2.7.4        <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   portal        <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+nginx               goharbor/nginx-photon:v2.7.4         <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   proxy         <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   <span class="token number">0.0</span>.0.0:80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp, :::80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp
+redis               goharbor/redis-photon:v2.7.4         <span class="token string">&quot;redis-server /etc/r…&quot;</span>   redis         <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+registry            goharbor/registry-photon:v2.7.4      <span class="token string">&quot;/home/harbor/entryp…&quot;</span>   registry      <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+registryctl         goharbor/harbor-registryctl:v2.7.4   <span class="token string">&quot;/home/harbor/start.…&quot;</span>   registryctl   <span class="token number">3</span> hours ago   Up <span class="token number">3</span> hours <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>   
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token function">docker-compose</span> down <span class="token parameter variable">-t</span> <span class="token number">0</span>
+<span class="token function">docker-compose</span> up <span class="token parameter variable">-d</span>
+
+<span class="token number">2</span>.harbor无法登录，可能和代理有关
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># vim /lib/systemd/system/docker.service</span>
+<span class="token punctuation">..</span>.
+<span class="token comment"># 配置docker代理注释掉</span>
+<span class="token comment"># Environment=&quot;HTTP_PROXY=http://10.0.0.1:7890&quot;</span>
+<span class="token comment"># Environment=&quot;HTTPS_PROXY=http://10.0.0.1:7890&quot;</span>
+<span class="token punctuation">..</span>.
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl daemon-reload</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+
+<span class="token number">3</span>.磁盘空间不足，需要使用lvm技术栈扩容
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># df -h  # 检查根文件系统的空间是否充足</span>
+检查lvm是否充足，不足的话可以使用新添加磁盘，并创建开机自动挂载点。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h3 id="_8-harbor配置主从复制"><a href="#_8-harbor配置主从复制" class="header-anchor">#</a> 8，harbor配置主从复制</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>在101上安装harbor，安装过程同上。如下：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/devops/public/assets/img/1731149284420.8782eee7.png" alt="1731149284420"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">102</span>是主，101是从。新建目标：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/devops/public/assets/img/1731149401693.0e143920.png" alt="1731149401693"></p> <p><img src="/devops/public/assets/img/1731149577747.2ecd4a54.png" alt="1731149577747"></p> <p><img src="/devops/public/assets/img/1731149665729.9ebdf77b.png" alt="1731149665729"></p> <h3 id="_9-harbor高可用"><a href="#_9-harbor高可用" class="header-anchor">#</a> 9，harbor高可用</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.实现2个harbor服务之间定时同步数据
+
+在102创建项目：
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><img src="/devops/public/assets/img/1731149959765.7a5c5f65.png" alt="1731149959765"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker tag goharbor/prepare:v2.7.4 10.0.0.102/yujingbo/prepare:v2.7.4</span>
+
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker login 10.0.0.102</span>
+Username: admin
+Password: 
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.102/yujingbo/prepare:v2.7.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.102/yujingbo/prepare<span class="token punctuation">]</span>
+2ff58a98a85b: Pushed 
+bb65be13a5cb: Pushed 
+3e88a2c3b85d: Pushed 
+73be511612dc: Pushed 
+4898cf665d29: Pushed 
+a65e5576f832: Pushed 
+0cb9d383bf15: Pushed 
+c50cbd8eddab: Pushed 
+1a04c2a44993: Pushed 
+278182fd9733: Pushed 
+v2.7.4: digest: sha256:2f8d6e1b77b79b4bfc766153e8232bdf18d7191bd58db2117d225540d132f8cf size: <span class="token number">2414</span>
+<span class="token punctuation">[</span>root@docker102 harbor<span class="token punctuation">]</span><span class="token comment"># </span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>发现101也有这个项目：</p> <p><img src="/devops/public/assets/img/1731150170738.f62f14e7.png" alt="1731150170738"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>在101创建一个项目linux94:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/devops/public/assets/img/1731150189034.8d9c2023.png" alt="1731150189034"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker tag goharbor/harbor-db:v2.7.4 10.0.0.101/linux94/harbor-db:v2.7.4</span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.101/linux94/harbor-db:v2.7.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.101/linux94/harbor-db<span class="token punctuation">]</span>
+Get <span class="token string">&quot;https://10.0.0.101/v2/&quot;</span><span class="token builtin class-name">:</span> dial tcp <span class="token number">10.0</span>.0.101:443: connect: connection refused
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># cat /etc/docker/daemon.json </span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;insecure-registries&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.102:5000&quot;</span>,<span class="token string">&quot;10.0.0.102&quot;</span>,<span class="token string">&quot;10.0.0.101&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl daemon-reload </span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># systemctl restart docker</span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose ps -a # harbor都退出了，需要重启</span>
+NAME                IMAGE                                COMMAND                  SERVICE       CREATED          STATUS                       PORTS
+chartmuseum         goharbor/chartmuseum-photon:v2.7.4   <span class="token string">&quot;./docker-entrypoint…&quot;</span>   chartmuseum   <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+harbor-core         goharbor/harbor-core:v2.7.4          <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   core          <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+harbor-db           goharbor/harbor-db:v2.7.4            <span class="token string">&quot;/docker-entrypoint.…&quot;</span>   postgresql    <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+harbor-jobservice   goharbor/harbor-jobservice:v2.7.4    <span class="token string">&quot;/harbor/entrypoint.…&quot;</span>   jobservice    <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+harbor-log          goharbor/harbor-log:v2.7.4           <span class="token string">&quot;/bin/sh -c /usr/loc…&quot;</span>   log           <span class="token number">38</span> minutes ago   Up <span class="token number">2</span> minutes <span class="token punctuation">(</span>healthy<span class="token punctuation">)</span>       <span class="token number">127.0</span>.0.1:1514-<span class="token operator">&gt;</span><span class="token number">10514</span>/tcp
+harbor-portal       goharbor/harbor-portal:v2.7.4        <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   portal        <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+nginx               goharbor/nginx-photon:v2.7.4         <span class="token string">&quot;nginx -g 'daemon of…&quot;</span>   proxy         <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   <span class="token number">0.0</span>.0.0:80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp, :::80-<span class="token operator">&gt;</span><span class="token number">8080</span>/tcp
+redis               goharbor/redis-photon:v2.7.4         <span class="token string">&quot;redis-server /etc/r…&quot;</span>   redis         <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+registry            goharbor/registry-photon:v2.7.4      <span class="token string">&quot;/home/harbor/entryp…&quot;</span>   registry      <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago   
+registryctl         goharbor/harbor-registryctl:v2.7.4   <span class="token string">&quot;/home/harbor/start.…&quot;</span>   registryctl   <span class="token number">38</span> minutes ago   Exited <span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">)</span> <span class="token number">2</span> minutes ago
+
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose down -t 0</span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose up -d</span>
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker-compose ps -a</span>
+
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker login 10.0.0.101</span>
+Username: admin
+Password: 
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+<span class="token punctuation">[</span>root@docker101 harbor<span class="token punctuation">]</span><span class="token comment"># docker push 10.0.0.101/linux94/harbor-db:v2.7.4 </span>
+The push refers to repository <span class="token punctuation">[</span><span class="token number">10.0</span>.0.101/linux94/harbor-db<span class="token punctuation">]</span>
+63831d725726: Pushed 
+a0c835082861: Pushed 
+93b026651674: Pushed 
+729e82f3ca6d: Pushed 
+8f64023145f1: Pushed 
+1e10c99feced: Pushed 
+c17ad26e7ee2: Pushed 
+dd0ec9899ccd: Pushed 
+c10014425dd7: Pushed 
+c5f2e2480755: Pushed 
+278182fd9733: Pushed 
+v2.7.4: digest: sha256:d38b092094938a63a91825693f6e8adf0e247a7d1e38a4d5579d1a2e30179f35 size: <span class="token number">2612</span>
+
+测试验证效果
+- 随意推送镜像到101节点，102有同步数据。
+- 在随意推送到102节点，101也有同步数据。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">3</span>.配置keepalived
+<span class="token number">3.1</span> 安装keeplived
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># apt -y install keepalived</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># apt -y install keepalived</span>
+
+
+<span class="token number">3.2</span> 修改keepliaved的配置文件 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># cat &gt; /etc/keepalived/keepalived.conf &lt;&lt;EOF</span>
+<span class="token operator">!</span> Configuration File <span class="token keyword">for</span> keepalived
+global_defs <span class="token punctuation">{</span>
+   router_id <span class="token number">10.0</span>.0.101
+<span class="token punctuation">}</span>
+vrrp_script chk_nginx <span class="token punctuation">{</span>
+    script <span class="token string">&quot;/etc/keepalived/check_port.sh 80&quot;</span>
+    interval <span class="token number">2</span>
+    weight <span class="token parameter variable">-20</span>
+<span class="token punctuation">}</span>
+vrrp_instance VI_1 <span class="token punctuation">{</span>
+    state MASTER
+    interface eth0
+    virtual_router_id <span class="token number">100</span>
+    priority <span class="token number">100</span>
+    advert_int <span class="token number">1</span>
+    mcast_src_ip <span class="token number">10.0</span>.0.101
+    nopreempt
+    authentication <span class="token punctuation">{</span>
+        auth_type PASS
+        auth_pass <span class="token number">11111111</span>
+    <span class="token punctuation">}</span>
+    track_script <span class="token punctuation">{</span>
+         chk_nginx
+    <span class="token punctuation">}</span>
+    virtual_ipaddress <span class="token punctuation">{</span>
+        <span class="token number">10.0</span>.0.99
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+EOF
+
+
+
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># cat &gt; /etc/keepalived/keepalived.conf &lt;&lt;EOF</span>
+<span class="token operator">!</span> Configuration File <span class="token keyword">for</span> keepalived
+global_defs <span class="token punctuation">{</span>
+   router_id <span class="token number">10.0</span>.0.102
+<span class="token punctuation">}</span>
+vrrp_script chk_nginx <span class="token punctuation">{</span>
+    script <span class="token string">&quot;/etc/keepalived/check_port.sh 80&quot;</span>
+    interval <span class="token number">2</span>
+    weight <span class="token parameter variable">-20</span>
+<span class="token punctuation">}</span>
+vrrp_instance VI_1 <span class="token punctuation">{</span>
+    state MASTER
+    interface eth0
+    virtual_router_id <span class="token number">100</span>
+    priority <span class="token number">100</span>
+    advert_int <span class="token number">1</span>
+    mcast_src_ip <span class="token number">10.0</span>.0.102
+    nopreempt
+    authentication <span class="token punctuation">{</span>
+        auth_type PASS
+        auth_pass <span class="token number">11111111</span>
+    <span class="token punctuation">}</span>
+    track_script <span class="token punctuation">{</span>
+         chk_nginx
+    <span class="token punctuation">}</span>
+    virtual_ipaddress <span class="token punctuation">{</span>
+        <span class="token number">10.0</span>.0.99
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+EOF
+
+
+<span class="token number">3.3</span> 启动keepalived
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># systemctl enable --now keepalived</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># systemctl enable --now keepalived</span>
+
+
+
+<span class="token number">3.4</span> 检查VIP
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:61:c4:a8 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    altname ens33
+    inet <span class="token number">10.0</span>.0.102/24 brd <span class="token number">10.0</span>.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet <span class="token number">10.0</span>.0.99/32 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe61:c4a8/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+
+
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:8a:5d:db brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    altname ens33
+    inet <span class="token number">10.0</span>.0.101/24 brd <span class="token number">10.0</span>.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe8a:5ddb/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+
+<span class="token number">3.5</span> 使用VIP访问测试 
+http://10.0.0.99/
+
+<span class="token number">3.6</span> 让harbor节点宕机
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment">#  init 0</span>
+
+<span class="token number">3.7</span> 观察VIP是否飘逸到101节点 
+<span class="token punctuation">[</span>root@docker101 ~<span class="token punctuation">]</span><span class="token comment"># ip a</span>
+<span class="token number">1</span>: lo: <span class="token operator">&lt;</span>LOOPBACK,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="token number">1000</span>
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet <span class="token number">127.0</span>.0.1/8 scope <span class="token function">host</span> lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope <span class="token function">host</span> 
+       valid_lft forever preferred_lft forever
+<span class="token number">2</span>: eth0: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu <span class="token number">1500</span> qdisc fq_codel state UP group default qlen <span class="token number">1000</span>
+    link/ether 00:0c:29:8a:5d:db brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    altname ens33
+    inet <span class="token number">10.0</span>.0.101/24 brd <span class="token number">10.0</span>.0.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet <span class="token number">10.0</span>.0.99/32 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe8a:5ddb/64 scope <span class="token function">link</span> 
+       valid_lft forever preferred_lft forever
+
+<span class="token number">3.8</span> 访问页面测试
+http://10.0.0.99/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br></div></div><p><img src="/devops/public/assets/img/1731153720934.d9b66768.png" alt="1731153720934"></p> <h3 id="_10-推送本地镜像到docker-hub官方仓库"><a href="#_10-推送本地镜像到docker-hub官方仓库" class="header-anchor">#</a> 10，推送本地镜像到docker hub官方仓库</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.去官方注册账号
+https://hub.docker.com/
+
+<span class="token number">2</span>.去官方新建仓库
+
+
+<span class="token number">3</span>.本地打镜像标签
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker tag alpine:latest malu/abc-linux94:v1</span>
+
+	
+<span class="token number">4</span>.登录官方仓库
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker login </span>
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, <span class="token function">head</span> over to https://hub.docker.com to create one.
+Username: jasonyin2020  <span class="token comment"># 你的账号</span>
+Password:   <span class="token comment"># 你的密码</span>
+WARNING<span class="token operator">!</span> Your password will be stored unencrypted <span class="token keyword">in</span> /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/<span class="token comment">#credentials-store</span>
+
+Login Succeeded
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">5</span>.将本地镜像推送到远程仓库
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker push malu/abc-linux94:v1</span>
+The push refers to repository <span class="token punctuation">[</span>docker.io/jasonyin2020/oldboyedu-linux94<span class="token punctuation">]</span>
+63ca1fbb43ae: Mounted from library/alpine 
+v1: digest: sha256:33735bd63cf84d7e388d9f6d297d348c523c044410f553bd878c6d7829612735 size: <span class="token number">528</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">6</span>.尝试从官网拉取镜像
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker pull malu/abc-linux94:v1</span>
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7</span>.退出本地登录 
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># docker logout </span>
+Removing login credentials <span class="token keyword">for</span> https://index.docker.io/v1/
+<span class="token punctuation">[</span>root@docker102 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">8</span>.移除官方仓库的项目
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br></div></div><h3 id="_11-docker-compose一键部署es集群"><a href="#_11-docker-compose一键部署es集群" class="header-anchor">#</a> 11，docker-compose一键部署ES集群</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.修改内核参数
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># cat /etc/profile.d/es.conf</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">262144</span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># sysctl -f /etc/profile.d/es.conf</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">262144</span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># sysctl -q vm.max_map_count</span>
+vm.max_map_count <span class="token operator">=</span> <span class="token number">262144</span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	
+<span class="token number">2</span>.编写docker-compose文件
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># cat docker-compose.yaml </span>
+version: <span class="token string">'3.3'</span>
+
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es01
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es01
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es02,es03
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    <span class="token comment"># 配置资源限制</span>
+    ulimits:
+      <span class="token comment"># 配置内存锁定</span>
+      memlock:
+        <span class="token comment"># 软限制，-1代表不限制</span>
+        soft: <span class="token parameter variable">-1</span>
+        <span class="token comment"># 硬限制，-1代表不限制</span>
+        hard: <span class="token parameter variable">-1</span>
+    <span class="token comment"># 参考文档: https://docs.docker.com/reference/compose-file/services/#sysctls</span>
+    <span class="token comment">#sysctls:</span>
+    <span class="token comment">#   vm.max_map_count: 262144</span>
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - <span class="token number">9200</span>:9200
+    networks:
+      - elastic
+
+  es02:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es02
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es02
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es01,es03
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    <span class="token comment">#sysctls:</span>
+    <span class="token comment">#   vm.max_map_count: 262144</span>
+    ulimits:
+      memlock:
+        soft: <span class="token parameter variable">-1</span>
+        hard: <span class="token parameter variable">-1</span>
+    volumes:
+      - data02:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  es03:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es03
+    <span class="token comment">#sysctls:</span>
+    <span class="token comment">#  vm.max_map_count: 262144</span>
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es03
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es01,es02
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    ulimits:
+      memlock:
+        soft: <span class="token parameter variable">-1</span>
+        hard: <span class="token parameter variable">-1</span>
+    volumes:
+      - data03:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+volumes:
+  data01:
+    driver: <span class="token builtin class-name">local</span>
+  data02:
+    driver: <span class="token builtin class-name">local</span>
+  data03:
+    driver: <span class="token builtin class-name">local</span>
+
+networks:
+  elastic:
+    driver: bridge
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.启动ES集群
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># docker-compose up -d</span>
+<span class="token punctuation">[</span>+<span class="token punctuation">]</span> Building <span class="token number">0</span>.0s <span class="token punctuation">(</span><span class="token number">0</span>/0<span class="token punctuation">)</span>                                                                                                                       docker:default
+<span class="token punctuation">[</span>+<span class="token punctuation">]</span> Running <span class="token number">3</span>/3
+ ✔ Container es01  Started                                                                                                                              <span class="token number">0</span>.0s 
+ ✔ Container es02  Started                                                                                                                              <span class="token number">0</span>.0s 
+ ✔ Container es03  Started                                                                                                                              <span class="token number">0</span>.0s 
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># docker-compose ps -a</span>
+NAME      IMAGE                                                   COMMAND                  SERVICE   CREATED         STATUS         PORTS
+es01      docker.elastic.co/elasticsearch/elasticsearch:7.17.25   <span class="token string">&quot;/bin/tini -- /usr/l…&quot;</span>   es01      <span class="token number">5</span> seconds ago   Up <span class="token number">3</span> seconds   <span class="token number">0.0</span>.0.0:9200-<span class="token operator">&gt;</span><span class="token number">9200</span>/tcp, :::9200-<span class="token operator">&gt;</span><span class="token number">9200</span>/tcp, <span class="token number">9300</span>/tcp
+es02      docker.elastic.co/elasticsearch/elasticsearch:7.17.25   <span class="token string">&quot;/bin/tini -- /usr/l…&quot;</span>   es02      <span class="token number">5</span> seconds ago   Up <span class="token number">3</span> seconds   <span class="token number">9200</span>/tcp, <span class="token number">9300</span>/tcp
+es03      docker.elastic.co/elasticsearch/elasticsearch:7.17.25   <span class="token string">&quot;/bin/tini -- /usr/l…&quot;</span>   es03      <span class="token number">5</span> seconds ago   Up <span class="token number">3</span> seconds   <span class="token number">9200</span>/tcp, <span class="token number">9300</span>/tcp
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">4</span>.访问ES集群节点测试验证
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># curl 10.0.0.102:9200/_cat/nodes</span>
+<span class="token number">172.21</span>.0.4 <span class="token number">45</span> <span class="token number">52</span> <span class="token number">46</span> <span class="token number">3.02</span> <span class="token number">1.15</span> <span class="token number">0.65</span> cdfhilmrstw - es01
+<span class="token number">172.21</span>.0.3 <span class="token number">61</span> <span class="token number">52</span> <span class="token number">45</span> <span class="token number">3.02</span> <span class="token number">1.15</span> <span class="token number">0.65</span> cdfhilmrstw * es03
+<span class="token number">172.21</span>.0.2 <span class="token number">41</span> <span class="token number">52</span> <span class="token number">46</span> <span class="token number">3.02</span> <span class="token number">1.15</span> <span class="token number">0.65</span> cdfhilmrstw - es02
+<span class="token punctuation">[</span>root@docker102 case03-elasticsearch<span class="token punctuation">]</span><span class="token comment"># </span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br></div></div><h3 id="_12-docker-compose推送镜像到harbor仓库"><a href="#_12-docker-compose推送镜像到harbor仓库" class="header-anchor">#</a> 12，docker-compose推送镜像到harbor仓库</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>docker-compose推送镜像到harbor仓库
+<span class="token number">1</span>.编写docker-compose文件
+<span class="token punctuation">[</span>root@docker102 tmp<span class="token punctuation">]</span><span class="token comment"># cat docker-compose.yaml </span>
+version: <span class="token string">'3.3'</span>
+
+services:
+  es01:
+    <span class="token comment"># 如果想要执行docker-compose push，尽量加上build指令。</span>
+    build:
+      <span class="token comment"># 生命上下文内容</span>
+      context: <span class="token builtin class-name">.</span>
+    image: <span class="token number">10.0</span>.0.102/malu-elk/elasticsearch:7.17.25
+<span class="token punctuation">[</span>root@docker102 tmp<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.推送镜像到harbor仓库
+<span class="token punctuation">[</span>root@docker102 tmp<span class="token punctuation">]</span><span class="token comment"># docker-compose push </span>
+<span class="token punctuation">[</span>root@docker102 tmp<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">3</span>.在harbor仓库查看即可
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h3 id="_13-docker-compose一键部署kibana环境"><a href="#_13-docker-compose一键部署kibana环境" class="header-anchor">#</a> 13，docker-compose一键部署kibana环境</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.编写文件 
+<span class="token punctuation">[</span>root@docker102 case04-kibana<span class="token punctuation">]</span><span class="token comment"># cat docker-compose.yaml </span>
+version: <span class="token string">'3.3'</span>
+
+services:
+  es01:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es01
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es01
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es02,es03
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    ulimits:
+      memlock:
+        soft: <span class="token parameter variable">-1</span>
+        hard: <span class="token parameter variable">-1</span>
+    volumes:
+      - data01:/usr/share/elasticsearch/data
+    ports:
+      - <span class="token number">9200</span>:9200
+    networks:
+      - elastic
+
+  es02:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es02
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es02
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es01,es03
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    ulimits:
+      memlock:
+        soft: <span class="token parameter variable">-1</span>
+        hard: <span class="token parameter variable">-1</span>
+    volumes:
+      - data02:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  es03:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+    container_name: es03
+    environment:
+      - <span class="token assign-left variable">node.name</span><span class="token operator">=</span>es03
+      - <span class="token assign-left variable">cluster.name</span><span class="token operator">=</span>oldboyedu-linux-es-cluster
+      - <span class="token assign-left variable">discovery.seed_hosts</span><span class="token operator">=</span>es01,es02
+      - <span class="token assign-left variable">cluster.initial_master_nodes</span><span class="token operator">=</span>es01,es02,es03
+      - <span class="token assign-left variable">bootstrap.memory_lock</span><span class="token operator">=</span>true
+      - <span class="token string">&quot;ES_JAVA_OPTS=-Xms256m -Xmx256m&quot;</span>
+    ulimits:
+      memlock:
+        soft: <span class="token parameter variable">-1</span>
+        hard: <span class="token parameter variable">-1</span>
+    volumes:
+      - data03:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.25
+    <span class="token comment"># 环境变量参考设置: https://www.elastic.co/guide/en/kibana/7.17/settings.html</span>
+    <span class="token comment"># 注意,在配置时，要将&quot;.&quot;变为&quot;_&quot;,小写字母转变为大写字母</span>
+    environment:
+      SERVER_NAME: oldboyedu-linux94-kibana
+      ELASTICSEARCH_HOSTS: <span class="token string">'[&quot;http://es01:9200&quot;,&quot;http://es02:9200&quot;,&quot;http://es03:9200&quot;]'</span>
+      I18N_LOCALE: zh-CN
+    ports:
+      - <span class="token number">5601</span>:5601
+    networks:
+      - elastic
+
+volumes:
+  data01:
+    driver: <span class="token builtin class-name">local</span>
+  data02:
+    driver: <span class="token builtin class-name">local</span>
+  data03:
+    driver: <span class="token builtin class-name">local</span>
+
+networks:
+  elastic:
+    driver: bridge
+<span class="token punctuation">[</span>root@docker102 case04-kibana<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">2</span>.启动实例
+<span class="token punctuation">[</span>root@docker102 case04-kibana<span class="token punctuation">]</span><span class="token comment"># docker-compose up -d</span>
+<span class="token punctuation">[</span>root@docker102 case04-kibana<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	 
+<span class="token number">3</span>.访问测试 
+http://10.0.0.102:5601/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_1-面试题" class="sidebar-link reco-side-_1-面试题" data-v-b57cc07c>1，面试题</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_2-镜像仓库" class="sidebar-link reco-side-_2-镜像仓库" data-v-b57cc07c>2，镜像仓库</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_3-docker-registry" class="sidebar-link reco-side-_3-docker-registry" data-v-b57cc07c>3，docker registry</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_4-harbor部署" class="sidebar-link reco-side-_4-harbor部署" data-v-b57cc07c>4，harbor部署</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_5-harbor的基本使用" class="sidebar-link reco-side-_5-harbor的基本使用" data-v-b57cc07c>5，harbor的基本使用</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_6-镜像仓库迁移" class="sidebar-link reco-side-_6-镜像仓库迁移" data-v-b57cc07c>6，镜像仓库迁移</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_7-迁移可能出现的问题" class="sidebar-link reco-side-_7-迁移可能出现的问题" data-v-b57cc07c>7，迁移可能出现的问题</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_8-harbor配置主从复制" class="sidebar-link reco-side-_8-harbor配置主从复制" data-v-b57cc07c>8，harbor配置主从复制</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_9-harbor高可用" class="sidebar-link reco-side-_9-harbor高可用" data-v-b57cc07c>9，harbor高可用</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_10-推送本地镜像到docker-hub官方仓库" class="sidebar-link reco-side-_10-推送本地镜像到docker-hub官方仓库" data-v-b57cc07c>10，推送本地镜像到docker hub官方仓库</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_11-docker-compose一键部署es集群" class="sidebar-link reco-side-_11-docker-compose一键部署es集群" data-v-b57cc07c>11，docker-compose一键部署ES集群</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_12-docker-compose推送镜像到harbor仓库" class="sidebar-link reco-side-_12-docker-compose推送镜像到harbor仓库" data-v-b57cc07c>12，docker-compose推送镜像到harbor仓库</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/50-docker/docker.html#_13-docker-compose一键部署kibana环境" class="sidebar-link reco-side-_13-docker-compose一键部署kibana环境" data-v-b57cc07c>13，docker-compose一键部署kibana环境</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.28103306.js" defer></script><script src="/devops/public/assets/js/113.27412706.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/117.23109c42.js" defer></script>
+  </body>
+</html>

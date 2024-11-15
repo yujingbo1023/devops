@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>prometheus02 | devops</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/devops/public/favicon.ico">
+    <meta name="description" content="快来玩devops">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/devops/public/assets/css/0.styles.4a69f283.css" as="style"><link rel="preload" href="/devops/public/assets/js/app.7d569ec8.js" as="script"><link rel="preload" href="/devops/public/assets/js/118.ceed6ab6.js" as="script"><link rel="preload" href="/devops/public/assets/js/1.774fca24.js" as="script"><link rel="preload" href="/devops/public/assets/js/108.0e591817.js" as="script"><link rel="prefetch" href="/devops/public/assets/js/10.4b3dc242.js"><link rel="prefetch" href="/devops/public/assets/js/100.7e9737a0.js"><link rel="prefetch" href="/devops/public/assets/js/101.4f407383.js"><link rel="prefetch" href="/devops/public/assets/js/102.88df873d.js"><link rel="prefetch" href="/devops/public/assets/js/103.232cdd53.js"><link rel="prefetch" href="/devops/public/assets/js/104.63edad81.js"><link rel="prefetch" href="/devops/public/assets/js/105.94b75f04.js"><link rel="prefetch" href="/devops/public/assets/js/106.6373983a.js"><link rel="prefetch" href="/devops/public/assets/js/107.67cb9c57.js"><link rel="prefetch" href="/devops/public/assets/js/109.441c2844.js"><link rel="prefetch" href="/devops/public/assets/js/11.06fc3f92.js"><link rel="prefetch" href="/devops/public/assets/js/110.39a7ec3f.js"><link rel="prefetch" href="/devops/public/assets/js/111.fded3579.js"><link rel="prefetch" href="/devops/public/assets/js/112.51b1c07d.js"><link rel="prefetch" href="/devops/public/assets/js/113.cbde1400.js"><link rel="prefetch" href="/devops/public/assets/js/114.54c309a6.js"><link rel="prefetch" href="/devops/public/assets/js/115.c26a1569.js"><link rel="prefetch" href="/devops/public/assets/js/116.4255514c.js"><link rel="prefetch" href="/devops/public/assets/js/117.9d1c6533.js"><link rel="prefetch" href="/devops/public/assets/js/119.e3285804.js"><link rel="prefetch" href="/devops/public/assets/js/12.63c3c1f3.js"><link rel="prefetch" href="/devops/public/assets/js/120.cf720ee7.js"><link rel="prefetch" href="/devops/public/assets/js/121.dbfa8623.js"><link rel="prefetch" href="/devops/public/assets/js/122.e7cdec31.js"><link rel="prefetch" href="/devops/public/assets/js/123.09b7084c.js"><link rel="prefetch" href="/devops/public/assets/js/124.de003a1c.js"><link rel="prefetch" href="/devops/public/assets/js/125.a50dcdf1.js"><link rel="prefetch" href="/devops/public/assets/js/126.88d2a88b.js"><link rel="prefetch" href="/devops/public/assets/js/127.fb481961.js"><link rel="prefetch" href="/devops/public/assets/js/128.f9790158.js"><link rel="prefetch" href="/devops/public/assets/js/129.ca6d8d1e.js"><link rel="prefetch" href="/devops/public/assets/js/13.ae18e270.js"><link rel="prefetch" href="/devops/public/assets/js/130.d4397eb5.js"><link rel="prefetch" href="/devops/public/assets/js/131.8a8751be.js"><link rel="prefetch" href="/devops/public/assets/js/132.e98fc40e.js"><link rel="prefetch" href="/devops/public/assets/js/133.46139fda.js"><link rel="prefetch" href="/devops/public/assets/js/134.76167714.js"><link rel="prefetch" href="/devops/public/assets/js/135.5adcd3ae.js"><link rel="prefetch" href="/devops/public/assets/js/136.31fabd54.js"><link rel="prefetch" href="/devops/public/assets/js/137.770dcb44.js"><link rel="prefetch" href="/devops/public/assets/js/138.d4d75a71.js"><link rel="prefetch" href="/devops/public/assets/js/139.9b2c0400.js"><link rel="prefetch" href="/devops/public/assets/js/14.846ec1ae.js"><link rel="prefetch" href="/devops/public/assets/js/140.ba28df97.js"><link rel="prefetch" href="/devops/public/assets/js/141.c592e630.js"><link rel="prefetch" href="/devops/public/assets/js/142.1dcaafb9.js"><link rel="prefetch" href="/devops/public/assets/js/143.1f4482aa.js"><link rel="prefetch" href="/devops/public/assets/js/144.8079a63b.js"><link rel="prefetch" href="/devops/public/assets/js/145.ccd6ab9a.js"><link rel="prefetch" href="/devops/public/assets/js/146.8fea1826.js"><link rel="prefetch" href="/devops/public/assets/js/147.0cc3f908.js"><link rel="prefetch" href="/devops/public/assets/js/148.bd25ee49.js"><link rel="prefetch" href="/devops/public/assets/js/149.abbd5278.js"><link rel="prefetch" href="/devops/public/assets/js/15.4d3a65ab.js"><link rel="prefetch" href="/devops/public/assets/js/150.f8e586e7.js"><link rel="prefetch" href="/devops/public/assets/js/151.eb4608fb.js"><link rel="prefetch" href="/devops/public/assets/js/152.6fe48680.js"><link rel="prefetch" href="/devops/public/assets/js/153.fb81e647.js"><link rel="prefetch" href="/devops/public/assets/js/154.1dd41cd6.js"><link rel="prefetch" href="/devops/public/assets/js/155.7386b9d0.js"><link rel="prefetch" href="/devops/public/assets/js/156.905e683b.js"><link rel="prefetch" href="/devops/public/assets/js/157.9e6bcc59.js"><link rel="prefetch" href="/devops/public/assets/js/158.36be0417.js"><link rel="prefetch" href="/devops/public/assets/js/159.631e0344.js"><link rel="prefetch" href="/devops/public/assets/js/16.a8b5e9a2.js"><link rel="prefetch" href="/devops/public/assets/js/160.fda7f4b2.js"><link rel="prefetch" href="/devops/public/assets/js/161.b3c13652.js"><link rel="prefetch" href="/devops/public/assets/js/162.d7fe03d5.js"><link rel="prefetch" href="/devops/public/assets/js/163.09534a90.js"><link rel="prefetch" href="/devops/public/assets/js/164.7d75373f.js"><link rel="prefetch" href="/devops/public/assets/js/165.23f70364.js"><link rel="prefetch" href="/devops/public/assets/js/166.3d1cde51.js"><link rel="prefetch" href="/devops/public/assets/js/167.0dca6275.js"><link rel="prefetch" href="/devops/public/assets/js/168.71a8b2fd.js"><link rel="prefetch" href="/devops/public/assets/js/169.ee61c785.js"><link rel="prefetch" href="/devops/public/assets/js/17.0be8e72a.js"><link rel="prefetch" href="/devops/public/assets/js/170.fb4e3bc0.js"><link rel="prefetch" href="/devops/public/assets/js/171.4abe3ecb.js"><link rel="prefetch" href="/devops/public/assets/js/172.4104fd87.js"><link rel="prefetch" href="/devops/public/assets/js/173.355a3afc.js"><link rel="prefetch" href="/devops/public/assets/js/174.6b396fee.js"><link rel="prefetch" href="/devops/public/assets/js/175.a907bc60.js"><link rel="prefetch" href="/devops/public/assets/js/176.1b2086ee.js"><link rel="prefetch" href="/devops/public/assets/js/177.9fa24bdc.js"><link rel="prefetch" href="/devops/public/assets/js/178.5f5e1279.js"><link rel="prefetch" href="/devops/public/assets/js/179.ec4875a4.js"><link rel="prefetch" href="/devops/public/assets/js/18.b1b29ad5.js"><link rel="prefetch" href="/devops/public/assets/js/180.e6976024.js"><link rel="prefetch" href="/devops/public/assets/js/181.32906757.js"><link rel="prefetch" href="/devops/public/assets/js/182.09691c46.js"><link rel="prefetch" href="/devops/public/assets/js/183.00199713.js"><link rel="prefetch" href="/devops/public/assets/js/184.e0c72fe0.js"><link rel="prefetch" href="/devops/public/assets/js/185.67b6b9d4.js"><link rel="prefetch" href="/devops/public/assets/js/186.7045b54c.js"><link rel="prefetch" href="/devops/public/assets/js/187.4649fa5f.js"><link rel="prefetch" href="/devops/public/assets/js/188.796ce41e.js"><link rel="prefetch" href="/devops/public/assets/js/189.809ffb5e.js"><link rel="prefetch" href="/devops/public/assets/js/19.39c3a2ff.js"><link rel="prefetch" href="/devops/public/assets/js/190.83e3881c.js"><link rel="prefetch" href="/devops/public/assets/js/191.6b715782.js"><link rel="prefetch" href="/devops/public/assets/js/192.cf6a4017.js"><link rel="prefetch" href="/devops/public/assets/js/193.f98ae362.js"><link rel="prefetch" href="/devops/public/assets/js/194.5246dc3c.js"><link rel="prefetch" href="/devops/public/assets/js/195.428e9bf0.js"><link rel="prefetch" href="/devops/public/assets/js/196.d076a50c.js"><link rel="prefetch" href="/devops/public/assets/js/197.55c2ac67.js"><link rel="prefetch" href="/devops/public/assets/js/198.ed0cde4d.js"><link rel="prefetch" href="/devops/public/assets/js/199.dd2dc49f.js"><link rel="prefetch" href="/devops/public/assets/js/20.59cbe9ee.js"><link rel="prefetch" href="/devops/public/assets/js/200.afa56a7b.js"><link rel="prefetch" href="/devops/public/assets/js/201.44c3622b.js"><link rel="prefetch" href="/devops/public/assets/js/202.2c42452a.js"><link rel="prefetch" href="/devops/public/assets/js/203.8299dd5d.js"><link rel="prefetch" href="/devops/public/assets/js/204.de069d66.js"><link rel="prefetch" href="/devops/public/assets/js/205.5ab0783c.js"><link rel="prefetch" href="/devops/public/assets/js/206.74754152.js"><link rel="prefetch" href="/devops/public/assets/js/207.41f0d4bf.js"><link rel="prefetch" href="/devops/public/assets/js/208.0483952b.js"><link rel="prefetch" href="/devops/public/assets/js/209.1aca4a3b.js"><link rel="prefetch" href="/devops/public/assets/js/21.23a83f02.js"><link rel="prefetch" href="/devops/public/assets/js/210.d0341dbd.js"><link rel="prefetch" href="/devops/public/assets/js/211.72dd5390.js"><link rel="prefetch" href="/devops/public/assets/js/212.e59e466c.js"><link rel="prefetch" href="/devops/public/assets/js/213.1373aac1.js"><link rel="prefetch" href="/devops/public/assets/js/214.d307ec31.js"><link rel="prefetch" href="/devops/public/assets/js/215.4a0a213e.js"><link rel="prefetch" href="/devops/public/assets/js/216.81ad789b.js"><link rel="prefetch" href="/devops/public/assets/js/217.33796242.js"><link rel="prefetch" href="/devops/public/assets/js/218.23843efb.js"><link rel="prefetch" href="/devops/public/assets/js/219.623b1168.js"><link rel="prefetch" href="/devops/public/assets/js/22.58c6461b.js"><link rel="prefetch" href="/devops/public/assets/js/220.381ab176.js"><link rel="prefetch" href="/devops/public/assets/js/221.deb3d1a8.js"><link rel="prefetch" href="/devops/public/assets/js/222.96ec6a5e.js"><link rel="prefetch" href="/devops/public/assets/js/223.7954bc0b.js"><link rel="prefetch" href="/devops/public/assets/js/224.16208c8d.js"><link rel="prefetch" href="/devops/public/assets/js/225.b805f0e3.js"><link rel="prefetch" href="/devops/public/assets/js/226.d2669939.js"><link rel="prefetch" href="/devops/public/assets/js/227.e72b90c5.js"><link rel="prefetch" href="/devops/public/assets/js/228.d072128c.js"><link rel="prefetch" href="/devops/public/assets/js/229.69495a9e.js"><link rel="prefetch" href="/devops/public/assets/js/23.59f9044f.js"><link rel="prefetch" href="/devops/public/assets/js/230.9c66543d.js"><link rel="prefetch" href="/devops/public/assets/js/231.7ab60f29.js"><link rel="prefetch" href="/devops/public/assets/js/232.fc6e5785.js"><link rel="prefetch" href="/devops/public/assets/js/233.0a0d2736.js"><link rel="prefetch" href="/devops/public/assets/js/234.a49950b6.js"><link rel="prefetch" href="/devops/public/assets/js/235.71140234.js"><link rel="prefetch" href="/devops/public/assets/js/236.6b828578.js"><link rel="prefetch" href="/devops/public/assets/js/237.9549e649.js"><link rel="prefetch" href="/devops/public/assets/js/238.1657f6b5.js"><link rel="prefetch" href="/devops/public/assets/js/239.289ab239.js"><link rel="prefetch" href="/devops/public/assets/js/24.be9ada1f.js"><link rel="prefetch" href="/devops/public/assets/js/240.fc170ba3.js"><link rel="prefetch" href="/devops/public/assets/js/241.43426c9a.js"><link rel="prefetch" href="/devops/public/assets/js/242.8afb0c9d.js"><link rel="prefetch" href="/devops/public/assets/js/243.2fdaef18.js"><link rel="prefetch" href="/devops/public/assets/js/244.2d9089b1.js"><link rel="prefetch" href="/devops/public/assets/js/245.6b4f42e0.js"><link rel="prefetch" href="/devops/public/assets/js/246.9d904f58.js"><link rel="prefetch" href="/devops/public/assets/js/247.99c2e8c5.js"><link rel="prefetch" href="/devops/public/assets/js/248.c877bb00.js"><link rel="prefetch" href="/devops/public/assets/js/249.946e5fde.js"><link rel="prefetch" href="/devops/public/assets/js/25.d209b773.js"><link rel="prefetch" href="/devops/public/assets/js/250.57c4d59a.js"><link rel="prefetch" href="/devops/public/assets/js/251.9c50e024.js"><link rel="prefetch" href="/devops/public/assets/js/252.5e1e216a.js"><link rel="prefetch" href="/devops/public/assets/js/253.bca6a43e.js"><link rel="prefetch" href="/devops/public/assets/js/254.32f9a9e4.js"><link rel="prefetch" href="/devops/public/assets/js/255.aa4f14d3.js"><link rel="prefetch" href="/devops/public/assets/js/256.0c175cdf.js"><link rel="prefetch" href="/devops/public/assets/js/257.2e86393d.js"><link rel="prefetch" href="/devops/public/assets/js/258.5b4e2b8d.js"><link rel="prefetch" href="/devops/public/assets/js/259.9b5ea8a1.js"><link rel="prefetch" href="/devops/public/assets/js/26.37cff05a.js"><link rel="prefetch" href="/devops/public/assets/js/260.11200c5e.js"><link rel="prefetch" href="/devops/public/assets/js/261.b8c7584a.js"><link rel="prefetch" href="/devops/public/assets/js/262.a917d897.js"><link rel="prefetch" href="/devops/public/assets/js/263.47e5f082.js"><link rel="prefetch" href="/devops/public/assets/js/264.1da268c2.js"><link rel="prefetch" href="/devops/public/assets/js/265.6cfa0237.js"><link rel="prefetch" href="/devops/public/assets/js/266.b03f016c.js"><link rel="prefetch" href="/devops/public/assets/js/267.1abc3909.js"><link rel="prefetch" href="/devops/public/assets/js/27.17674ffe.js"><link rel="prefetch" href="/devops/public/assets/js/28.8675ef43.js"><link rel="prefetch" href="/devops/public/assets/js/29.1bbb3c84.js"><link rel="prefetch" href="/devops/public/assets/js/3.35a3f762.js"><link rel="prefetch" href="/devops/public/assets/js/30.e3c5f1e5.js"><link rel="prefetch" href="/devops/public/assets/js/31.e96cf53b.js"><link rel="prefetch" href="/devops/public/assets/js/32.6d39a578.js"><link rel="prefetch" href="/devops/public/assets/js/33.19fff795.js"><link rel="prefetch" href="/devops/public/assets/js/34.7d131903.js"><link rel="prefetch" href="/devops/public/assets/js/35.69f1e115.js"><link rel="prefetch" href="/devops/public/assets/js/36.962c3523.js"><link rel="prefetch" href="/devops/public/assets/js/37.8a283b7c.js"><link rel="prefetch" href="/devops/public/assets/js/38.fcdfdbf3.js"><link rel="prefetch" href="/devops/public/assets/js/39.08499321.js"><link rel="prefetch" href="/devops/public/assets/js/4.66c9c5f3.js"><link rel="prefetch" href="/devops/public/assets/js/40.ecd69e9f.js"><link rel="prefetch" href="/devops/public/assets/js/41.991b6203.js"><link rel="prefetch" href="/devops/public/assets/js/42.56bacc28.js"><link rel="prefetch" href="/devops/public/assets/js/43.54713f51.js"><link rel="prefetch" href="/devops/public/assets/js/44.5aebcd50.js"><link rel="prefetch" href="/devops/public/assets/js/45.bde76db1.js"><link rel="prefetch" href="/devops/public/assets/js/46.9ccbd788.js"><link rel="prefetch" href="/devops/public/assets/js/47.00d25425.js"><link rel="prefetch" href="/devops/public/assets/js/48.ec5edda8.js"><link rel="prefetch" href="/devops/public/assets/js/49.c64c870e.js"><link rel="prefetch" href="/devops/public/assets/js/5.8e21f9d3.js"><link rel="prefetch" href="/devops/public/assets/js/50.38e1ea84.js"><link rel="prefetch" href="/devops/public/assets/js/51.1a911c4e.js"><link rel="prefetch" href="/devops/public/assets/js/52.92139cf1.js"><link rel="prefetch" href="/devops/public/assets/js/53.89b06a8f.js"><link rel="prefetch" href="/devops/public/assets/js/54.6c248a88.js"><link rel="prefetch" href="/devops/public/assets/js/55.45770749.js"><link rel="prefetch" href="/devops/public/assets/js/56.41b65466.js"><link rel="prefetch" href="/devops/public/assets/js/57.eaec9e9b.js"><link rel="prefetch" href="/devops/public/assets/js/58.a9a07b8c.js"><link rel="prefetch" href="/devops/public/assets/js/59.d7a5afc3.js"><link rel="prefetch" href="/devops/public/assets/js/6.9150baff.js"><link rel="prefetch" href="/devops/public/assets/js/60.66cf40bb.js"><link rel="prefetch" href="/devops/public/assets/js/61.e089eb14.js"><link rel="prefetch" href="/devops/public/assets/js/62.ce34e7ad.js"><link rel="prefetch" href="/devops/public/assets/js/63.c4dba709.js"><link rel="prefetch" href="/devops/public/assets/js/64.d2520c76.js"><link rel="prefetch" href="/devops/public/assets/js/65.ece2cc2e.js"><link rel="prefetch" href="/devops/public/assets/js/66.12cb968c.js"><link rel="prefetch" href="/devops/public/assets/js/67.c7ab28aa.js"><link rel="prefetch" href="/devops/public/assets/js/68.72df026a.js"><link rel="prefetch" href="/devops/public/assets/js/69.1951131c.js"><link rel="prefetch" href="/devops/public/assets/js/7.e4e8b6c2.js"><link rel="prefetch" href="/devops/public/assets/js/70.d8c73257.js"><link rel="prefetch" href="/devops/public/assets/js/71.ade4bf7c.js"><link rel="prefetch" href="/devops/public/assets/js/72.e48ba840.js"><link rel="prefetch" href="/devops/public/assets/js/73.3951cd3c.js"><link rel="prefetch" href="/devops/public/assets/js/74.cc4a2931.js"><link rel="prefetch" href="/devops/public/assets/js/75.65e448ff.js"><link rel="prefetch" href="/devops/public/assets/js/76.d13793b7.js"><link rel="prefetch" href="/devops/public/assets/js/77.6bb99700.js"><link rel="prefetch" href="/devops/public/assets/js/78.f306fed8.js"><link rel="prefetch" href="/devops/public/assets/js/79.47710d29.js"><link rel="prefetch" href="/devops/public/assets/js/8.5e170c36.js"><link rel="prefetch" href="/devops/public/assets/js/80.dddd989f.js"><link rel="prefetch" href="/devops/public/assets/js/81.cec9077e.js"><link rel="prefetch" href="/devops/public/assets/js/82.79a7325c.js"><link rel="prefetch" href="/devops/public/assets/js/83.6ed1bf3b.js"><link rel="prefetch" href="/devops/public/assets/js/84.6cdba99d.js"><link rel="prefetch" href="/devops/public/assets/js/85.37401841.js"><link rel="prefetch" href="/devops/public/assets/js/86.e71bb44f.js"><link rel="prefetch" href="/devops/public/assets/js/87.914543b0.js"><link rel="prefetch" href="/devops/public/assets/js/88.df906855.js"><link rel="prefetch" href="/devops/public/assets/js/89.ec43c2d4.js"><link rel="prefetch" href="/devops/public/assets/js/9.8e2307c4.js"><link rel="prefetch" href="/devops/public/assets/js/90.3a6d82e0.js"><link rel="prefetch" href="/devops/public/assets/js/91.1ad4d666.js"><link rel="prefetch" href="/devops/public/assets/js/92.ddc90ed2.js"><link rel="prefetch" href="/devops/public/assets/js/93.be43f77f.js"><link rel="prefetch" href="/devops/public/assets/js/94.d6f0bc7d.js"><link rel="prefetch" href="/devops/public/assets/js/95.e6846831.js"><link rel="prefetch" href="/devops/public/assets/js/96.5a7d5ba0.js"><link rel="prefetch" href="/devops/public/assets/js/97.5da431ca.js"><link rel="prefetch" href="/devops/public/assets/js/98.d063cf07.js"><link rel="prefetch" href="/devops/public/assets/js/99.34847663.js">
+    <link rel="stylesheet" href="/devops/public/assets/css/0.styles.4a69f283.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>devops</h3> <p class="description" data-v-59e6cb88>快来玩devops</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/devops/public/" class="home-link router-link-active"><img src="/devops/public/logo.png" alt="devops" class="logo"> <span class="site-name">devops</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/前端技术栈/" class="nav-link"><i class="undefined"></i>
+  前端技术栈
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/devops/public/avatar.png" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    devops
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>243</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>43</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/devops/public/" class="nav-link"><i class="iconfont reco-home"></i>
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      devops
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/categories/前端技术栈/" class="nav-link"><i class="undefined"></i>
+  前端技术栈
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/HarmonyOS/" class="nav-link"><i class="undefined"></i>
+  HarmonyOS
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/data analysis/" class="nav-link"><i class="undefined"></i>
+  data analysis
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/devops/" class="nav-link"><i class="undefined"></i>
+  devops
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/每日一题/" class="nav-link"><i class="undefined"></i>
+  每日一题
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javabase/" class="nav-link"><i class="undefined"></i>
+  javabase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/javaweb/" class="nav-link"><i class="undefined"></i>
+  javaweb
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/linux/" class="nav-link"><i class="undefined"></i>
+  linux
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/node/" class="nav-link"><i class="undefined"></i>
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/pybase/" class="nav-link"><i class="undefined"></i>
+  pybase
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/python/" class="nav-link"><i class="undefined"></i>
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloud/" class="nav-link"><i class="undefined"></i>
+  springcloud
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/spider/" class="nav-link"><i class="undefined"></i>
+  spider
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/springcloudalibaba/" class="nav-link"><i class="undefined"></i>
+  springcloudalibaba
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/ssm/" class="nav-link"><i class="undefined"></i>
+  ssm
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/storage/" class="nav-link"><i class="undefined"></i>
+  storage
+</a></li><li class="dropdown-item"><!----> <a href="/devops/public/categories/zhifu/" class="nav-link"><i class="undefined"></i>
+  zhifu
+</a></li></ul></div></div><div class="nav-item"><a href="/devops/public/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div><div class="nav-item"><a href="/devops/public/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Docs
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/devops/public/docs/theme-reco/" class="nav-link"><i class="undefined"></i>
+  vuepress-reco
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      Contact
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/recoluan" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>prometheus02</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>devops</span>
+          
+        <span data-v-59e6cb88>2017 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page"><section style="display:;"><div class="page-title"><h1 class="title">prometheus02</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>devops</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>12/15/2028</span></i> <!----> <i class="tags iconfont reco-tag" data-v-8a445198><span class="tag-item" data-v-8a445198>devops</span></i></div></div> <div class="theme-reco-content content__default"><h3 id="_1-面试题"><a href="#_1-面试题" class="header-anchor">#</a> 1，面试题</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>Q81:zabbix架构包含哪些组件及其作用?
+
+
+Q82:zabbix server和zabbix agent各自监听的端口是多少?
+
+
+Q83:zabbix agent的工作模式有哪些?你生产环境中用的哪种工作模式?
+
+
+Q84:Prometheus架构及各组件的作用有哪些?
+
+
+Q85:Prometheus server监控一个exporter的流程是啥?
+
+
+Q86:你工作中grafana如何制作dashboard?
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="_2-prometheus过滤采集node-exporter数据"><a href="#_2-prometheus过滤采集node-exporter数据" class="header-anchor">#</a> 2，prometheus过滤采集node_exporter数据</h3> <p>监控如下三台机器：</p> <p><img src="/devops/public/assets/img/1731503050763.b67d2911.png" alt="1731503050763"></p> <p><img src="/devops/public/assets/img/1731503081850.6d2ffd8c.png" alt="1731503081850"></p> <p>如果不想采集这个指标：</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>经过测试，排除某个指标，并不好使用。我们看一下只采集某个指标是否好使用。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>参考链接:
+	https://github.com/prometheus/node_exporter?tab<span class="token operator">=</span>readme-ov-file<span class="token comment">#filtering-enabled-collectors</span>
+	
+
+<span class="token number">1</span>.修改Prometheus server的配置文件,这里最好不要使用tab键
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+ <span class="token number">30</span>   - job_name: <span class="token string">&quot;malu-node-exporter&quot;</span>
+ <span class="token number">31</span>     metrics_path: <span class="token string">&quot;/metrics&quot;</span>
+ <span class="token number">32</span>     scheme: <span class="token string">&quot;http&quot;</span>
+ <span class="token number">33</span>     <span class="token comment"># 配置参数   只采集内存</span>
+ <span class="token number">34</span>     params:
+ <span class="token number">35</span>       collect<span class="token punctuation">[</span><span class="token punctuation">]</span>:
+ <span class="token number">36</span>         - meminfo
+ <span class="token number">37</span>     static_configs:
+ <span class="token number">38</span>       - targets: <span class="token punctuation">[</span><span class="token string">&quot;10.0.0.41:9100&quot;</span>,<span class="token string">&quot;10.0.0.42:9100&quot;</span>,<span class="token string">&quot;10.0.0.43:9100&quot;</span><span class="token punctuation">]</span>
+	
+
+<span class="token number">2</span>.重新加载配置配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -X POST 10.0.0.31:9090/-/reload</span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">3</span>.验证测试
+发现无法查询CPU相关的指标，但是可以查询内存的指标。
+
+node_memory_MemTotal_bytes
+
+node_cpu_seconds_total
+
+
+
+<span class="token number">4</span>.底层原理说明
+node_exporter是采集到数据了，这一点可以在相应节点测试。
+http://10.0.0.43:9100/metrics
+搜索： node_cpu_seconds_total
+	
+
+之所以Prometheus采集不到CPU指标，本质是是修改了访问的URL参数。
+http://10.0.0.43:9100/metrics?collect<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">=</span>meminfo
+
+编码后:
+http://10.0.0.43:9100/metrics?collect%5B%5D<span class="token operator">=</span>meminfo
+
+搜索： node_cpu_seconds_total
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br></div></div><p><img src="/devops/public/assets/img/1731503864285.50ff42c8.png" alt="1731503864285"></p> <p><img src="/devops/public/assets/img/1731503901718.6e98272b.png" alt="1731503901718"></p> <p><img src="/devops/public/assets/img/1731503949904.a426d53d.png" alt="1731503949904"></p> <h3 id="_3-监控zookeeper集群"><a href="#_3-监控zookeeper集群" class="header-anchor">#</a> 3，监控zookeeper集群</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.修改zookeeper集群开启metric指标暴露,打开之前的注释
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/apache-zookeeper-3.8.4-bin/conf/zoo.cfg </span>
+<span class="token punctuation">..</span>.
+<span class="token comment"># https://prometheus.io Metrics Exporter</span>
+<span class="token assign-left variable">metricsProvider.className</span><span class="token operator">=</span>org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider
+<span class="token assign-left variable">metricsProvider.httpHost</span><span class="token operator">=</span><span class="token number">0.0</span>.0.0
+<span class="token assign-left variable">metricsProvider.httpPort</span><span class="token operator">=</span><span class="token number">7000</span>
+<span class="token assign-left variable">metricsProvider.exportJvmInfo</span><span class="token operator">=</span>true        
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># scp /malu/softwares/apache-zookeeper-3.8.4-bin/conf/zoo.cfg 10.0.0.92:/malu/softwares/apache-zookeeper-3.8.4-bin/conf/zoo.cfg</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># scp /malu/softwares/apache-zookeeper-3.8.4-bin/conf/zoo.cfg 10.0.0.93:/malu/softwares/apache-zookeeper-3.8.4-bin/conf/zoo.cfg</span>
+
+<span class="token number">2</span>.启动zookeeper集群
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh start</span>
+
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh start</span>
+ 
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh start</span>
+
+
+<span class="token number">3</span>.检查zookeeper集群是否正常
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh status</span>
+ZooKeeper JMX enabled by default
+Using config: /malu/softwares/apache-zookeeper-3.8.4-bin/bin/<span class="token punctuation">..</span>/conf/zoo.cfg
+Client port found: <span class="token number">2181</span>. Client address: localhost. Client SSL: false.
+Mode: follower
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh status</span>
+ZooKeeper JMX enabled by default
+Using config: /malu/softwares/apache-zookeeper-3.8.4-bin/bin/<span class="token punctuation">..</span>/conf/zoo.cfg
+Client port found: <span class="token number">2181</span>. Client address: localhost. Client SSL: false.
+Mode: follower
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># zkServer.sh status</span>
+ZooKeeper JMX enabled by default
+Using config: /malu/softwares/apache-zookeeper-3.8.4-bin/bin/<span class="token punctuation">..</span>/conf/zoo.cfg
+Client port found: <span class="token number">2181</span>. Client address: localhost. Client SSL: false.
+Mode: leader
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">4</span>.访问prometheus的metric接口
+http://10.0.0.91:7000/metrics
+http://10.0.0.92:7000/metrics
+http://10.0.0.93:7000/metrics
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br></div></div><p><img src="/devops/public/assets/img/1731504970120.9ec32ca9.png" alt="1731504970120"></p> <p><img src="/devops/public/assets/img/1731504976932.2b5e5fee.png" alt="1731504976932"></p> <p><img src="/devops/public/assets/img/1731504983124.609d246f.png" alt="1731504983124"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">5</span>.修改Prometheus的配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+	- job_name: <span class="token string">&quot;malu-zookeeper&quot;</span>
+	  static_configs:
+		- targets: 
+			- <span class="token number">10.0</span>.0.91:7000
+			- <span class="token number">10.0</span>.0.92:7000
+			- <span class="token number">10.0</span>.0.93:7000
+
+
+<span class="token number">6</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -X POST 10.0.0.31:9090/-/reload </span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7</span>.验证是否监控成功
+http://10.0.0.31:9090/targets
+
+
+<span class="token number">8</span>.导入grafana的ID
+<span class="token number">10465</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><img src="/devops/public/assets/img/1731506074069.bc6e6eaa.png" alt="1731506074069"></p> <p><img src="/devops/public/assets/img/1731506201103.82839fd2.png" alt="1731506201103"></p> <p><img src="/devops/public/assets/img/1731506256798.d20d4541.png" alt="1731506256798"></p> <h3 id="_4-监控kafka集群"><a href="#_4-监控kafka集群" class="header-anchor">#</a> 4，监控kafka集群</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.启动kafka集群
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties </span>
+
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties </span>
+
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties </span>
+
+查看是否启动成功，也可以启动一个生产者和消费者来测试
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment">#  zkCli.sh -server 10.0.0.91:2181,10.0.0.92:2181,10.0.0.93:2181</span>
+<span class="token punctuation">[</span>zk: <span class="token number">10.0</span>.0.91:2181,10.0.0.92:2181,10.0.0.93:2181<span class="token punctuation">(</span>CONNECTED<span class="token punctuation">)</span> <span class="token number">0</span><span class="token punctuation">]</span> <span class="token function">ls</span> /malu-kafka381/brokers/ids
+<span class="token punctuation">[</span><span class="token number">91</span>, <span class="token number">92</span>, <span class="token number">93</span><span class="token punctuation">]</span>
+
+
+<span class="token number">2</span>.启动生产者 
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># kafka-console-producer.sh --bootstrap-server 10.0.0.92:9092 --topic malu-linux94</span>
+<span class="token operator">&gt;</span><span class="token number">111111111111111</span>
+<span class="token punctuation">[</span><span class="token number">2024</span>-11-12 02:56:55,457<span class="token punctuation">]</span> WARN <span class="token punctuation">[</span>Producer <span class="token assign-left variable">clientId</span><span class="token operator">=</span>console-producer<span class="token punctuation">]</span> Error <span class="token keyword">while</span> fetching metadata with correlation <span class="token function">id</span> <span class="token number">6</span> <span class="token builtin class-name">:</span> <span class="token punctuation">{</span>malu-linux94<span class="token operator">=</span>LEADER_NOT_AVAILABLE<span class="token punctuation">}</span> <span class="token punctuation">(</span>org.apache.kafka.clients.NetworkClient<span class="token punctuation">)</span>
+<span class="token operator"><span class="token file-descriptor important">2</span>&gt;</span><span class="token number">22222222222222</span>
+<span class="token operator">&gt;</span><span class="token number">333333333333333333333</span>
+<span class="token operator">&gt;</span>
+
+
+<span class="token number">3</span>.启动消费者 
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># kafka-console-consumer.sh --bootstrap-server 10.0.0.91:9092 --topic malu-linux94 --from-beginning --consumer-property group.id=linux94</span>
+<span class="token number">111111111111111</span>
+<span class="token number">222222222222222</span>
+<span class="token number">333333333333333333333</span>
+
+
+<span class="token number">4</span>.下载kafka_exporter
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># wget https://github.com/danielqsj/kafka_exporter/releases/download/v1.8.0/kafka_exporter-1.8.0.linux-amd64.tar.gz</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># ll kafka_exporter-1.8.0.linux-amd64.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">10580616</span> Nov <span class="token number">13</span> <span class="token number">22</span>:05 kafka_exporter-1.8.0.linux-amd64.tar.gz
+
+
+
+<span class="token number">5</span>.解压软件包  strip-components<span class="token operator">=</span><span class="token number">1</span>跳过一层
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># tar xf kafka_exporter-1.8.0.linux-amd64.tar.gz -C /usr/local/bin/ kafka_exporter-1.8.0.linux-amd64/kafka_exporter --strip-components=1</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># ll /usr/local/bin/</span>
+total <span class="token number">19976</span>
+drwxr-xr-x  <span class="token number">2</span> root root       <span class="token number">4096</span> Nov <span class="token number">13</span> <span class="token number">22</span>:15 ./
+drwxr-xr-x <span class="token number">10</span> root root       <span class="token number">4096</span> Feb <span class="token number">17</span>  <span class="token number">2024</span> <span class="token punctuation">..</span>/
+-rwxr-xr-x  <span class="token number">1</span> <span class="token number">1001</span> colord <span class="token number">20446894</span> Aug <span class="token number">20</span> <span class="token number">15</span>:06 kafka_exporter*
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+
+
+
+<span class="token number">6</span>.启动kafka_exporter
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># kafka_exporter --kafka.server=10.0.0.91:9092 --kafka.version=&quot;3.8.1&quot;  --web.listen-address=&quot;:9308&quot; --web.telemetry-path=&quot;/metrics&quot;</span>
+
+
+<span class="token number">7</span>.访问kafka_exporter的metrics接口
+http://10.0.0.91:9308/metrics
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br></div></div><p><img src="/devops/public/assets/img/1731507445232.adc00759.png" alt="1731507445232"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">8</span>.Prometheus监控kafka_exporter
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+   - job_name: <span class="token string">&quot;malu-kafka&quot;</span>
+     static_configs:
+       - targets: 
+           - <span class="token number">10.0</span>.0.91:9308                 
+
+
+<span class="token number">9</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -X POST 10.0.0.31:9090/-/reload </span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+	
+	
+<span class="token number">10</span>.检查配置是否生效
+http://10.0.0.31:9090/targets
+
+<span class="token number">11</span>.grafna导入模板ID
+<span class="token number">12460</span>
+
+<span class="token number">10122</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p><img src="/devops/public/assets/img/1731507577739.486f2f2a.png" alt="1731507577739"></p> <p><img src="/devops/public/assets/img/1731507712151.70a687d6.png" alt="1731507712151"></p> <p><img src="/devops/public/assets/img/1731507932004.f5e0afc3.png" alt="1731507932004"></p> <h3 id="_5-监控elasticsearch集群"><a href="#_5-监控elasticsearch集群" class="header-anchor">#</a> 5，监控elasticSearch集群</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.下载elastcsearch_exporter
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># wget https://github.com/prometheus-community/elasticsearch_exporter/releases/download/v1.8.0/elasticsearch_exporter-1.8.0.linux-amd64.tar.gz</span>
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># ll elasticsearch_exporter-1.8.0.linux-amd64.tar.gz </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">5097115</span> Nov <span class="token number">13</span> <span class="token number">22</span>:29 elasticsearch_exporter-1.8.0.linux-amd64.tar.gz
+
+<span class="token number">2</span>.解压软件包
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># tar xf elasticsearch_exporter-1.8.0.linux-amd64.tar.gz -C /usr/local/bin/ elasticsearch_exporter-1.8.0.linux-amd64/elasticsearch_exporter --strip-components=1</span>
+
+
+<span class="token number">3</span>.启动elasticsearch_exporter
+<span class="token punctuation">[</span>root@elk91 ~<span class="token punctuation">]</span><span class="token comment"># elasticsearch_exporter --es.uri=&quot;http://elastic:123456Abc.com@10.0.0.92:9200&quot; --web.listen-address=:9114 --web.telemetry-path=&quot;/metrics&quot;</span>
+<span class="token assign-left variable">level</span><span class="token operator">=</span>info <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">2024</span>-11-12T03:56:10.458466996Z <span class="token assign-left variable">caller</span><span class="token operator">=</span>clusterinfo.go:214 <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token string">&quot;triggering initial cluster info call&quot;</span>
+<span class="token assign-left variable">level</span><span class="token operator">=</span>info <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">2024</span>-11-12T03:56:10.458879438Z <span class="token assign-left variable">caller</span><span class="token operator">=</span>clusterinfo.go:183 <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token string">&quot;providing consumers with updated cluster info label&quot;</span>
+<span class="token assign-left variable">level</span><span class="token operator">=</span>info <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">2024</span>-11-12T03:56:10.520366346Z <span class="token assign-left variable">caller</span><span class="token operator">=</span>main.go:244 <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token string">&quot;started cluster info retriever&quot;</span> <span class="token assign-left variable">interval</span><span class="token operator">=</span>5m0s
+<span class="token assign-left variable">level</span><span class="token operator">=</span>info <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">2024</span>-11-12T03:56:10.520832298Z <span class="token assign-left variable">caller</span><span class="token operator">=</span>tls_config.go:313 <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token string">&quot;Listening on&quot;</span> <span class="token assign-left variable">address</span><span class="token operator">=</span><span class="token punctuation">[</span>::<span class="token punctuation">]</span>:9114
+<span class="token assign-left variable">level</span><span class="token operator">=</span>info <span class="token assign-left variable">ts</span><span class="token operator">=</span><span class="token number">2024</span>-11-12T03:56:10.520844867Z <span class="token assign-left variable">caller</span><span class="token operator">=</span>tls_config.go:316 <span class="token assign-left variable">msg</span><span class="token operator">=</span><span class="token string">&quot;TLS is disabled.&quot;</span> <span class="token assign-left variable">http2</span><span class="token operator">=</span>false <span class="token assign-left variable">address</span><span class="token operator">=</span><span class="token punctuation">[</span>::<span class="token punctuation">]</span>:9114
+<span class="token punctuation">..</span>.
+
+<span class="token number">4</span>.访问elasticsearch_exporter的metrics
+http://10.0.0.91:9114/metrics
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><img src="/devops/public/assets/img/1731508288232.0a478d8a.png" alt="1731508288232"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">5</span>.Prometheus修改配置文件 
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+- job_name: <span class="token string">&quot;malu-elasticsearch&quot;</span>
+  static_configs:
+    - targets: 
+        - <span class="token number">10.0</span>.0.91:9114
+
+<span class="token number">6</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -X POST 10.0.0.31:9090/-/reload </span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+<span class="token number">7</span>.检查配置是否生效
+http://10.0.0.31:9090/targets
+
+<span class="token number">8</span>.grafna导入模板ID
+<span class="token number">14191</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p><img src="/devops/public/assets/img/1731508366454.b81206c5.png" alt="1731508366454"></p> <p><img src="/devops/public/assets/img/1731508484688.5f3ecc66.png" alt="1731508484688"></p> <h3 id="_6-监控mysql"><a href="#_6-监控mysql" class="header-anchor">#</a> 6，监控mysql</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.下载mysql_exporter
+<span class="token function">wget</span> https://github.com/prometheus/mysqld_exporter/releases/download/v0.16.0/mysqld_exporter-0.16.0.linux-amd64.tar.gz
+
+
+
+<span class="token number">2</span>.解压软件包
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># tar xf mysqld_exporter-0.16.0.linux-amd64.tar.gz -C /usr/local/bin/ mysqld_exporter-0.16.0.linux-amd64/mysqld_exporter --strip-components=1</span>
+
+
+<span class="token number">3</span>.启动MySQL数据库
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># docker run -d --network host --name db -e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_USER=linux94 -e MYSQL_PASSWORD=123456 mysql:8.0.36-oracle</span>
+
+
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it db mysql</span>
+Welcome to the MySQL monitor.  Commands end with <span class="token punctuation">;</span> or <span class="token punctuation">\</span>g.
+Your MySQL connection <span class="token function">id</span> is <span class="token number">8</span>
+Server version: <span class="token number">8.0</span>.36 MySQL Community Server - GPL
+
+Copyright <span class="token punctuation">(</span>c<span class="token punctuation">)</span> <span class="token number">2000</span>, <span class="token number">2024</span>, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type <span class="token string">'help;'</span> or <span class="token string">'\h'</span> <span class="token keyword">for</span> help. Type <span class="token string">'\c'</span> to <span class="token function">clear</span> the current input statement.
+
+mysql<span class="token operator">&gt;</span> 
+mysql<span class="token operator">&gt;</span> SELECT user,host,plugin FROM mysql.user<span class="token punctuation">;</span>
++------------------+-----------+-----------------------+
+<span class="token operator">|</span> user             <span class="token operator">|</span> <span class="token function">host</span>      <span class="token operator">|</span> plugin                <span class="token operator">|</span>
++------------------+-----------+-----------------------+
+<span class="token operator">|</span> linux94          <span class="token operator">|</span> %         <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
+<span class="token operator">|</span> root             <span class="token operator">|</span> %         <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
+<span class="token operator">|</span> mysql.infoschema <span class="token operator">|</span> localhost <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
+<span class="token operator">|</span> mysql.session    <span class="token operator">|</span> localhost <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
+<span class="token operator">|</span> mysql.sys        <span class="token operator">|</span> localhost <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
+<span class="token operator">|</span> root             <span class="token operator">|</span> localhost <span class="token operator">|</span> caching_sha2_password <span class="token operator">|</span>
++------------------+-----------+-----------------------+
+<span class="token number">6</span> rows <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">&gt;</span> 
+mysql<span class="token operator">&gt;</span> GRANT PROCESS, REPLICATION CLIENT, SELECT ON *.* TO linux94<span class="token punctuation">;</span>
+Query OK, <span class="token number">0</span> rows affected <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">&gt;</span> 
+mysql<span class="token operator">&gt;</span> SHOW GRANTS FOR linux94<span class="token punctuation">;</span>
++-------------------------------------------------------------------+
+<span class="token operator">|</span> Grants <span class="token keyword">for</span> linux94@%                                              <span class="token operator">|</span>
++-------------------------------------------------------------------+
+<span class="token operator">|</span> GRANT SELECT, PROCESS, REPLICATION CLIENT ON *.* TO <span class="token variable"><span class="token variable">`</span>linux94<span class="token variable">`</span></span>@<span class="token variable"><span class="token variable">`</span>%<span class="token variable">`</span></span> <span class="token operator">|</span>
++-------------------------------------------------------------------+
+<span class="token number">1</span> row <span class="token keyword">in</span> <span class="token builtin class-name">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
+
+mysql<span class="token operator">&gt;</span> 
+mysql<span class="token operator">&gt;</span> 
+
+
+<span class="token number">4</span>.启动mysql_exporter
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># cat /root/.my.cnf</span>
+<span class="token punctuation">[</span>client<span class="token punctuation">]</span>
+<span class="token assign-left variable">user</span><span class="token operator">=</span>linux94
+<span class="token assign-left variable">password</span><span class="token operator">=</span><span class="token number">123456</span>
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># mysqld_exporter --web.listen-address=:9104 --web.telemetry-path=&quot;/metrics&quot; --mysqld.address=&quot;10.0.0.93:3306&quot; --config.my-cnf=&quot;/root/.my.cnf&quot;</span>
+	
+<span class="token number">5</span>.访问metrics测试
+http://10.0.0.92:9104/metrics
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br></div></div><p><img src="/devops/public/assets/img/1731567324629.73b2ada5.png" alt="1731567324629"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">6</span>.修改Prometheus的配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+	- job_name: <span class="token string">&quot;malu-mysqld&quot;</span>
+	  static_configs:
+		- targets:
+			- <span class="token number">10.0</span>.0.92:9104
+
+
+<span class="token number">7</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -X POST 10.0.0.31:9090/-/reload </span>
+
+<span class="token number">8</span>.检查配置是否生效
+http://10.0.0.31:9090/targets
+
+<span class="token number">9</span>.grafana导入模板ID
+<span class="token number">17320</span>
+
+<span class="token number">18949</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p><img src="/devops/public/assets/img/1731567429191.652f39ae.png" alt="1731567429191"></p> <p><img src="/devops/public/assets/img/1731567752741.29e2c94a.png" alt="1731567752741"></p> <h3 id="_7-监控redis"><a href="#_7-监控redis" class="header-anchor">#</a> 7，监控redis</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.部署redis环境 
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># apt -y install redis</span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># sed -i  '/^bind/s#127.0.0.1 ::1#0.0.0.0#' /etc/redis/redis.conf </span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart redis-server</span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># ss -ntl | grep 6379</span>
+LISTEN <span class="token number">0</span>      <span class="token number">511</span>          <span class="token number">0.0</span>.0.0:6379      <span class="token number">0.0</span>.0.0:*          
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># redis-cli -n 5 --raw</span>
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> KEYS *
+
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> <span class="token builtin class-name">set</span> school bd
+OK
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> lpush a b c d
+<span class="token number">3</span>
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> KEYS *
+a
+school
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> TYPE a
+list
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> TYPE school
+string
+<span class="token number">127.0</span>.0.1:6379<span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token operator">&gt;</span> 
+
+
+<span class="token number">2</span>.下载redis_exporter
+<span class="token function">wget</span> https://github.com/oliver006/redis_exporter/releases/download/v1.66.0/redis_exporter-v1.66.0.linux-amd64.tar.gz
+
+	
+<span class="token number">3</span>.解压软件包 
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># tar xf redis_exporter-v1.66.0.linux-amd64.tar.gz -C /usr/local/bin/ redis_exporter-v1.66.0.linux-amd64/redis_exporter --strip-components=1</span>
+
+
+<span class="token number">4</span>.启动redis_exporter
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># redis_exporter -web.listen-address=:9121 -web.telemetry-path=/metrics -redis.addr=redis://10.0.0.93:6379</span>
+
+<span class="token number">5</span>.访问metrics测试
+http://10.0.0.92:9121/metrics
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br></div></div><p><img src="/devops/public/assets/img/1731568452735.18b392f9.png" alt="1731568452735"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">6</span>.修改Prometheus的配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+  - job_name: <span class="token string">&quot;malu-redis&quot;</span>
+    static_configs:
+      - targets: 
+          - <span class="token number">10.0</span>.0.92:9121                    
+		  
+<span class="token number">7</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl -vvv -X POST 10.0.0.31:9090/-/reload</span>
+
+
+<span class="token number">8</span>.检查配置是否生效
+http://10.0.0.31:9090/targets
+
+
+<span class="token number">9</span>.grafana导入模板ID
+<span class="token number">763</span>
+<span class="token number">14091</span>
+<span class="token number">14615</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><p><img src="/devops/public/assets/img/1731568521384.c41eefc3.png" alt="1731568521384"></p> <p><img src="/devops/public/assets/img/1731568629312.fba40fc3.png" alt="1731568629312"></p> <h3 id="_8-grafana实现插件安装"><a href="#_8-grafana实现插件安装" class="header-anchor">#</a> 8，grafana实现插件安装</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span>.安装插件
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># grafana-cli plugins install  natel-discrete-panel</span>
+✔ Downloaded and extracted natel-discrete-panel v0.1.1 <span class="token function">zip</span> successfully to /var/lib/grafana/plugins/natel-discrete-panel
+
+Please restart Grafana after installing or removing plugins. Refer to Grafana documentation <span class="token keyword">for</span> instructions <span class="token keyword">if</span> necessary.
+
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># ll /var/lib/grafana/plugins/</span>
+total <span class="token number">12</span>
+drwxr-xr-x <span class="token number">3</span> root    root    <span class="token number">4096</span> Nov <span class="token number">12</span> <span class="token number">15</span>:29 ./
+drwxr-xr-x <span class="token number">6</span> grafana grafana <span class="token number">4096</span> Nov <span class="token number">12</span> <span class="token number">15</span>:29 <span class="token punctuation">..</span>/
+drwxr-xr-x <span class="token number">4</span> root    root    <span class="token number">4096</span> Nov <span class="token number">12</span> <span class="token number">15</span>:29 natel-discrete-panel/
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">2</span>.重启服务使得配置生效
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart grafana-server</span>
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@grafana51 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+	
+<span class="token number">3</span>.访问WebUI测试
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p><img src="/devops/public/assets/img/1731568943567.dc23290f.png" alt="1731568943567"></p> <h3 id="_9-监控nginx"><a href="#_9-监控nginx" class="header-anchor">#</a> 9，监控nginx</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span> 编译安装nginx
+<span class="token number">1.1</span> 安装编译工具
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># apt -y install git wget gcc make zlib1g-dev build-essential libtool openssl libssl-dev</span>
+
+
+<span class="token number">1.2</span> 克隆nginx-module-vts模块
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span>git clone git://github.com/vozlt/nginx-module-vts.git
+
+
+如果上述连接不好用，可以执行下面代码:
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span>git clone https://gitee.com/jasonyin2020/nginx-module-vts.git
+
+
+<span class="token number">1.3</span> 下载nginx软件包
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span>wget https://nginx.org/download/nginx-1.27.2.tar.gz
+
+
+<span class="token number">1.4</span> 解压nginx
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span>tar xf nginx-1.27.2.tar.gz 
+
+
+<span class="token number">1.5</span> 配置nginx 
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># cd nginx-1.27.2/</span>
+<span class="token punctuation">[</span>root@elk92 nginx-1.27.2<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk92 nginx-1.27.2<span class="token punctuation">]</span><span class="token comment"># ./configure --prefix=/malu/softwares/nginx --with-http_ssl_module --with-http_v2_module --with-http_realip_module --without-http_rewrite_module --with-http_stub_status_module --without-http_gzip_module  --with-file-aio --with-stream --with-stream_ssl_module --with-stream_realip_module --add-module=/root/nginx-module-vts</span>
+
+<span class="token number">1.6</span> 编译并安装nginx  <span class="token number">2</span>表示两个核心
+<span class="token function">make</span> <span class="token parameter variable">-j</span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span>
+
+
+<span class="token number">1.7</span> 修改nginx的配置文件
+<span class="token function">vim</span> /malu/softwares/nginx/conf/nginx.conf
+<span class="token punctuation">..</span>.
+http <span class="token punctuation">{</span>
+    vhost_traffic_status_zone<span class="token punctuation">;</span>
+    upstream malu-grafana <span class="token punctuation">{</span>
+       server <span class="token number">10.0</span>.0.51:3000<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token punctuation">..</span>.
+    server <span class="token punctuation">{</span>
+        <span class="token punctuation">..</span>.
+        location / <span class="token punctuation">{</span>
+            root   html<span class="token punctuation">;</span>
+            <span class="token comment"># index  index.html index.htm;</span>
+            proxy_pass http://malu-grafana<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        location /status <span class="token punctuation">{</span>
+            vhost_traffic_status_display<span class="token punctuation">;</span>
+            vhost_traffic_status_display_format html<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token number">1.8</span> 检查配置文件语法
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># /malu/softwares/nginx/sbin/nginx -t</span>
+nginx: the configuration <span class="token function">file</span> /malu/softwares/nginx/conf/nginx.conf syntax is ok
+nginx: configuration <span class="token function">file</span> /malu/softwares/nginx/conf/nginx.conf <span class="token builtin class-name">test</span> is successful
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+
+<span class="token number">1.9</span> 启动nginx
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># /malu/softwares/nginx/sbin/nginx</span>
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># ss -ntl | grep 80</span>
+LISTEN <span class="token number">0</span>      <span class="token number">511</span>          <span class="token number">0.0</span>.0.0:80        <span class="token number">0.0</span>.0.0:*          
+<span class="token punctuation">[</span>root@elk92 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+<span class="token number">1.10</span> 访问nginx的状态页面
+http://10.0.0.92/status
+http://10.0.0.92/status/format/prometheus
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br></div></div><p><img src="/devops/public/assets/img/1731571312885.fbafe368.png" alt="1731571312885"></p> <p><img src="/devops/public/assets/img/1731571322140.7f1aae04.png" alt="1731571322140"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">2</span> 安装nginx-vtx-exporter
+<span class="token number">2.1</span> 下载nginx-vtx-exporter
+		
+CentOS：<span class="token punctuation">(</span>不支持更高版本<span class="token punctuation">)</span>
+<span class="token function">wget</span> https://github.com/hnlq715/nginx-vts-exporter/releases/download/v0.10.3/nginx-vts-exporter-0.10.3.linux-amd64.tar.gz
+
+
+
+温馨提示:
+	不建议下载更高版本，因为其会提升对GLIC的版本要求，可以通过<span class="token string">&quot; strings /lib64/libc.so.6 | grep GLIBC_ &quot;</span>查看默认是2.17版本，若使用较高版本则需要2.32+
+
+Ubuntu可以采用：
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># wget https://github.com/sysulq/nginx-vts-exporter/releases/download/v0.10.8/nginx-vtx-exporter_0.10.8_linux_amd64.tar.gz</span>
+
+
+<span class="token number">2.2</span> 解压软件包到path路径
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># tar xf nginx-vtx-exporter_0.10.8_linux_amd64.tar.gz -C /usr/local/bin/ nginx-vtx-exporter</span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">2.3</span> 运行nginx-vtx-exporter
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># nginx-vtx-exporter -nginx.scrape_uri=http://10.0.0.92/status/format/json -telemetry.address=:9913 -telemetry.endpoint=/metrics</span>
+<span class="token punctuation">..</span>.
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Starting nginx_vts_exporter <span class="token punctuation">(</span>version<span class="token operator">=</span>, <span class="token assign-left variable">branch</span><span class="token operator">=</span>, <span class="token assign-left variable">revision</span><span class="token operator">=</span><span class="token punctuation">)</span>
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Build context <span class="token punctuation">(</span>go<span class="token operator">=</span>go1.20.5, <span class="token assign-left variable">user</span><span class="token operator">=</span>, <span class="token assign-left variable">date</span><span class="token operator">=</span><span class="token punctuation">)</span>
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Starting Server at <span class="token builtin class-name">:</span> :9913
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Metrics endpoint: /metrics
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Metrics namespace: nginx
+<span class="token number">2024</span>/11/12 <span class="token number">16</span>:34:50 Scraping information from <span class="token builtin class-name">:</span> http://10.0.0.92/status/format/json
+
+
+<span class="token number">3</span> 配置prometheus采集nginx数据
+<span class="token number">3.1</span> 修改配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /malu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+
+<span class="token punctuation">..</span>.
+scrape_configs:
+  <span class="token punctuation">..</span>. 
+  
+  - job_name: <span class="token string">&quot;malu-nginx&quot;</span>
+    static_configs:
+      - targets:
+          - <span class="token number">10.0</span>.0.93:9913
+
+
+
+<span class="token number">3.2</span> 重新加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl  -X POST 10.0.0.31:9090/-/reload</span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">3.3</span> 检查配置是否生效
+http://10.0.0.31:9090/targets
+
+<span class="token number">3.4</span> 导入grafana模板
+<span class="token number">2949</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br></div></div><p><img src="/devops/public/assets/img/1731571435282.92c5d49e.png" alt="1731571435282"></p> <p><img src="/devops/public/assets/img/1731571524019.82bb6036.png" alt="1731571524019"></p> <h3 id="_10-监控tomcat-没有成功"><a href="#_10-监控tomcat-没有成功" class="header-anchor">#</a> 10，监控tomcat（没有成功）</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>参考（没有测试）：https://blog.csdn.net/chenwewi520feng/article/details/141863833
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language-bash line-numbers-mode"><pre class="language-bash"><code>下面的测试没有成功。
+
+<span class="token number">1</span>.下载svip
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment">#  ll tomcat_exporter.zip </span>
+-rw-r--r-- <span class="token number">1</span> root root <span class="token number">2001185</span> Nov <span class="token number">14</span> <span class="token number">16</span>:28 tomcat_exporter.zip
+
+
+<span class="token number">2</span>.解压软件包 
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># mkdir /malu/softwares/tomcat</span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># unzip tomcat_exporter.zip -d  /malu/softwares/tomcat</span>
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment">#</span>
+
+
+<span class="token number">3</span>.编译镜像
+<span class="token punctuation">[</span>root@elk93 ~<span class="token punctuation">]</span><span class="token comment"># cd /malu/softwares/tomcat</span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># chmod +x build.sh </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># wget http://192.168.13.253/Resources/Prometheus/images/oldboyedu-tomcat-v9.0.87.tar.gz</span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># docker load -i oldboyedu-tomcat-v9.0.87.tar.gz</span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># ./build.sh </span>
+
+<span class="token number">4</span>.启动tomcat实例
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># docker run -d --name tomcat-server --network host --restart always harbor.oldboyedu.com/tomcat/tomcat-app:v2</span>
+dc07d5e0222150bab62e340f8ca495541413e902e6e0a1d947e69e529c5ebc19
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># ss -ntl | grep 8080</span>
+LISTEN <span class="token number">0</span>      <span class="token number">100</span>                     *:8080            *:*          
+<span class="token punctuation">[</span>root@elk93 tomcat<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+<span class="token number">5</span>.访问测试metrics
+http://10.0.0.93:8080/myapp/
+http://10.0.0.93:8080/metrics/
+
+
+<span class="token number">6</span>.修改Prometheus的配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /oldboyedu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml </span>
+<span class="token punctuation">..</span>.
+  - job_name: <span class="token string">&quot;malu-tomcat&quot;</span>
+    static_configs:
+      - targets: 
+          - <span class="token number">10.0</span>.0.93:8080                
+ 
+	
+<span class="token number">7</span>.热加载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl  -X POST 10.0.0.31:9090/-/reload</span>
+
+
+<span class="token number">8</span>.检查配置是否生效
+http://10.0.0.31:9090/targets
+	
+<span class="token number">9</span>.grafana导入模板ID
+自行导入模板文件。
+
+参考链接：
+	https://github.com/nlighten/tomcat_exporter/blob/master/dashboard/example.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br></div></div><h3 id="_11-监控容器"><a href="#_11-监控容器" class="header-anchor">#</a> 11，监控容器</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">1</span> cAdvisor概述
+cAdvisor（Container Advisor）让容器用户了解其运行容器的资源使用情况和性能特征。
+
+它是一个正在运行的守护进程，用于收集、聚合、处理和导出有关正在运行的容器的信息。
+
+具体来说，对于每个容器，它保留资源隔离参数、历史资源使用情况、完整历史资源使用的直方图和网络统计信息。
+
+官网地址: https://github.com/google/cadvisor
+
+
+<span class="token number">2</span> 部署cAdvisor容器
+<span class="token function">docker</span> run <span class="token parameter variable">--volume</span><span class="token operator">=</span>/:/rootfs:ro <span class="token punctuation">\</span>
+  <span class="token parameter variable">--volume</span><span class="token operator">=</span>/var/run:/var/run:rw <span class="token punctuation">\</span>
+  <span class="token parameter variable">--volume</span><span class="token operator">=</span>/sys:/sys:ro <span class="token punctuation">\</span>
+  <span class="token parameter variable">--volume</span><span class="token operator">=</span>/var/lib/docker/:/var/lib/docker:ro <span class="token punctuation">\</span>
+  <span class="token parameter variable">--publish</span><span class="token operator">=</span><span class="token number">18080</span>:8080 <span class="token punctuation">\</span>
+  <span class="token parameter variable">--detach</span><span class="token operator">=</span>true <span class="token punctuation">\</span>
+  <span class="token parameter variable">--name</span><span class="token operator">=</span>malu_cadvisor <span class="token punctuation">\</span>
+  registry.cn-hangzhou.aliyuncs.com/yinzhengjie-k8s/cadvisor:v0.47.2
+  
+
+
+<span class="token number">3</span>.访问测试 
+http://10.0.0.93:18080/metrics
+http://10.0.0.93:18080/containers/
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p><img src="/devops/public/assets/img/1731576169489.fda2057e.png" alt="1731576169489"></p> <p><img src="/devops/public/assets/img/1731576182605.d20fcecb.png" alt="1731576182605"></p> <p><img src="/devops/public/assets/img/1731576239434.032bf7ef.png" alt="1731576239434"></p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code><span class="token number">4</span>.修改Prometheus的配置文件
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># vim /oldboyedu/softwares/prometheus-2.53.3.linux-amd64/prometheus.yml</span>
+<span class="token punctuation">..</span>.
+scrape_configs:
+  <span class="token punctuation">..</span>.
+  - job_name: <span class="token string">&quot;malu-docker&quot;</span>
+    static_configs:
+      - targets: 
+          - <span class="token number">10.0</span>.0.93:18080 
+
+<span class="token number">5</span>.重载配置
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># curl  -X POST 10.0.0.31:9090/-/reload</span>
+<span class="token punctuation">[</span>root@prometheus-server31 ~<span class="token punctuation">]</span><span class="token comment"># </span>
+
+
+
+<span class="token number">6</span> 验证配置是否生效
+http://10.0.0.31:9090/targets
+
+
+<span class="token number">7</span>.导入grafana模板
+<span class="token number">315</span>
+<span class="token number">10619</span>
+
+
+<span class="token number">8</span>.grafana的官方优化思路-对于容器出现小数的情况
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><p><img src="/devops/public/assets/img/1731576408541.0796efd8.png" alt="1731576408541"></p> <p><img src="/devops/public/assets/img/1731576577755.41f33f83.png" alt="1731576577755"></p> <h3 id="_12-prometheus监控服务流程"><a href="#_12-prometheus监控服务流程" class="header-anchor">#</a> 12，Prometheus监控服务流程</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>- Prometheus监控服务流程
+    - <span class="token number">1</span>.验证被监控端服务是否启动<span class="token punctuation">;</span> 【mysql】
+    - <span class="token number">2</span>.检测服务对应的exporter是否正常启动<span class="token punctuation">;</span> <span class="token punctuation">(</span>/metrics<span class="token punctuation">)</span>【mysql_exporter】
+    - <span class="token number">3</span>.prometheus server配置监控exporter
+    - <span class="token number">4</span>.热加载配置并验证是否生效<span class="token punctuation">;</span>
+    - <span class="token number">5</span>.grafana导入模板ID 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="_13-监控mongodb和window"><a href="#_13-监控mongodb和window" class="header-anchor">#</a> 13，监控Mongodb和window</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>- 使用Prometheus监控Mongodb<span class="token punctuation">;</span>
+- 使用Prometheus监控window系统<span class="token punctuation">;</span>
+
+参考链接:
+	https://github.com/percona/mongodb_exporter
+	https://github.com/prometheus-community/windows_exporter
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:12rem;" data-v-b57cc07c data-v-7dd95ae2><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_1-面试题" class="sidebar-link reco-side-_1-面试题" data-v-b57cc07c>1，面试题</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_2-prometheus过滤采集node-exporter数据" class="sidebar-link reco-side-_2-prometheus过滤采集node-exporter数据" data-v-b57cc07c>2，prometheus过滤采集node_exporter数据</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_3-监控zookeeper集群" class="sidebar-link reco-side-_3-监控zookeeper集群" data-v-b57cc07c>3，监控zookeeper集群</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_4-监控kafka集群" class="sidebar-link reco-side-_4-监控kafka集群" data-v-b57cc07c>4，监控kafka集群</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_5-监控elasticsearch集群" class="sidebar-link reco-side-_5-监控elasticsearch集群" data-v-b57cc07c>5，监控elasticSearch集群</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_6-监控mysql" class="sidebar-link reco-side-_6-监控mysql" data-v-b57cc07c>6，监控mysql</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_7-监控redis" class="sidebar-link reco-side-_7-监控redis" data-v-b57cc07c>7，监控redis</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_8-grafana实现插件安装" class="sidebar-link reco-side-_8-grafana实现插件安装" data-v-b57cc07c>8，grafana实现插件安装</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_9-监控nginx" class="sidebar-link reco-side-_9-监控nginx" data-v-b57cc07c>9，监控nginx</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_10-监控tomcat-没有成功" class="sidebar-link reco-side-_10-监控tomcat-没有成功" data-v-b57cc07c>10，监控tomcat（没有成功）</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_11-监控容器" class="sidebar-link reco-side-_11-监控容器" data-v-b57cc07c>11，监控容器</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_12-prometheus监控服务流程" class="sidebar-link reco-side-_12-prometheus监控服务流程" data-v-b57cc07c>12，Prometheus监控服务流程</a></li><li class="level-3" data-v-b57cc07c><a href="/devops/public/blogs/devops/53-prometheus/prometheus.html#_13-监控mongodb和window" class="sidebar-link reco-side-_13-监控mongodb和window" data-v-b57cc07c>13，监控Mongodb和window</a></li></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/devops/public/assets/js/app.7d569ec8.js" defer></script><script src="/devops/public/assets/js/118.ceed6ab6.js" defer></script><script src="/devops/public/assets/js/1.774fca24.js" defer></script><script src="/devops/public/assets/js/108.0e591817.js" defer></script>
+  </body>
+</html>
